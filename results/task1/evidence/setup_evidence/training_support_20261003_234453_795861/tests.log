@@ -1,0 +1,19 @@
+
+2026-10-03 18:45:07.592502: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-03 18:45:07.904636: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work
+test_all_five_conditions_and_original_short_order (test_task1_training_support.TrainingSupportTests.test_all_five_conditions_and_original_short_order) ... ok
+test_bad_copy_cannot_report_backup_verified (test_task1_training_support.TrainingSupportTests.test_bad_copy_cannot_report_backup_verified) ... ok
+test_base_digest_excludes_adapters_even_when_frozen_for_reload (test_task1_training_support.TrainingSupportTests.test_base_digest_excludes_adapters_even_when_frozen_for_reload) ... ok
+test_changed_dataset_hash_is_rejected (test_task1_training_support.TrainingSupportTests.test_changed_dataset_hash_is_rejected) ... ok
+test_nested_backup_is_rejected (test_task1_training_support.TrainingSupportTests.test_nested_backup_is_rejected) ... ok
+test_pinned_cache_requests_cannot_download_during_training (test_task1_training_support.TrainingSupportTests.test_pinned_cache_requests_cannot_download_during_training) ... ok
+test_prepared_snapshot_integrity (test_task1_training_support.TrainingSupportTests.test_prepared_snapshot_integrity) ... ok
+test_unapproved_parameters_are_rejected (test_task1_training_support.TrainingSupportTests.test_unapproved_parameters_are_rejected) ... ok
+test_verified_copy_matches_and_preserves_existing_backup (test_task1_training_support.TrainingSupportTests.test_verified_copy_matches_and_preserves_existing_backup) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.085s
+
+OK

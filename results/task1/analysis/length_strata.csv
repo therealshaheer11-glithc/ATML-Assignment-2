@@ -1,0 +1,7 @@
+condition,stratum,pairs,beta,mean_dpo_loss,preference_accuracy,correct_pairs,ties
+standard,preferred_longer,82,0.1,0.703795570062428,0.4268292682926829,35,0
+standard,length_matched,82,0.1,0.6844387337928866,0.5609756097560976,46,0
+standard,rejected_longer,82,0.1,0.6539859608179186,0.7073170731707317,58,0
+length_balanced,preferred_longer,82,0.1,0.7262326784250213,0.4146341463414634,34,0
+length_balanced,length_matched,82,0.1,0.6770631460154929,0.6219512195121951,51,0
+length_balanced,rejected_longer,82,0.1,0.6208179832958594,0.7926829268292683,65,0

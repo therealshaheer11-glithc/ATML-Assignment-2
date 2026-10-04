@@ -1,0 +1,115 @@
+{
+  "status": "STANDARD_AND_SFT_POLICY_EVALUATION_COMPLETE",
+  "prepared_jobs": "/content/drive/MyDrive/ATML-Assignment-2/setup_evidence/20261003_161419_807248/standard_complete_evaluation_jobs_20261004_145929_395368",
+  "bundle": {
+    "status": "PREPARED_POLICY_EVALUATION_NOT_STARTED",
+    "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_142324_585826",
+    "project_archive_sha256": "7ea0f43db01bc23437559225832c756e5799261c5e5b8535ed28c5d500b6b8eb",
+    "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED",
+    "checkpoint_file_sha256": {
+      "run_record.json": "a890b2f4e04e00d23f2ef769dbd63308bd8bd478f55622af6151f8ff9b4cf65b",
+      "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+      "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+      "adapter_model.safetensors": "803e05a9355eb24a1889474350d63377e97c067432d55f3b8ce0f173c17d63c0"
+    },
+    "local_adapter": "/content/ATML_PA2_adapters/standard_completed_scale1024",
+    "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+    "local_models_dir": "/content/ATML_PA2_models",
+    "model_manifest_sha256": "7ad306ec2e4ba0f2c12f5d9e9ce16f1eec34de418388f2a4ef776196f72e4b2e",
+    "evaluation_backup_root": "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs",
+    "jobs": [
+      {
+        "condition": "standard",
+        "phase": "policy",
+        "output": "/content/ATML-Assignment-2/results/task1_dpo/standard/policy_20261004_145929_395368",
+        "command_arguments": [
+          "-m",
+          "task1_dpo.evaluate",
+          "--config",
+          "configs/dpo.yaml",
+          "--name",
+          "standard",
+          "--phase",
+          "policy",
+          "--models-dir",
+          "/content/ATML_PA2_models",
+          "--output",
+          "/content/ATML-Assignment-2/results/task1_dpo/standard/policy_20261004_145929_395368",
+          "--backup-root",
+          "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs",
+          "--adapter",
+          "/content/ATML_PA2_adapters/standard_completed_scale1024"
+        ],
+        "pair_pools": {
+          "dpo_standard_eval": 300,
+          "dpo_length_eval": 246
+        },
+        "generation_pools": {
+          "dpo_standard_eval": 300,
+          "word_limit_prompts": 10
+        }
+      },
+      {
+        "condition": "sft",
+        "phase": "policy",
+        "output": "/content/ATML-Assignment-2/results/task1_dpo/sft/policy_20261004_145929_395368",
+        "command_arguments": [
+          "-m",
+          "task1_dpo.evaluate",
+          "--config",
+          "configs/dpo.yaml",
+          "--name",
+          "sft",
+          "--phase",
+          "policy",
+          "--models-dir",
+          "/content/ATML_PA2_models",
+          "--output",
+          "/content/ATML-Assignment-2/results/task1_dpo/sft/policy_20261004_145929_395368",
+          "--backup-root",
+          "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+        ],
+        "pair_pools": {},
+        "generation_pools": {
+          "dpo_standard_eval": 300,
+          "word_limit_prompts": 10
+        }
+      }
+    ],
+    "ML_settings_changed": false,
+    "scope": "Previously approved full evaluation pools and untouched SFT baseline; separate fresh processes and verified backups. Reward scoring follows using saved responses."
+  },
+  "ML_settings_changed": false,
+  "training_invoked": false,
+  "evaluation_invoked": true,
+  "completed_jobs": [
+    {
+      "condition": "standard",
+      "phase": "policy",
+      "status": "POLICY_COMPLETE",
+      "verified_backup": "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs/eval_standard_policy_20261004_151635_894282_POLICY_COMPLETE",
+      "evaluation_record_sha256": "237947037f602470008c968793ea2c87a79a2c87f2b8a472650cc8cceecff20a",
+      "metrics_sha256": "1adc3c861b525bd05ba2de8fd510ed49febf1bc7e4a91c785ce4f82580e660bc"
+    },
+    {
+      "condition": "sft",
+      "phase": "policy",
+      "status": "POLICY_COMPLETE",
+      "verified_backup": "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs/eval_sft_policy_20261004_155308_478928_POLICY_COMPLETE",
+      "evaluation_record_sha256": "f752c9f052d828dda26b6c04e167236206bae2e457340d02de330478cd90ca35",
+      "metrics_sha256": "ddaeb19423a56fb7c89b7cc962b973aa60d41dd3e11f024853c9ff4a8c3c3d86"
+    }
+  ],
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.11.0+cu130",
+  "package_restoration_needed": true,
+  "packages": {
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "peft": "0.17.1",
+    "trl": "0.27.2",
+    "bitsandbytes": "0.50.2"
+  },
+  "current_condition": "sft",
+  "launcher_wall_seconds": 3830.3230546369996
+}

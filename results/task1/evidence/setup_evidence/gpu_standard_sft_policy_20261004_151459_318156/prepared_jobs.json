@@ -1,0 +1,78 @@
+{
+  "status": "PREPARED_POLICY_EVALUATION_NOT_STARTED",
+  "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_142324_585826",
+  "project_archive_sha256": "7ea0f43db01bc23437559225832c756e5799261c5e5b8535ed28c5d500b6b8eb",
+  "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED",
+  "checkpoint_file_sha256": {
+    "run_record.json": "a890b2f4e04e00d23f2ef769dbd63308bd8bd478f55622af6151f8ff9b4cf65b",
+    "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+    "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+    "adapter_model.safetensors": "803e05a9355eb24a1889474350d63377e97c067432d55f3b8ce0f173c17d63c0"
+  },
+  "local_adapter": "/content/ATML_PA2_adapters/standard_completed_scale1024",
+  "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "local_models_dir": "/content/ATML_PA2_models",
+  "model_manifest_sha256": "7ad306ec2e4ba0f2c12f5d9e9ce16f1eec34de418388f2a4ef776196f72e4b2e",
+  "evaluation_backup_root": "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs",
+  "jobs": [
+    {
+      "condition": "standard",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/standard/policy_20261004_145929_395368",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "standard",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/standard/policy_20261004_145929_395368",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs",
+        "--adapter",
+        "/content/ATML_PA2_adapters/standard_completed_scale1024"
+      ],
+      "pair_pools": {
+        "dpo_standard_eval": 300,
+        "dpo_length_eval": 246
+      },
+      "generation_pools": {
+        "dpo_standard_eval": 300,
+        "word_limit_prompts": 10
+      }
+    },
+    {
+      "condition": "sft",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/sft/policy_20261004_145929_395368",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "sft",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/sft/policy_20261004_145929_395368",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+      ],
+      "pair_pools": {},
+      "generation_pools": {
+        "dpo_standard_eval": 300,
+        "word_limit_prompts": 10
+      }
+    }
+  ],
+  "ML_settings_changed": false,
+  "scope": "Previously approved full evaluation pools and untouched SFT baseline; separate fresh processes and verified backups. Reward scoring follows using saved responses."
+}

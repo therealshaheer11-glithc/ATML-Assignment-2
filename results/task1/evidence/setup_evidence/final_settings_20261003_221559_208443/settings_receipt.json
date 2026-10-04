@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "TA_patch_commit": "076e7cfdc7cd2f4b5e8e9e12cf15ef3652bc92da",
+  "patch_url": "https://raw.githubusercontent.com/AbDu11aHHH/ATML-PA2-LLM-PostTraining/076e7cfdc7cd2f4b5e8e9e12cf15ef3652bc92da/common/data.py",
+  "before_sha256": {
+    "common/data.py": "41a40198cafb278f6afe3e2e4ece72eb7a8c66c2c753ff8c4d81681a0bb33fd2",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "configs/dpo.yaml": "3895544e18db7316b236091b11bbf55176286ecae07b8647e02ae25e4e9618e9"
+  },
+  "after_sha256": {
+    "common/data.py": "d563a88e1dd4a0c7ab1ae4a9805ec615d273086c5badb4b3e517c6bbe24c9498",
+    "configs/dpo.yaml": "9376053afad62ea9622cb1486dfc11ece6d58ddeb59f1f8d63836c4c29848e38",
+    "tests/test_response_scoring.py": "9bdaec951466d6161f6416afb2fa88f8772effd5c1121347cc4acee375d39b7a"
+  },
+  "approval": {
+    "approval": "User explicitly selected Approve all three limits.",
+    "dpo_combined_tokens": 4096,
+    "generation_prompt_tokens": 4096,
+    "reward_input_tokens": 4096,
+    "generated_answer_tokens": 256,
+    "retain_all_original_pairs": true,
+    "retain_four_original_empty_rejected_answers": true,
+    "reward_input_and_GPU_memory_checks_required": true,
+    "configuration_applied": true,
+    "official_training_started": false,
+    "applied_at": "20261003_221559_208443",
+    "supersedes": "Only the earlier A-H sequence/prompt/reward limits; all other approved choices retained."
+  },
+  "config": {
+    "base_config": "configs/base.yaml",
+    "beta": 0.1,
+    "betas": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "batch_size": 2,
+    "grad_accum_steps": 8,
+    "epochs": 1,
+    "short_ablation_examples": 600,
+    "max_sequence_length": 4096,
+    "max_generation_tokens": 256,
+    "max_grad_norm": 1.0,
+    "standard_output": "outputs/task1_dpo/standard",
+    "length_output": "outputs/task1_dpo/length_balanced",
+    "results_dir": "results/task1_dpo",
+    "max_prompt_length": 4096,
+    "reward_max_length": 4096,
+    "generation_batch_size": 1,
+    "base_model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "reward_tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "reward_model_revision": "f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc"
+  },
+  "official_training_started": false,
+  "checks": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_dpo_objective.py",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_response_scoring.py",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

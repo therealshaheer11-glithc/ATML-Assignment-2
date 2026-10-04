@@ -1,0 +1,17 @@
+
+test_eos_included_and_later_positions_excluded (test_response_scoring.ResponseScoringTests.test_eos_included_and_later_positions_excluded) ... ok
+test_generated_token_scores_match_sequence_scores (test_response_scoring.ResponseScoringTests.test_generated_token_scores_match_sequence_scores) ... ok
+test_left_padding_preserves_both_masks (test_response_scoring.ResponseScoringTests.test_left_padding_preserves_both_masks) ... ok
+test_next_token_shift_and_response_sum (test_response_scoring.ResponseScoringTests.test_next_token_shift_and_response_sum) ... ok
+test_only_response_predictions_receive_gradients (test_response_scoring.ResponseScoringTests.test_only_response_predictions_receive_gradients) ... ok
+test_original_empty_answer_scores_immediate_EOS (test_response_scoring.ResponseScoringTests.test_original_empty_answer_scores_immediate_EOS) ... ok
+test_oversized_prompt_rejected_instead_of_removed (test_response_scoring.ResponseScoringTests.test_oversized_prompt_rejected_instead_of_removed) ... ok
+test_prompt_and_padding_predictions_do_not_affect_score (test_response_scoring.ResponseScoringTests.test_prompt_and_padding_predictions_do_not_affect_score) ... ok
+test_prompt_preserved_response_prefix_truncated (test_response_scoring.ResponseScoringTests.test_prompt_preserved_response_prefix_truncated) ... ok
+test_response_budget_reserves_EOS (test_response_scoring.ResponseScoringTests.test_response_budget_reserves_EOS) ... ok
+test_response_encoding_appends_eos (test_response_scoring.ResponseScoringTests.test_response_encoding_appends_eos) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.133s
+
+OK

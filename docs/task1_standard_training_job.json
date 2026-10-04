@@ -1,0 +1,28 @@
+{
+  "status": "PREPARED_NOT_STARTED",
+  "condition": "standard",
+  "pairs": 1500,
+  "epochs": 1,
+  "beta": 0.1,
+  "optimizer_updates": 94,
+  "final_update_pairs": 12,
+  "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_133443_697113",
+  "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "model_manifest_sha256": "7ad306ec2e4ba0f2c12f5d9e9ce16f1eec34de418388f2a4ef776196f72e4b2e",
+  "local_models_dir": "/content/ATML_PA2_models",
+  "training_backup_root": "/content/drive/MyDrive/ATML-Assignment-2/training_runs",
+  "command_arguments": [
+    "-m",
+    "task1_dpo.train",
+    "--config",
+    "configs/dpo.yaml",
+    "--run-name",
+    "standard",
+    "--models-dir",
+    "/content/ATML_PA2_models",
+    "--backup-root",
+    "/content/drive/MyDrive/ATML-Assignment-2/training_runs"
+  ],
+  "approved_settings_changed": false,
+  "next": "Restore this snapshot on A100, restore pinned packages, copy saved policy files locally, then launch this approved standard run."
+}

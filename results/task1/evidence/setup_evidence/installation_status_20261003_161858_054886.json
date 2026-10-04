@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "/content/ATML-Assignment-2/requirements.txt"
+  ],
+  "exit_code": 0,
+  "requirements_sha256": "f13c0e6952c39ee99b8996ecee9cf5a426e4f798bc646c2aade007bec803603f",
+  "finished_at": "2026-10-03T16:19:18.054349+05:00",
+  "official_training_started": false
+}

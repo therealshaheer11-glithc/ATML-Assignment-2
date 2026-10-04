@@ -1,0 +1,19 @@
+Inspecting the three checks that stopped the GPU trial:
+standard_train/chosen: shortened=0; empty original answer=0; EOS-only answer=0
+standard_train/rejected: shortened=0; empty original answer=4; EOS-only answer=4
+short_train_first_600/chosen: shortened=0; empty original answer=0; EOS-only answer=0
+short_train_first_600/rejected: shortened=0; empty original answer=3; EOS-only answer=3
+balanced_train/chosen: shortened=0; empty original answer=0; EOS-only answer=0
+balanced_train/rejected: shortened=0; empty original answer=0; EOS-only answer=0
+standard_eval/chosen: shortened=0; empty original answer=0; EOS-only answer=0
+standard_eval/rejected: shortened=0; empty original answer=0; EOS-only answer=0
+stratified_eval/chosen: shortened=0; empty original answer=0; EOS-only answer=0
+stratified_eval/rejected: shortened=0; empty original answer=0; EOS-only answer=0
+
+Affected responses (first 20; all IDs saved):
+standard_train row=265 id=f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652 side=rejected original/retained tokens=0/0 raw answer=''
+standard_train row=543 id=edaaed9266be8a87960fe113ab6f93ff8cd79bd313716db0655962f9f62562fe side=rejected original/retained tokens=0/0 raw answer=''
+standard_train row=589 id=e35e19e6824f471ff810b4aa30302ce117dfededc7d1ec75ac08fd6c48f92dfa side=rejected original/retained tokens=0/0 raw answer=''
+standard_train row=1381 id=8ecb5ac7e537f09025cd5e69a7ec44f31bf89b711aeea8accc37bcf9fff34fd3 side=rejected original/retained tokens=0/0 raw answer=''
+Total affected responses: 4
+CAP_4096_PREFLIGHT_DIAGNOSTIC_DONE

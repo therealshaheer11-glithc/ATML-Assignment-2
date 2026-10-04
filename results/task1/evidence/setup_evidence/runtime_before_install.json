@@ -1,0 +1,9 @@
+{
+  "backup_directory": "/content/drive/MyDrive/ATML-Assignment-2/setup_evidence/20261003_161419_807248",
+  "python": "3.13.15",
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_memory_GiB": 39.4935302734375,
+  "official_training_started": false
+}

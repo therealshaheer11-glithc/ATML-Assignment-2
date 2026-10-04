@@ -1,0 +1,25 @@
+{
+  "status": "STANDARD_TRAINING_COMPLETE_RELOAD_AND_BACKUP_VERIFIED",
+  "completed_pairs": 1500,
+  "optimizer_updates": 94,
+  "final_update_pairs": 12,
+  "training_minutes": 8.109019967716668,
+  "training_mean_loss": 0.6841042958100637,
+  "training_preference_accuracy": 0.604,
+  "initial_gradient_scale": 1024.0,
+  "same_initialization_as_failed_attempt": true,
+  "frozen_base_unchanged": true,
+  "reload_verified": true,
+  "peak_allocated_VRAM_GiB": 22.405821800231934,
+  "peak_reserved_VRAM_GiB": 35.638671875,
+  "metrics_scope": "Training diagnostics only; held-out evaluation has not started.",
+  "theory_outcome": "The fresh scale1024 run completed the entire budget. This is consistent with the overflow hypothesis, but does not prove the original failure's exact cause.",
+  "checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED",
+  "checkpoint_file_sha256": {
+    "run_record.json": "a890b2f4e04e00d23f2ef769dbd63308bd8bd478f55622af6151f8ff9b4cf65b",
+    "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+    "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+    "adapter_model.safetensors": "803e05a9355eb24a1889474350d63377e97c067432d55f3b8ce0f173c17d63c0"
+  },
+  "prior_failed_attempt": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_135137_662295_FAILED"
+}

@@ -1,0 +1,11 @@
+PASS: standard; pairs=['dpo_standard_eval', 'dpo_length_eval']; generation=['dpo_standard_eval', 'word_limit_prompts']
+PASS: beta_003; pairs=['dpo_standard_eval']; generation=['dpo_standard_eval']
+PASS: beta_010; pairs=['dpo_standard_eval']; generation=['dpo_standard_eval']
+PASS: beta_030; pairs=['dpo_standard_eval']; generation=['dpo_standard_eval']
+PASS: length_balanced; pairs=['dpo_standard_eval', 'dpo_length_eval']; generation=['dpo_standard_eval', 'word_limit_prompts']
+PASS: sft; pairs=[]; generation=['dpo_standard_eval', 'word_limit_prompts']
+
+2026-10-04 08:29:24.185504: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-04 08:29:24.296617: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work

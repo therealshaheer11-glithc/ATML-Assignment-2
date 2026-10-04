@@ -1,0 +1,10 @@
+condition,pool,responses,reached_256_token_ceiling_without_eos,terminated_with_eos,maximum_reward_input_tokens,reward_input_truncations
+standard,dpo_standard_eval,300,139,161,2119,0
+standard,word_limit_prompts,10,0,10,125,0
+sft,dpo_standard_eval,300,130,170,2119,0
+sft,word_limit_prompts,10,0,10,172,0
+beta_003,dpo_standard_eval,300,131,169,2119,0
+beta_010,dpo_standard_eval,300,132,168,2119,0
+beta_030,dpo_standard_eval,300,132,168,2119,0
+length_balanced,dpo_standard_eval,300,130,170,2119,0
+length_balanced,word_limit_prompts,10,0,10,111,0

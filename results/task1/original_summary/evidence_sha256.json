@@ -1,0 +1,15 @@
+{
+  "summary.csv": "96f4062818dfd30f8a278d8f422b4c339bd6d739ead63c3d532ef95585c12b1e",
+  "length_strata.csv": "24eb217bac36393520e2bfbb0b20fd3e788bd32633e51613cd7ef58c3378f0cb",
+  "word_limit_comparison.csv": "27d6d224529b1f97f1f46509052e1c8452df18f5603ed41e71a8539216f3eb27",
+  "generation_ceiling_audit.csv": "c9848ee2b1ac89bdf62151685697de8abd9d38d021a748c8ed1b747407d979be",
+  "metrics.json": "92052959e39bd1b4ca7909578cf0e6fdf5ce1847d365a0e7a1278453e519de5c",
+  "provenance.json": "dca99b1845ca460971dffaebe0a3c7d15c63704ebeba5da8a91bab4153bca182",
+  "word_limit_review.json": "44e467724e8429fc01fcd6790f3a13dbd9de7a0ca414932325533f6117b071e5",
+  "saved_general_responses_sft.json": "5b0ac694b028d572658aaf0c2d148e6870d06c074eae34ddd02a0cf132d3ca09",
+  "saved_general_responses_standard.json": "34b13c7a8befa530e9b397a9da8001e7f0f2b7b6dc36dbedb3e381f9b6b56564",
+  "saved_general_responses_beta_003.json": "d155cbae9597b68fde2273f16b9ba9880b05f154dd8cf6664d992fb2bdc8e046",
+  "saved_general_responses_beta_010.json": "ce899d5b52c4cbc3e4d4b082d70dc392827532dfd8126731756f476b469b6709",
+  "saved_general_responses_beta_030.json": "d104eb82f2d2cd5d51ed83201eed3149b424f2d51af2e6b22e226823ad104ab3",
+  "saved_general_responses_length_balanced.json": "41c12a9652eae558046212a2122500d3eb9a743c3e44d700ef1aaf0077a9e061"
+}

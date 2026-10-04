@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "official_training_started": false,
+  "installed_sha256": {
+    "task1_dpo/evaluation_support.py": "2042fc415998d99085d7288f7c91ff87fa7fff3665f5b0e5f7cd71258f8a046d",
+    "tests/test_task1_evaluation_support.py": "d7c017439267e027dcd8e307dbbd2874ee771ed8fdaa78809a77b072c7c2acfd"
+  },
+  "course_helper_sha256": {
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "common/metrics.py": "29fe2bd56bc68dcaf55b7e291ffdeff2b61260cf0ead227be259f48531203fc1"
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_task1_evaluation_support.py",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "real evaluation pools and pinned tokenizer",
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+condition,prompts,compliant_prompts,word_limit_compliance,length_tokens_mean,length_tokens_population_sd,length_words_mean,length_words_population_sd,reward_mean
+sft,10,4.0,0.4,60.6,36.34886518173573,52.2,32.42776588049198,3.8919921875
+standard,10,5.0,0.5,47.1,17.739503938949365,39.9,15.28037957643723,3.78984375
+length_balanced,10,5.0,0.5,45.7,13.899999999999999,38.3,11.29645962237727,3.706640625

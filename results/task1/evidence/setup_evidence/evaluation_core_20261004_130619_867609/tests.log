@@ -1,0 +1,14 @@
+
+2026-10-04 08:06:28.209942: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-04 08:06:28.287940: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work
+test_actual_tiny_qwen_generation_resets_seed_and_baseline_kl_is_zero (test_task1_evaluation_core.EvaluationCoreTests.test_actual_tiny_qwen_generation_resets_seed_and_baseline_kl_is_zero) ... ok
+test_overlength_pair_stops_before_model_scoring (test_task1_evaluation_core.EvaluationCoreTests.test_overlength_pair_stops_before_model_scoring) ... ok
+test_pair_tail_strata_and_duplicate_ids_keep_full_denominator (test_task1_evaluation_core.EvaluationCoreTests.test_pair_tail_strata_and_duplicate_ids_keep_full_denominator) ... ok
+test_reward_replay_membership_and_population_mean (test_task1_evaluation_core.EvaluationCoreTests.test_reward_replay_membership_and_population_mean) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.246s
+
+OK

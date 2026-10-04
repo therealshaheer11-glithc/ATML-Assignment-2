@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "official_training_started": false,
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_task1_training_support.py",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "all five real-data plans",
+      "exit_code": 0
+    }
+  ],
+  "installed_sha256": {
+    "task1_dpo/support.py": "b11a9d7364dfc3a61436c20e418264f0340cb05b31950f7c0a23ec4b2a32b0b9",
+    "tests/test_task1_training_support.py": "2f8cc73866344b46f16148b509647461f69e554fec09d31f53bc1bd87eae9cbd"
+  }
+}

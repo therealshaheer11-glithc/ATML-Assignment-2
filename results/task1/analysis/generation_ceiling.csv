@@ -1,0 +1,10 @@
+condition,pool,responses,at_ceiling_without_eos,word_mean,maximum_reward_input
+sft,dpo_standard_eval,300,130,111.6,2119
+sft,word_limit_prompts,10,0,52.2,172
+standard,dpo_standard_eval,300,139,113.53666666666666,2119
+standard,word_limit_prompts,10,0,39.9,125
+beta_003,dpo_standard_eval,300,131,107.72333333333333,2119
+beta_010,dpo_standard_eval,300,132,109.1,2119
+beta_030,dpo_standard_eval,300,132,112.06,2119
+length_balanced,dpo_standard_eval,300,130,110.03333333333333,2119
+length_balanced,word_limit_prompts,10,0,38.3,111

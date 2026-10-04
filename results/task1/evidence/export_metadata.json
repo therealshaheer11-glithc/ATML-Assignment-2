@@ -1,0 +1,234 @@
+{
+  "status": "SAVED_EVIDENCE_EXPORTED_FOR_FINAL_AUDIT",
+  "project_snapshot": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_142324_585826",
+  "analysis": "/content/drive/MyDrive/ATML-Assignment-2/analysis/task1_quantitative_20261004_214602_567835",
+  "new_training_or_generation": false,
+  "source_or_settings_changed": false,
+  "omitted_binary_or_tokenizer_artifacts": [
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/adapter_model.safetensors",
+      "sha256_from_receipt": "803e05a9355eb24a1889474350d63377e97c067432d55f3b8ce0f173c17d63c0"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/final_training_state.pt",
+      "sha256_from_receipt": "ce3ef872c1df0854ec502cdf96628b3f665d39f3f33d89aa933d19539538e659"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/reload_probe.pt",
+      "sha256_from_receipt": "a09aa08303bd22e1bfa774e63c6d9ea82a2b4ea3703ba618034ccf516b531c3b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/added_tokens.json",
+      "sha256_from_receipt": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/chat_template.jinja",
+      "sha256_from_receipt": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/merges.txt",
+      "sha256_from_receipt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/special_tokens_map.json",
+      "sha256_from_receipt": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer.json",
+      "sha256_from_receipt": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer_config.json",
+      "sha256_from_receipt": "d10d4ad57348e7bf9b899b6d9b3b9cf8209776b47803e754541ca275e03f2dd3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED/tokenizer/vocab.json",
+      "sha256_from_receipt": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/adapter_model.safetensors",
+      "sha256_from_receipt": "7c20c1165fdef5e0e4943a130fb64c91e22cc01beb73c59a4b8d36e190d73553"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/final_training_state.pt",
+      "sha256_from_receipt": "fa5c0b3d2c30a49e3932dbbec031c6546f760b22ae37d2cbaac7697007270b81"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/reload_probe.pt",
+      "sha256_from_receipt": "1f7527ad781f6e0b389b5cc24bcc38d21f336accfa4ee6a9a103085743145331"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/added_tokens.json",
+      "sha256_from_receipt": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/chat_template.jinja",
+      "sha256_from_receipt": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/merges.txt",
+      "sha256_from_receipt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/special_tokens_map.json",
+      "sha256_from_receipt": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer.json",
+      "sha256_from_receipt": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer_config.json",
+      "sha256_from_receipt": "d10d4ad57348e7bf9b899b6d9b3b9cf8209776b47803e754541ca275e03f2dd3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED/tokenizer/vocab.json",
+      "sha256_from_receipt": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/adapter_model.safetensors",
+      "sha256_from_receipt": "8d4a53bff937e7ad8bdefdc3cc25ecb58888e5b6d2ec7ac3de70d0a261f43f82"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/final_training_state.pt",
+      "sha256_from_receipt": "fc9dbf0612ee084d8c693848102778d669e9e34e69996a9171663d8d79d8b266"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/reload_probe.pt",
+      "sha256_from_receipt": "646b063ce2ff79c9979b9642e26a45b29384cfabbd9e3ea7360dd98c09f57ae3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/added_tokens.json",
+      "sha256_from_receipt": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/chat_template.jinja",
+      "sha256_from_receipt": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/merges.txt",
+      "sha256_from_receipt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/special_tokens_map.json",
+      "sha256_from_receipt": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer.json",
+      "sha256_from_receipt": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer_config.json",
+      "sha256_from_receipt": "d10d4ad57348e7bf9b899b6d9b3b9cf8209776b47803e754541ca275e03f2dd3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED/tokenizer/vocab.json",
+      "sha256_from_receipt": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/adapter_model.safetensors",
+      "sha256_from_receipt": "16083190c8d0567768be5257cb3e789368c29819d29c89170d483c6df191f522"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/final_training_state.pt",
+      "sha256_from_receipt": "ccc6fc8d844fbde073d2806c9b94849758fa18ccd82e58a181e999f1998239d3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/reload_probe.pt",
+      "sha256_from_receipt": "24fdadf04b5eb649a34b43529825038b2e27c1249b357f06c032e1ef5677afdb"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/added_tokens.json",
+      "sha256_from_receipt": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/chat_template.jinja",
+      "sha256_from_receipt": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/merges.txt",
+      "sha256_from_receipt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/special_tokens_map.json",
+      "sha256_from_receipt": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer.json",
+      "sha256_from_receipt": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer_config.json",
+      "sha256_from_receipt": "d10d4ad57348e7bf9b899b6d9b3b9cf8209776b47803e754541ca275e03f2dd3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED/tokenizer/vocab.json",
+      "sha256_from_receipt": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/adapter_model.safetensors",
+      "sha256_from_receipt": "b328b45f81a85069af09ec8dbd30d6448ee93cc41d77dead6685ac34e6cab878"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/final_training_state.pt",
+      "sha256_from_receipt": "b75399278847793c94e8ef63817c304cf5ccbc2da33d0c034ab595cee9cd2d69"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/reload_probe.pt",
+      "sha256_from_receipt": "3038569427b6100f517088d9e8e04f7f34b5400b6a45e94c97183daf263c7e2d"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/added_tokens.json",
+      "sha256_from_receipt": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/chat_template.jinja",
+      "sha256_from_receipt": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/merges.txt",
+      "sha256_from_receipt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/special_tokens_map.json",
+      "sha256_from_receipt": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer.json",
+      "sha256_from_receipt": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/tokenizer_config.json",
+      "sha256_from_receipt": "d10d4ad57348e7bf9b899b6d9b3b9cf8209776b47803e754541ca275e03f2dd3"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED/tokenizer/vocab.json",
+      "sha256_from_receipt": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "source": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_135137_662295_FAILED/rng_before_epoch.pt",
+      "sha256_from_receipt": "02fafe28d807a480dbdc37fc705c0dd4ab3d5461cc119055e5dbdb6459842ddf"
+    }
+  ],
+  "note": "Original receipts retain hashes of omitted files; final adapters checked without exporting weights."
+}

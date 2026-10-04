@@ -1,0 +1,25 @@
+
+2026-10-03 17:47:14.785977: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-03 17:47:14.985088: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work
+test_accumulation_equals_full_window_including_tail (test_task1_runtime.RuntimeTests.test_accumulation_equals_full_window_including_tail) ... ok
+test_accuracy_includes_ties_in_denominator (test_task1_runtime.RuntimeTests.test_accuracy_includes_ties_in_denominator) ... ok
+test_adapter_reload_and_reference_invariance (test_task1_runtime.RuntimeTests.test_adapter_reload_and_reference_invariance) ... /usr/local/lib/python3.13/dist-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+ok
+test_fresh_run_does_not_inherit_previous_adapters (test_task1_runtime.RuntimeTests.test_fresh_run_does_not_inherit_previous_adapters) ... ok
+test_incomplete_epoch_never_returns_success (test_task1_runtime.RuntimeTests.test_incomplete_epoch_never_returns_success) ... ok
+test_kl_weights_tokens_across_unequal_response_lengths (test_task1_runtime.RuntimeTests.test_kl_weights_tokens_across_unequal_response_lengths) ... ok
+test_negative_sampled_kl_remains_negative (test_task1_runtime.RuntimeTests.test_negative_sampled_kl_remains_negative) ... ok
+test_nonfinite_gradient_stops_before_optimizer_update (test_task1_runtime.RuntimeTests.test_nonfinite_gradient_stops_before_optimizer_update) ... ok
+test_nonfinite_loss_stops (test_task1_runtime.RuntimeTests.test_nonfinite_loss_stops) ... ok
+test_pair_loss_weights_unequal_batches (test_task1_runtime.RuntimeTests.test_pair_loss_weights_unequal_batches) ... ok
+test_released_budgets_keep_partial_windows (test_task1_runtime.RuntimeTests.test_released_budgets_keep_partial_windows) ... ok
+test_scaled_gradients_are_unscaled_before_clipping (test_task1_runtime.RuntimeTests.test_scaled_gradients_are_unscaled_before_clipping) ... ok
+test_skipped_optimizer_update_stops (test_task1_runtime.RuntimeTests.test_skipped_optimizer_update_stops) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 26.886s
+
+OK

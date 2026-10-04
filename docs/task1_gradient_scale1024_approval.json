@@ -1,0 +1,56 @@
+{
+  "status": "USER_APPROVED_CHANGE_APPLIED_ON_CPU",
+  "user_approval": "okay approved, as long as our theory is recorded as well the change sure go ahead",
+  "recorded_at_Asia_Karachi": "20261004_142324_585826",
+  "conditions": [
+    "standard",
+    "beta_003",
+    "beta_010",
+    "beta_030",
+    "length_balanced"
+  ],
+  "change": {
+    "initial_gradient_scale_before": 65536.0,
+    "initial_gradient_scale_after": 1024.0
+  },
+  "theory": "Unconfirmed FP16 backward overflow, possibly amplified by scale 65536; trace does not identify the exact operation or prove causation.",
+  "reasoning": "1024 reduces temporary amplification 64-fold; unscaling retains the intended optimizer update in exact arithmetic, while rounding can differ.",
+  "tradeoff": "Lower amplification can increase underflow susceptibility; 1024 is a conservative trial setting, not a guarantee.",
+  "failure_evidence": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_135137_662295_FAILED",
+  "diagnostic_evidence": "/content/drive/MyDrive/ATML-Assignment-2/setup_evidence/20261003_161419_807248/standard_failure_diagnostic_20261004_140644_711479/diagnostic.json",
+  "failure_summary": {
+    "run_status": "FAILED",
+    "error": "FloatingPointError: Nonfinite unscaled gradients; stop and review.",
+    "completed_optimizer_updates": 18,
+    "pairs_in_completed_updates": 288,
+    "failed_update": 19,
+    "microbatches_in_failed_update": 8,
+    "pairs_in_failed_update": 16,
+    "all_logged_losses_finite": true,
+    "all_logged_response_scores_and_margins_finite": true,
+    "adapter_tensors_with_nonfinite_gradients": 8,
+    "scaler_settings": {
+      "enabled": true,
+      "init_scale": 65536.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000
+    },
+    "autocast": false,
+    "trainable_dtypes": {
+      "torch.float32": 112
+    },
+    "run_wall_seconds": 137.678944817
+  },
+  "source_before_sha256": "6592db40ca9d4b51a56ad4807ee4d70e71108ba33bc5c607b9edd8824dca59af",
+  "source_after_sha256": "d378bdf4ea383b6347baf92780f0ef4e9e07c805a1e0c9b13d0186e05c9595bf",
+  "source_change_scope": "Only GradScaler init_scale and its matching run-record value.",
+  "all_other_original_snapshot_files_unchanged": true,
+  "retry": "Original pinned base, fresh adapters/optimizer/scaler, seed6304, full budgets, distinct output; preserve failed evidence.",
+  "retained": "FP16 base; FP32 LoRA; no autocast; growth2/backoff0.5/interval2000; unscale before clip1; strict stop on nonfinite gradients; all data/limits/betas/optimizer/generation settings.",
+  "verification_scope": "Exact source change, syntax and original-file hashes; no new test suite or model computation.",
+  "gpu_retry_started": false,
+  "root_cause_confirmed": false,
+  "successful_fix_confirmed": false,
+  "reference": "https://docs.pytorch.org/docs/2.11/amp.html#gradient-scaling"
+}

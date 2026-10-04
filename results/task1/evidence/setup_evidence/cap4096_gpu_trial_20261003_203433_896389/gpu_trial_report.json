@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "official_training_started": false,
+  "diagnostic_optimizer_updates": 0,
+  "stage": "setup",
+  "error": "AssertionError: ",
+  "wall_seconds": 0.0020399690001795534,
+  "peak_allocated_VRAM_GiB": 0.0,
+  "peak_reserved_VRAM_GiB": 0.0
+}

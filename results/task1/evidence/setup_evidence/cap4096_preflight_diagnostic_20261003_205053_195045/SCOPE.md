@@ -1,0 +1,1 @@
+Read-only diagnosis of the failed GPU-trial preflight. Inspect original empty-answer and EOS-only counts separately from truncation. Preserve all original rows, settings, and failed trial evidence. No model loading, training, filtering, or checkpoint creation.

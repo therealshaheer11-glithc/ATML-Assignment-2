@@ -1,0 +1,20 @@
+{
+  "status": "CPU_ENVIRONMENT_OK",
+  "python": "3.13.15",
+  "torch": "2.11.0+cpu",
+  "packages": {
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "peft": "0.17.1",
+    "trl": "0.27.2",
+    "bitsandbytes": "0.50.2"
+  },
+  "course_helper_imports": "PASS",
+  "gpu_available": false,
+  "official_training_started": false
+}
+
+2026-10-03 17:07:26.265546: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-03 17:07:26.405465: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work

@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "max_sequence_length": 768,
+  "tokenizer": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "resolved_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer_backend_sha256": "f884026e05f6dfffe68b72d580b588006d98b3bc0a128bb1ac425c76f7fc438c",
+    "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+    "padding_side": "left",
+    "truncation_side": "right",
+    "pad_token_id": 151643,
+    "eos_token_id": 151645
+  },
+  "dataset_sha256": {
+    "data/dpo_standard_train.jsonl": "8a0e52eb0927b261b35dab887f8f49f5d81bc666adb4621a91481ded277a3c42",
+    "data/dpo_length_balanced_train.jsonl": "15e1126ef1befe35d1011a713d223ed28044f3cb0ab8cbe4acecc033fdbd9bbf",
+    "data/dpo_standard_eval.jsonl": "c1f9e7c7e140b4671efd67173a4434946780cf04232aabc03ef317ae621e5079",
+    "data/dpo_length_stratified_eval.jsonl": "89e2c56ee2fdaec75fcf1f56ae4802d710ed4ad08f127e097990923017ca7405"
+  },
+  "summaries": {
+    "standard_train": {
+      "pairs": 1500,
+      "chosen": {
+        "responses": 1500,
+        "prompt_shortened": 226,
+        "response_shortened": 70,
+        "prompt_fully_removed": 71,
+        "retained_token_without_preceding_position": 71,
+        "original_response_tokens_mean": 283.11466666666666
+      },
+      "rejected": {
+        "responses": 1500,
+        "prompt_shortened": 187,
+        "response_shortened": 47,
+        "prompt_fully_removed": 47,
+        "retained_token_without_preceding_position": 47,
+        "original_response_tokens_mean": 240.66466666666668
+      }
+    },
+    "short_train_first_600": {
+      "pairs": 600,
+      "chosen": {
+        "responses": 600,
+        "prompt_shortened": 89,
+        "response_shortened": 29,
+        "prompt_fully_removed": 30,
+        "retained_token_without_preceding_position": 30,
+        "original_response_tokens_mean": 283.455
+      },
+      "rejected": {
+        "responses": 600,
+        "prompt_shortened": 68,
+        "response_shortened": 21,
+        "prompt_fully_removed": 21,
+        "retained_token_without_preceding_position": 21,
+        "original_response_tokens_mean": 231.37833333333333
+      }
+    },
+    "balanced_train": {
+      "pairs": 1500,
+      "chosen": {
+        "responses": 1500,
+        "prompt_shortened": 90,
+        "response_shortened": 0,
+        "prompt_fully_removed": 0,
+        "retained_token_without_preceding_position": 0,
+        "original_response_tokens_mean": 157.85533333333333
+      },
+      "rejected": {
+        "responses": 1500,
+        "prompt_shortened": 91,
+        "response_shortened": 0,
+        "prompt_fully_removed": 0,
+        "retained_token_without_preceding_position": 0,
+        "original_response_tokens_mean": 152.692
+      }
+    },
+    "standard_eval": {
+      "pairs": 300,
+      "chosen": {
+        "responses": 300,
+        "prompt_shortened": 46,
+        "response_shortened": 16,
+        "prompt_fully_removed": 16,
+        "retained_token_without_preceding_position": 16,
+        "original_response_tokens_mean": 275.4033333333333
+      },
+      "rejected": {
+        "responses": 300,
+        "prompt_shortened": 41,
+        "response_shortened": 12,
+        "prompt_fully_removed": 12,
+        "retained_token_without_preceding_position": 12,
+        "original_response_tokens_mean": 244.75666666666666
+      }
+    },
+    "stratified_eval": {
+      "pairs": 246,
+      "chosen": {
+        "responses": 246,
+        "prompt_shortened": 13,
+        "response_shortened": 0,
+        "prompt_fully_removed": 0,
+        "retained_token_without_preceding_position": 0,
+        "original_response_tokens_mean": 148.45528455284554
+      },
+      "rejected": {
+        "responses": 246,
+        "prompt_shortened": 15,
+        "response_shortened": 0,
+        "prompt_fully_removed": 0,
+        "retained_token_without_preceding_position": 0,
+        "original_response_tokens_mean": 145.760162601626
+      }
+    }
+  },
+  "official_training_started": false
+}

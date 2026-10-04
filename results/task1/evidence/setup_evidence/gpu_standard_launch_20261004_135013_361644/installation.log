@@ -1,0 +1,124 @@
+Requirement already satisfied: torch>=2.4 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 1)) (2.11.0+cu130)
+Collecting transformers==4.57.1 (from -r /content/ATML-Assignment-2/requirements.txt (line 2))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 1.9 MB/s eta 0:00:00
+Collecting tokenizers==0.22.1 (from -r /content/ATML-Assignment-2/requirements.txt (line 3))
+  Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting trl==0.27.2 (from -r /content/ATML-Assignment-2/requirements.txt (line 4))
+  Downloading trl-0.27.2-py3-none-any.whl.metadata (11 kB)
+Collecting peft==0.17.1 (from -r /content/ATML-Assignment-2/requirements.txt (line 5))
+  Downloading peft-0.17.1-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: datasets<5,>=3.0 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 6)) (4.8.5)
+Requirement already satisfied: accelerate<2,>=1.0 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 7)) (1.15.0)
+Collecting bitsandbytes>=0.45 (from -r /content/ATML-Assignment-2/requirements.txt (line 8))
+  Downloading bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl.metadata (10 kB)
+Collecting huggingface_hub>=0.27 (from -r /content/ATML-Assignment-2/requirements.txt (line 9))
+  Downloading huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: safetensors>=0.4 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 10)) (0.8.0)
+Requirement already satisfied: pyyaml>=6.0 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 11)) (6.0.3)
+Requirement already satisfied: pandas>=2.0 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 12)) (2.2.3)
+Requirement already satisfied: numpy>=1.26 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 13)) (2.1.3)
+Requirement already satisfied: scikit-learn>=1.4 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 14)) (1.6.1)
+Requirement already satisfied: matplotlib>=3.8 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 15)) (3.10.0)
+Requirement already satisfied: tqdm>=4.66 in /usr/local/lib/python3.13/dist-packages (from -r /content/ATML-Assignment-2/requirements.txt (line 16)) (4.67.3)
+Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (3.32.7)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (26.3)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (2025.11.3)
+Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (2.32.4)
+Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from peft==0.17.1->-r /content/ATML-Assignment-2/requirements.txt (line 5)) (5.9.5)
+Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (80.10.2)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (3.6.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (2025.12.0)
+Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.2)
+Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.3)
+Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (0.8.0)
+Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (3.6.0)
+Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.1.0.3)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.96)
+Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (12.0.0.61)
+Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (1.15.1.6)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.85)
+Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (10.4.0.35)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (12.0.4.66)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (12.6.3.3)
+Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.88)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.88)
+Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (13.0.85)
+Requirement already satisfied: pyarrow>=21.0.0 in /usr/local/lib/python3.13/dist-packages (from datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (23.0.1)
+Requirement already satisfied: dill<0.4.2,>=0.3.0 in /usr/local/lib/python3.13/dist-packages (from datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (0.4.1)
+Requirement already satisfied: httpx<1.0.0 in /usr/local/lib/python3.13/dist-packages (from datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (0.28.1)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.13/dist-packages (from datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (4.0.1)
+Requirement already satisfied: multiprocess<0.70.20 in /usr/local/lib/python3.13/dist-packages (from datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (0.70.19)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.13/dist-packages (from huggingface_hub>=0.27->-r /content/ATML-Assignment-2/requirements.txt (line 9)) (1.6.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.13/dist-packages (from pandas>=2.0->-r /content/ATML-Assignment-2/requirements.txt (line 12)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.13/dist-packages (from pandas>=2.0->-r /content/ATML-Assignment-2/requirements.txt (line 12)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.13/dist-packages (from pandas>=2.0->-r /content/ATML-Assignment-2/requirements.txt (line 12)) (2026.4)
+Requirement already satisfied: scipy>=1.6.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn>=1.4->-r /content/ATML-Assignment-2/requirements.txt (line 14)) (1.16.3)
+Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn>=1.4->-r /content/ATML-Assignment-2/requirements.txt (line 14)) (1.6.0)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /usr/local/lib/python3.13/dist-packages (from scikit-learn>=1.4->-r /content/ATML-Assignment-2/requirements.txt (line 14)) (3.7.0)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (1.4.0)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (4.65.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (1.5.1)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (11.3.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.13/dist-packages (from matplotlib>=3.8->-r /content/ATML-Assignment-2/requirements.txt (line 15)) (3.3.2)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<14,>=13.0.3->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (1.8.1)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (3.14.3)
+Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx<1.0.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (4.15.1)
+Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx<1.0.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (2026.7.22)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx<1.0.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx<1.0.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (3.19)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*->httpx<1.0.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (0.16.0)
+Requirement already satisfied: cloudpickle>=3.0 in /usr/local/lib/python3.13/dist-packages (from joblib>=1.2.0->scikit-learn>=1.4->-r /content/ATML-Assignment-2/requirements.txt (line 14)) (3.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.13/dist-packages (from python-dateutil>=2.8.2->pandas>=2.0->-r /content/ATML-Assignment-2/requirements.txt (line 12)) (1.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (3.4.9)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1->-r /content/ATML-Assignment-2/requirements.txt (line 2)) (2.5.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=2.4->-r /content/ATML-Assignment-2/requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (2.7.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (6.8.0)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (0.5.4)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5,>=3.0->-r /content/ATML-Assignment-2/requirements.txt (line 6)) (1.25.1)
+Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 133.6 MB/s eta 0:00:00
+Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 91.3 MB/s eta 0:00:00
+Downloading trl-0.27.2-py3-none-any.whl (530 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 530.9/530.9 kB 27.6 MB/s eta 0:00:00
+Downloading peft-0.17.1-py3-none-any.whl (504 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 504.9/504.9 kB 41.3 MB/s eta 0:00:00
+Downloading bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl (43.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.1/43.1 MB 63.8 MB/s eta 0:00:00
+Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 47.3 MB/s eta 0:00:00
+Installing collected packages: huggingface_hub, tokenizers, transformers, bitsandbytes, trl, peft
+  Attempting uninstall: huggingface_hub
+    Found existing installation: huggingface_hub 1.31.0
+    Uninstalling huggingface_hub-1.31.0:
+      Successfully uninstalled huggingface_hub-1.31.0
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.23.2
+    Uninstalling tokenizers-0.23.2:
+      Successfully uninstalled tokenizers-0.23.2
+  Attempting uninstall: transformers
+    Found existing installation: transformers 5.17.0
+    Uninstalling transformers-5.17.0:
+      Successfully uninstalled transformers-5.17.0
+  Attempting uninstall: peft
+    Found existing installation: peft 0.21.0
+    Uninstalling peft-0.21.0:
+      Successfully uninstalled peft-0.21.0
+Successfully installed bitsandbytes-0.50.2 huggingface_hub-0.36.2 peft-0.17.1 tokenizers-0.22.1 transformers-4.57.1 trl-0.27.2
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+diffusers 0.40.0 requires huggingface-hub<2.0,>=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.
+gradio 6.27.0 requires huggingface-hub<2.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.

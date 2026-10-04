@@ -1,0 +1,31 @@
+2026-10-04 13:06:33.718071: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-04 13:06:33.790404: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Pairs dpo_standard_eval: 1/300
+Pairs dpo_standard_eval: 25/300
+Pairs dpo_standard_eval: 50/300
+Pairs dpo_standard_eval: 75/300
+Pairs dpo_standard_eval: 100/300
+Pairs dpo_standard_eval: 125/300
+Pairs dpo_standard_eval: 150/300
+Pairs dpo_standard_eval: 175/300
+Pairs dpo_standard_eval: 200/300
+Pairs dpo_standard_eval: 225/300
+Pairs dpo_standard_eval: 250/300
+Pairs dpo_standard_eval: 275/300
+Pairs dpo_standard_eval: 300/300
+Generate dpo_standard_eval: 1/300
+Generate dpo_standard_eval: 25/300
+Generate dpo_standard_eval: 50/300
+Generate dpo_standard_eval: 75/300
+Generate dpo_standard_eval: 100/300
+Generate dpo_standard_eval: 125/300
+Generate dpo_standard_eval: 150/300
+Generate dpo_standard_eval: 175/300
+Generate dpo_standard_eval: 200/300
+Generate dpo_standard_eval: 225/300
+Generate dpo_standard_eval: 250/300
+Generate dpo_standard_eval: 275/300
+Generate dpo_standard_eval: 300/300
+BACKUP_VERIFIED: /content/drive/MyDrive/ATML-Assignment-2/evaluation_runs/eval_beta_003_policy_20261004_180638_771388_POLICY_COMPLETE
+EVALUATION_PHASE_COMPLETE: beta_003 policy

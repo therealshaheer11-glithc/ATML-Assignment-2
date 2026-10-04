@@ -1,0 +1,62 @@
+{
+  "beta_003": {
+    "pairs": 600,
+    "updates": 38,
+    "training_minutes": 3.2443315657500005,
+    "training_mean_loss": 0.6920811184247335,
+    "training_preference_accuracy": 0.5666666666666667,
+    "metrics_scope": "Training diagnostics only; held-out evaluation pending.",
+    "checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED",
+    "checkpoint_file_sha256": {
+      "run_record.json": "502aa10884895233189350070e79908b308305391632acd8b4f988a80aac23ad",
+      "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+      "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+      "adapter_model.safetensors": "7c20c1165fdef5e0e4943a130fb64c91e22cc01beb73c59a4b8d36e190d73553"
+    }
+  },
+  "beta_010": {
+    "pairs": 600,
+    "updates": 38,
+    "training_minutes": 3.238235920666667,
+    "training_mean_loss": 0.6897572749853134,
+    "training_preference_accuracy": 0.5533333333333333,
+    "metrics_scope": "Training diagnostics only; held-out evaluation pending.",
+    "checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED",
+    "checkpoint_file_sha256": {
+      "run_record.json": "5f79e9afa26ec8c7edae0c5a727ff67d8200d31b8c359e274b6119b37576d0de",
+      "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+      "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+      "adapter_model.safetensors": "8d4a53bff937e7ad8bdefdc3cc25ecb58888e5b6d2ec7ac3de70d0a261f43f82"
+    }
+  },
+  "beta_030": {
+    "pairs": 600,
+    "updates": 38,
+    "training_minutes": 3.343407145483335,
+    "training_mean_loss": 0.6836337640881538,
+    "training_preference_accuracy": 0.5516666666666666,
+    "metrics_scope": "Training diagnostics only; held-out evaluation pending.",
+    "checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED",
+    "checkpoint_file_sha256": {
+      "run_record.json": "8e52bdc94b28d9c5499ee991a47c36969f1a1f5fca868467857acd9571e364dc",
+      "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+      "adapter_config.json": "345dbaf74216700798bba586022daaaa404bd4b6ca025581f393cf5a801e7534",
+      "adapter_model.safetensors": "16083190c8d0567768be5257cb3e789368c29819d29c89170d483c6df191f522"
+    }
+  },
+  "length_balanced": {
+    "pairs": 1500,
+    "updates": 94,
+    "training_minutes": 7.995412855016669,
+    "training_mean_loss": 0.6828145512739817,
+    "training_preference_accuracy": 0.592,
+    "metrics_scope": "Training diagnostics only; held-out evaluation pending.",
+    "checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED",
+    "checkpoint_file_sha256": {
+      "run_record.json": "9d68b5ec75915b933f0d8dc0740a864bbd2a973535bcf71a49294102a79b6d00",
+      "reload_verification.json": "3b2e64579496a737a2d8594d598b57608706478f370fa82726397e99e1c78625",
+      "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+      "adapter_model.safetensors": "b328b45f81a85069af09ec8dbd30d6448ee93cc41d77dead6685ac34e6cab878"
+    }
+  }
+}

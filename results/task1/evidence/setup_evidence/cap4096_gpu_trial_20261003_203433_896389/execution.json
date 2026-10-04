@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "scripts.student_trial_task1_cap4096",
+    "--output",
+    "/content/ATML-Assignment-2/results/setup/cap4096_gpu_trial_20261003_203433_896389"
+  ],
+  "exit_code": 1,
+  "script_sha256": "fc221ff7c00ed9706f3a334dfaf8ac5475103b3e432d5a913ade43f7a8d6abfd",
+  "official_training_started": false
+}

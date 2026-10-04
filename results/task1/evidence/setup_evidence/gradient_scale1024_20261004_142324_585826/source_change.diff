@@ -1,0 +1,18 @@
+--- original/task1_dpo/train.py
++++ approved/task1_dpo/train.py
+@@ -54,13 +54,13 @@
+     named = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
+     parameters = [p for _, p in named]
+     optimizer = AdamW(parameters, lr=float(cfg["learning_rate"]), weight_decay=float(cfg["weight_decay"]))
+-    scaler = torch.amp.GradScaler("cuda", enabled=True, init_scale=65536.,
++    scaler = torch.amp.GradScaler("cuda", enabled=True, init_scale=1024.,
+                                 growth_factor=2., backoff_factor=.5, growth_interval=2000)
+     collate = make_collate(tok, int(cfg["max_sequence_length"]))
+     loader = DataLoader(rows, batch_size=int(cfg["batch_size"]), shuffle=True,
+                         drop_last=False, collate_fn=collate)
+     record.update({"optimizer_defaults": optimizer.defaults,
+-                   "scaler_settings": {"enabled": True, "init_scale": 65536., "growth_factor": 2.,
++                   "scaler_settings": {"enabled": True, "init_scale": 1024., "growth_factor": 2.,
+                                        "backoff_factor": .5, "growth_interval": 2000},
+                    "autocast": False, "trainable_names": [n for n, _ in named],
+                    "trainable_parameters": sum(p.numel() for p in parameters),

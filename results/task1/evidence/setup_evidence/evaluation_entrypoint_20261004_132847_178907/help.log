@@ -1,0 +1,27 @@
+usage: evaluate.py [-h] [--config CONFIG]
+                   --name {standard,beta_003,beta_010,beta_030,length_balanced,sft}
+                   [--phase {policy,reward}] [--adapter ADAPTER]
+                   [--models-dir MODELS_DIR] [--output OUTPUT]
+                   [--backup-root BACKUP_ROOT]
+                   [--policy-results POLICY_RESULTS] [--plan]
+
+Run one fixed Task 1 evaluation phase and verify its persistent backup. Policy
+scoring/generation and reward replay are separate invocations. Importing this
+module or requesting --plan never loads model weights or creates results.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --name {standard,beta_003,beta_010,beta_030,length_balanced,sft}
+  --phase {policy,reward}
+  --adapter ADAPTER
+  --models-dir MODELS_DIR
+  --output OUTPUT
+  --backup-root BACKUP_ROOT
+  --policy-results POLICY_RESULTS
+  --plan                CPU-only full-pool validation; no model loading
+
+2026-10-04 08:29:10.359668: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-04 08:29:10.484684: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work

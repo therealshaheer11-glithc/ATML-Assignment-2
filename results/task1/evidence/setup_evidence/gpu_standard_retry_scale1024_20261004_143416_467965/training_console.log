@@ -1,0 +1,17 @@
+2026-10-04 09:36:30.392897: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-04 09:36:30.463956: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+standard: update 1; pairs 16/1500; training 0.1 min
+standard: update 10; pairs 160/1500; training 0.9 min
+standard: update 20; pairs 320/1500; training 1.7 min
+standard: update 30; pairs 480/1500; training 2.6 min
+standard: update 40; pairs 640/1500; training 3.5 min
+standard: update 50; pairs 800/1500; training 4.4 min
+standard: update 60; pairs 960/1500; training 5.2 min
+standard: update 70; pairs 1120/1500; training 6.1 min
+standard: update 80; pairs 1280/1500; training 6.9 min
+standard: update 90; pairs 1440/1500; training 7.8 min
+standard: update 94; pairs 1500/1500; training 8.1 min
+FRESH_CHECKPOINT_RELOAD_OK
+BACKUP_VERIFIED: /content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_143635_293670_COMPLETE_RELOAD_VERIFIED
+DPO_RUN_COMPLETE: standard

@@ -1,0 +1,10 @@
+{
+  "status": "CPU_RESTORE_OK",
+  "backup_folder": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261003_212158_880598",
+  "archive_sha256": "25f5f06fd3d5cb2f1ae11d115a1924a590af3c3c0b0e813fec5a4712b9b2dac0",
+  "restored_files": 143,
+  "working_folder": "/content/ATML-Assignment-2",
+  "gpu_available": false,
+  "official_training_started": false,
+  "settings_changed": false
+}

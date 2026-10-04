@@ -1,0 +1,18 @@
+2026-10-04 15:55:02.534145: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-04 15:55:02.606304: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Reward dpo_standard_eval: 1/300
+Reward dpo_standard_eval: 25/300
+Reward dpo_standard_eval: 50/300
+Reward dpo_standard_eval: 75/300
+Reward dpo_standard_eval: 100/300
+Reward dpo_standard_eval: 125/300
+Reward dpo_standard_eval: 150/300
+Reward dpo_standard_eval: 175/300
+Reward dpo_standard_eval: 200/300
+Reward dpo_standard_eval: 225/300
+Reward dpo_standard_eval: 250/300
+Reward dpo_standard_eval: 275/300
+Reward dpo_standard_eval: 300/300
+BACKUP_VERIFIED: /content/drive/MyDrive/ATML-Assignment-2/evaluation_runs/eval_beta_030_reward_20261004_205506_776145_COMPLETE
+EVALUATION_PHASE_COMPLETE: beta_030 reward

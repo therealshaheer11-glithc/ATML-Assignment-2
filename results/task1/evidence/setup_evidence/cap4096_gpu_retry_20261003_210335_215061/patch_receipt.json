@@ -1,0 +1,8 @@
+{
+  "change": "Allow verified originally empty rejected answers; preserve all truncation checks.",
+  "before_sha256": "fc221ff7c00ed9706f3a334dfaf8ac5475103b3e432d5a913ade43f7a8d6abfd",
+  "after_sha256": "57148169cad153e510bd8969bd4c5d963b96c6f69dedf2819fcaafe7e31c52e0",
+  "official_training_started": false,
+  "hyperparameters_changed": false,
+  "examples_filtered": false
+}

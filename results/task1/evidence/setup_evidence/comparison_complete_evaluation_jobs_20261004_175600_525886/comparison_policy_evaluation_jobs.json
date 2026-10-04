@@ -1,0 +1,243 @@
+{
+  "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_142324_585826",
+  "project_archive_sha256": "7ea0f43db01bc23437559225832c756e5799261c5e5b8535ed28c5d500b6b8eb",
+  "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "local_models_dir": "/content/ATML_PA2_models",
+  "model_manifest_sha256": "7ad306ec2e4ba0f2c12f5d9e9ce16f1eec34de418388f2a4ef776196f72e4b2e",
+  "status": "PREPARED_FOUR_COMPARISON_POLICY_EVALUATIONS_NOT_STARTED",
+  "jobs": [
+    {
+      "condition": "beta_003",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/beta_003/policy_20261004_175600_525886",
+      "pair_pools": {
+        "dpo_standard_eval": 300
+      },
+      "generation_pools": {
+        "dpo_standard_eval": 300
+      },
+      "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_003_20261004_172551_753049_COMPLETE_RELOAD_VERIFIED",
+      "checkpoint_file_sha256": {
+        "run_record.json": "502aa10884895233189350070e79908b308305391632acd8b4f988a80aac23ad",
+        "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+        "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+        "adapter_model.safetensors": "7c20c1165fdef5e0e4943a130fb64c91e22cc01beb73c59a4b8d36e190d73553"
+      },
+      "local_adapter": "/content/ATML_PA2_adapters/beta_003_completed_scale1024",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "beta_003",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--adapter",
+        "/content/ATML_PA2_adapters/beta_003_completed_scale1024",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/beta_003/policy_20261004_175600_525886",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+      ]
+    },
+    {
+      "condition": "beta_010",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/beta_010/policy_20261004_175600_525886",
+      "pair_pools": {
+        "dpo_standard_eval": 300
+      },
+      "generation_pools": {
+        "dpo_standard_eval": 300
+      },
+      "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_010_20261004_173034_427153_COMPLETE_RELOAD_VERIFIED",
+      "checkpoint_file_sha256": {
+        "run_record.json": "5f79e9afa26ec8c7edae0c5a727ff67d8200d31b8c359e274b6119b37576d0de",
+        "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+        "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+        "adapter_model.safetensors": "8d4a53bff937e7ad8bdefdc3cc25ecb58888e5b6d2ec7ac3de70d0a261f43f82"
+      },
+      "local_adapter": "/content/ATML_PA2_adapters/beta_010_completed_scale1024",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "beta_010",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--adapter",
+        "/content/ATML_PA2_adapters/beta_010_completed_scale1024",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/beta_010/policy_20261004_175600_525886",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+      ]
+    },
+    {
+      "condition": "beta_030",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/beta_030/policy_20261004_175600_525886",
+      "pair_pools": {
+        "dpo_standard_eval": 300
+      },
+      "generation_pools": {
+        "dpo_standard_eval": 300
+      },
+      "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/beta_030_20261004_173512_004179_COMPLETE_RELOAD_VERIFIED",
+      "checkpoint_file_sha256": {
+        "run_record.json": "8e52bdc94b28d9c5499ee991a47c36969f1a1f5fca868467857acd9571e364dc",
+        "reload_verification.json": "1c4211fd6a7f192fdfa4c3d75be23d2d12e069a361e2f284e525745047119bbe",
+        "adapter_config.json": "345dbaf74216700798bba586022daaaa404bd4b6ca025581f393cf5a801e7534",
+        "adapter_model.safetensors": "16083190c8d0567768be5257cb3e789368c29819d29c89170d483c6df191f522"
+      },
+      "local_adapter": "/content/ATML_PA2_adapters/beta_030_completed_scale1024",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "beta_030",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--adapter",
+        "/content/ATML_PA2_adapters/beta_030_completed_scale1024",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/beta_030/policy_20261004_175600_525886",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+      ]
+    },
+    {
+      "condition": "length_balanced",
+      "phase": "policy",
+      "output": "/content/ATML-Assignment-2/results/task1_dpo/length_balanced/policy_20261004_175600_525886",
+      "pair_pools": {
+        "dpo_standard_eval": 300,
+        "dpo_length_eval": 246
+      },
+      "generation_pools": {
+        "dpo_standard_eval": 300,
+        "word_limit_prompts": 10
+      },
+      "completed_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/length_balanced_20261004_173954_855414_COMPLETE_RELOAD_VERIFIED",
+      "checkpoint_file_sha256": {
+        "run_record.json": "9d68b5ec75915b933f0d8dc0740a864bbd2a973535bcf71a49294102a79b6d00",
+        "reload_verification.json": "3b2e64579496a737a2d8594d598b57608706478f370fa82726397e99e1c78625",
+        "adapter_config.json": "2812614d166728ec870d1bd3bf2e6808b7cb1e2bef5092caab4221055b9353df",
+        "adapter_model.safetensors": "b328b45f81a85069af09ec8dbd30d6448ee93cc41d77dead6685ac34e6cab878"
+      },
+      "local_adapter": "/content/ATML_PA2_adapters/length_balanced_completed_scale1024",
+      "command_arguments": [
+        "-m",
+        "task1_dpo.evaluate",
+        "--config",
+        "configs/dpo.yaml",
+        "--name",
+        "length_balanced",
+        "--phase",
+        "policy",
+        "--models-dir",
+        "/content/ATML_PA2_models",
+        "--adapter",
+        "/content/ATML_PA2_adapters/length_balanced_completed_scale1024",
+        "--output",
+        "/content/ATML-Assignment-2/results/task1_dpo/length_balanced/policy_20261004_175600_525886",
+        "--backup-root",
+        "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs"
+      ]
+    }
+  ],
+  "evaluation_backup_root": "/content/drive/MyDrive/ATML-Assignment-2/evaluation_runs",
+  "effective_config": {
+    "seed": 6304,
+    "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+    "reward_tokenizer": "Qwen/Qwen2.5-1.5B-Instruct",
+    "ai_judge_model": "Qwen/Qwen2.5-3B-Instruct",
+    "value_model_init": "Qwen/Qwen2.5-0.5B-Instruct",
+    "dtype": "float16",
+    "quantize_frozen_models": true,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "value_lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "paths": {
+      "dpo_standard_train": "data/dpo_standard_train.jsonl",
+      "dpo_standard_eval": "data/dpo_standard_eval.jsonl",
+      "dpo_length_train": "data/dpo_length_balanced_train.jsonl",
+      "dpo_length_eval": "data/dpo_length_stratified_eval.jsonl",
+      "word_limit_prompts": "data/word_limit_prompts.jsonl",
+      "rl_prompt_train": "data/rl_prompt_pool_train.jsonl",
+      "rl_prompt_eval": "data/rl_prompt_pool_eval.jsonl",
+      "xstest": "data/xstest_safety_prompts.csv",
+      "gsm_train": "data/gsm8k_rl_train.jsonl",
+      "gsm_eval": "data/gsm8k_eval.jsonl",
+      "math_transfer_eval": "data/math_transfer_eval.jsonl",
+      "task5_diagnostics": "data/task5_controlled_reward_diagnostics.jsonl",
+      "ppo_rollout_cache": "cached/ppo_rollout.pt",
+      "grpo_k_cache": "cached/grpo_k_cache.jsonl",
+      "ppo_midpoint_policy": "checkpoints/ppo_midpoint_policy",
+      "ppo_midpoint_value": "checkpoints/ppo_midpoint_value",
+      "grpo_midpoint_policy": "checkpoints/grpo_midpoint_policy",
+      "rlvr_policy": "checkpoints/rlvr_policy",
+      "rlaif_policy": "checkpoints/rlaif_policy"
+    },
+    "beta": 0.1,
+    "betas": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "batch_size": 2,
+    "grad_accum_steps": 8,
+    "epochs": 1,
+    "short_ablation_examples": 600,
+    "max_sequence_length": 4096,
+    "max_generation_tokens": 256,
+    "max_grad_norm": 1.0,
+    "standard_output": "outputs/task1_dpo/standard",
+    "length_output": "outputs/task1_dpo/length_balanced",
+    "results_dir": "results/task1_dpo",
+    "max_prompt_length": 4096,
+    "reward_max_length": 4096,
+    "generation_batch_size": 1,
+    "base_model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "reward_tokenizer_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "reward_model_revision": "f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc"
+  },
+  "ML_settings_changed": false,
+  "training_launch_evidence": "/content/drive/MyDrive/ATML-Assignment-2/setup_evidence/20261003_161419_807248/gpu_four_comparison_training_20261004_172413_595406",
+  "training_launch_record_sha256": "dc456ebf15bde54eb01e23e5165fddf07e04a564afd68fe42c1caafb90f780e1",
+  "scope": "Existing evaluator, fixed prompts/decoding/seed; final full-budget checkpoints; no held-out model selection. Reward scoring of saved answers follows."
+}

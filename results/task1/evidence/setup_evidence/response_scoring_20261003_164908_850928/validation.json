@@ -1,0 +1,22 @@
+{
+  "stage": "Response-scoring helpers with known probabilities",
+  "status": "PASS",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_response_scoring.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "helper_sha256": {
+    "common/data.py": "41a40198cafb278f6afe3e2e4ece72eb7a8c66c2c753ff8c4d81681a0bb33fd2",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c"
+  },
+  "test_sha256": "02a886b93baa242c31a5e1294250b93e7acf4aededba9894c9f54fa561053ed1",
+  "official_training_started": false
+}

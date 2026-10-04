@@ -1,0 +1,43 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "transformers": "4.57.1",
+  "torch": "2.11.0+cpu",
+  "gpu_available": false,
+  "model_weights_loaded": false,
+  "settings_changed": false,
+  "official_training_started": false,
+  "models": {
+    "policy": {
+      "checkpoint_transformers_version": "4.43.1",
+      "checkpoint_rope_theta": 1000000.0,
+      "parsed_rope_theta": 1000000.0,
+      "checkpoint_rope_parameters": null,
+      "parsed_rope_scaling": null,
+      "rotary_frequency_vectors_match": true,
+      "maximum_frequency_difference": 0.0,
+      "context_capacity": 32768,
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "num_labels": 2
+    },
+    "reward": {
+      "checkpoint_transformers_version": "5.12.1",
+      "checkpoint_rope_theta": 1000000.0,
+      "parsed_rope_theta": 10000.0,
+      "checkpoint_rope_parameters": {
+        "rope_theta": 1000000.0,
+        "rope_type": "default"
+      },
+      "parsed_rope_scaling": null,
+      "rotary_frequency_vectors_match": false,
+      "maximum_frequency_difference": 0.1478545367717743,
+      "context_capacity": 32768,
+      "architectures": [
+        "Qwen2ForSequenceClassification"
+      ],
+      "num_labels": 1
+    }
+  },
+  "interpretation": "Pinned Transformers interprets a checkpoint position setting differently. No correction applied; review and approval required before reward scoring."
+}

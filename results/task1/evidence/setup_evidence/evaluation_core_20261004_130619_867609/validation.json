@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "official_training_started": false,
+  "course_model_weights_loaded": false,
+  "fixtures": "Synthetic CPU only",
+  "installed_sha256": {
+    "task1_dpo/evaluation_core.py": "be07731fad908c266c1b80624fe0adc698fbff1f901502b386066195550a43bc",
+    "tests/test_task1_evaluation_core.py": "b31d1e1e1914e5f5114f4f91c8e9d142a4970e753c4a857d89cfb521358d7bf9",
+    "docs/task1_evaluation_core.md": "a31b4905e59a69a81bc93bb02eec992af4fa04699fd638c557859683b1c992d5"
+  },
+  "runnable_evaluation_entrypoint": "PENDING",
+  "actual_GPU_evaluation": "PENDING",
+  "unchanged_helper_and_config_sha256": {
+    "configs/base.yaml": "c37ed8b49832388a6193202d30640d79b1d0279ba428731de28900e8c8a92853",
+    "configs/dpo.yaml": "9376053afad62ea9622cb1486dfc11ece6d58ddeb59f1f8d63836c4c29848e38",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "common/metrics.py": "29fe2bd56bc68dcaf55b7e291ffdeff2b61260cf0ead227be259f48531203fc1",
+    "common/logging_utils.py": "b521a4fa4e73aa7144dd807d8c2d8f6a129efe483f618f2c5f081d1ab52761ee",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/data.py": "d563a88e1dd4a0c7ab1ae4a9805ec615d273086c5badb4b3e517c6bbe24c9498",
+    "common/models.py": "01cb5c795c44672311d07c13a9d0c2cd22f1b258ab16ad8b924e64d23a5a3a92"
+  }
+}

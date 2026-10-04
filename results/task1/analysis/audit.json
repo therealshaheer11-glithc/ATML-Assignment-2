@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "export_files_verified": 855,
+  "held_out_pairs": 1992,
+  "generated_answers": 1830,
+  "reward_scores": 1830,
+  "completed_training_runs": 5,
+  "failed_attempts_preserved": 1,
+  "matched_evaluation_source_files": 23,
+  "source_and_settings_consistent": true,
+  "training_budgets_and_trace_metrics_verified": true,
+  "frozen_base_and_reload_records_verified": true,
+  "reward_translation_records_verified": true,
+  "all_raw_pair_and_generation_metrics_recomputed": true,
+  "scope": "Independent saved-record verification; no model execution or fresh GPU replay. Omitted binary artifacts remain on Drive."
+}

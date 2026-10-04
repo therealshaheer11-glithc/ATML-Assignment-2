@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_task1_runtime.py",
+    "-v"
+  ],
+  "expected_tests": 13,
+  "installed_file_sha256": {
+    "task1_dpo/runtime.py": "665e341034c68b1f18619810f1a427ff2566633539391fc432897d2140da5cdc",
+    "tests/test_task1_runtime.py": "80714021d13b964c885a6cd181197f15b5f67e922782f29aab41e9ab0fcecd62"
+  },
+  "fixture_only": true,
+  "official_training_started": false,
+  "active_encoding_report_sha256": "26c399a092d082ae236e83c397de42436ad2b2ecd23e416a74553c2873a9fda3",
+  "helper_sha256": {
+    "common/models.py": "01cb5c795c44672311d07c13a9d0c2cd22f1b258ab16ad8b924e64d23a5a3a92",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "task1_dpo/dpo.py": "a2833a652933945ec958bb5740af97da2e51ab60eb164577eb5aadf6cfc6feb5"
+  }
+}

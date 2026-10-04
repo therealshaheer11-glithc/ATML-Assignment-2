@@ -1,0 +1,15 @@
+
+2026-10-04 08:28:55.522170: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-04 08:28:55.802646: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work
+test_all_six_cli_plans_use_full_pools_without_loading_models (test_task1_evaluation_entrypoint.EvaluationEntryPointTests.test_all_six_cli_plans_use_full_pools_without_loading_models) ... ok
+test_baseline_adapter_and_incomplete_or_wrong_checkpoint_are_rejected (test_task1_evaluation_entrypoint.EvaluationEntryPointTests.test_baseline_adapter_and_incomplete_or_wrong_checkpoint_are_rejected) ... ok
+test_changed_policy_artifact_and_reordered_reward_inputs_stop_before_weights (test_task1_evaluation_entrypoint.EvaluationEntryPointTests.test_changed_policy_artifact_and_reordered_reward_inputs_stop_before_weights) ... ok
+test_cpu_execution_stops_before_output_or_weight_loading (test_task1_evaluation_entrypoint.EvaluationEntryPointTests.test_cpu_execution_stops_before_output_or_weight_loading) ... ok
+test_phase_failure_is_backed_up_without_success_and_existing_results_are_preserved (test_task1_evaluation_entrypoint.EvaluationEntryPointTests.test_phase_failure_is_backed_up_without_success_and_existing_results_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.472s
+
+OK

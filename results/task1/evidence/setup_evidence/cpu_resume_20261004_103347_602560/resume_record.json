@@ -1,0 +1,14 @@
+{
+  "status": "CPU_RESUME_OK",
+  "project_state": "Project restored and all file hashes verified.",
+  "snapshot_files_verified": 217,
+  "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_002851_903477",
+  "drive_models": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "weights_copied_or_downloaded": false,
+  "python": "3.13.15",
+  "torch": "2.11.0+cpu",
+  "gpu_available": false,
+  "official_training_started": false,
+  "settings_changed": false,
+  "next": "Check/restore the pinned CPU packages."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "official_training_started": false,
+  "gpu_available": false,
+  "models": {
+    "policy": {
+      "status": "PUBLIC_CHECKSUMS_VERIFIED",
+      "files": 9,
+      "bytes": 3098971928
+    },
+    "reward": {
+      "status": "PUBLIC_CHECKSUMS_VERIFIED",
+      "files": 6,
+      "bytes": 3098898311
+    }
+  },
+  "started_at": "20261004_002851_903477",
+  "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "project_backup": "/content/drive/MyDrive/ATML-Assignment-2/runtime_backups/20261004_002851_903477",
+  "project_files": 217,
+  "wall_seconds": 343.71527657299885
+}

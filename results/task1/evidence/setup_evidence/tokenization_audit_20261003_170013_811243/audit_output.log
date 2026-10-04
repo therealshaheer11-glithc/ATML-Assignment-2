@@ -1,0 +1,32 @@
+Loading the course Qwen tokenizer...
+Auditing standard_train: 1500 pairs...
+Auditing balanced_train: 1500 pairs...
+Auditing standard_eval: 300 pairs...
+Auditing stratified_eval: 246 pairs...
+Tokenizer revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+Sequence limit: 768
+
+standard_train: 1500 pairs
+  chosen: prompt shortened=226; response shortened=70; prompt fully removed=71
+  rejected: prompt shortened=187; response shortened=47; prompt fully removed=47
+
+short_train_first_600: 600 pairs
+  chosen: prompt shortened=89; response shortened=29; prompt fully removed=30
+  rejected: prompt shortened=68; response shortened=21; prompt fully removed=21
+
+balanced_train: 1500 pairs
+  chosen: prompt shortened=90; response shortened=0; prompt fully removed=0
+  rejected: prompt shortened=91; response shortened=0; prompt fully removed=0
+
+standard_eval: 300 pairs
+  chosen: prompt shortened=46; response shortened=16; prompt fully removed=16
+  rejected: prompt shortened=41; response shortened=12; prompt fully removed=12
+
+stratified_eval: 246 pairs
+  chosen: prompt shortened=13; response shortened=0; prompt fully removed=0
+  rejected: prompt shortened=15; response shortened=0; prompt fully removed=0
+TOKENIZATION_AUDIT_OK
+
+2026-10-03 12:00:19.032497: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 12:00:19.104626: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.

@@ -1,0 +1,12 @@
+{
+  "approval": "User explicitly selected Approve all three limits.",
+  "dpo_combined_tokens": 4096,
+  "generation_prompt_tokens": 4096,
+  "reward_input_tokens": 4096,
+  "generated_answer_tokens": 256,
+  "retain_all_original_pairs": true,
+  "retain_four_original_empty_rejected_answers": true,
+  "reward_input_and_GPU_memory_checks_required": true,
+  "configuration_applied": false,
+  "official_training_started": false
+}

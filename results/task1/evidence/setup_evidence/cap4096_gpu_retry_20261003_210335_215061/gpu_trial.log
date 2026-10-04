@@ -1,0 +1,22 @@
+2026-10-03 16:03:40.435766: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 16:03:40.508659: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Verified four original empty rejected answers: retained and scored as EOS-only.
+Loading pinned Qwen weights and fresh course LoRA adapters...
+Checking initial policy/reference agreement on two long pairs...
+Testing eight batches of two long pairs, then one optimizer update...
+Batch 1/8: loss=0.693147; peak VRAM=14.22 GiB
+Batch 2/8: loss=0.693147; peak VRAM=14.22 GiB
+Batch 3/8: loss=0.693147; peak VRAM=14.22 GiB
+Batch 4/8: loss=0.693147; peak VRAM=22.41 GiB
+Batch 5/8: loss=0.693147; peak VRAM=22.41 GiB
+Batch 6/8: loss=0.693147; peak VRAM=22.41 GiB
+Batch 7/8: loss=0.693147; peak VRAM=22.41 GiB
+Batch 8/8: loss=0.693147; peak VRAM=22.41 GiB
+Initial DPO loss: 0.6931471824645996
+Gradient norm before clipping: 2.8401432037353516
+Gradient scale: 65536.0 -> 65536.0
+Adapter tensors changed: 56
+Frozen base: exact hash match; reference scores unchanged.
+CAP_4096_GPU_TRIAL_OK
+Peak allocated/reserved VRAM (GiB): 22.41 33.13

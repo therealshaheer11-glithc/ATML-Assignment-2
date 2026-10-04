@@ -1,0 +1,408 @@
+{
+  "status": "FAILED_RUN_DIAGNOSTIC_ONLY",
+  "failed_run_directory": "/content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_135137_662295_FAILED",
+  "backup_receipt_sha256": "7c71995961a16874a8f8df6b45c4a20f2e033378e9ece721ff77f80e2781df9e",
+  "verified_input_sha256": {
+    "run_record.json": "c4514cbfa49c69e0ab958351fb1596a1666aa7b323d2cc0daf5f24207a46910a",
+    "training_trace.jsonl": "40249b50ac15eedc8dd836b25cf7d267f535f82b2020283061911c09381b67a3",
+    "source_snapshot/task1_dpo/dpo.py": "a2833a652933945ec958bb5740af97da2e51ab60eb164577eb5aadf6cfc6feb5",
+    "source_snapshot/task1_dpo/runtime.py": "665e341034c68b1f18619810f1a427ff2566633539391fc432897d2140da5cdc"
+  },
+  "summary": {
+    "run_status": "FAILED",
+    "error": "FloatingPointError: Nonfinite unscaled gradients; stop and review.",
+    "completed_optimizer_updates": 18,
+    "pairs_in_completed_updates": 288,
+    "failed_update": 19,
+    "microbatches_in_failed_update": 8,
+    "pairs_in_failed_update": 16,
+    "all_logged_losses_finite": true,
+    "all_logged_response_scores_and_margins_finite": true,
+    "adapter_tensors_with_nonfinite_gradients": 8,
+    "scaler_settings": {
+      "enabled": true,
+      "init_scale": 65536.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000
+    },
+    "autocast": false,
+    "trainable_dtypes": {
+      "torch.float32": 112
+    },
+    "run_wall_seconds": 137.678944817
+  },
+  "last_three_completed_updates": [
+    {
+      "event": "optimizer_update",
+      "update": 16,
+      "pairs": 16,
+      "seen_pairs": 256,
+      "gradient_norm_before_clipping": 2.079237937927246,
+      "scale_before": 65536.0,
+      "scale_after": 65536.0,
+      "training_wall_seconds": 92.47504232799997,
+      "update_wall_seconds": 6.158021636000058,
+      "peak_allocated_VRAM_GiB": 12.155953407287598,
+      "peak_reserved_VRAM_GiB": 35.63671875
+    },
+    {
+      "event": "optimizer_update",
+      "update": 17,
+      "pairs": 16,
+      "seen_pairs": 272,
+      "gradient_norm_before_clipping": 2.656095504760742,
+      "scale_before": 65536.0,
+      "scale_after": 65536.0,
+      "training_wall_seconds": 98.4308304299999,
+      "update_wall_seconds": 5.955788101999929,
+      "peak_allocated_VRAM_GiB": 12.155953407287598,
+      "peak_reserved_VRAM_GiB": 35.63671875
+    },
+    {
+      "event": "optimizer_update",
+      "update": 18,
+      "pairs": 16,
+      "seen_pairs": 288,
+      "gradient_norm_before_clipping": 2.180164337158203,
+      "scale_before": 65536.0,
+      "scale_after": 65536.0,
+      "training_wall_seconds": 104.14953799799991,
+      "update_wall_seconds": 5.7187075680000135,
+      "peak_allocated_VRAM_GiB": 12.155953407287598,
+      "peak_reserved_VRAM_GiB": 35.63671875
+    }
+  ],
+  "failed_window_microbatches": [
+    {
+      "event": "microbatch",
+      "microbatch": 145,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "b005cecd796f5392d4770c95000855409165d3d423f04af7e750e833fd9989e8",
+        "d5ee738f3078166ef212a275c71dc69961031f25edc7dad1805ff825c7891134"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6685613393783569,
+      "policy_chosen_logp": [
+        -1185.23046875,
+        -10.446468353271484
+      ],
+      "policy_rejected_logp": [
+        -418.5903625488281,
+        -340.6664123535156
+      ],
+      "reference_chosen_logp": [
+        -1185.342529296875,
+        -10.439336776733398
+      ],
+      "reference_rejected_logp": [
+        -418.08782958984375,
+        -340.2773132324219
+      ],
+      "reference_adjusted_margin": [
+        0.61456298828125,
+        0.3819580078125
+      ],
+      "diagnostics": {
+        "logit_mean": 0.04982604831457138,
+        "policy_margin_mean": -218.21009826660156,
+        "reference_margin_mean": -218.70835876464844,
+        "adjusted_margin_mean": 0.498260498046875,
+        "preference_accuracy": 1.0
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 146,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "62335853c73073d494b5a3c11096376937f6f2fa13893745b0d307a1d5cb5d96",
+        "aab4a36c0678aa46369e515f9758c097d6efae69069c4843d85ff7db95e33fdd"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6857280731201172,
+      "policy_chosen_logp": [
+        -283.90130615234375,
+        -19.83578872680664
+      ],
+      "policy_rejected_logp": [
+        -214.74192810058594,
+        -21.740650177001953
+      ],
+      "reference_chosen_logp": [
+        -283.87384033203125,
+        -19.783756256103516
+      ],
+      "reference_rejected_logp": [
+        -214.33349609375,
+        -21.769027709960938
+      ],
+      "reference_adjusted_margin": [
+        0.3809661865234375,
+        -0.08041000366210938
+      ],
+      "diagnostics": {
+        "logit_mean": 0.015027808025479317,
+        "policy_margin_mean": -33.62725830078125,
+        "reference_margin_mean": -33.77753448486328,
+        "adjusted_margin_mean": 0.15027809143066406,
+        "preference_accuracy": 0.5
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 147,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "812c81717506be9e8784b87cb20d4aa2d10a6daf7415a5ec16ec909a6665ad31",
+        "a2a160b33207f6faadab22724fe173efbc2c66cc2fbeef78d0c8a6aae2558e78"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6897637844085693,
+      "policy_chosen_logp": [
+        -292.35723876953125,
+        -62.74409103393555
+      ],
+      "policy_rejected_logp": [
+        -1052.534912109375,
+        -36.208335876464844
+      ],
+      "reference_chosen_logp": [
+        -292.2503356933594,
+        -62.73924255371094
+      ],
+      "reference_rejected_logp": [
+        -1052.3134765625,
+        -36.182373046875
+      ],
+      "reference_adjusted_margin": [
+        0.11456298828125,
+        0.021114349365234375
+      ],
+      "diagnostics": {
+        "logit_mean": 0.006783866789191961,
+        "policy_margin_mean": 366.8209533691406,
+        "reference_margin_mean": 366.75311279296875,
+        "adjusted_margin_mean": 0.06783866882324219,
+        "preference_accuracy": 1.0
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 148,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "998e7789f7e1acaa4265af4787dfbdfb9610439d4a32fa8f13adef198003d41f",
+        "7372e72a31731b83e2dc810d3e6c70a4205b50561117bf0a86d6928e38c01ff6"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.691179633140564,
+      "policy_chosen_logp": [
+        -29.496530532836914,
+        -35.66828155517578
+      ],
+      "policy_rejected_logp": [
+        -49.624786376953125,
+        -111.4151840209961
+      ],
+      "reference_chosen_logp": [
+        -29.26770782470703,
+        -35.658504486083984
+      ],
+      "reference_rejected_logp": [
+        -49.56340026855469,
+        -111.15702819824219
+      ],
+      "reference_adjusted_margin": [
+        -0.1674365997314453,
+        0.248382568359375
+      ],
+      "diagnostics": {
+        "logit_mean": 0.004047298803925514,
+        "policy_margin_mean": 47.93758010864258,
+        "reference_margin_mean": 47.8971061706543,
+        "adjusted_margin_mean": 0.040472984313964844,
+        "preference_accuracy": 0.5
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 149,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "f0473373685b488fe37e9460292e397be4cec974ef826645adf085cf523c8eb9",
+        "264e1dd067397eb6cd7833f351a06ba590081346e04ebc0c0170e07033554dd6"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6906372904777527,
+      "policy_chosen_logp": [
+        -341.9951477050781,
+        -16.177215576171875
+      ],
+      "policy_rejected_logp": [
+        -689.223388671875,
+        -283.829345703125
+      ],
+      "reference_chosen_logp": [
+        -341.76068115234375,
+        -16.150867462158203
+      ],
+      "reference_rejected_logp": [
+        -689.1636962890625,
+        -283.525146484375
+      ],
+      "reference_adjusted_margin": [
+        -0.174774169921875,
+        0.277862548828125
+      ],
+      "diagnostics": {
+        "logit_mean": 0.005154418759047985,
+        "policy_margin_mean": 307.440185546875,
+        "reference_margin_mean": 307.3886413574219,
+        "adjusted_margin_mean": 0.051544189453125,
+        "preference_accuracy": 0.5
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 150,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "ca4cd871546e5a27e52b84fc10c4f378b146fbb5a579157a10cd1b42feafef98",
+        "f8ca094f415a7e17f9eadfc331c3b5e03a67289b799c4927d45f02ad73cb7ae0"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6977828741073608,
+      "policy_chosen_logp": [
+        -127.11498260498047,
+        -340.9184875488281
+      ],
+      "policy_rejected_logp": [
+        -88.69844818115234,
+        -488.774658203125
+      ],
+      "reference_chosen_logp": [
+        -126.68743896484375,
+        -340.894287109375
+      ],
+      "reference_rejected_logp": [
+        -88.51950073242188,
+        -488.6856384277344
+      ],
+      "reference_adjusted_margin": [
+        -0.24859619140625,
+        0.0648193359375
+      ],
+      "diagnostics": {
+        "logit_mean": -0.009188842959702015,
+        "policy_margin_mean": 54.719818115234375,
+        "reference_margin_mean": 54.81170654296875,
+        "adjusted_margin_mean": -0.091888427734375,
+        "preference_accuracy": 0.5
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 151,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "1af08d5c35d483ee0e4196debeacf6026be56160a916f4e6dad9eba7cc981864",
+        "c67c492649a8f29617d71dd6dbc095f887f1b81d1891a11ebd633bd137b71c75"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6789084672927856,
+      "policy_chosen_logp": [
+        -693.7310791015625,
+        -194.30848693847656
+      ],
+      "policy_rejected_logp": [
+        -590.1490478515625,
+        -71.2792739868164
+      ],
+      "reference_chosen_logp": [
+        -694.0930786132812,
+        -194.5022735595703
+      ],
+      "reference_rejected_logp": [
+        -590.19921875,
+        -71.21119689941406
+      ],
+      "reference_adjusted_margin": [
+        0.31182861328125,
+        0.26186370849609375
+      ],
+      "diagnostics": {
+        "logit_mean": 0.028684616088867188,
+        "policy_margin_mean": -113.30561828613281,
+        "reference_margin_mean": -113.59246826171875,
+        "adjusted_margin_mean": 0.2868461608886719,
+        "preference_accuracy": 1.0
+      }
+    },
+    {
+      "event": "microbatch",
+      "microbatch": 152,
+      "update": 19,
+      "pairs": 2,
+      "prompt_ids": [
+        "5d919654eafdfee2b786de936eeeee53554997c4fdcc745ef218bc1f0059445a",
+        "372f65a9ba156189c0cac0b560619b6f19c08ff509983a03740fa0ca937ed7a2"
+      ],
+      "window_pairs": 16,
+      "mean_loss": 0.6755816340446472,
+      "policy_chosen_logp": [
+        -463.6520080566406,
+        -100.20389556884766
+      ],
+      "policy_rejected_logp": [
+        -476.249267578125,
+        -182.64968872070312
+      ],
+      "reference_chosen_logp": [
+        -463.6229248046875,
+        -100.08633422851562
+      ],
+      "reference_rejected_logp": [
+        -475.65625,
+        -182.38494873046875
+      ],
+      "reference_adjusted_margin": [
+        0.563934326171875,
+        0.14717864990234375
+      ],
+      "diagnostics": {
+        "logit_mean": 0.035555649548769,
+        "policy_margin_mean": 47.52152633666992,
+        "reference_margin_mean": 47.16596984863281,
+        "adjusted_margin_mean": 0.3555564880371094,
+        "preference_accuracy": 1.0
+      }
+    }
+  ],
+  "nonfinite_gradient_parameter_names": [
+    "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight"
+  ],
+  "saved_objective_formula_lines": [
+    "margin = policy_margin - ref_margin",
+    "logits = float(beta) * margin",
+    "\"preference_accuracy\": (margin > 0).float().mean().detach(),"
+  ],
+  "cause": "Unresolved; no GPU replay performed.",
+  "training_or_settings_changed": false,
+  "precision_change_approval": "Pending; no correction applied."
+}

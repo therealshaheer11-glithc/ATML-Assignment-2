@@ -1,0 +1,21 @@
+{
+  "status": "MODELS_AND_TOKENIZER_VERIFIED",
+  "local_models_dir": "/content/ATML_PA2_models",
+  "drive_models_dir": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "model_manifest_sha256": "7ad306ec2e4ba0f2c12f5d9e9ce16f1eec34de418388f2a4ef776196f72e4b2e",
+  "model_identities": {
+    "policy": {
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+    },
+    "reward": {
+      "model_id": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+      "revision": "f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc"
+    }
+  },
+  "evidence_directory": "/content/drive/MyDrive/ATML-Assignment-2/setup_evidence/20261003_161419_807248/cpu_model_preparation_20261004_002851_903477",
+  "weights_loaded_into_models": false,
+  "official_training_started": false,
+  "reward_model_GPU_check": "PENDING",
+  "evaluation_entrypoint": "PENDING"
+}

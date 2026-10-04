@@ -1,0 +1,9 @@
+Auditing the 4096-token proposal; original files remain unchanged.
+standard_train: 1500 pairs; longest question=3563; answers shortened chosen/rejected=0/0; length ordering changed=0
+short_train_first_600: 600 pairs; longest question=3563; answers shortened chosen/rejected=0/0; length ordering changed=0
+balanced_train: 1500 pairs; longest question=1809; answers shortened chosen/rejected=0/0; length ordering changed=0
+standard_eval: 300 pairs; longest question=1861; answers shortened chosen/rejected=0/0; length ordering changed=0
+stratified_eval: 246 pairs; longest question=1109; answers shortened chosen/rejected=0/0; length ordering changed=0
+Generation standard_eval: 300 prompts; longest=1861; question >= current RM limit (1024)=6
+Generation word_limit_prompts: 10 prompts; longest=51; question >= current RM limit (1024)=0
+CAP_4096_AUDIT_DONE

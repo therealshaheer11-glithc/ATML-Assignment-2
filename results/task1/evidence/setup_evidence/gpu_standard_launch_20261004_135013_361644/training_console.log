@@ -1,0 +1,29 @@
+2026-10-04 08:51:32.374437: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-04 08:51:32.449716: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+standard: update 1; pairs 16/1500; training 0.1 min
+standard: update 10; pairs 160/1500; training 1.0 min
+BACKUP_VERIFIED: /content/drive/MyDrive/ATML-Assignment-2/training_runs/standard_20261004_135137_662295_FAILED
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/content/ATML-Assignment-2/task1_dpo/train.py", line 243, in <module>
+    main()
+    ~~~~^^
+  File "/content/ATML-Assignment-2/task1_dpo/train.py", line 238, in main
+    run_training(args.config, args.run_name, args.dataset, args.output, args.beta,
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 args.max_examples, backup_root=args.backup_root, models_dir=args.models_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/ATML-Assignment-2/task1_dpo/train.py", line 185, in run_training
+    _train_once(cfg, rows, plan, output, models_dir, record)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/ATML-Assignment-2/task1_dpo/train.py", line 108, in _train_once
+    result = train_epoch(model, loader, optimizer, scaler, beta=plan["beta"], total_pairs=len(rows),
+                         batch_size=int(cfg["batch_size"]), accumulation_steps=int(cfg["grad_accum_steps"]),
+                         max_grad_norm=float(cfg["max_grad_norm"]), emit=emit)
+  File "/content/ATML-Assignment-2/task1_dpo/runtime.py", line 118, in train_epoch
+    raise FloatingPointError(
+        "Nonfinite unscaled gradients; stop and review."
+    )
+FloatingPointError: Nonfinite unscaled gradients; stop and review.

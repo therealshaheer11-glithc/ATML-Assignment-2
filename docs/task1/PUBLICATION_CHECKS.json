@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "python_files_parsed": 486,
+  "core_experimental_files_unchanged": true,
+  "changed_existing_publication_files": [
+    "README.md",
+    "docs/SOURCE_ATTRIBUTION.md",
+    "manual/README.md",
+    "task1_dpo/ablate_beta.py",
+    "task1_dpo/analyze_length.py",
+    ".gitignore"
+  ],
+  "independent_evidence_audit": "PASS: 855 file hashes, 1992 pairs, 1830 generations/rewards, 5 completed training runs, 1 failed attempt",
+  "targeted_publication_tests": {
+    "passed": 4,
+    "failed": 0,
+    "model_weights_loaded": false
+  },
+  "offline_asset_and_beta_cli_plans": "PASS",
+  "analysis_regeneration_byte_identical": true,
+  "current_document_internal_links": "PASS",
+  "raw_datasets_and_model_binaries_absent": true,
+  "historical_ignore_rule_deactivated": true,
+  "credential_pattern_scan": "No matches",
+  "new_GPU_runs": 0,
+  "fresh_downloads": 0,
+  "git_accessed": false,
+  "limits": "No fresh model computation; original successful Colab records are preserved. Download dispatcher was exercised only with offline plans and refusal checks."
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "DPO objective and analytical-gradient validation",
+  "status": "PASS",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_dpo_objective.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "original_course_sha256": "56b7b48abc51b813f0c01ba31a143f5fdd142eb832d768980266497d713466d7",
+  "before_sha256": "56b7b48abc51b813f0c01ba31a143f5fdd142eb832d768980266497d713466d7",
+  "corrected_sha256": "a2833a652933945ec958bb5740af97da2e51ab60eb164577eb5aadf6cfc6feb5",
+  "test_sha256": "7c89bada6253747b7e536edbbf5719a82a2836ee929cd3ee7c7ce456fc1750a2",
+  "official_training_started": false
+}

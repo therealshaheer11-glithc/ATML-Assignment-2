@@ -1,0 +1,54 @@
+{
+  "approved_on": "2026-10-03",
+  "approval": "User explicitly approved A-H, conditional on complete documentation.",
+  "publication": "User manually pushes to GitHub; assistant must not access their repository.",
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "A": "Complete course Python scripts; notebook is a launcher.",
+  "B": "Frozen original base reference; adapters and gradients disabled for reference scoring.",
+  "C": {
+    "epochs": 1,
+    "short_examples": 600,
+    "short_subset": "first supplied rows",
+    "length_balanced_examples": 1500,
+    "scheduler": null,
+    "warmup": false,
+    "early_stopping": false,
+    "checkpoint": "final budget",
+    "keep_partial_accumulation": true
+  },
+  "D": {
+    "base_dtype": "float16",
+    "autocast": false,
+    "grad_scaler": {
+      "enabled": true,
+      "init_scale": 65536.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000
+    },
+    "clip_after_unscale": true,
+    "official_nonfinite_or_skipped_update": "Stop, preserve logs, review remedy with user."
+  },
+  "E": {
+    "standard_eval_pairs": 300,
+    "length_eval_pairs": 246,
+    "word_limit_prompts": 10,
+    "seed": 6304,
+    "generation_batch_size": 1,
+    "max_prompt_length": 768,
+    "max_new_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "reward_max_length": 1024
+  },
+  "F": {
+    "accuracy": "Reference-adjusted margin > 0; ties excluded.",
+    "kl": "Released estimator, globally weighted by valid response tokens.",
+    "reward": "Mean per response.",
+    "length": "Mean and population standard deviation; released EOS convention.",
+    "word_count": "Released helper unchanged."
+  },
+  "G": "Evaluate untouched SFT on the same 300 prompts and 10 word-limit prompts.",
+  "H": "Save configs, versions, IDs/order, hashes, logs, adapters, generations, metrics and restart evidence; review qualitative examples with user."
+}

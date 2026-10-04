@@ -1,0 +1,13 @@
+
+test_analytical_gradient_and_frozen_reference (test_dpo_objective.DPOObjectiveTests.test_analytical_gradient_and_frozen_reference) ... ok
+test_common_policy_offset_cancels (test_dpo_objective.DPOObjectiveTests.test_common_policy_offset_cancels) ... ok
+test_identical_policy_reference (test_dpo_objective.DPOObjectiveTests.test_identical_policy_reference) ... ok
+test_independent_scalar_formula (test_dpo_objective.DPOObjectiveTests.test_independent_scalar_formula) ... ok
+test_nonpositive_beta_rejected (test_dpo_objective.DPOObjectiveTests.test_nonpositive_beta_rejected) ... ok
+test_reference_changes_accuracy (test_dpo_objective.DPOObjectiveTests.test_reference_changes_accuracy) ... ok
+test_swapping_responses_reverses_margin (test_dpo_objective.DPOObjectiveTests.test_swapping_responses_reverses_margin) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.158s
+
+OK

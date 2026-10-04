@@ -1,0 +1,19 @@
+
+2026-10-03 19:15:33.366742: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-10-03 19:15:33.445769: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work
+test_generated_eos_is_counted_later_padding_is_excluded (test_task1_evaluation_support.EvaluationSupportTests.test_generated_eos_is_counted_later_padding_is_excluded) ... ok
+test_generation_ceiling_is_distinct_from_eos_termination (test_task1_evaluation_support.EvaluationSupportTests.test_generation_ceiling_is_distinct_from_eos_termination) ... ok
+test_nonfinite_rewards_cannot_be_reported (test_task1_evaluation_support.EvaluationSupportTests.test_nonfinite_rewards_cannot_be_reported) ... ok
+test_overlong_reward_stops_before_the_model_is_called (test_task1_evaluation_support.EvaluationSupportTests.test_overlong_reward_stops_before_the_model_is_called) ... ok
+test_population_statistics_and_supplied_strata_preserve_rows (test_task1_evaluation_support.EvaluationSupportTests.test_population_statistics_and_supplied_strata_preserve_rows) ... ok
+test_prompt_boundary_preserves_complete_input (test_task1_evaluation_support.EvaluationSupportTests.test_prompt_boundary_preserves_complete_input) ... ok
+test_reward_boundary_keeps_prompt_answer_and_template (test_task1_evaluation_support.EvaluationSupportTests.test_reward_boundary_keeps_prompt_answer_and_template) ... ok
+test_scopes_keep_beta_runs_matched_and_baseline_untouched (test_task1_evaluation_support.EvaluationSupportTests.test_scopes_keep_beta_runs_matched_and_baseline_untouched) ... ok
+test_word_rule_uses_course_count_and_inclusive_limit (test_task1_evaluation_support.EvaluationSupportTests.test_word_rule_uses_course_count_and_inclusive_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

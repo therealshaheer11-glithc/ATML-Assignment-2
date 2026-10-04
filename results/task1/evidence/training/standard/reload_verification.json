@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "held_out_examples_used": false,
+  "probe_prompt_ids": [
+    "15e3ae617c12f2d85a353f5118ae0bd5a514f073eda74ce71a98b72f889eea02",
+    "902bdb46838acd4b2fa5962b04871f0501f9af24142517a87d39aa1f0341b40e"
+  ],
+  "policy_max_abs_changes": [
+    0.0,
+    0.0
+  ],
+  "reference_max_abs_changes": [
+    0.0,
+    0.0
+  ]
+}

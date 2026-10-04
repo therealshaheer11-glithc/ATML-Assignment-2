@@ -1,0 +1,18 @@
+Python: 3.13.15
+PyTorch: 2.11.0+cu130
+Transformers: 4.57.1
+Tokenizers: 0.22.1
+PEFT: 0.17.1
+TRL: 0.27.2
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+VRAM GiB: 39.49
+System RAM (GiB): 83.47
+bitsandbytes: 0.50.2
+Course helper imports: PASS
+Basic CUDA calculation: PASS
+ENVIRONMENT_OK
+
+2026-10-03 11:27:52.011876: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 11:27:52.082869: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.

@@ -1,0 +1,793 @@
+{
+  "status": "PASS",
+  "official_training_started": false,
+  "diagnostic_optimizer_updates": 1,
+  "stage": "complete",
+  "original_empty_rejected_answers": [
+    {
+      "dataset": "standard_train",
+      "row_index": 265,
+      "prompt_id": "f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652",
+      "side": "rejected",
+      "length_stratum": "",
+      "original_content_tokens": 0,
+      "retained_content_tokens": 0,
+      "raw_answer_characters": 0,
+      "raw_answer_is_empty_string": true,
+      "raw_answer_is_whitespace_only": false,
+      "raw_answer_preview": "''",
+      "released_response_format": "list"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": 543,
+      "prompt_id": "edaaed9266be8a87960fe113ab6f93ff8cd79bd313716db0655962f9f62562fe",
+      "side": "rejected",
+      "length_stratum": "",
+      "original_content_tokens": 0,
+      "retained_content_tokens": 0,
+      "raw_answer_characters": 0,
+      "raw_answer_is_empty_string": true,
+      "raw_answer_is_whitespace_only": false,
+      "raw_answer_preview": "''",
+      "released_response_format": "list"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": 589,
+      "prompt_id": "e35e19e6824f471ff810b4aa30302ce117dfededc7d1ec75ac08fd6c48f92dfa",
+      "side": "rejected",
+      "length_stratum": "",
+      "original_content_tokens": 0,
+      "retained_content_tokens": 0,
+      "raw_answer_characters": 0,
+      "raw_answer_is_empty_string": true,
+      "raw_answer_is_whitespace_only": false,
+      "raw_answer_preview": "''",
+      "released_response_format": "list"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": 1381,
+      "prompt_id": "8ecb5ac7e537f09025cd5e69a7ec44f31bf89b711aeea8accc37bcf9fff34fd3",
+      "side": "rejected",
+      "length_stratum": "",
+      "original_content_tokens": 0,
+      "retained_content_tokens": 0,
+      "raw_answer_characters": 0,
+      "raw_answer_is_empty_string": true,
+      "raw_answer_is_whitespace_only": false,
+      "raw_answer_preview": "''",
+      "released_response_format": "list"
+    }
+  ],
+  "empty_answer_diagnostic_sha256": "77cae21b5f9417a0840c5c7d1c61f8c8f396ab23f01719419f1b8b419a5c1568",
+  "validation_fix": "Retain four verified original empty rejected answers; score their appended EOS. No filtering or numerical/config changes.",
+  "active_course_config": {
+    "seed": 6304,
+    "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+    "reward_tokenizer": "Qwen/Qwen2.5-1.5B-Instruct",
+    "ai_judge_model": "Qwen/Qwen2.5-3B-Instruct",
+    "value_model_init": "Qwen/Qwen2.5-0.5B-Instruct",
+    "dtype": "float16",
+    "quantize_frozen_models": true,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "value_lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "do_sample": true
+    },
+    "paths": {
+      "dpo_standard_train": "data/dpo_standard_train.jsonl",
+      "dpo_standard_eval": "data/dpo_standard_eval.jsonl",
+      "dpo_length_train": "data/dpo_length_balanced_train.jsonl",
+      "dpo_length_eval": "data/dpo_length_stratified_eval.jsonl",
+      "word_limit_prompts": "data/word_limit_prompts.jsonl",
+      "rl_prompt_train": "data/rl_prompt_pool_train.jsonl",
+      "rl_prompt_eval": "data/rl_prompt_pool_eval.jsonl",
+      "xstest": "data/xstest_safety_prompts.csv",
+      "gsm_train": "data/gsm8k_rl_train.jsonl",
+      "gsm_eval": "data/gsm8k_eval.jsonl",
+      "math_transfer_eval": "data/math_transfer_eval.jsonl",
+      "task5_diagnostics": "data/task5_controlled_reward_diagnostics.jsonl",
+      "ppo_rollout_cache": "cached/ppo_rollout.pt",
+      "grpo_k_cache": "cached/grpo_k_cache.jsonl",
+      "ppo_midpoint_policy": "checkpoints/ppo_midpoint_policy",
+      "ppo_midpoint_value": "checkpoints/ppo_midpoint_value",
+      "grpo_midpoint_policy": "checkpoints/grpo_midpoint_policy",
+      "rlvr_policy": "checkpoints/rlvr_policy",
+      "rlaif_policy": "checkpoints/rlaif_policy"
+    },
+    "beta": 0.1,
+    "betas": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "batch_size": 2,
+    "grad_accum_steps": 8,
+    "epochs": 1,
+    "short_ablation_examples": 600,
+    "max_sequence_length": 768,
+    "max_generation_tokens": 256,
+    "max_grad_norm": 1.0,
+    "standard_output": "outputs/task1_dpo/standard",
+    "length_output": "outputs/task1_dpo/length_balanced",
+    "results_dir": "results/task1_dpo"
+  },
+  "trial_combined_cap": 4096,
+  "audit_source": "results/setup/cap4096_audit_20261003_201859_200185/audit_summary.json",
+  "audit_summary_sha256": "391f1cc045a68ca631e19c432c54e99ed1a70a9e0bd48c00e56bd2edaff369df",
+  "pair_csv_sha256": "ddd4ecd7a01bdd42fe9f8c7b0cb10776fa817745e4e23e2a562db4b017e8a84b",
+  "stress_selection": "16 longest retained pairs from both training sets; ties by dataset name, then original row index; shuffled using course seed.",
+  "selected_training_pairs": [
+    {
+      "dataset": "standard_train",
+      "row_index": "271",
+      "prompt_id": "e1dca4044ab27e45f64b5b58c6bfd84642f2dfe0c4f295fa9e7be195c437161d",
+      "length_stratum": "",
+      "prompt_tokens": "3563",
+      "chosen_sequence_tokens": "3960",
+      "rejected_sequence_tokens": "4002",
+      "chosen_minus_rejected_before": "-42",
+      "chosen_minus_rejected_after": "-42",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "balanced_train",
+      "row_index": "62",
+      "prompt_id": "6aade7ad56c3abdfac691139ae6e7f155c1e4d09700cab41506280f41fb11010",
+      "length_stratum": "preferred_longer",
+      "prompt_tokens": "1809",
+      "chosen_sequence_tokens": "2191",
+      "rejected_sequence_tokens": "1941",
+      "chosen_minus_rejected_before": "250",
+      "chosen_minus_rejected_after": "250",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "265",
+      "prompt_id": "f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652",
+      "length_stratum": "",
+      "prompt_tokens": "1867",
+      "chosen_sequence_tokens": "2153",
+      "rejected_sequence_tokens": "1868",
+      "chosen_minus_rejected_before": "285",
+      "chosen_minus_rejected_after": "285",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1468",
+      "prompt_id": "4805efe054b9aec481c76f9369fb43a099028c1c144aa9e58618890b238e15fd",
+      "length_stratum": "",
+      "prompt_tokens": "1281",
+      "chosen_sequence_tokens": "2120",
+      "rejected_sequence_tokens": "1863",
+      "chosen_minus_rejected_before": "257",
+      "chosen_minus_rejected_after": "257",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1332",
+      "prompt_id": "528082e49c856bf11d998a627ba70e919e824d9bed220b89c67d6ea4b0f58d58",
+      "length_stratum": "",
+      "prompt_tokens": "1538",
+      "chosen_sequence_tokens": "2066",
+      "rejected_sequence_tokens": "1833",
+      "chosen_minus_rejected_before": "233",
+      "chosen_minus_rejected_after": "233",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "balanced_train",
+      "row_index": "855",
+      "prompt_id": "afc435e01bd22bcd96eb3cbb196be2db23fb680dda63aa3c13ed7e33aceec678",
+      "length_stratum": "length_matched",
+      "prompt_tokens": "1709",
+      "chosen_sequence_tokens": "2043",
+      "rejected_sequence_tokens": "2040",
+      "chosen_minus_rejected_before": "3",
+      "chosen_minus_rejected_after": "3",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "727",
+      "prompt_id": "6c3949ffcd8936dc52b97195525f03ccddd163c58a9f350941e369bafbfab997",
+      "length_stratum": "",
+      "prompt_tokens": "1183",
+      "chosen_sequence_tokens": "1293",
+      "rejected_sequence_tokens": "2019",
+      "chosen_minus_rejected_before": "-726",
+      "chosen_minus_rejected_after": "-726",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1383",
+      "prompt_id": "96d0e64581d60b3b7d2ad8330ea32bf0c55bba313c8e0d7347f690345ac4553b",
+      "length_stratum": "",
+      "prompt_tokens": "1366",
+      "chosen_sequence_tokens": "1488",
+      "rejected_sequence_tokens": "1944",
+      "chosen_minus_rejected_before": "-456",
+      "chosen_minus_rejected_after": "-456",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "balanced_train",
+      "row_index": "382",
+      "prompt_id": "f0c4ae0e37f178a10ad16e7a587a986778d03331b485d09633e2bbc62d1005b3",
+      "length_stratum": "preferred_longer",
+      "prompt_tokens": "1536",
+      "chosen_sequence_tokens": "1872",
+      "rejected_sequence_tokens": "1732",
+      "chosen_minus_rejected_before": "140",
+      "chosen_minus_rejected_after": "140",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "620",
+      "prompt_id": "c929c4a06cebf2d7da342a36d2293d951141a03aa52a5e479cb4ce5a7a6647c0",
+      "length_stratum": "",
+      "prompt_tokens": "1194",
+      "chosen_sequence_tokens": "1464",
+      "rejected_sequence_tokens": "1828",
+      "chosen_minus_rejected_before": "-364",
+      "chosen_minus_rejected_after": "-364",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "783",
+      "prompt_id": "85ccce766b55ab70893247ed17691396676d9b9c1edb95923a32693811ddde17",
+      "length_stratum": "",
+      "prompt_tokens": "1334",
+      "chosen_sequence_tokens": "1824",
+      "rejected_sequence_tokens": "1392",
+      "chosen_minus_rejected_before": "432",
+      "chosen_minus_rejected_after": "432",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1239",
+      "prompt_id": "31993842da19871db88d6fae9d424132b340c765297202d8c9e18b0b8159f536",
+      "length_stratum": "",
+      "prompt_tokens": "1297",
+      "chosen_sequence_tokens": "1729",
+      "rejected_sequence_tokens": "1796",
+      "chosen_minus_rejected_before": "-67",
+      "chosen_minus_rejected_after": "-67",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "325",
+      "prompt_id": "0fa6c81ef0c6275141c14569d677fc68111afc00b606873124271ac601d32f8b",
+      "length_stratum": "",
+      "prompt_tokens": "1222",
+      "chosen_sequence_tokens": "1591",
+      "rejected_sequence_tokens": "1782",
+      "chosen_minus_rejected_before": "-191",
+      "chosen_minus_rejected_after": "-191",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1458",
+      "prompt_id": "d4160e5db8fcd014a813ab1230f19b008ba3934ea722449809d1fd4c291e78bd",
+      "length_stratum": "",
+      "prompt_tokens": "780",
+      "chosen_sequence_tokens": "859",
+      "rejected_sequence_tokens": "1765",
+      "chosen_minus_rejected_before": "-906",
+      "chosen_minus_rejected_after": "-906",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "balanced_train",
+      "row_index": "593",
+      "prompt_id": "0e8192bde38bf2eddf0faf919bd6bcfa4afda444eb8b2a162b6e1d0f0bc760b3",
+      "length_stratum": "preferred_longer",
+      "prompt_tokens": "1597",
+      "chosen_sequence_tokens": "1747",
+      "rejected_sequence_tokens": "1629",
+      "chosen_minus_rejected_before": "118",
+      "chosen_minus_rejected_after": "118",
+      "answer_length_order_changed": "False"
+    },
+    {
+      "dataset": "standard_train",
+      "row_index": "1166",
+      "prompt_id": "3b88a8e7afb03130a8546b743c2d44073badecf7228315b7fae5c9b3f91d234d",
+      "length_stratum": "",
+      "prompt_tokens": "1109",
+      "chosen_sequence_tokens": "1590",
+      "rejected_sequence_tokens": "1733",
+      "chosen_minus_rejected_before": "-143",
+      "chosen_minus_rejected_after": "-143",
+      "answer_length_order_changed": "False"
+    }
+  ],
+  "source_sha256": {
+    "configs/base.yaml": "c37ed8b49832388a6193202d30640d79b1d0279ba428731de28900e8c8a92853",
+    "configs/dpo.yaml": "3895544e18db7316b236091b11bbf55176286ecae07b8647e02ae25e4e9618e9",
+    "common/models.py": "01cb5c795c44672311d07c13a9d0c2cd22f1b258ab16ad8b924e64d23a5a3a92",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "common/data.py": "41a40198cafb278f6afe3e2e4ece72eb7a8c66c2c753ff8c4d81681a0bb33fd2",
+    "common/logging_utils.py": "b521a4fa4e73aa7144dd807d8c2d8f6a129efe483f618f2c5f081d1ab52761ee",
+    "task1_dpo/dpo.py": "a2833a652933945ec958bb5740af97da2e51ab60eb164577eb5aadf6cfc6feb5"
+  },
+  "trial_script_sha256": "57148169cad153e510bd8969bd4c5d963b96c6f69dedf2819fcaafe7e31c52e0",
+  "tokenizer": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "resolved_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer_backend_sha256": "f884026e05f6dfffe68b72d580b588006d98b3bc0a128bb1ac425c76f7fc438c",
+    "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+    "padding_side": "left",
+    "truncation_side": "right",
+    "pad_token_id": 151643,
+    "eos_token_id": 151645
+  },
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "total_VRAM_GiB": 39.4935302734375,
+  "autocast": false,
+  "reference_tolerance": {
+    "rtol": 0,
+    "atol": 0.0001
+  },
+  "grad_scaler": {
+    "init_scale": 65536.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000
+  },
+  "microbatches": [
+    {
+      "number": 1,
+      "prompt_ids": [
+        "31993842da19871db88d6fae9d424132b340c765297202d8c9e18b0b8159f536",
+        "96d0e64581d60b3b7d2ad8330ea32bf0c55bba313c8e0d7347f690345ac4553b"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        1729,
+        1488
+      ],
+      "rejected_sequence_tokens": [
+        1796,
+        1944
+      ],
+      "chosen_scored_response_tokens": [
+        432.0,
+        122.0
+      ],
+      "rejected_scored_response_tokens": [
+        499.0,
+        578.0
+      ]
+    },
+    {
+      "number": 2,
+      "prompt_ids": [
+        "f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652",
+        "6aade7ad56c3abdfac691139ae6e7f155c1e4d09700cab41506280f41fb11010"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        2153,
+        2191
+      ],
+      "rejected_sequence_tokens": [
+        1868,
+        1941
+      ],
+      "chosen_scored_response_tokens": [
+        286.0,
+        382.0
+      ],
+      "rejected_scored_response_tokens": [
+        1.0,
+        132.0
+      ]
+    },
+    {
+      "number": 3,
+      "prompt_ids": [
+        "6c3949ffcd8936dc52b97195525f03ccddd163c58a9f350941e369bafbfab997",
+        "0e8192bde38bf2eddf0faf919bd6bcfa4afda444eb8b2a162b6e1d0f0bc760b3"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        1293,
+        1747
+      ],
+      "rejected_sequence_tokens": [
+        2019,
+        1629
+      ],
+      "chosen_scored_response_tokens": [
+        110.0,
+        150.0
+      ],
+      "rejected_scored_response_tokens": [
+        836.0,
+        32.0
+      ]
+    },
+    {
+      "number": 4,
+      "prompt_ids": [
+        "85ccce766b55ab70893247ed17691396676d9b9c1edb95923a32693811ddde17",
+        "e1dca4044ab27e45f64b5b58c6bfd84642f2dfe0c4f295fa9e7be195c437161d"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        1824,
+        3960
+      ],
+      "rejected_sequence_tokens": [
+        1392,
+        4002
+      ],
+      "chosen_scored_response_tokens": [
+        490.0,
+        397.0
+      ],
+      "rejected_scored_response_tokens": [
+        58.0,
+        439.0
+      ]
+    },
+    {
+      "number": 5,
+      "prompt_ids": [
+        "3b88a8e7afb03130a8546b743c2d44073badecf7228315b7fae5c9b3f91d234d",
+        "0fa6c81ef0c6275141c14569d677fc68111afc00b606873124271ac601d32f8b"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        1590,
+        1591
+      ],
+      "rejected_sequence_tokens": [
+        1733,
+        1782
+      ],
+      "chosen_scored_response_tokens": [
+        481.0,
+        369.0
+      ],
+      "rejected_scored_response_tokens": [
+        624.0,
+        560.0
+      ]
+    },
+    {
+      "number": 6,
+      "prompt_ids": [
+        "528082e49c856bf11d998a627ba70e919e824d9bed220b89c67d6ea4b0f58d58",
+        "c929c4a06cebf2d7da342a36d2293d951141a03aa52a5e479cb4ce5a7a6647c0"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        2066,
+        1464
+      ],
+      "rejected_sequence_tokens": [
+        1833,
+        1828
+      ],
+      "chosen_scored_response_tokens": [
+        528.0,
+        270.0
+      ],
+      "rejected_scored_response_tokens": [
+        295.0,
+        634.0
+      ]
+    },
+    {
+      "number": 7,
+      "prompt_ids": [
+        "f0c4ae0e37f178a10ad16e7a587a986778d03331b485d09633e2bbc62d1005b3",
+        "4805efe054b9aec481c76f9369fb43a099028c1c144aa9e58618890b238e15fd"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        1872,
+        2120
+      ],
+      "rejected_sequence_tokens": [
+        1732,
+        1863
+      ],
+      "chosen_scored_response_tokens": [
+        336.0,
+        839.0
+      ],
+      "rejected_scored_response_tokens": [
+        196.0,
+        582.0
+      ]
+    },
+    {
+      "number": 8,
+      "prompt_ids": [
+        "afc435e01bd22bcd96eb3cbb196be2db23fb680dda63aa3c13ed7e33aceec678",
+        "d4160e5db8fcd014a813ab1230f19b008ba3934ea722449809d1fd4c291e78bd"
+      ],
+      "pairs": 2,
+      "mean_loss": 0.6931471824645996,
+      "chosen_sequence_tokens": [
+        2043,
+        859
+      ],
+      "rejected_sequence_tokens": [
+        2040,
+        1765
+      ],
+      "chosen_scored_response_tokens": [
+        334.0,
+        79.0
+      ],
+      "rejected_scored_response_tokens": [
+        331.0,
+        985.0
+      ]
+    }
+  ],
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "attention_implementation": "sdpa",
+  "trainable_parameters": 1089536,
+  "trainable_dtypes": {
+    "torch.float32": 112
+  },
+  "trainable_names": [
+    "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight",
+    "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight",
+    "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"
+  ],
+  "optimizer_defaults": {
+    "lr": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": null,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": true
+  },
+  "initial_probe_loss": 0.6931471824645996,
+  "reference_before": [
+    [
+      -575.8324584960938,
+      -423.0719299316406
+    ],
+    [
+      -925.9239501953125,
+      -217.7075958251953
+    ]
+  ],
+  "frozen_before_sha256": "efb4d1c65bdd1dc88fc0d43c84f1827131e4eb8f39c140556790da080c7a5391",
+  "nonfinite_gradient_names": [],
+  "gradient_norm_before_clipping": 2.8401432037353516,
+  "scale_before": 65536.0,
+  "scale_after": 65536.0,
+  "changed_adapter_parameters": [
+    "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight",
+    "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight",
+    "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"
+  ],
+  "frozen_after_sha256": "efb4d1c65bdd1dc88fc0d43c84f1827131e4eb8f39c140556790da080c7a5391",
+  "reference_max_abs_changes": [
+    0.0,
+    0.0
+  ],
+  "wall_seconds": 46.040585932001704,
+  "peak_allocated_VRAM_GiB": 22.40688467025757,
+  "peak_reserved_VRAM_GiB": 33.126953125,
+  "active_source_unchanged": true
+}

@@ -1,0 +1,7 @@
+condition,stratum,pairs,correct_pairs,preference_accuracy,dpo_loss,ties
+standard,preferred_longer,82,35,0.4268292682926829,0.703795570062428,0
+standard,length_matched,82,46,0.5609756097560976,0.6844387337928866,0
+standard,rejected_longer,82,58,0.7073170731707317,0.6539859608179186,0
+length_balanced,preferred_longer,82,34,0.4146341463414634,0.7262326784250213,0
+length_balanced,length_matched,82,51,0.6219512195121951,0.6770631460154929,0
+length_balanced,rejected_longer,82,65,0.7926829268292683,0.6208179832958594,0

@@ -1,0 +1,15 @@
+Downloading ATML PA2 course assets...
+Source: AbDu11aHHH/ATML-PA2-assets
+Revision: 0b350481fb03f5525a35bcdec4131bd4fe487f98
+
+Course assets downloaded.
+Now run: python -m scripts.validate_assets
+
+
+Fetching 90 files:   0%|          | 0/90 [00:00<?, ?it/s]
+Fetching 90 files:   1%|          | 1/90 [00:00<00:16,  5.47it/s]
+Fetching 90 files:   2%|▏         | 2/90 [00:00<00:34,  2.53it/s]
+Fetching 90 files:  13%|█▎        | 12/90 [00:00<00:04, 16.86it/s]
+Fetching 90 files:  33%|███▎      | 30/90 [00:01<00:01, 38.66it/s]
+Fetching 90 files:  47%|████▋     | 42/90 [00:06<00:08,  5.42it/s]
+Fetching 90 files: 100%|██████████| 90/90 [00:06<00:00, 14.50it/s]

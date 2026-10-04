@@ -1,0 +1,16 @@
+{
+  "drive_models": "/content/drive/MyDrive/ATML-Assignment-2/model_snapshots/20261004_002851_903477",
+  "config_sha256": {
+    "policy": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "reward": "d04c63bcaf27f49f7fea8c3c1287ba4078056f3b3ed35d2635c6caef7dbad9fb"
+  },
+  "unchanged_active_source_sha256": {
+    "configs/base.yaml": "c37ed8b49832388a6193202d30640d79b1d0279ba428731de28900e8c8a92853",
+    "configs/dpo.yaml": "9376053afad62ea9622cb1486dfc11ece6d58ddeb59f1f8d63836c4c29848e38",
+    "common/models.py": "01cb5c795c44672311d07c13a9d0c2cd22f1b258ab16ad8b924e64d23a5a3a92",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "task1_dpo/support.py": "b11a9d7364dfc3a61436c20e418264f0340cb05b31950f7c0a23ec4b2a32b0b9"
+  },
+  "audit_script_sha256": "e449cd2929a959484f46e606eb9d0c77036e09579e2924d54dd824d8892e492c",
+  "correction_applied": false
+}

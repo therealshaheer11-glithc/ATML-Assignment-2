@@ -1,0 +1,14 @@
+{
+  "status": "USER_APPROVED",
+  "user_approval": "Approve both examples",
+  "prompt_ids": [
+    "wl05",
+    "wl04"
+  ],
+  "purposes": [
+    "Reward versus content relevance",
+    "Word-limit compliance regression"
+  ],
+  "source_analysis": "/content/drive/MyDrive/ATML-Assignment-2/analysis/task1_quantitative_20261004_214602_567835",
+  "all_answers_previously_generated": true
+}

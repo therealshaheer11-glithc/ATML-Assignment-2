@@ -1,0 +1,127 @@
+{
+  "status": "USER_APPROVED",
+  "selection_method": "Reviewed all30 saved word-limit responses. Chose candidate illustrations for the two PA requirements; no extra generation, tuning, model selection or population failure-rate estimation. Also inspected selected general responses; no general-prompt example selected.",
+  "candidates": [
+    {
+      "id": "C1",
+      "prompt_id": "wl05",
+      "title": "Reward versus content relevance",
+      "selection_status": "USER_APPROVED",
+      "reason": "The standard and balanced outputs receive higher reward, but substitute a social filter-bubble claim for a technical limitation of neural attention. SFT identifies computational cost. This is a narrow content-relevance comparison, not a claim that SFT is better overall: both outputs violate the 45-word limit and DPO is much shorter.",
+      "records": {
+        "standard": {
+          "row_index": 4,
+          "prompt_id": "wl05",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Describe one advantage and one limitation of attention in at most 45 words."
+            }
+          ],
+          "response": "**Advantage:**\nAttention allows machines to focus on relevant information, improving efficiency and accuracy in processing complex tasks like language understanding or image recognition.\n\n**Limitation:**\nIt can lead to the \"filter bubble\" effect, where individuals only see information that confirms their existing beliefs, potentially limiting exposure to diverse viewpoints.",
+          "response_length": 64,
+          "word_count": 48,
+          "word_limit": 45,
+          "word_limit_compliance": 0.0,
+          "reward_score": 4.24609375,
+          "reached_generation_ceiling": false
+        },
+        "sft": {
+          "row_index": 4,
+          "prompt_id": "wl05",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Describe one advantage and one limitation of attention in at most 45 words."
+            }
+          ],
+          "response": "Attention is an important concept in neural networks for processing sequences or time-series data. It helps the model focus on relevant information while ignoring less relevant details, thereby improving performance on tasks like language translation, text summarization, and speech recognition.\n\nOne limitation of attention is that it can be computationally expensive to implement, especially when dealing with long sequences due to the need for calculating attention weights across the entire sequence. This computational cost can limit its scalability and efficiency compared to simpler methods like recurrent neural networks (RNNs). Additionally, understanding how attention mechanisms work can be challenging for developers who may not have expertise in deep learning concepts.",
+          "response_length": 126,
+          "word_count": 110,
+          "word_limit": 45,
+          "word_limit_compliance": 0.0,
+          "reward_score": 3.5390625,
+          "reached_generation_ceiling": false
+        },
+        "length_balanced": {
+          "row_index": 4,
+          "prompt_id": "wl05",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Describe one advantage and one limitation of attention in at most 45 words."
+            }
+          ],
+          "response": "**Advantage:**\nAttention allows machines to focus on relevant information, improving efficiency and accuracy in processing complex tasks like language understanding or image recognition.\n\n**Limitation:**\nIt can lead to the \"filter bubble\" effect, where individuals only see information that confirms their existing beliefs, potentially limiting exposure to diverse viewpoints.",
+          "response_length": 64,
+          "word_count": 48,
+          "word_limit": 45,
+          "word_limit_compliance": 0.0,
+          "reward_score": 4.24609375,
+          "reached_generation_ceiling": false
+        }
+      }
+    },
+    {
+      "id": "C2",
+      "prompt_id": "wl04",
+      "title": "Instruction compliance",
+      "selection_status": "USER_APPROVED",
+      "reason": "Baseline uses31 words and satisfies under35; standard and balanced each use43 and violate it. All three terminate naturally. This shows a per-prompt regression despite aggregate compliance improving from4/10 to5/10.",
+      "records": {
+        "standard": {
+          "row_index": 3,
+          "prompt_id": "wl04",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Explain gradient descent in under 35 words."
+            }
+          ],
+          "response": "Gradient Descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. It starts with an initial guess and adjusts parameters until the objective function is minimized.",
+          "response_length": 50,
+          "word_count": 43,
+          "word_limit": 35,
+          "word_limit_compliance": 0.0,
+          "reward_score": 3.75,
+          "reached_generation_ceiling": false
+        },
+        "sft": {
+          "row_index": 3,
+          "prompt_id": "wl04",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Explain gradient descent in under 35 words."
+            }
+          ],
+          "response": "Gradient Descent is an optimization algorithm used to find the minimum of a function. It iteratively updates parameters based on the negative gradient of the objective function, aiming to minimize it.",
+          "response_length": 37,
+          "word_count": 31,
+          "word_limit": 35,
+          "word_limit_compliance": 1.0,
+          "reward_score": 3.94921875,
+          "reached_generation_ceiling": false
+        },
+        "length_balanced": {
+          "row_index": 3,
+          "prompt_id": "wl04",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Explain gradient descent in under 35 words."
+            }
+          ],
+          "response": "Gradient Descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. It starts with an initial guess and adjusts parameters until the objective function is minimized.",
+          "response_length": 50,
+          "word_count": 43,
+          "word_limit": 35,
+          "word_limit_compliance": 0.0,
+          "reward_score": 3.75,
+          "reached_generation_ceiling": false
+        }
+      }
+    }
+  ],
+  "user_approval": "Approve both examples"
+}

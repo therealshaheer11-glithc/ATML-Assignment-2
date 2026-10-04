@@ -1,0 +1,521 @@
+{
+  "status": "UNSELECTED_SAVED_EXAMPLES_FOR_JOINT_REVIEW",
+  "conditions": {
+    "standard": [
+      {
+        "row_index": 0,
+        "prompt_id": "wl01",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain why regularization can improve generalization in at most 40 words."
+          }
+        ],
+        "response": "Regularization helps prevent overfitting by adding a penalty term to the loss function that discourages complex models from fitting noise in the training data, thus improving model's ability to generalize to unseen data.",
+        "response_length": 41,
+        "word_count": 34,
+        "word_limit": 40,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.890625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 1,
+        "prompt_id": "wl02",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define overfitting in no more than 25 words."
+          }
+        ],
+        "response": "Overfitting occurs when a statistical model describes random error or noise instead of the underlying relationship, typically resulting from insufficiently training data or excessively complex models that capture every detail but fail to generalize well to new observations.",
+        "response_length": 44,
+        "word_count": 38,
+        "word_limit": 25,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.546875,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 2,
+        "prompt_id": "wl03",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the purpose of a validation set in at most 30 words."
+          }
+        ],
+        "response": "A validation set is used to evaluate the performance of machine learning models during training and selection, ensuring model accuracy without overfitting on the training data.",
+        "response_length": 31,
+        "word_count": 26,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.599609375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 3,
+        "prompt_id": "wl04",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain gradient descent in under 35 words."
+          }
+        ],
+        "response": "Gradient Descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. It starts with an initial guess and adjusts parameters until the objective function is minimized.",
+        "response_length": 50,
+        "word_count": 43,
+        "word_limit": 35,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.75,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 4,
+        "prompt_id": "wl05",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Describe one advantage and one limitation of attention in at most 45 words."
+          }
+        ],
+        "response": "**Advantage:**\nAttention allows machines to focus on relevant information, improving efficiency and accuracy in processing complex tasks like language understanding or image recognition.\n\n**Limitation:**\nIt can lead to the \"filter bubble\" effect, where individuals only see information that confirms their existing beliefs, potentially limiting exposure to diverse viewpoints.",
+        "response_length": 64,
+        "word_count": 48,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.24609375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 5,
+        "prompt_id": "wl06",
+        "messages": [
+          {
+            "role": "user",
+            "content": "What is distribution shift? Answer in no more than 30 words."
+          }
+        ],
+        "response": "Distribution shift occurs when the training data and test data have different distributions, leading to poor performance of machine learning models.",
+        "response_length": 24,
+        "word_count": 21,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.2578125,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 6,
+        "prompt_id": "wl07",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain the role of a learning rate in at most 35 words."
+          }
+        ],
+        "response": "The learning rate is a crucial hyperparameter that determines how much to adjust model parameters during training iterations. It controls the step size taken towards the minimum of the loss function. A too small learning rate can lead to slow convergence or stagnation, while an excessively large learning rate may cause overshooting and instability. Adjusting the learning rate dynamically through techniques like adaptive learning rates helps maintain efficient optimization.",
+        "response_length": 79,
+        "word_count": 69,
+        "word_limit": 35,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.77734375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 7,
+        "prompt_id": "wl08",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Why can a model with high training accuracy still fail at deployment? Answer in at most 40 words."
+          }
+        ],
+        "response": "A model's training accuracy doesn't guarantee real-world performance because it overfits the training data and generalizes poorly to unseen data. Deployment involves different contexts and distributions that differ from training, leading to failure.",
+        "response_length": 42,
+        "word_count": 36,
+        "word_limit": 40,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.615234375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 8,
+        "prompt_id": "wl09",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define calibration for a probabilistic classifier in under 30 words."
+          }
+        ],
+        "response": "Calibration refers to adjusting the output probabilities of a probabilistic classifier so that they more closely approximate true beliefs about class membership.",
+        "response_length": 26,
+        "word_count": 22,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.61328125,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 9,
+        "prompt_id": "wl10",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain what a frozen reference model does in RLHF in at most 45 words."
+          }
+        ],
+        "response": "A frozen reference model in Reinforcement Learning with Human Feedback (RLHF) refers to training an AI agent using human feedback but keeping the reward function fixed and unchanged from its original state. This approach ensures that the agent learns directly from human instructions without altering the underlying task's difficulty or objectives, preserving the initial learning progress made on the baseline model.",
+        "response_length": 70,
+        "word_count": 62,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.6015625,
+        "reached_generation_ceiling": false
+      }
+    ],
+    "sft": [
+      {
+        "row_index": 0,
+        "prompt_id": "wl01",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain why regularization can improve generalization in at most 40 words."
+          }
+        ],
+        "response": "Regularization helps prevent overfitting by adding a penalty term to the loss function that discourages complex models from fitting noise in the training data, thus improving model's ability to generalize to unseen data.",
+        "response_length": 41,
+        "word_count": 34,
+        "word_limit": 40,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.890625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 1,
+        "prompt_id": "wl02",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define overfitting in no more than 25 words."
+          }
+        ],
+        "response": "Overfitting occurs when a model performs well on the training data but poorly on new, unseen data because it has learned the noise or detail from the training data rather than the underlying pattern.",
+        "response_length": 39,
+        "word_count": 34,
+        "word_limit": 25,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.912109375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 2,
+        "prompt_id": "wl03",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the purpose of a validation set in at most 30 words."
+          }
+        ],
+        "response": "A validation set is used to evaluate the performance and tune hyperparameters during training, ensuring model accuracy and preventing overfitting before final deployment.",
+        "response_length": 29,
+        "word_count": 23,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.818359375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 3,
+        "prompt_id": "wl04",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain gradient descent in under 35 words."
+          }
+        ],
+        "response": "Gradient Descent is an optimization algorithm used to find the minimum of a function. It iteratively updates parameters based on the negative gradient of the objective function, aiming to minimize it.",
+        "response_length": 37,
+        "word_count": 31,
+        "word_limit": 35,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.94921875,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 4,
+        "prompt_id": "wl05",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Describe one advantage and one limitation of attention in at most 45 words."
+          }
+        ],
+        "response": "Attention is an important concept in neural networks for processing sequences or time-series data. It helps the model focus on relevant information while ignoring less relevant details, thereby improving performance on tasks like language translation, text summarization, and speech recognition.\n\nOne limitation of attention is that it can be computationally expensive to implement, especially when dealing with long sequences due to the need for calculating attention weights across the entire sequence. This computational cost can limit its scalability and efficiency compared to simpler methods like recurrent neural networks (RNNs). Additionally, understanding how attention mechanisms work can be challenging for developers who may not have expertise in deep learning concepts.",
+        "response_length": 126,
+        "word_count": 110,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.5390625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 5,
+        "prompt_id": "wl06",
+        "messages": [
+          {
+            "role": "user",
+            "content": "What is distribution shift? Answer in no more than 30 words."
+          }
+        ],
+        "response": "Distribution shift occurs when the training data and test data come from different distributions, leading to poor model performance on new data.",
+        "response_length": 25,
+        "word_count": 22,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 2.888671875,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 6,
+        "prompt_id": "wl07",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain the role of a learning rate in at most 35 words."
+          }
+        ],
+        "response": "The learning rate is a crucial hyperparameter that determines how quickly an artificial neural network adjusts its weights during training to minimize loss. It controls the step size taken towards the minimum of the loss function, which helps balance between convergence speed and risk of overshooting the optimal solution. A suitable learning rate can significantly impact model performance; if too high, it may cause oscillation or instability in gradient descent updates; if too low, training might be slow or fail to converge. Therefore, finding an optimal learning rate requires experimentation with various values and monitoring of the training process's progress.",
+        "response_length": 115,
+        "word_count": 101,
+        "word_limit": 35,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.484375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 7,
+        "prompt_id": "wl08",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Why can a model with high training accuracy still fail at deployment? Answer in at most 40 words."
+          }
+        ],
+        "response": "A model's training accuracy may not translate to successful deployment due to issues like overfitting, lack of generalization, or compatibility with the production environment. Deployment often involves different constraints and requirements than training, leading to failures if these are ignored or poorly addressed during development.",
+        "response_length": 55,
+        "word_count": 46,
+        "word_limit": 40,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.06640625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 8,
+        "prompt_id": "wl09",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define calibration for a probabilistic classifier in under 30 words."
+          }
+        ],
+        "response": "Calibration refers to adjusting a probabilistic classifier's output probabilities so that they more closely match the actual likelihood of the outcomes, often using techniques like Platt scaling or isotonic regression.",
+        "response_length": 37,
+        "word_count": 31,
+        "word_limit": 30,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.20703125,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 9,
+        "prompt_id": "wl10",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain what a frozen reference model does in RLHF in at most 45 words."
+          }
+        ],
+        "response": "In Reinforcement Learning with Human Feedback (RLHF), a frozen reference model is one that remains unchanged during the training process of an AI agent. This means the model's parameters or structure do not evolve based on feedback from human evaluators throughout the training sessions. Instead, it focuses on refining its own policies to match those observed behaviors over time, eventually learning how to interact effectively with humans without further adjustments from the human trainers. This approach allows for self-learning systems while maintaining consistency across different rounds of interaction.",
+        "response_length": 102,
+        "word_count": 90,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.1640625,
+        "reached_generation_ceiling": false
+      }
+    ],
+    "length_balanced": [
+      {
+        "row_index": 0,
+        "prompt_id": "wl01",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain why regularization can improve generalization in at most 40 words."
+          }
+        ],
+        "response": "Regularization helps prevent overfitting by adding a penalty term to the loss function that discourages complex models from fitting noise in the training data, thus improving model's ability to generalize to unseen data.",
+        "response_length": 41,
+        "word_count": 34,
+        "word_limit": 40,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.890625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 1,
+        "prompt_id": "wl02",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define overfitting in no more than 25 words."
+          }
+        ],
+        "response": "Overfitting occurs when a statistical model describes random error or noise instead of the underlying relationship, typically resulting from insufficiently training data or excessively complex models that capture every detail but fail to generalize well to new observations.",
+        "response_length": 44,
+        "word_count": 38,
+        "word_limit": 25,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.546875,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 2,
+        "prompt_id": "wl03",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the purpose of a validation set in at most 30 words."
+          }
+        ],
+        "response": "A validation set is used to evaluate the performance of machine learning models during training and selection, ensuring model accuracy without overfitting on the training data.",
+        "response_length": 31,
+        "word_count": 26,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.599609375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 3,
+        "prompt_id": "wl04",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain gradient descent in under 35 words."
+          }
+        ],
+        "response": "Gradient Descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. It starts with an initial guess and adjusts parameters until the objective function is minimized.",
+        "response_length": 50,
+        "word_count": 43,
+        "word_limit": 35,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.75,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 4,
+        "prompt_id": "wl05",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Describe one advantage and one limitation of attention in at most 45 words."
+          }
+        ],
+        "response": "**Advantage:**\nAttention allows machines to focus on relevant information, improving efficiency and accuracy in processing complex tasks like language understanding or image recognition.\n\n**Limitation:**\nIt can lead to the \"filter bubble\" effect, where individuals only see information that confirms their existing beliefs, potentially limiting exposure to diverse viewpoints.",
+        "response_length": 64,
+        "word_count": 48,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 4.24609375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 5,
+        "prompt_id": "wl06",
+        "messages": [
+          {
+            "role": "user",
+            "content": "What is distribution shift? Answer in no more than 30 words."
+          }
+        ],
+        "response": "Distribution shift occurs when the training data and test data have different distributions, leading to poor performance of machine learning models.",
+        "response_length": 24,
+        "word_count": 21,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.2578125,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 6,
+        "prompt_id": "wl07",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain the role of a learning rate in at most 35 words."
+          }
+        ],
+        "response": "The learning rate determines how quickly an algorithm adjusts its parameters during training to minimize error. A too high learning rate can cause the model to overshoot the minimum and diverge, while a too low learning rate may result in slow convergence or even stagnation. Finding an optimal learning rate is crucial for effective machine learning optimization.",
+        "response_length": 65,
+        "word_count": 57,
+        "word_limit": 35,
+        "word_limit_compliance": 0.0,
+        "reward_score": 3.974609375,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 7,
+        "prompt_id": "wl08",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Why can a model with high training accuracy still fail at deployment? Answer in at most 40 words."
+          }
+        ],
+        "response": "A model's high training accuracy doesn't guarantee it will perform well during deployment due to issues like overfitting, differences between training and testing data distributions, lack of robustness against adversarial attacks, or inadequate handling of real-world constraints.",
+        "response_length": 49,
+        "word_count": 40,
+        "word_limit": 40,
+        "word_limit_compliance": 1.0,
+        "reward_score": 3.935546875,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 8,
+        "prompt_id": "wl09",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Define calibration for a probabilistic classifier in under 30 words."
+          }
+        ],
+        "response": "Calibration involves adjusting the probabilities predicted by a model to reflect their true likelihood of belonging to each class, ensuring predictions align with human judgment.",
+        "response_length": 29,
+        "word_count": 25,
+        "word_limit": 30,
+        "word_limit_compliance": 1.0,
+        "reward_score": 4.140625,
+        "reached_generation_ceiling": false
+      },
+      {
+        "row_index": 9,
+        "prompt_id": "wl10",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain what a frozen reference model does in RLHF in at most 45 words."
+          }
+        ],
+        "response": "Frozen Reference Model (FRM) is an improvement to RLHF that allows the teacher network's policies to be fixed once they have been trained and evaluated, eliminating the need for additional training rounds with new policies. This reduces computational costs and speeds up the fine-tuning process of the student networks.",
+        "response_length": 60,
+        "word_count": 51,
+        "word_limit": 45,
+        "word_limit_compliance": 0.0,
+        "reward_score": 2.724609375,
+        "reached_generation_ceiling": false
+      }
+    ]
+  }
+}

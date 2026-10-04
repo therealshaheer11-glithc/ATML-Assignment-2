@@ -1,0 +1,24 @@
+base_config: configs/base.yaml
+beta: 0.1
+betas:
+- 0.03
+- 0.1
+- 0.3
+learning_rate: 2.0e-05
+weight_decay: 0.0
+batch_size: 2
+grad_accum_steps: 8
+epochs: 1
+short_ablation_examples: 600
+max_sequence_length: 4096
+max_generation_tokens: 256
+max_grad_norm: 1.0
+standard_output: outputs/task1_dpo/standard
+length_output: outputs/task1_dpo/length_balanced
+results_dir: results/task1_dpo
+max_prompt_length: 4096
+reward_max_length: 4096
+generation_batch_size: 1
+base_model_revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+reward_tokenizer_revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+reward_model_revision: f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc
