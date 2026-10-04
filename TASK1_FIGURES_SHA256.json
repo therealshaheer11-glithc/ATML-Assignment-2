@@ -1,0 +1,13 @@
+{
+  "docs/task1/FIGURES.md": "32e0e9870c702d5c6a99eadc0b39677d5026286ff1300da004a915461c2a2fa2",
+  "docs/task1/FIGURE_APPROVAL.json": "d5e3fd3acb9e23261949a189809bbc50893cf43cdbe8f0600f24b3cc5df27768",
+  "docs/task1/FIGURE_CHECKS.json": "524e7f62fdc36612fb26c44fbff33c6281051421ef6dc0a55bea6a2d41499de6",
+  "figures/task1/README.md": "f85da3347f62166468e29692d9e01bfcad57e0ea8cea3191379ef1042f72371f",
+  "figures/task1/beta_comparison.pdf": "6605e85ba662315cf836af3e939a018382e1a1186cbaf0c3052d2b4d71bc3144",
+  "figures/task1/beta_comparison.png": "084311ec03968c7b73f4a24f755e03d7af13084285c5cb9e757bbf0028721aae",
+  "figures/task1/figure_provenance.json": "576429962e627ca7595d125860a27e9f79f92b0dbf7134a061cfcbfb36a1c793",
+  "figures/task1/length_comparison.pdf": "57860165eb725cb1f1a19e8b3eb6cca96719201e7911f6b79c47792127ac283d",
+  "figures/task1/length_comparison.png": "ce55c37de7d46780129e7b68cc60552c71d7e08a87e1f7644f1cd42a5e7bd58f",
+  "figures/task1/plotted_values.json": "3c58d5194f9c1fe51f5d05743095d9875b1c04295f2c1961c1fb835399cac1c6",
+  "task1_dpo/plot_results.py": "2e6d7d17a8d3dcb36b6bf14eb2b5c364319c6fcb5b7d9f9436649baee304f6a2"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "GENERATED_FROM_VERIFIED_SAVED_RESULTS",
+  "matplotlib": "3.10.9",
+  "script_sha256": "2e6d7d17a8d3dcb36b6bf14eb2b5c364319c6fcb5b7d9f9436649baee304f6a2",
+  "source_sha256": {
+    "results/task1/analysis/summary.csv": "846d917929fce3b1f93a7235d585ef2d6a73481abc0dbef60678931057a731e6",
+    "results/task1/analysis/length_strata.csv": "c62fb7a38271464c11aa53905f6a043342914b7db6446e55da5c0b0d0dae1d2b",
+    "results/task1/analysis/word_limits.csv": "c5d636067f91d1b78e1790fb1ec02446faac30d7c15ba34fbb0a87a7a7ee73d1",
+    "results/task1/analysis/audit.json": "a0424072ef12a54c94919728807393c7d802c1ceeb870aade4517ad989c2dcf6"
+  },
+  "approach": "Two user-approved figures; exact means/fractions, no smoothing or inferential error bars.",
+  "new_training": false,
+  "new_generation": false,
+  "GPU_used": false,
+  "output_sha256": {
+    "beta_comparison.pdf": "6605e85ba662315cf836af3e939a018382e1a1186cbaf0c3052d2b4d71bc3144",
+    "beta_comparison.png": "084311ec03968c7b73f4a24f755e03d7af13084285c5cb9e757bbf0028721aae",
+    "length_comparison.pdf": "57860165eb725cb1f1a19e8b3eb6cca96719201e7911f6b79c47792127ac283d",
+    "length_comparison.png": "ce55c37de7d46780129e7b68cc60552c71d7e08a87e1f7644f1cd42a5e7bd58f",
+    "plotted_values.json": "3c58d5194f9c1fe51f5d05743095d9875b1c04295f2c1961c1fb835399cac1c6"
+  }
+}

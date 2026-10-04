@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "beta_points_checked_against_original_metrics": 12,
+  "stratum_bars_checked": 6,
+  "compliance_bars_checked": 2,
+  "both_figures_visually_inspected": true,
+  "formats": [
+    "PDF",
+    "PNG 300 dpi"
+  ],
+  "experimental_package_hashes_unchanged": true,
+  "new_GPU_runs": 0,
+  "new_metrics": false,
+  "report_layout_in_combined_eight_page_document": "Pending integration"
+}

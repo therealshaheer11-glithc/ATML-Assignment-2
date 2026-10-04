@@ -1,0 +1,13 @@
+{
+  "status": "USER_APPROVED",
+  "user_message": "Lets lock in babes",
+  "scope": [
+    "beta figure: accuracy, signed sampled KL, reward and response length for the matched short runs",
+    "length figure: standard versus balanced stratum accuracy and word-limit compliance",
+    "captions and two previously approved qualitative examples"
+  ],
+  "new_training": false,
+  "new_generation": false,
+  "new_metrics": false,
+  "source_results_unchanged": true
+}

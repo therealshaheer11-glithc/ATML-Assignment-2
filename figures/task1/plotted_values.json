@@ -1,0 +1,89 @@
+{
+  "beta": [
+    {
+      "condition": "beta_003",
+      "beta": 0.03,
+      "training_pairs": 600,
+      "accuracy": 0.6366666666666667,
+      "sampled_kl": -0.00043213879019026634,
+      "reward_mean": 1.035452330907186,
+      "token_mean": 151.90666666666667
+    },
+    {
+      "condition": "beta_010",
+      "beta": 0.1,
+      "training_pairs": 600,
+      "accuracy": 0.62,
+      "sampled_kl": -0.0004467131399320301,
+      "reward_mean": 1.0965264161427817,
+      "token_mean": 153.46
+    },
+    {
+      "condition": "beta_030",
+      "beta": 0.3,
+      "training_pairs": 600,
+      "accuracy": 0.6466666666666666,
+      "sampled_kl": -0.0004749374391991359,
+      "reward_mean": 1.1447782135009765,
+      "token_mean": 156.67666666666668
+    }
+  ],
+  "strata": [
+    {
+      "condition": "standard",
+      "stratum": "preferred_longer",
+      "correct": 35,
+      "pairs": 82,
+      "accuracy": 0.4268292682926829
+    },
+    {
+      "condition": "standard",
+      "stratum": "length_matched",
+      "correct": 46,
+      "pairs": 82,
+      "accuracy": 0.5609756097560976
+    },
+    {
+      "condition": "standard",
+      "stratum": "rejected_longer",
+      "correct": 58,
+      "pairs": 82,
+      "accuracy": 0.7073170731707317
+    },
+    {
+      "condition": "length_balanced",
+      "stratum": "preferred_longer",
+      "correct": 34,
+      "pairs": 82,
+      "accuracy": 0.4146341463414634
+    },
+    {
+      "condition": "length_balanced",
+      "stratum": "length_matched",
+      "correct": 51,
+      "pairs": 82,
+      "accuracy": 0.6219512195121951
+    },
+    {
+      "condition": "length_balanced",
+      "stratum": "rejected_longer",
+      "correct": 65,
+      "pairs": 82,
+      "accuracy": 0.7926829268292683
+    }
+  ],
+  "word_compliance": [
+    {
+      "condition": "standard",
+      "compliant": 5,
+      "prompts": 10,
+      "fraction": 0.5
+    },
+    {
+      "condition": "length_balanced",
+      "compliant": 5,
+      "prompts": 10,
+      "fraction": 0.5
+    }
+  ]
+}
