@@ -1,0 +1,242 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "row": 0,
+      "expected": 313,
+      "actual": 313,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 1,
+      "expected": 389,
+      "actual": 389,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 2,
+      "expected": 228,
+      "actual": 228,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 3,
+      "expected": 14,
+      "actual": 14,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 4,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 5,
+      "expected": 336,
+      "actual": 336,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 6,
+      "expected": 43,
+      "actual": 43,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 7,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 8,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 9,
+      "expected": 229,
+      "actual": 229,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 10,
+      "expected": 10,
+      "actual": 10,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 11,
+      "expected": 419,
+      "actual": 419,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 12,
+      "expected": 2,
+      "actual": 2,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 13,
+      "expected": 272,
+      "actual": 272,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 14,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 15,
+      "expected": 440,
+      "actual": 440,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 16,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 17,
+      "expected": 244,
+      "actual": 244,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 18,
+      "expected": 492,
+      "actual": 492,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 19,
+      "expected": 19,
+      "actual": 19,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 20,
+      "expected": 363,
+      "actual": 363,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 21,
+      "expected": 22,
+      "actual": 22,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 22,
+      "expected": 468,
+      "actual": 468,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 23,
+      "expected": 12,
+      "actual": 12,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 24,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 25,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 26,
+      "expected": 512,
+      "actual": 512,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 27,
+      "expected": 80,
+      "actual": 80,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 28,
+      "expected": 34,
+      "actual": 34,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 29,
+      "expected": 267,
+      "actual": 267,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 30,
+      "expected": 14,
+      "actual": 14,
+      "length_match": true,
+      "text_round_trip": true
+    },
+    {
+      "row": 31,
+      "expected": 8,
+      "actual": 8,
+      "length_match": true,
+      "text_round_trip": true
+    }
+  ],
+  "policy_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "model_weights_loaded": false,
+  "gpu_used": false,
+  "limitation": "Original cache token IDs are absent; text/token-count reconstruction does not prove original tokenization uniqueness."
+}

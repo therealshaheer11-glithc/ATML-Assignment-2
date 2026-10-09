@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "approval_date": "2026-10-08",
+  "session_minutes": 120,
+  "session_limit_user_reply": "120 minutes",
+  "automatic_disconnect": true,
+  "automatic_disconnect_user_reply": "Approve automatic disconnection",
+  "disconnect_conditions": [
+    "The model process has stopped",
+    "Every completed local unit has a verified persistent copy",
+    "The session log and status have a verified persistent copy",
+    "Drive has been flushed and unmounted successfully"
+  ],
+  "budget_boundary": "Before the next rollout or held-out/cache prompt, preserving all required update and prompt counts across resumptions",
+  "limit_scope": "Includes GPU-session setup time counted from launcher start. The current work unit and required persistence/flush can extend beyond the scheduling boundary.",
+  "experimental_settings_changed": false,
+  "primary_api_reference": "https://raw.githubusercontent.com/googlecolab/colabtools/main/google/colab/runtime.py"
+}

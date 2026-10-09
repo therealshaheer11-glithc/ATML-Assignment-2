@@ -1,0 +1,26 @@
+{
+  "approved": true,
+  "status": "APPROVED",
+  "criterion": "Prompt requires 20 titles, each 6 to 10 words. Compare compliance counts.",
+  "examples": [
+    {
+      "condition": "kl_020",
+      "relation": "agreement",
+      "midpoint_compliant": 18,
+      "candidate_compliant": 20
+    },
+    {
+      "condition": "kl_000",
+      "relation": "disagreement",
+      "midpoint_compliant": 18,
+      "candidate_compliant": 17
+    }
+  ],
+  "prompt_id": "ee7b7003b96f186726812f27c0c689da5283da51a6a682eb1f65046fda17ba65",
+  "authorship": "Assistant analysis from saved text; no external model judge; not represented as unaided human review.",
+  "approval_date": "2026-10-09",
+  "approval_timezone": "Asia/Karachi",
+  "user_response": "sure",
+  "scope": "Use the explained title-length agreement and disagreement examples as the required Task 2 qualitative evidence.",
+  "approval_context": "The user approved after the simple explanation of 18/20 to 20/20 agreement and 18/20 to 17/20 disagreement."
+}

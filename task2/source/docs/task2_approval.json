@@ -1,0 +1,103 @@
+{
+  "approved": true,
+  "approval_date": "2026-10-08",
+  "approval_text": "Approved",
+  "approved_decisions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K"
+  ],
+  "course_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "policy_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "policy_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+  "reward_revision": "f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc",
+  "original_ppo_sha256": "ffe6445675048a751407a878b0b2bf8133eff2479c515e6a4879610132d1b190",
+  "source_sha256": {
+    "common/metrics.py": "29fe2bd56bc68dcaf55b7e291ffdeff2b61260cf0ead227be259f48531203fc1",
+    "common/generation.py": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+    "common/models.py": "01cb5c795c44672311d07c13a9d0c2cd22f1b258ab16ad8b924e64d23a5a3a92",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/data.py": "d563a88e1dd4a0c7ab1ae4a9805ec615d273086c5badb4b3e517c6bbe24c9498",
+    "common/logging_utils.py": "b521a4fa4e73aa7144dd807d8c2d8f6a129efe483f618f2c5f081d1ab52761ee",
+    "configs/base.yaml": "c37ed8b49832388a6193202d30640d79b1d0279ba428731de28900e8c8a92853",
+    "configs/ppo.yaml": "44c9f49c0e977fd7890be1630710db3171f9cc455562f4d0390ec187cf273c07",
+    "configs/assets.yaml": "b09be8907f290caa812eec002cc6829ef4e56aa46f50a19d70615d8a4f847eff",
+    "requirements.txt": "f13c0e6952c39ee99b8996ecee9cf5a426e4f798bc646c2aade007bec803603f",
+    "scripts/download_assets.py": "cd0505bd79657f465d8ee2a1fb0d2455084f3e29f754e21015fefa3198605062",
+    "scripts/validate_assets.py": "c4f5ab10681fbf64bde0b3d1166492f3dd9967cee027634a26696b74bbb12e02",
+    "task2_ppo/ppo.py": "c5b469618069492f30432153a0548edfb41a14d850dc4c41d2f5539c87c456f5",
+    "task2_ppo/preflight.py": "65cea73baaa215745f0ce37340a6ab16823010e1cb4e0315d7bb82efc09fd3ed",
+    "task2_ppo/reward_compat.py": "dfb392b853e997832862eee064c68194d967a44abff25f53abb684634ef91c69",
+    "tests/test_task2_objective.py": "6a8bc89b0afa151506e7c10544f45091c49a9fbbcad1bf011226a427c56c41cc"
+  },
+  "asset_manifest_sha256": "68fe972715831e0a657878979d41b7c34102ab9e2e5bfe2bd50bb8bb979cd285",
+  "reward_config_sha256": "d04c63bcaf27f49f7fea8c3c1287ba4078056f3b3ed35d2635c6caef7dbad9fb",
+  "operational_choices": {
+    "normalize_advantages": true,
+    "normalize_returns": false,
+    "reward_whitening": false,
+    "dropout_during_ppo_forwards": false,
+    "model_dtype": "float16",
+    "objective_dtype": "float32",
+    "extra_autocast": false,
+    "grad_scaler": false,
+    "entropy_bonus": false,
+    "value_clipping": false,
+    "policy_adamw_weight_decay": 0.01,
+    "critic_adamw_weight_decay": 0.0,
+    "cache_candidate": "standard_final_20_updates",
+    "shared_8_update_central_fork": true,
+    "allocated_tokens_per_short_fork": 4096,
+    "evaluation_count": 200,
+    "evaluation_generation_seed_offset": 100000,
+    "stability": "population std and max of pre-clipping gradient norms per optimizer step"
+  },
+  "required_runs": [
+    {
+      "name": "standard",
+      "updates": 20,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.1
+    },
+    {
+      "name": "clip_005",
+      "updates": 8,
+      "clip_epsilon": 0.05,
+      "kl_beta": 0.1
+    },
+    {
+      "name": "central_8",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.1
+    },
+    {
+      "name": "clip_050",
+      "updates": 8,
+      "clip_epsilon": 0.5,
+      "kl_beta": 0.1
+    },
+    {
+      "name": "kl_000",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.0
+    },
+    {
+      "name": "kl_020",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.2
+    }
+  ]
+}

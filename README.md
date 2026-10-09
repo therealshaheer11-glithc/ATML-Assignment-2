@@ -1,45 +1,44 @@
-# ATML PA2 — Task 1: Direct Preference Optimization
+# ATML PA2 — LLM Post-Training
 
-Task 1 experiments and the saved-evidence audit are complete. Five DPO conditions and the untouched SFT baseline were evaluated. **Tasks 2–5 remain course scaffolds, not completed implementations.** The combined assignment report still needs the Task 1 evidence integrated within its eight-page limit.
+Tasks 1 (DPO) and 2 (PPO) have completed experiments, saved evidence, and documented audits. Tasks 3–5 remain unfinished course starters. The combined assignment report is separate from this code and evidence repository.
 
 ## Start here
 
-- [Results and interpretation](docs/task1/RESULTS.md): required comparisons, length diagnostics and approved qualitative examples.
-- [Audit and requirement coverage](docs/task1/AUDIT.md): what was verified and the limits of that verification.
-- [Protocol and decisions](docs/task1/PROTOCOL.md): fixed settings, approvals, TA clarifications, corrections and the failed attempt.
-- [Reproduce or inspect](docs/task1/REPRODUCE.md): independent CPU analysis and standalone experiment commands.
-- [Evidence index and chronology](docs/task1/EVIDENCE.md): exact sources, traces, approvals, dependencies and Drive handoff.
-- [Source attribution](docs/SOURCE_ATTRIBUTION.md).
+| Task | Implementation | Results and audit |
+|---|---|---|
+| 1: DPO | [task1_dpo](task1_dpo/) | [Results](docs/task1/RESULTS.md), [audit](docs/task1/AUDIT.md), [figures](figures/task1/README.md) |
+| 2: PPO | [task2/source/task2_ppo](task2/source/task2_ppo/) | [Task 2 guide](task2/README.md), [audit](task2/AUDIT.md), [approved examples](task2/QUALITATIVE_EXAMPLES.md) |
+| 3–5 | task3_grpo, task4_safety, task5_feedback | Unfinished course starters |
 
-## Inspect the completed results without a GPU
+Task 2 carries the exact helpers and configuration used for its experiments inside `task2/source/`. Follow its [restoration instructions](task2/README.md) before running its source tests or experiments. Task 1 uses the root `common/` and `configs/` directories.
 
-From this folder, with Python 3.10 or newer:
+## Verify the published files
+
+From the repository root, using Python 3.10 or newer:
 
 ```bash
-python -m task1_dpo.analyze_results --output outputs/task1_recomputed
+python3 scripts/verify_repository.py
 ```
 
-This verifies the exported file hashes and recomputes the saved statistics with the Python standard library. It checks **1,992 held-out pair records, 1,830 generated answers and rewards, five completed training traces, and the preserved failed attempt**. It does not download models or execute training. Choose a new output directory each time.
+This checks the original 988-file Task 1 package at its documented current locations, the separate Task 1 figures addition, all 133 manifest-listed Task 2 files, and the repository maintenance files. It requires no model downloads, third-party Python packages, or GPU. It verifies file integrity; the scientific audit results and their limits are documented in each task's audit.
 
-The checked tables are already in [results/task1/analysis](results/task1/analysis). Raw evidence is in [results/task1/evidence](results/task1/evidence), with an original SHA-256 manifest. Original result files and source snapshots are unchanged.
+Task 1 saved statistics can also be recomputed with:
 
-## Repository layout
+```bash
+python3 -m task1_dpo.analyze_results --output outputs/task1_recomputed
+```
 
-| Location | Purpose |
-|---|---|
-| `task1_dpo/`, `common/`, `configs/` | Standalone implementation and exact experimental configuration |
-| `tests/` | Objective, scoring, runtime, evaluation and packaging checks |
-| `docs/task1/` | Current Task 1 documentation |
-| `results/task1/analysis/` | Independently verified tables and audit result |
-| `results/task1/evidence/` | Immutable exported records, executed sources and historical documentation |
-| `results/task1/original_summary/` | Original Colab summary export, retained for comparison |
-| `archive/atml_pa2_task1.py.txt` | Original chronological Colab export; history only, **do not Run All** |
-| `task2_ppo/` through `task5_feedback/` | Unfinished course starter files for subsequent tasks |
+Choose a fresh output directory. See [Task 1 reproduction](docs/task1/REPRODUCE.md) and [Task 2 verification and reproduction](task2/README.md) for further checks.
 
-The four large preference datasets, public model weights, trained adapters, optimizer states and caches are intentionally absent from this Git package. The ten fixed word-limit prompts were tracked in the course starter and are retained unchanged. Generated evaluation answers and score records are included as required evidence. Pinned downloads and their hashes are documented; the standard adapter remains on Drive for Task 4.
+## Organization and provenance
 
-## Manual publication
+- `docs/task1/`, `results/task1/`, and `figures/task1/` contain Task 1 documentation, evidence, and figures.
+- `task2/` contains the complete approved Task 2 publication, including its immutable execution source and original evidence.
+- `archive/course-starter/task2_ppo/` contains the superseded, incomplete Task 2 course starter. It is historical material, not the implementation used for the completed experiments.
+- `archive/task1-publication/` preserves the original Task 1 README and verification script byte for byte. The archived README describes the earlier publication state.
+- The original chronological Task 1 notebook export remains in `archive/atml_pa2_task1.py.txt`; it is history and should not be run wholesale.
+- Model weights, optimizer checkpoints, runtime backups, downloaded datasets, and outer delivery ZIPs remain outside the published repository.
 
-Extract this package and review/copy its **contents** into your repository, preserving your repository's existing Git history. Review the changes, commit and push yourself. Suggested commit message: `Complete Task 1 DPO experiments, evidence audit and reproducibility documentation`.
+The intentional evidence and code-release archives inside `task2/` are required publication files. They are distinct from outer delivery ZIPs used to upload packages.
 
-Do not upload runtime backups or model folders. The supplied `.gitignore` excludes these. The assistant did not access, commit to, or push to your Git repository. This package does not claim that the final whole-assignment report has been submitted.
+See [repository layout and verification changes](docs/REPOSITORY_LAYOUT.md), [Task 1 source attribution](docs/SOURCE_ATTRIBUTION.md), and [Task 2 attribution](task2/README.md#attribution). Repository maintenance does not change model code, hyperparameters, results, or experimental approvals.

@@ -1,0 +1,36 @@
+Verified evaluation: midpoint 200
+Verified evaluation: standard 200
+Verified evaluation: clip_005 200
+Verified evaluation: central_8 200
+Verified evaluation: clip_050 200
+Verified evaluation: kl_000 200
+Verified evaluation: kl_020 200
+{
+  "technical_audit_passed": true,
+  "raw_export_files_verified": 2968,
+  "training_runs": 6,
+  "rollout_updates": 60,
+  "optimizer_steps": 120,
+  "evaluation_records": 1400,
+  "cached_rows": 32,
+  "cached_tokens": 8814,
+  "training_and_eval_ids_disjoint": true,
+  "frozen_source_and_asset_contracts_match": true,
+  "optimizer_hyperparameters_and_fp32_states_verified": true,
+  "all_recorded_optimizer_diagnostics_finite": true,
+  "nonfinite_failure_events": 0,
+  "all_recorded_training_clip_fractions_zero": true,
+  "maximum_sampled_statistic_recomputation_abs_error": 3.5762786865234375e-07,
+  "cached_surrogate_cross_platform_absolute_tolerance": 2e-08,
+  "unique_eval_prompts_truncated_at_256": 35,
+  "task4_standard_adapter_sha256": "0611abe4991b033dda4352b34a72b0f499a50f27536799a13eeee7de56b41bf0",
+  "gpu_used_for_audit": false,
+  "model_inference_rerun": false,
+  "qualitative_approval": "PENDING_USER_APPROVAL",
+  "limits": [
+    "Saved categorical entropy aggregated and checked finite; full logits are not in the export for independent per-token categorical-entropy recalculation.",
+    "Model weights not loaded or inferred again.",
+    "Actual generated token counts differ under the approved equal-allowance interpretation.",
+    "No active training clipping; between-fork differences are not evidence of clipping intervention effects."
+  ]
+}

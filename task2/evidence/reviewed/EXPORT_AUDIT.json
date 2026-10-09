@@ -1,0 +1,16 @@
+{
+  "export_checks_passed": true,
+  "verified_original_files": 14,
+  "conditions": 7,
+  "prompts_per_condition": 200,
+  "qualitative_pair_rows": 1200,
+  "standard_optimizer_steps": 40,
+  "original_export_modified": false,
+  "cached_rows": 32,
+  "cached_tokens": 8814,
+  "course_cache_sha256": "6d9c28c1cc534b60410640f2f23694c227d4d653bf8088e9b1b2d6bf39be8b6d",
+  "presentation_fix": "Separate cache and held-out token counts and aggregation definitions; numerical rewards, objectives and fractions unchanged.",
+  "raw_training_and_per_prompt_metric_audit": "Recorded separately in RECORD_AUDIT.json",
+  "qualitative_approval_record": "See provenance/qualitative_review_approval.json",
+  "scope": "Summary export integrity and presentation corrections; underlying records are audited separately"
+}

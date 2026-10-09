@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-08",
+  "command": [
+    "/Users/shaheerahmadmasood/Documents/Codex/2026-10-03/ta/work/pa2-test-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_task2_*.py",
+    "-v"
+  ],
+  "return_code": 0,
+  "tests_run": 37,
+  "passed": true,
+  "device": "CPU",
+  "course_weights_loaded": false,
+  "gpu_used": false,
+  "experimental_training_executed": false,
+  "scope": "21 objective/setup checks; 6 scalar-head precision checks; 10 continuation, checkpoint and interruption checks using tiny random models",
+  "limitations": [
+    "Full supplied actor/critic/RM weights not loaded locally",
+    "CUDA memory, speed, bitsandbytes loading and real Drive throughput not verified",
+    "Public model and course-asset CPU preparation still requires the user Colab run"
+  ],
+  "versions": {
+    "python": "3.12.10 (v3.12.10:0cc81280367, Apr  8 2025, 08:46:59) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "torch": "2.13.0",
+    "peft": "0.17.1",
+    "transformers": "4.57.1"
+  },
+  "backup_restore_checks": [
+    "Synthetic backed-up project restored with all bytes verified",
+    "Corrupt backed-up project rejected before target creation"
+  ]
+}

@@ -1,0 +1,51 @@
+test_approved_eval_mode_is_enforced (test_task2_continuation.ContinuationTests.test_approved_eval_mode_is_enforced) ... ok
+test_committed_archive_round_trip_republish_and_corruption_detection (test_task2_continuation.ContinuationTests.test_committed_archive_round_trip_republish_and_corruption_detection) ... ok
+test_critic_nonfinite_stops_before_actor_optimizer_step (test_task2_continuation.ContinuationTests.test_critic_nonfinite_stops_before_actor_optimizer_step) ... ok
+test_existing_evidence_is_not_overwritten (test_task2_continuation.ContinuationTests.test_existing_evidence_is_not_overwritten) ... ok
+test_full_runner_recovers_locally_committed_update_without_retraining (test_task2_continuation.ContinuationTests.test_full_runner_recovers_locally_committed_update_without_retraining) ... standard 1/4 | reward 0.7000 | KL -0.0139 | tokens 3 | checkpoint verified
+standard 2/4 | reward 0.7000 | KL -0.0140 | tokens 3 | checkpoint verified
+standard 3/4 | reward 0.7000 | KL -0.0140 | tokens 3 | checkpoint verified
+standard 4/4 | reward 0.7000 | KL -0.0139 | tokens 3 | checkpoint verified
+/Users/shaheerahmadmasood/Documents/Codex/2026-10-03/ta/work/pa2-test-env/lib/python3.12/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+standard 1/4 | reward 0.7000 | KL -0.0139 | tokens 3 | checkpoint verified
+standard 3/4 | reward 0.7000 | KL -0.0140 | tokens 3 | checkpoint verified
+standard 4/4 | reward 0.7000 | KL -0.0139 | tokens 3 | checkpoint verified
+ok
+test_missing_eos_penalty_and_terminal_shaping_are_exact (test_task2_continuation.ContinuationTests.test_missing_eos_penalty_and_terminal_shaping_are_exact) ... ok
+test_resume_rejects_different_contract_and_half_head (test_task2_continuation.ContinuationTests.test_resume_rejects_different_contract_and_half_head) ... ok
+test_two_epochs_preserve_rollout_targets_and_distinguish_reference (test_task2_continuation.ContinuationTests.test_two_epochs_preserve_rollout_targets_and_distinguish_reference) ... ok
+test_update_boundary_resume_matches_uninterrupted_training (test_task2_continuation.ContinuationTests.test_update_boundary_resume_matches_uninterrupted_training) ... ok
+test_zip_traversal_is_rejected_before_extraction (test_task2_continuation.ContinuationTests.test_zip_traversal_is_rejected_before_extraction) ... ok
+test_backward_reaches_head_and_lora_then_adamw_uses_float32_moments (test_task2_critic_precision.CriticPrecisionTests.test_backward_reaches_head_and_lora_then_adamw_uses_float32_moments) ... ok
+test_checkpoint_restore_preserves_float32_head_and_optimizer_exactly (test_task2_critic_precision.CriticPrecisionTests.test_checkpoint_restore_preserves_float32_head_and_optimizer_exactly) ... ok
+test_only_active_head_changes_dtype_and_no_parameter_changes_value (test_task2_critic_precision.CriticPrecisionTests.test_only_active_head_changes_dtype_and_no_parameter_changes_value) ... ok
+test_small_gradient_mechanism_and_float32_correction (test_task2_critic_precision.CriticPrecisionTests.test_small_gradient_mechanism_and_float32_correction) ... ok
+test_unpromoted_scoring_is_rejected (test_task2_critic_precision.CriticPrecisionTests.test_unpromoted_scoring_is_rejected) ... ok
+test_values_match_manual_head_and_causal_state_slice (test_task2_critic_precision.CriticPrecisionTests.test_values_match_manual_head_and_causal_state_slice) ... ok
+test_gae_cannot_bootstrap_through_padding (test_task2_objective.PPOObjectiveTests.test_gae_cannot_bootstrap_through_padding) ... ok
+test_gae_lambda_one_equals_monte_carlo_return (test_task2_objective.PPOObjectiveTests.test_gae_lambda_one_equals_monte_carlo_return) ... ok
+test_gae_matches_hand_calculation (test_task2_objective.PPOObjectiveTests.test_gae_matches_hand_calculation) ... ok
+test_identical_old_and_new_policy_has_ratio_one (test_task2_objective.PPOObjectiveTests.test_identical_old_and_new_policy_has_ratio_one) ... ok
+test_inside_interval_has_unclipped_policy_gradient (test_task2_objective.PPOObjectiveTests.test_inside_interval_has_unclipped_policy_gradient) ... ok
+test_kl_shaping_sign_and_terminal_reward_position (test_task2_objective.PPOObjectiveTests.test_kl_shaping_sign_and_terminal_reward_position) ... ok
+test_masked_population_advantage_normalization (test_task2_objective.PPOObjectiveTests.test_masked_population_advantage_normalization) ... ok
+test_negative_advantage_above_upper_bound_remains_active (test_task2_objective.PPOObjectiveTests.test_negative_advantage_above_upper_bound_remains_active) ... ok
+test_negative_advantage_below_lower_bound (test_task2_objective.PPOObjectiveTests.test_negative_advantage_below_lower_bound) ... ok
+test_padding_does_not_change_loss_diagnostics_or_gradient (test_task2_objective.PPOObjectiveTests.test_padding_does_not_change_loss_diagnostics_or_gradient) ... ok
+test_positive_advantage_above_upper_bound (test_task2_objective.PPOObjectiveTests.test_positive_advantage_above_upper_bound) ... ok
+test_positive_advantage_below_lower_bound_remains_active (test_task2_objective.PPOObjectiveTests.test_positive_advantage_below_lower_bound_remains_active) ... ok
+test_reference_disables_adapter_and_restores_mode_even_on_error (test_task2_objective.PPOObjectiveTests.test_reference_disables_adapter_and_restores_mode_even_on_error) ... ok
+test_response_log_probabilities_have_correct_causal_shift (test_task2_objective.PPOObjectiveTests.test_response_log_probabilities_have_correct_causal_shift) ... ok
+test_response_mask_includes_first_eos_but_excludes_later_padding (test_task2_objective.PPOObjectiveTests.test_response_mask_includes_first_eos_but_excludes_later_padding) ... ok
+test_value_loss_is_masked_mse_without_extra_half_factor (test_task2_objective.PPOObjectiveTests.test_value_loss_is_masked_mse_without_extra_half_factor) ... ok
+test_zero_kl_coefficient_leaves_only_terminal_reward (test_task2_objective.PPOObjectiveTests.test_zero_kl_coefficient_leaves_only_terminal_reward) ... ok
+test_released_config_passes_and_changed_budget_is_rejected (test_task2_objective.SetupTests.test_released_config_passes_and_changed_budget_is_rejected) ... ok
+test_reward_translation_preserves_file_and_only_changes_theta (test_task2_objective.SetupTests.test_reward_translation_preserves_file_and_only_changes_theta) ... ok
+test_reward_translation_rejects_unapproved_rope_type (test_task2_objective.SetupTests.test_reward_translation_rejects_unapproved_rope_type) ... ok
+test_training_schedule_prefix_and_eval_seeds_are_fixed (test_task2_objective.SetupTests.test_training_schedule_prefix_and_eval_seeds_are_fixed) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 1.100s
+
+OK

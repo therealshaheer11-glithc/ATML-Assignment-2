@@ -1,0 +1,16 @@
+{
+  "task2_ppo/checkpoint.py": "0eabed7c1f5cd99255fdf47907c800d96ff52c4b24f75188985a596e83b5eeb9",
+  "task2_ppo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task2_ppo/critic_precision.py": "0d04f8b70af875c10e98257a996a572479d263121521e3e608ffd1d2634e388d",
+  "task2_ppo/runtime.py": "dbbdc9a5f24bcf5988cdbfe21cf2d817194d19dbad985f68b05b53fedb737f0d",
+  "task2_ppo/continuation.py": "b8ce8b43ebf5bf7ab0384d4637ef1983ef6e047914c023c806a44b3c593e2520",
+  "task2_ppo/training_core.py": "1e2c13ee843b44dfb298881160f158aacc939b0b9235b171f1451f5f2ad47b91",
+  "task2_ppo/storage.py": "fed6289acaf529752122c46db4b404f1c610f8d0c24326ef7fe4d305aa19b0e0",
+  "tests/test_task2_continuation.py": "62c7ef630496819fddf20ae7069414601bf95a7df455535c6bc62e0842a1fa47",
+  "tests/test_task2_critic_precision.py": "511f9553bb58ac3b3db053255e2f15014a53fa7f0ed212c602d1f6ed1082e4d3",
+  "scripts/task2_cpu_prepare.py": "442651ef902c32d2e887458d18918c10b57894ccbbdbf2feae603ea0755dc429",
+  "docs/task2_precision_approval.json": "6505f0f312d9412d41ff15b6a9e24e9ec051ee491b7cfe891cf583341d66c5f5",
+  "docs/task2_precision_approval.md": "9b13ca9eab91ab8e85f3599119ea94c05594c9bdd339f3a34020c6c9b058cbcf",
+  "docs/task2_precision_diagnostic.json": "aadc7866903ee6a53ce794bbde3f2c07f88634574c63f80cc2fdd60a034abe0e",
+  "docs/task2_chunk2_README.md": "832d575482fa502ca721ac604b234753d84cac8865fd58999940f3d2739d6b3a"
+}

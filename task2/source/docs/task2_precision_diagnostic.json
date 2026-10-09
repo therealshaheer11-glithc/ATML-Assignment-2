@@ -1,0 +1,39 @@
+{
+  "test": "CPU tiny-model diagnostic; not course weights or experimental output",
+  "seed": 6304,
+  "head_dtype": "torch.float16",
+  "all_gradients_finite_before_step": true,
+  "head_gradient_abs_min": 0.005847930908203125,
+  "head_gradient_abs_max": 0.324462890625,
+  "half_1e_minus_8": 0.0,
+  "half_square_of_1e_minus_5": 0.0,
+  "nonfinite_parameters_after_step": [],
+  "head_optimizer_state_dtypes": {
+    "step": "torch.float32",
+    "exp_avg": "torch.float16",
+    "exp_avg_sq": "torch.float16"
+  },
+  "controlled_adamw_precision_examples": [
+    {
+      "parameter_dtype": "torch.float16",
+      "starting_parameter": 0.1,
+      "gradient": 1e-05,
+      "learning_rate": 0.0003,
+      "optimizer_epsilon": 1e-08,
+      "parameter_after_step": "-inf",
+      "finite_after_step": false,
+      "second_moment_after_step": "0.0"
+    },
+    {
+      "parameter_dtype": "torch.float32",
+      "starting_parameter": 0.1,
+      "gradient": 1e-05,
+      "learning_rate": 0.0003,
+      "optimizer_epsilon": 1e-08,
+      "parameter_after_step": "0.09970030188560486",
+      "finite_after_step": true,
+      "second_moment_after_step": "9.9999998245167e-14"
+    }
+  ],
+  "limitation": "The seeded tiny critic step above remained finite. The controlled small-gradient AdamW example demonstrates the precision failure mechanism; this is not an observed failure of the full course checkpoint."
+}

@@ -1,0 +1,22 @@
+test_keyword_contract_invocation_preserves_every_field (__main__.ResumeJSONTests.test_keyword_contract_invocation_preserves_every_field) ... ok
+test_nonfinite_metadata_is_rejected (__main__.ResumeJSONTests.test_nonfinite_metadata_is_rejected) ... ok
+test_only_pipeline_subprocess_gets_compatibility_entry (__main__.ResumeJSONTests.test_only_pipeline_subprocess_gets_compatibility_entry) ... ok
+test_original_archive_resumes_without_generation_or_record_changes (__main__.ResumeJSONTests.test_original_archive_resumes_without_generation_or_record_changes) ... Evaluation midpoint: 1/1 prompts; mean reward 0.7000
+Evaluation midpoint: 1/1 prompts; mean reward 0.7000
+ok
+test_original_source_guard_accepts_exact_hash_and_rejects_change (__main__.ResumeJSONTests.test_original_source_guard_accepts_exact_hash_and_rejects_change) ... ok
+test_real_setting_changes_still_stop_before_original_function (__main__.ResumeJSONTests.test_real_setting_changes_still_stop_before_original_function) ... REAL EVALUATION CONTRACT DIFFERENCES:
+$.generation.max_response_length: saved=768, current=512
+REAL EVALUATION CONTRACT DIFFERENCES:
+$.adapter.weights: saved='fixed', current='changed'
+REAL EVALUATION CONTRACT DIFFERENCES:
+$.job.source.commit: saved='fixed', current='changed'
+REAL EVALUATION CONTRACT DIFFERENCES:
+$.reward_loading.effective_config.rope_theta: saved=1000000.0, current=10000.0
+ok
+test_transformers_integer_label_key_reproduces_and_is_normalized (__main__.ResumeJSONTests.test_transformers_integer_label_key_reproduces_and_is_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+OK

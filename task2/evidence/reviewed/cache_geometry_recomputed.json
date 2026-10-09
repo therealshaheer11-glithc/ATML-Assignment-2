@@ -1,0 +1,45 @@
+{
+  "rows": 32,
+  "tokens": 8814,
+  "beta_kl": 0.1,
+  "advantage_normalization": "Once per cached response/rollout; same fixed advantages for every epsilon",
+  "aggregation": "Masked token mean across all cached responses",
+  "candidate": "standard final after exactly 20 updates",
+  "results": [
+    {
+      "epsilon": 0.05,
+      "valid_tokens": 8814,
+      "clipped_surrogate": -0.005219094033269635,
+      "policy_loss": 0.005219094033269635,
+      "unclipped_surrogate": 0.0007138923199398057,
+      "affected_token_count": 944,
+      "affected_token_fraction": 0.10710233719083277,
+      "active_clipped_branch_count": 469,
+      "active_clipped_branch_fraction": 0.05321080099841162
+    },
+    {
+      "epsilon": 0.2,
+      "valid_tokens": 8814,
+      "clipped_surrogate": -0.003805204433580022,
+      "policy_loss": 0.003805204433580022,
+      "unclipped_surrogate": 0.0007138923199398057,
+      "affected_token_count": 74,
+      "affected_token_fraction": 0.008395734059450873,
+      "active_clipped_branch_count": 41,
+      "active_clipped_branch_fraction": 0.004651690492398457
+    },
+    {
+      "epsilon": 0.5,
+      "valid_tokens": 8814,
+      "clipped_surrogate": -0.003128268466317619,
+      "policy_loss": 0.003128268466317619,
+      "unclipped_surrogate": 0.0007138923199398057,
+      "affected_token_count": 49,
+      "affected_token_fraction": 0.005559337417744497,
+      "active_clipped_branch_count": 29,
+      "active_clipped_branch_fraction": 0.0032902201043793966
+    }
+  ],
+  "training_on_cache": false,
+  "reconstruction_limit": "Recorded token counts and decoded text verified. Original token IDs are absent, so text/token-count reconstruction alone cannot prove uniqueness of the original tokenization."
+}

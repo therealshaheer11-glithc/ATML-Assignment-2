@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "tests_run": 50,
+  "return_code": 0,
+  "tests_log_sha256": "184e7a7b7f66bec05451208b0df53597de5a494d8d259f6fd20f0a6bf764a370",
+  "device": "CPU",
+  "course_model_weights_loaded": false,
+  "gpu_used": false,
+  "orchestration_fixture": {
+    "independent_runs": 6,
+    "rollout_updates": 60,
+    "evaluation_conditions": 7,
+    "prompts_per_condition": 200,
+    "fixed_cached_rows": 32,
+    "real_gpu_inference": false
+  },
+  "real_cache_tokenizer_check": {
+    "passed": true,
+    "rows": 32,
+    "evidence": "CACHE_RECONSTRUCTION_CPU.json",
+    "original_token_ids_available": false
+  },
+  "generation_defaults_check": {
+    "passed": true,
+    "evidence": "GENERATION_DEFAULTS_CPU.json"
+  },
+  "plot_layout_qa": {
+    "passed": true,
+    "data": "Synthetic QA only; no synthetic plot is included as experiment evidence"
+  },
+  "notebooks_syntax_checked": true,
+  "limitations": [
+    "Full course GPU model loading, training, evaluation, wall-clock and VRAM remain unmeasured locally.",
+    "Qualitative agreement/disagreement evidence requires reviewing real generated responses."
+  ]
+}

@@ -1,0 +1,7 @@
+condition,updates,optimizer_steps,allocated_response_tokens,actual_response_tokens,max_recorded_clip_fraction,max_recorded_abs_ratio_change,nonfinite_failure_events,nonfinite_steps,definition,actor_std_preclip,actor_max_preclip,critic_std_preclip,critic_max_preclip
+standard,20,40,10240,6137,0.0,0.04152071475982666,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.4763126669726631,1.8365631103515625,74.29273915484339,403.8246154785156
+clip_005,8,16,4096,2113,0.0,0.029178142547607422,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.5074987141731823,1.8169927597045898,96.03254049358915,403.8778381347656
+central_8,8,16,4096,2113,0.0,0.03205764293670654,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.5205764047499679,1.8585673570632935,96.13636773584575,404.2791748046875
+clip_050,8,16,4096,2178,0.0,0.029022932052612305,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.5085107872733314,1.806036353111267,98.36180375262714,410.19927978515625
+kl_000,8,16,4096,2189,0.0,0.029469609260559082,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.5052917180590242,1.8020297288894653,98.86074784717549,411.4221496582031
+kl_020,8,16,4096,2178,0.0,0.02811753749847412,0,0,population std and max across pre-clipping optimizer-step gradient norms,0.5091590363509756,1.8089137077331543,98.35722303747897,410.10125732421875

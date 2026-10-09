@@ -1,0 +1,16 @@
+{
+  "condition": "standard",
+  "updates": 20,
+  "policy_files_sha256": {
+    "policy/README.md": "2b6f6f6d995013e1eb6a59c2b32fdbc88c1c39485095f7497889efbf96a3e399",
+    "policy/adapter_config.json": "b7c4427b92d1514135b9f3530e3fc9134a1f9f460f980c8798a22c7d5fd0d4ae",
+    "policy/adapter_model.safetensors": "0611abe4991b033dda4352b34a72b0f499a50f27536799a13eeee7de56b41bf0"
+  },
+  "drive_archive": "ATML-Assignment-2/task2/experiment_v1/training/standard/final.zip",
+  "archive_receipt": {
+    "archive": "final.zip",
+    "sha256": "4a285d753405681cb879013357504e66842a2b5590bdf5c4adbb69eec125ce41",
+    "bytes": 10725066
+  },
+  "selection": "Fixed standard endpoint; no held-out selection."
+}

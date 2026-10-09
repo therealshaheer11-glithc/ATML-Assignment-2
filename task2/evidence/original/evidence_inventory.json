@@ -1,0 +1,12 @@
+{
+  "quantitative_complete": true,
+  "qualitative_complete": false,
+  "reviewed_agreement_examples": 0,
+  "reviewed_disagreement_examples": 0,
+  "remaining": [
+    "Human-supported reward/quality agreement and disagreement examples"
+  ],
+  "central_8_reused_between_sweeps": true,
+  "held_out_selection": false,
+  "safety_evidence": "Task 4 remains separate; do not infer safety from learned reward alone"
+}

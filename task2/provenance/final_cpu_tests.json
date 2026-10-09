@@ -1,0 +1,15 @@
+{
+  "core_tests": 50,
+  "resume_tests": 7,
+  "passed": true,
+  "gpu_used": false,
+  "course_weights_loaded": false,
+  "source_restored_from_course_bundle": true,
+  "course_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+  "source_manifest_sha256": "3d72245c19db58883ac7009876ed0297a793c8c251e8da530f21db370568ef72",
+  "test_logs": [
+    "core_tests.log",
+    "portable_resume_tests.log"
+  ],
+  "portable_test_change": "Only source/test import paths changed. Original tests retained in provenance/resume-fix."
+}

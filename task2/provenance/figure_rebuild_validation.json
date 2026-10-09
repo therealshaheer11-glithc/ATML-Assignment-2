@@ -1,0 +1,24 @@
+{
+  "all_figures_rebuilt_from_saved_json": true,
+  "pixel_comparison": {
+    "standard_trajectories.png": {
+      "dimensions_match": true,
+      "rgb_pixels_identical": true,
+      "original_sha256": "bc10a3e41558d29f2ed4379349feaafe27772dc8bbe66f55fc3bae30e014642e",
+      "rebuilt_sha256": "a4a626dc9727291b8b1997c5458ba686f6427f720d70178c8f7a09e9e3893d5e"
+    },
+    "kl_fork_trajectories.png": {
+      "dimensions_match": true,
+      "rgb_pixels_identical": true,
+      "original_sha256": "22874109ec38be2f0b4d56082fe307dee7317bc201cb4b6531560e77478f5066",
+      "rebuilt_sha256": "58643e3d1f50c266d031bc404fc6ba5159b665a28fa48c520998f53686085d5f"
+    },
+    "clipping_study.png": {
+      "dimensions_match": true,
+      "rgb_pixels_identical": true,
+      "original_sha256": "8df4e7c4b79625d2d2c22a10efd723cb2eeb998abf947516200568f612dc2e0b",
+      "rebuilt_sha256": "0b8ea8612ff99a8c2f4b6480ed3eabc0161784c35438f8e1e58215c6978c2507"
+    }
+  },
+  "gpu_used": false
+}

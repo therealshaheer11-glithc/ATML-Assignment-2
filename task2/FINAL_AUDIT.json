@@ -1,0 +1,20 @@
+{
+  "original_results_archive": {
+    "filename": "task2_results_20261009T092123Z_99a375a0.zip",
+    "sha256": "65aca40d2770631d18ba479da56ce64404f3019143bb73183030b1c59a95a5a0"
+  },
+  "original_audit_archive": {
+    "filename": "task2_audit_records_20261009T094501Z_3325a369.zip",
+    "sha256": "19683f9d2990ce97de45e36d6f00f8cd8f4b5feb2eac5debf8384fdea1f7d908"
+  },
+  "publication_record_archive_sha256": "0c6498f1023e6422f1e78b53708cc94e90fc9871e885d691ab607a9ad3d23c71",
+  "technical_audit": "PASSED",
+  "qualitative_examples": "APPROVED",
+  "gpu_rerun_required": false,
+  "manual_budget_interpretation": "User-approved equal allowance, not equal realized token count; documented as a limitation.",
+  "qualitative_agreement_examples": 1,
+  "qualitative_disagreement_examples": 1,
+  "outstanding_approvals": [],
+  "package_status": "FINAL_TASK2_CODE_AND_EVIDENCE",
+  "scope": "Task 2 code and evidence under the documented approved protocol; does not claim completion of the multi-task report or remove the documented interpretation limits."
+}

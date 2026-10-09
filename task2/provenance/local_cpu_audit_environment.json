@@ -1,0 +1,15 @@
+{
+  "python": "3.12.10",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "gpu_used": false,
+  "packages": {
+    "torch": "2.13.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "peft": "0.17.1",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "PyYAML": "6.0.3"
+  }
+}

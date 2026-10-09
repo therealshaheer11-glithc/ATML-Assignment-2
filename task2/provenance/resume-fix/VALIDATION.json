@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "tests_run": 7,
+  "tests_log_sha256": "1ba5f0d99ffa298ec9150d1e39338b950b199d8f89eb0c6cb0b4cc6738fa76f3",
+  "pinned_reward_config_sha256": "d04c63bcaf27f49f7fea8c3c1287ba4078056f3b3ed35d2635c6caef7dbad9fb",
+  "reproduced": {
+    "live_id2label_key_type": "int",
+    "saved_id2label_key_type": "str",
+    "original_equality": false,
+    "JSON_normalized_equality": true
+  },
+  "original_archive_resume_verified": true,
+  "original_archive_bytes_preserved": true,
+  "no_repeat_generation_in_regression": true,
+  "real_setting_changes_still_rejected": [
+    "response cap",
+    "adapter hash",
+    "source identity",
+    "reward rope_theta"
+  ],
+  "sealed_chunk_1_2_3_sources_unchanged": true,
+  "GPU_or_course_model_weights_loaded_locally": false,
+  "original_session_minutes": 120,
+  "original_automatic_disconnect": true,
+  "replacement_notebook_sha256": "c1c9ea44657a8213cdb0113f2de5be611c828b677f913edd938ff6d4cb13d296",
+  "compatibility_module_sha256": "ffd1841563573eb4c2d3209f40394536512087949a34d567cfcd07e87a0e1b59",
+  "source_guard": "ddad6b34bd279026fe486e4e2ecba62dafcd47e5eaa893fc258b6efa5ebe9700",
+  "limitations": [
+    "CPU reproduction establishes this format-comparison defect. The users actual saved contract files were not directly read locally.",
+    "Actual GPU resume must still verify that no other contract fields differ. Such differences are reported and stop safely."
+  ]
+}

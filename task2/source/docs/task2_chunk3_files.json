@@ -1,0 +1,20 @@
+{
+  "task2_ppo/cache_geometry.py": "ea983d4722e3f643294d6e15c5819ac343f2af856099d616b2736b513680dce1",
+  "task2_ppo/aggregate_cpu.py": "5076f7f5481bf076d9fdc44263485a04e531f4bd40f7e213b5505b49837e4768",
+  "task2_ppo/generation_audit.py": "9930f93e8ac530fc510fc32f17d1d05d9d7ddc0f7436749e7f4a91ea20f2cae7",
+  "task2_ppo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task2_ppo/session_budget.py": "59aa1c760bc6933ea45a83d979cbe05774658093c441dd2f8bd767b252fc397a",
+  "task2_ppo/pipeline.py": "21050d407c58b0cf74210b1b2ac3dcb4b64496507d3c2640f2f25190a0502b3c",
+  "task2_ppo/storage.py": "fed6289acaf529752122c46db4b404f1c610f8d0c24326ef7fe4d305aa19b0e0",
+  "task2_ppo/evaluation_complete.py": "ddad6b34bd279026fe486e4e2ecba62dafcd47e5eaa893fc258b6efa5ebe9700",
+  "tests/test_task2_complete.py": "db31d2b5a3f417b6c5584f17908840a2e01d7b9115f28f086645f77c6cdc341e",
+  "scripts/task2_gpu_session.py": "8cbd3dda8c18c7545acc4ccad38469acbb83de2c0af2e250aab872a1f907b4c2",
+  "scripts/task2_finish.py": "53ea6678463cfaa03a123d8309020c735e5b0dde9c866227f532389f43ad0d1f",
+  "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scripts/task2_stage.py": "5bfe082b05195767f06ac9de3b98aa552379f9f84260823192e5ada0cbe697ba",
+  "scripts/task2_verify_cache_cpu.py": "0a7006a77c0b017a6a8498ab9ecfbeb9754d0321afa8407daf5780d882e319bd",
+  "docs/task2_resource_approval.json": "ea8952d29b46090bd7b93ca33f6b2b1402921cab69ad4c49366334e561769057",
+  "docs/task2_chunk3_README.md": "149b28d9a862e8d92fbcf4cd25ec84267d23560c332b71b39ce12fae41dc12ea",
+  "docs/task2_generation_defaults_local_check.json": "dfef76ed7fa7fe27b5fc66359eb070baafc059315d18951f6e26d75ba4fb28e0",
+  "docs/task2_cache_reconstruction_local_check.json": "1fbdf6a8ca6b74e35244e5f8126ed6b4b888ebb52cd52ed8182ee5b5c7d3cd24"
+}
