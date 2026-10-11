@@ -1,0 +1,16 @@
+{
+  "task4_policy": "GRPO standard final after 20 updates",
+  "drive_archive": "MyDrive/ATML-Assignment-2/task3/experiment_v1/training/standard/final.zip",
+  "adapter_directory_inside_archive": "policy/",
+  "recorded_endpoint_identity": {
+    "summary.json": "12a927c1753bd1538a569b590359aef187584b65eeef43e3af1e579a989cd72b",
+    "policy/adapter_config.json": "b7c4427b92d1514135b9f3530e3fc9134a1f9f460f980c8798a22c7d5fd0d4ae",
+    "policy/adapter_model.safetensors": "4dba6d379d0e3b0221927446db4852c28630d25edd6730a34d0ee02583cbe21a",
+    "policy/README.md": "ae6ffa488660de6b31d2686f79f06e5da073cca02d1954e2c8fb4841add1ac97"
+  },
+  "identity_source": "Original standard evaluation contract; all 200 records agree.",
+  "large_adapter_bytes_independently_checked_locally": false,
+  "loading_requirement": "Verify the Drive final.zip against its saved SHA-256 receipt and verify the policy files against these recorded identities before Task 4 loading.",
+  "checkpoint_selected_using_task4": false,
+  "normalization_forks_are_task4_candidates": false
+}

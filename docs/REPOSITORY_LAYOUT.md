@@ -1,28 +1,15 @@
-# Repository maintenance — 9 October 2026
+# Repository maintenance — current through 11 October 2026
 
-The user explicitly approved the proposed cleanup with “sure”: archive the six old Task 2 starter files, replace the root README, preserve the original Task 1 publication documents and checksums, adapt the verifier for moved files, restore the previously approved Task 1 figures, and publish the audited Task 2 package including its required archives.
+Task 3 publication retires the six old root `task3_grpo/` starter files into `archive/course-starter/task3_grpo/`, byte for byte, and publishes the completed implementation under `task3/source/`. No root Task 1 helpers/configurations, Task 2 files, Task 4/5 starters, historical package manifests, recorded experiments or scientific settings are changed.
 
-## Preserved original files
+The prior four maintenance files and their manifest are preserved under `archive/repository-maintenance-20261009/`. The active Task 1 verifier adds the six explicit Task 3 path translations to its existing translations. It still verifies the original 988-file manifest unchanged. The combined verifier additionally verifies the original Task 1 figures, original Task 2 package, new Task 3 package/evidence and current maintenance files.
 
-The root `PACKAGE_SHA256.json` remains byte for byte unchanged. Its SHA-256 is `1ea18dbe564c95ebb326b062305279c191344036730a896f78b87b5178dd63ca`.
+`python3 scripts/verify_repository.py --stage` stages only the full declared repository inventory and the explicit archived-starter removals. It includes the small required code-release ZIP even though outer delivery ZIPs are ignored. `--staged` verifies exact index membership and byte equality to the checked working files. Neither command commits or pushes. Unexpected tracked files stop the stage operation; unrelated local files are not published.
 
-| Original location | Current location |
-|---|---|
-| `README.md` | `archive/task1-publication/README.md` |
-| `scripts/verify_task1_package.py` | `archive/task1-publication/verify_task1_package.py` |
-| The six files under `task2_ppo/` | Corresponding paths under `archive/course-starter/task2_ppo/` |
-| All other original Task 1 package files | Unchanged |
+Use the read-only default verification after checkout. The original small export and executed source are immutable. Approved qualitative review and publication analysis are separate additions; historical pending labels are export-time history. The Task 3 manifest excludes superseded local review drafts and the historical resealing builder. The original Colab ZIP still preserves its original contents exactly.
 
-The active Task 1 verifier checks the same 988 original bytes against the original manifest, using only these explicit path translations. Its success message covers those historical files. The active combined verifier additionally checks the current README and maintenance scripts, the 11 files listed in the original Task 1 figures manifest, and the 133 files listed in the original Task 2 manifest.
+This maintenance resolves the duplicate active Task 3 starter/import path and strict combined-verifier inventory conflicts. It does not auto-merge unknown remote changes. The delivery installer requires the reviewed baseline commit `cddc252d1116de1b26d48823ccfb95dae83b4857` and exact clean baseline bytes; refresh origin/main before application. If main advances or local files conflict, stop for a targeted review rather than resetting or overwriting them.
 
-The archived verification script is a source snapshot, not a runnable entry point from its new directory. Use `python3 scripts/verify_repository.py` from the repository root.
+## Prior maintenance record (9 October)
 
-## Added publication material
-
-The separate, previously approved Task 1 figures package is copied unchanged, including its own manifest. The approved final Task 2 package is preserved unchanged. The completed PPO implementation is `task2/source/task2_ppo/`; the root starter path has been retired.
-
-The combined verifier's `--stage` option stages exactly the expected publication files and the approved removals from their old paths. It explicitly includes required ignored Task 2 archives, and rejects unrelated tracked files. The `--staged` option checks that the index contains exactly that inventory and matches the verified working files. Neither option commits or pushes. Outer upload ZIPs and local runtime files are excluded from this expected inventory.
-
-The maintenance hash manifest checks the four current maintenance files. Like any repository checksum list, it detects accidental changes relative to its recorded values; it is not an external authenticity signature.
-
-No training, inference, optimizer settings, model code, checkpoint selection, recorded observations, or original evidence were changed by this maintenance. Historical documents retain the status they recorded at their original publication time. The root README is the current navigation page.
+The complete prior record is preserved at [archive/repository-maintenance-20261009/docs/REPOSITORY_LAYOUT.md](../archive/repository-maintenance-20261009/docs/REPOSITORY_LAYOUT.md). Its relative links describe the older publication layout. The root README is the current navigation page.

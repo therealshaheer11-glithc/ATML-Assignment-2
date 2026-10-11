@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-10",
+  "user_repository": "https://github.com/therealshaheer11-glithc/ATML-Assignment-2",
+  "user_commit": "cddc252d1116de1b26d48823ccfb95dae83b4857",
+  "course_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "execution_environment_user_selected": "Google Colab",
+  "status": "review only; approvals pending",
+  "source_comparisons": {
+    "task3_grpo/grpo.py": {
+      "sha256": "a182518c881064d2e8d878d2d7f284076957e53dd4b65c25292a5f7b3c25b79f",
+      "user_equals_course": true
+    },
+    "configs/grpo.yaml": {
+      "sha256": "ced597186657175f2b43ffb95b87432b526378e625710ac1d4130ff161c7494a",
+      "user_equals_course": true
+    },
+    "common/metrics.py": {
+      "sha256": "29fe2bd56bc68dcaf55b7e291ffdeff2b61260cf0ead227be259f48531203fc1",
+      "user_equals_course": true
+    },
+    "common/generation.py": {
+      "sha256": "ad7ed6ac961adc1ab754e067e0613b8ba924ac528274e2e7b33120ebc6b9040c",
+      "user_equals_course": true
+    }
+  },
+  "limited_asset_integrity_checks": {
+    "cached/grpo_k_cache.jsonl": {
+      "sha256": "d43024a41301a0b1de63d9bce3f484f8259263dd6495253dd52fecaf73fbbf9c",
+      "manifest_sha256": "d43024a41301a0b1de63d9bce3f484f8259263dd6495253dd52fecaf73fbbf9c",
+      "matches": true
+    },
+    "checkpoints/grpo_midpoint_metadata.json": {
+      "sha256": "709487f3b77b8283324a7f47506d9f25e3b1c751a343b482a41930ac09c5c067",
+      "manifest_sha256": "709487f3b77b8283324a7f47506d9f25e3b1c751a343b482a41930ac09c5c067",
+      "matches": true
+    },
+    "checkpoints/grpo_midpoint_policy/adapter_config.json": {
+      "sha256": "b7c4427b92d1514135b9f3530e3fc9134a1f9f460f980c8798a22c7d5fd0d4ae",
+      "manifest_sha256": "b7c4427b92d1514135b9f3530e3fc9134a1f9f460f980c8798a22c7d5fd0d4ae",
+      "matches": true
+    },
+    "data/rl_prompt_pool_train.jsonl": {
+      "sha256": "633d500194260bbba777049f82d7c179410998d36eba2259d6e47440661cbb69",
+      "manifest_sha256": "633d500194260bbba777049f82d7c179410998d36eba2259d6e47440661cbb69",
+      "matches": true
+    },
+    "data/rl_prompt_pool_eval.jsonl": {
+      "sha256": "37051939db20699dff7ec9110599cdb3854890ad9ce700d310715a0784b32a83",
+      "manifest_sha256": "37051939db20699dff7ec9110599cdb3854890ad9ce700d310715a0784b32a83",
+      "matches": true
+    },
+    "manifests/sha256.json": {
+      "sha256": "68fe972715831e0a657878979d41b7c34102ab9e2e5bfe2bd50bb8bb979cd285",
+      "manifest_sha256": "a83968832666e5d460f44a5a8e40ac206f7c6fe8575a23e7c9f0df98d8a453ef",
+      "matches": false
+    }
+  },
+  "cache_schema": {
+    "rows": 192,
+    "prompts": 24,
+    "unique_source_generation_pairs": 192,
+    "generation_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "keys": [
+      "clipped_at_max",
+      "completion",
+      "completion_tokens",
+      "generation_index",
+      "prompt_id",
+      "reward",
+      "source_index",
+      "terminated_with_eos"
+    ],
+    "note": "No K-condition metrics calculated."
+  },
+  "unmodified_objective_reproduction": {
+    "starter_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+    "torch_version": "2.13.0",
+    "kind": "read-only reproduction of released objective",
+    "case_constant_groups": {
+      "rewards": [
+        1.0,
+        1.0,
+        10.0,
+        10.0
+      ],
+      "group_ids": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "released_advantages": [
+        -1.0,
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "mathematical_expected": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "case_cross_prompt_dependence": {
+      "rewards": [
+        0.0,
+        2.0,
+        100.0,
+        102.0
+      ],
+      "first_group_alone": [
+        -1.0,
+        1.0
+      ],
+      "first_group_in_batch": [
+        -1.0197961330413818,
+        -0.9798040986061096
+      ]
+    },
+    "note": "No corrected implementation, model loading, or training performed."
+  },
+  "limits": [
+    "No corrected objective implementation yet.",
+    "No model weights loaded or downloaded.",
+    "No policy training or model evaluation.",
+    "Full course installation validation not run.",
+    "Public model config compatibility and actual Colab environment remain to be validated.",
+    "Course checksum manifest self-entry mismatch preserved unchanged."
+  ]
+}

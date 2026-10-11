@@ -1,0 +1,229 @@
+{
+  "status": "USER_APPROVED",
+  "provenance": "Assistant-proposed criterion scores discussed sequentially and subsequently approved by the user.",
+  "input_archive_sha256": "4ee4ad4b317c308be910b1dc5d4d3f54751f58a5fa12bf217bcd5ba23572267d",
+  "rubric": {
+    "maximum_total": 6,
+    "criteria_order": [
+      "Answers the question",
+      "Supported by supplied text (technical correctness for the C question)",
+      "Clear and focused"
+    ],
+    "points_per_criterion": [
+      0,
+      1,
+      2
+    ],
+    "original_rubric_explicitly_approved": true,
+    "C_correctness_adaptation_explicitly_approved": true
+  },
+  "independent_human_ratings_created": false,
+  "final_user_approval_received": true,
+  "review_method": "Full requests and exact outputs shown before per-answer scoring; automated scores omitted during the scoring exchange. Review used previously disclosed conditions and assistant interpretations; assisted and unblinded.",
+  "selection_limit": "Five unique prompts selected by frozen extreme reward/length differences; illustrative qualitative evidence, not representative aggregate quality.",
+  "context_limit": "Input truncation affects four of the five pairs; evaluate against the full original requests while preserving this limitation.",
+  "examples": [
+    {
+      "example_number": 1,
+      "title": "Poem/video",
+      "prompt_id": "4e4da235589d4153d6b9614f7d069f9b986257fcb10be059f1d4366a218ea183",
+      "selection_rules": [
+        "largest_absolute_reward_difference"
+      ],
+      "second_criterion": "Supported by supplied text",
+      "answers": {
+        "A": {
+          "condition": "canonical_8",
+          "criterion_scores": [
+            1,
+            0,
+            1
+          ],
+          "total": 2,
+          "reasons": [
+            "Partly discusses emotional delivery but misses historical footage.",
+            "Adds unsupported title, performance details and personal commentary.",
+            "Readable sentences with repetition, shifts of voice and an unfinished ending."
+          ]
+        },
+        "B": {
+          "condition": "dr_grpo_8",
+          "criterion_scores": [
+            0,
+            0,
+            1
+          ],
+          "total": 1,
+          "reasons": [
+            "Mostly biography/publication history rather than the video question.",
+            "Biographical events and publication details are unsupported by the supplied passage.",
+            "Readable sentences, but distracting and unfinished."
+          ]
+        }
+      }
+    },
+    {
+      "example_number": 2,
+      "title": "C static keyword",
+      "prompt_id": "51223958b651c1f84f3241122f66cdda11207f754b2f7feacc6fec85a3463423",
+      "selection_rules": [
+        "largest_absolute_reward_difference"
+      ],
+      "second_criterion": "Technical correctness",
+      "answers": {
+        "A": {
+          "condition": "canonical_8",
+          "criterion_scores": [
+            2,
+            1,
+            1
+          ],
+          "total": 4,
+          "reasons": [
+            "Directly addresses static, compilation and linking.",
+            "Correct basic storage/linkage ideas mixed with significant scope and access errors.",
+            "Structured but repetitive and unfinished."
+          ]
+        },
+        "B": {
+          "condition": "dr_grpo_8",
+          "criterion_scores": [
+            2,
+            1,
+            1
+          ],
+          "total": 4,
+          "reasons": [
+            "Directly addresses static, compilation and linking.",
+            "Mixes correct basic ideas with scope/linkage errors, incorrect __func__/__LINE__ claims and a nonstandard nested-function example.",
+            "Readable structure, but an unfinished and unusable code example."
+          ]
+        }
+      }
+    },
+    {
+      "example_number": 3,
+      "title": "Polish sentiment",
+      "prompt_id": "c4053dc7fb2ba3bfe219c5302d384c6b714278b856b16dbe7868741ff25df843",
+      "selection_rules": [
+        "largest_absolute_reward_difference",
+        "largest_absolute_length_difference"
+      ],
+      "second_criterion": "Supported by supplied text",
+      "answers": {
+        "A": {
+          "condition": "canonical_8",
+          "criterion_scores": [
+            1,
+            0,
+            0
+          ],
+          "total": 1,
+          "reasons": [
+            "Attempts classification but repeats/changes the demonstration instead of returning one word.",
+            "Final Yes conflicts with the negative target review.",
+            "Conflicting No/Yes labels and substantial extraneous text."
+          ]
+        },
+        "B": {
+          "condition": "dr_grpo_8",
+          "criterion_scores": [
+            1,
+            1,
+            1
+          ],
+          "total": 3,
+          "reasons": [
+            "Provides a label but violates the required one-word output format.",
+            "No fits the negative target review, with unsupported added complaints.",
+            "Consistent No labels but unnecessary surrounding text."
+          ]
+        }
+      }
+    },
+    {
+      "example_number": 4,
+      "title": "MidJourney instructions",
+      "prompt_id": "03d68fc53b5c3ee9cd4d9437e868107d87a5e4e66cfe9234cf249c4c1347dffd",
+      "selection_rules": [
+        "largest_absolute_length_difference"
+      ],
+      "second_criterion": "Supported by supplied text",
+      "answers": {
+        "A": {
+          "condition": "canonical_8",
+          "criterion_scores": [
+            1,
+            0,
+            1
+          ],
+          "total": 2,
+          "reasons": [
+            "Related image-prompt material but generates before a concept is supplied.",
+            "Invents a concept and changes field meanings.",
+            "Understandable but mixes instructions and an unsolicited example with incorrect formatting."
+          ]
+        },
+        "B": {
+          "condition": "dr_grpo_8",
+          "criterion_scores": [
+            1,
+            0,
+            1
+          ],
+          "total": 2,
+          "reasons": [
+            "Related image-prompt material but rewrites instructions instead of requesting the concept.",
+            "Changes atmosphere/lighting fields to actions/objects.",
+            "Readable but begins mid-sentence and supplies unnecessary instructions."
+          ]
+        }
+      }
+    },
+    {
+      "example_number": 5,
+      "title": "SafeSpace passage",
+      "prompt_id": "23bd8f99e8359f0052e16c65689eae80cb20bf937ea6ca5794d36d29734a560b",
+      "selection_rules": [
+        "largest_absolute_length_difference"
+      ],
+      "second_criterion": "Supported by supplied text",
+      "answers": {
+        "A": {
+          "condition": "canonical_8",
+          "criterion_scores": [
+            1,
+            0,
+            1
+          ],
+          "total": 2,
+          "reasons": [
+            "Discusses relaxation but omits the stated compassionate-mind mechanism.",
+            "Adds unsupported institutional attribution, personalization, simulation and clinical-result claims.",
+            "Readable but repetitive, promotional and unfinished."
+          ]
+        },
+        "B": {
+          "condition": "dr_grpo_8",
+          "criterion_scores": [
+            1,
+            0,
+            1
+          ],
+          "total": 2,
+          "reasons": [
+            "Discusses relaxation but omits the stated compassionate-mind mechanism and collaborative design.",
+            "Adds unsupported personalization and treatment-simulation claims.",
+            "Readable but begins mid-sentence, drifts into event promotion and ends with an unrelated device instruction."
+          ]
+        }
+      }
+    }
+  ],
+  "final_approval": {
+    "question": "Do you approve the score table itself?",
+    "user_reply": "yes",
+    "date": "2026-10-11"
+  },
+  "report_wording_preference": "Describe the rubric and selected-example limitations; omit the phrase assistant-assisted from report prose."
+}

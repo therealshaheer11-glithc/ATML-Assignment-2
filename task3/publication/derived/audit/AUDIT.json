@@ -1,0 +1,135 @@
+{
+  "status": "SAVED_EXPORT_AUDIT_PASSED",
+  "archive_bytes": null,
+  "archive_sha256": null,
+  "input_form": "extracted_files",
+  "internal_export_files_verified": 11,
+  "sealed_local_source_verified": true,
+  "approval_and_source_contract_match": true,
+  "training": {
+    "standard": {
+      "completed_updates": 20,
+      "allocated_response_tokens": 40960,
+      "actual_response_tokens": 24213,
+      "loss_bearing_tokens": 12949,
+      "wall_clock_seconds": 1069.8788295970003,
+      "wall_clock_complete": true,
+      "peak_allocated_gib": 17.54238986968994,
+      "peak_reserved_gib": 18.798828125,
+      "all_masked_update_numbers": [
+        5,
+        7
+      ],
+      "truncated_completions": 22,
+      "total_completions": 80,
+      "uninformative_reward_groups": 0.0,
+      "clip_fractions": [
+        0.0
+      ],
+      "preupdate_max_ratio_changes": [
+        0.0
+      ]
+    },
+    "canonical_8": {
+      "completed_updates": 8,
+      "allocated_response_tokens": 16384,
+      "actual_response_tokens": 8483,
+      "loss_bearing_tokens": 2851,
+      "wall_clock_seconds": 373.79722407400004,
+      "wall_clock_complete": true,
+      "peak_allocated_gib": 16.177006721496582,
+      "peak_reserved_gib": 16.560546875,
+      "all_masked_update_numbers": [
+        5,
+        7
+      ],
+      "truncated_completions": 11,
+      "total_completions": 32,
+      "uninformative_reward_groups": 0.0,
+      "clip_fractions": [
+        0.0
+      ],
+      "preupdate_max_ratio_changes": [
+        0.0
+      ]
+    },
+    "dr_grpo_8": {
+      "completed_updates": 8,
+      "allocated_response_tokens": 16384,
+      "actual_response_tokens": 8628,
+      "loss_bearing_tokens": 2996,
+      "wall_clock_seconds": 376.74621240999977,
+      "wall_clock_complete": true,
+      "peak_allocated_gib": 16.177006721496582,
+      "peak_reserved_gib": 16.560546875,
+      "all_masked_update_numbers": [
+        5,
+        7
+      ],
+      "truncated_completions": 11,
+      "total_completions": 32,
+      "uninformative_reward_groups": 0.0,
+      "clip_fractions": [
+        0.0
+      ],
+      "preupdate_max_ratio_changes": [
+        0.0
+      ]
+    }
+  },
+  "evaluation": {
+    "midpoint": {
+      "records": 200,
+      "aggregate_exact_match": true,
+      "policy_prompt_truncated": 35,
+      "reward_input_truncated": 9,
+      "full_prompt_at_least_reward_cap": 4,
+      "shortened_prompt_missing_assistant_marker": 35
+    },
+    "standard": {
+      "records": 200,
+      "aggregate_exact_match": true,
+      "policy_prompt_truncated": 35,
+      "reward_input_truncated": 9,
+      "full_prompt_at_least_reward_cap": 4,
+      "shortened_prompt_missing_assistant_marker": 35
+    },
+    "canonical_8": {
+      "records": 200,
+      "aggregate_exact_match": true,
+      "policy_prompt_truncated": 35,
+      "reward_input_truncated": 11,
+      "full_prompt_at_least_reward_cap": 4,
+      "shortened_prompt_missing_assistant_marker": 35
+    },
+    "dr_grpo_8": {
+      "records": 200,
+      "aggregate_exact_match": true,
+      "policy_prompt_truncated": 35,
+      "reward_input_truncated": 8,
+      "full_prompt_at_least_reward_cap": 4,
+      "shortened_prompt_missing_assistant_marker": 35
+    }
+  },
+  "frozen_seeds_configuration_optimizer_and_loading_audited": true,
+  "canonical_eight_equals_standard_first_eight": true,
+  "cache_membership_conserves_192_each_k": true,
+  "cache_matches_pretraining_local_diagnostic": true,
+  "common_probe_unmasked_completions": 1,
+  "qualitative_selection_slots": 6,
+  "qualitative_unique_prompts": 5,
+  "qualitative_exact_outputs_and_selection_verified": true,
+  "review_status": "QUALITATIVE_SCORES_USER_APPROVED",
+  "approved_scores_validated": true,
+  "raw_cache_recomputed_this_run": false,
+  "limits": [
+    "The independent Drive ZIP receipt was not attached; all internal export hashes pass.",
+    "Raw step/prompt ZIPs, optimizer tensors, adapter weights, and full datasets stay on Drive; local audit verifies the small export and its internal contracts, not those remote bytes.",
+    "No models were loaded and no reward scores were recomputed.",
+    "Categorical entropies are aggregated from saved scalars; complete vocabulary logits are absent.",
+    "Single seed, fixed endpoints, one sampled response per evaluation prompt; descriptive differences do not establish repeatable improvement.",
+    "All-masked updates still call the released AdamW step: zero current loss gradients do not imply unchanged weights, due to optimizer momentum and weight decay.",
+    "The common probe has one unmasked completion; broad length-bin claims require caution.",
+    "Input truncation can remove task context and the final assistant generation marker; reward truncation can remove part or all of the response."
+  ]
+}

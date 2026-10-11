@@ -1,0 +1,53 @@
+{
+  "format": "ATML_TASK3_APPROVAL_V1",
+  "approved": true,
+  "approved_decisions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M"
+  ],
+  "user_instruction": "All approved go ahead",
+  "date_local": "2026-10-10",
+  "timezone": "Asia/Karachi",
+  "repository": "https://github.com/therealshaheer11-glithc/ATML-Assignment-2",
+  "repository_review_commit": "cddc252d1116de1b26d48823ccfb95dae83b4857",
+  "course_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+  "asset_revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "asset_manifest_sha256": "68fe972715831e0a657878979d41b7c34102ab9e2e5bfe2bd50bb8bb979cd285",
+  "policy_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "policy_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+  "reward_revision": "f98759a4a1ccdc47a3136748b6bfea9a32ba8fcc",
+  "reward_config_sha256": "d04c63bcaf27f49f7fea8c3c1287ba4078056f3b3ed35d2635c6caef7dbad9fb",
+  "execution_environment": "Google Colab",
+  "session_minutes": 120,
+  "auto_disconnect": true,
+  "drive_relative_root": "ATML-Assignment-2/task3/experiment_v1",
+  "required_runs": [
+    {
+      "name": "standard",
+      "updates": 20,
+      "loss_type": "grpo"
+    },
+    {
+      "name": "canonical_8",
+      "updates": 8,
+      "loss_type": "grpo"
+    },
+    {
+      "name": "dr_grpo_8",
+      "updates": 8,
+      "loss_type": "dr_grpo"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "cache_sha256": "d43024a41301a0b1de63d9bce3f484f8259263dd6495253dd52fecaf73fbbf9c",
+  "all_saved_fields_exact_match": true,
+  "generations_each_k": 192,
+  "raw_cache_shipped": false
+}
