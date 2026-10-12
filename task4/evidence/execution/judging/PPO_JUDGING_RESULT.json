@@ -1,0 +1,11 @@
+{
+  "completed_judgments": 450,
+  "export": {
+    "judgments": 450,
+    "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/judgment/ppo.jsonl",
+    "sha256": "e83b0b9ea7d2cfe2b8852d606b44b4ee41267ff5efd9a7f9acb3a1a94cf59f45"
+  },
+  "new_judgments": 450,
+  "policy": "ppo",
+  "reused_judgments": 0
+}

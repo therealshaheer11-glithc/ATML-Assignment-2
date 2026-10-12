@@ -11,7 +11,7 @@ def current_path(name):
         return "archive/task1-publication/README.md"
     if name == "scripts/verify_task1_package.py":
         return "archive/task1-publication/verify_task1_package.py"
-    if name.startswith(("task2_ppo/", "task3_grpo/")):
+    if name.startswith(("task2_ppo/", "task3_grpo/", "task4_safety/")):
         return "archive/course-starter/" + name
     return name
 

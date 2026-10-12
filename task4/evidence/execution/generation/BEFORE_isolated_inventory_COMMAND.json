@@ -1,0 +1,10 @@
+{
+  "stage": "BEFORE_isolated_inventory",
+  "argv": [
+    "/content/task4_isolated_runtime_v1/bin/python",
+    "-I",
+    "-B",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/BEFORE_ISOLATED.json"
+  ]
+}

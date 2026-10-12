@@ -1,0 +1,494 @@
+{
+  "Task4_A100_Judge_Load_Resume.py": {
+    "path": "provenance/launchers/Task4_A100_Judge_Load_Resume.py",
+    "sha256": "255b62f2e701444bcf05f850b1028c60289f218b6aa38323bfc520a435919904"
+  },
+  "Task4_A100_Judge_Load_Resume.sha256.json": {
+    "path": "provenance/history/Task4_A100_Judge_Load_Resume.sha256.json",
+    "sha256": "5993a7cf5dedfc0cc0de856986f38026d394a3fd361a49a675230ddb9404e432"
+  },
+  "Task4_A100_Judge_Load_Resume_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Judge_Load_Resume_Launcher.py",
+    "sha256": "9596c63d5f4f42241ab6739a362c11f92beefac263c7d8042fce10a2259e101d"
+  },
+  "Task4_A100_Judge_Load_Resume_README.md": {
+    "path": "provenance/history/Task4_A100_Judge_Load_Resume_README.md",
+    "sha256": "704b026ac421ed13d909551c28e644f929372bf8c880dd42759b1c37453bdfaf"
+  },
+  "Task4_A100_Judging.py": {
+    "path": "evidence/execution/judging/JUDGING_SOURCE.py",
+    "sha256": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8"
+  },
+  "Task4_A100_Judging.sha256.json": {
+    "path": "provenance/history/Task4_A100_Judging.sha256.json",
+    "sha256": "b7e6dcd66d6e4a8da0e52824476f84f36cc7a5b69e1ef738bd9be82d854aaef3"
+  },
+  "Task4_A100_Judging_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Judging_Launcher.py",
+    "sha256": "d1cf1d4dd38b032b1738e0837994a9f8cb6d3c49a29debd97812764760b55e28"
+  },
+  "Task4_A100_Judging_README.md": {
+    "path": "provenance/history/Task4_A100_Judging_README.md",
+    "sha256": "415316d52bb865e9e8a120d694b7e6ed3cabd9123be1e5f4961068ebe5184639"
+  },
+  "Task4_A100_Post_Restart_Resume.py": {
+    "path": "provenance/launchers/Task4_A100_Post_Restart_Resume.py",
+    "sha256": "0a4fbc85656b74e01c145a2476ae058f9687e6bcf3cc21b3815716a9da67115d"
+  },
+  "Task4_A100_Post_Restart_Resume.sha256.json": {
+    "path": "provenance/history/Task4_A100_Post_Restart_Resume.sha256.json",
+    "sha256": "1e1d8c2ce615c5a9d0e0d84f4614dc77f88e5ce2621ef70bae02c21f4476f257"
+  },
+  "Task4_A100_Post_Restart_Resume_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Post_Restart_Resume_Launcher.py",
+    "sha256": "5a3b4e577f72508dcefa860066a17d0b4fa640b0efee66443a2be7038dd7aa58"
+  },
+  "Task4_A100_Post_Restart_Resume_README.md": {
+    "path": "provenance/history/Task4_A100_Post_Restart_Resume_README.md",
+    "sha256": "cd632c872b4ba4bb6d768bdd8762e22ee8eeeba57f9945116f060c52c4937405"
+  },
+  "Task4_A100_Repair_Jedi.py": {
+    "path": "provenance/launchers/Task4_A100_Repair_Jedi.py",
+    "sha256": "6b1813443b7b61fe9be1bc0ee36e6ac4f73dcba660533d15d884aab4580f95af"
+  },
+  "Task4_A100_Repair_Jedi.sha256.json": {
+    "path": "provenance/history/Task4_A100_Repair_Jedi.sha256.json",
+    "sha256": "144a8b0bdc119796f6407ecb3c49deea390ce12a86ca88ad0a8f71e89bd662a8"
+  },
+  "Task4_A100_Repair_Jedi_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Repair_Jedi_Launcher.py",
+    "sha256": "3c672b324cb83bc013bc6749d4b5c1690206df171f0db96e80133fefd77813cf"
+  },
+  "Task4_A100_Repair_Jedi_README.md": {
+    "path": "provenance/history/Task4_A100_Repair_Jedi_README.md",
+    "sha256": "87a801abd2ae4234fd40dca48273757781142684058b35d0cbfb312111308135"
+  },
+  "Task4_A100_Restore_Isolated.py": {
+    "path": "provenance/launchers/Task4_A100_Restore_Isolated.py",
+    "sha256": "a3025083ed0094652e39e306c7d2bdaf226d025a651e705cf3f8f37b17ac130e"
+  },
+  "Task4_A100_Restore_Isolated.sha256.json": {
+    "path": "provenance/history/Task4_A100_Restore_Isolated.sha256.json",
+    "sha256": "caa101ca83e21a85d289932bf816560f9114f701031b4be70a816c1cd279f200"
+  },
+  "Task4_A100_Restore_Isolated_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Restore_Isolated_Launcher.py",
+    "sha256": "6f9a047719a402e9f2a2acbed3a71083e9c90a1aeb3f40daede8dd1fa16d8c99"
+  },
+  "Task4_A100_Restore_Isolated_README.md": {
+    "path": "provenance/history/Task4_A100_Restore_Isolated_README.md",
+    "sha256": "22c1f01c4545fb3b4e8f97ea769ed6635f8c5cd7865951cf39b8b8e7deb0d0ac"
+  },
+  "Task4_A100_Resume_Preflight.py": {
+    "path": "provenance/launchers/Task4_A100_Resume_Preflight.py",
+    "sha256": "b304191c43f791b5c9b742758389027b7c7c0de034d72ed7881ad25747d5a657"
+  },
+  "Task4_A100_Resume_Preflight.sha256.json": {
+    "path": "provenance/history/Task4_A100_Resume_Preflight.sha256.json",
+    "sha256": "6ccb8809fc4e17ce3dd062ed81f503e94a871b0dad07fa75d87aa0976c9a20d1"
+  },
+  "Task4_A100_Resume_Preflight_Launcher.py": {
+    "path": "provenance/launchers/Task4_A100_Resume_Preflight_Launcher.py",
+    "sha256": "36336d1db4e01dcde2daa690cc076fe5732c6593e7d635be95270d246d0033fa"
+  },
+  "Task4_A100_Resume_Preflight_Observation.json": {
+    "path": "provenance/history/Task4_A100_Resume_Preflight_Observation.json",
+    "sha256": "dc9c19a98021f9dbac5f501ed00a9b29c6d652c824b4834cb5505ce081a139c2"
+  },
+  "Task4_A100_Resume_Preflight_README.md": {
+    "path": "provenance/history/Task4_A100_Resume_Preflight_README.md",
+    "sha256": "b27ffa4538ca960f8c7314198fa1150263793610e198c79fc5aedd6565761f07"
+  },
+  "Task4_Approval_and_Progress.md": {
+    "path": "provenance/history/Task4_Approval_and_Progress.md",
+    "sha256": "13ad15017f846d933d95ec8d3b129a579410719b7df683a71a935aef7a630c7c"
+  },
+  "Task4_Audit_Decision_Notes.json": {
+    "path": "provenance/history/Task4_Audit_Decision_Notes.json",
+    "sha256": "449cfed686ba1d7e258397a99c20e6e02d49eee4173b90e5070ba29442427490"
+  },
+  "Task4_Block10_A100_Isolated_Environment.py": {
+    "path": "provenance/launchers/Task4_Block10_A100_Isolated_Environment.py",
+    "sha256": "8d10ea10f12c5b0c2c32e54432ae414d047e66ad8c64a3d6b145e2c8f828d533"
+  },
+  "Task4_Block10_A100_Isolated_Environment_README.md": {
+    "path": "provenance/history/Task4_Block10_A100_Isolated_Environment_README.md",
+    "sha256": "7bfa276a6638463087e2420a5bb16a4917fa00da83160400370c12a8ecae1515"
+  },
+  "Task4_Block10_Isolated_GPU_Observation.json": {
+    "path": "provenance/history/Task4_Block10_Isolated_GPU_Observation.json",
+    "sha256": "1fa282f805100ab8d0e1c3af8f6b922e3902d34cc8419b23fefbdce6396e076c"
+  },
+  "Task4_Block10b_A100_Isolated_Recheck.py": {
+    "path": "provenance/launchers/Task4_Block10b_A100_Isolated_Recheck.py",
+    "sha256": "c638ec32d989f5ef0335e81d57300f03a652c59273bb63ddac68dc2c16e441a8"
+  },
+  "Task4_Block10b_A100_Isolated_Recheck_README.md": {
+    "path": "provenance/history/Task4_Block10b_A100_Isolated_Recheck_README.md",
+    "sha256": "807f436ea7cfa22df89aeefcb6a345bd46f05c310946cc0e70f37cfeb9344cc4"
+  },
+  "Task4_Block10b_Isolated_Recheck_Observation.json": {
+    "path": "provenance/history/Task4_Block10b_Isolated_Recheck_Observation.json",
+    "sha256": "824c4fdf76410a73fb672f608a03408be3365e8c6e8861366b209499e9870558"
+  },
+  "Task4_Block11_A100_Base_Repair.py": {
+    "path": "provenance/launchers/Task4_Block11_A100_Base_Repair.py",
+    "sha256": "45ab540b4b144e0094e9a00871725e17556db47ea92eebbe6d8f3bad1a7e83d5"
+  },
+  "Task4_Block11_A100_Base_Repair_README.md": {
+    "path": "provenance/history/Task4_Block11_A100_Base_Repair_README.md",
+    "sha256": "a4da89895fb149b94055d336291b32f08fe19142c858c759a0296f2d1187457d"
+  },
+  "Task4_Block11_Base_Repair_Observation.json": {
+    "path": "provenance/history/Task4_Block11_Base_Repair_Observation.json",
+    "sha256": "52d960fc3757cd3a90dfd338abe3c18ad82faad95601ebea2ce2ed9a7cefa7d1"
+  },
+  "Task4_Block11b_A100_Base_Layout_Diagnostic.py": {
+    "path": "provenance/launchers/Task4_Block11b_A100_Base_Layout_Diagnostic.py",
+    "sha256": "c3da970563390b7115d36bc72f72ecfcde2b6fb47b43100606bd22252f5b6f36"
+  },
+  "Task4_Block11b_A100_Base_Layout_Diagnostic_README.md": {
+    "path": "provenance/history/Task4_Block11b_A100_Base_Layout_Diagnostic_README.md",
+    "sha256": "32060db6638931e6e7646ea61e9d29b692f25a4013ac030662fc77d532f40779"
+  },
+  "Task4_Block11b_Base_Layout_Observation.json": {
+    "path": "provenance/history/Task4_Block11b_Base_Layout_Observation.json",
+    "sha256": "22fca29ec0761cb9a620ec444a1c69d5a8b5770472aad78709ba81320a64c4f4"
+  },
+  "Task4_Block11c_A100_Base_Repair_Recheck.py": {
+    "path": "provenance/launchers/Task4_Block11c_A100_Base_Repair_Recheck.py",
+    "sha256": "c94c85dfffa0be989d80f5841eb1bf1da3e920717e5803c3113dd3c71624f681"
+  },
+  "Task4_Block11c_A100_Base_Repair_Recheck_README.md": {
+    "path": "provenance/history/Task4_Block11c_A100_Base_Repair_Recheck_README.md",
+    "sha256": "5c3227b3fc7da29b4a78d6b682fd4dd2d5c763209add0fb86cb09317b5a90870"
+  },
+  "Task4_Block11c_Base_Repair_Observation.json": {
+    "path": "provenance/history/Task4_Block11c_Base_Repair_Observation.json",
+    "sha256": "d00e28d3f5bbb1a41af2ca788eaca39e3cb5b1a2629f2e090b27a3e3b8359b5a"
+  },
+  "Task4_Block12_A100_Post_Restart.py": {
+    "path": "provenance/launchers/Task4_Block12_A100_Post_Restart.py",
+    "sha256": "0a24c09548e0a7adc1a26c8fa069180e667f50811d581cfacf4fcbe5f3940c22"
+  },
+  "Task4_Block12_A100_Post_Restart_README.md": {
+    "path": "provenance/history/Task4_Block12_A100_Post_Restart_README.md",
+    "sha256": "bc991e24b8ab40966fd0bbc6b7295ee4b957b9b50ff2669acf827ba0113625c4"
+  },
+  "Task4_Block12_Post_Restart_Observation.json": {
+    "path": "provenance/history/Task4_Block12_Post_Restart_Observation.json",
+    "sha256": "84267c4ac43880e9fe46d5f641d70d3a60120cc009d189c6559e48d95e1347b1"
+  },
+  "Task4_Block13_A100_Model_Loading.py": {
+    "path": "provenance/launchers/Task4_Block13_A100_Model_Loading.py",
+    "sha256": "df5fd994480435ab1de9724d87aa115287bf8e5a723fd6c0fa7352eeaa6531b4"
+  },
+  "Task4_Block13_A100_Model_Loading_README.md": {
+    "path": "provenance/history/Task4_Block13_A100_Model_Loading_README.md",
+    "sha256": "7807805b7461f7bac613ed24bde47b3c6084284c1bca533e91f229ccdf0e9ef2"
+  },
+  "Task4_Block13_Model_Loading_Observation.json": {
+    "path": "provenance/history/Task4_Block13_Model_Loading_Observation.json",
+    "sha256": "cb9271933b451d3bea7159ef11816abea40237ecb969db47caaf68425d30c888"
+  },
+  "Task4_Block14_A100_Generation.py": {
+    "path": "provenance/launchers/Task4_Block14_A100_Generation.py",
+    "sha256": "529663acdbda4a7570ae53030b23c61a57ea9536a1722209ce5220876fb0554d"
+  },
+  "Task4_Block14_A100_Generation_README.md": {
+    "path": "provenance/history/Task4_Block14_A100_Generation_README.md",
+    "sha256": "0e3b03d1ff091f48e3ab93435f67d27db23e14ef3f77f657d84314c113d5e3b7"
+  },
+  "Task4_Block14_Generation_Observation.json": {
+    "path": "provenance/history/Task4_Block14_Generation_Observation.json",
+    "sha256": "8c7202682451b58d943c5db51b25e6b9d30c1eea32e4e476a0616831794b0e4b"
+  },
+  "Task4_Block1_CPU.py": {
+    "path": "provenance/launchers/Task4_Block1_CPU.py",
+    "sha256": "5f69d424085cf1cca906270e4509aebb341b429b0ecd2e5970ca7841800d8592"
+  },
+  "Task4_Block2_CPU.py": {
+    "path": "provenance/launchers/Task4_Block2_CPU.py",
+    "sha256": "cced35e625c60a69e49755d8fc3e6d4fa83e2c47d15f6a8d892c87c69c3d7b1d"
+  },
+  "Task4_Block2_Confirmed_Diagnosis.md": {
+    "path": "provenance/history/Task4_Block2_Confirmed_Diagnosis.md",
+    "sha256": "5a20d02e4907ada64d4f9c3e5137ec4f7183d7f40b8f0f5be15d02f709d5628c"
+  },
+  "Task4_Block2_Diagnostic_CPU.py": {
+    "path": "provenance/launchers/Task4_Block2_Diagnostic_CPU.py",
+    "sha256": "071a45c00a2f5f5f80c1e032b4e2345312e6eeeb8428fb02b31c3193617a4ea8"
+  },
+  "Task4_Block2_Failure_and_Recovery_Proposal.md": {
+    "path": "provenance/history/Task4_Block2_Failure_and_Recovery_Proposal.md",
+    "sha256": "9ab95ad62a090ecc676d01ae554eb3d018f00001933113bcd963dc2f97ab3c22"
+  },
+  "Task4_Block2_Recovery_CPU.py": {
+    "path": "provenance/launchers/Task4_Block2_Recovery_CPU.py",
+    "sha256": "7055e82de99f48922cff99038c01ffb7cc77636179730cce4537776c8c2c49dc"
+  },
+  "Task4_Block3_CPU_Model_Inventory.py": {
+    "path": "provenance/launchers/Task4_Block3_CPU_Model_Inventory.py",
+    "sha256": "be941f7ca6251a3e1b0190d38a8b813159544cf13ff26c03a1c197575305ec8a"
+  },
+  "Task4_Block3_Inventory_Observation.json": {
+    "path": "provenance/history/Task4_Block3_Inventory_Observation.json",
+    "sha256": "e888a536d67a01306c91993e0e971c7d17865f7915aab5a57a1f71e56a6482b9"
+  },
+  "Task4_Block3_Result_and_Judge_Download_Proposal.md": {
+    "path": "provenance/history/Task4_Block3_Result_and_Judge_Download_Proposal.md",
+    "sha256": "6130d91ebf5fc15c4e790f455623957fa24d175aa6d447f0d3ccf66702538ea1"
+  },
+  "Task4_Block4_CPU_Judge_Download.py": {
+    "path": "provenance/launchers/Task4_Block4_CPU_Judge_Download.py",
+    "sha256": "1509767d254f7c848a159505111335fb512c589425f49f134886ed8b01e4bc78"
+  },
+  "Task4_Block4_CPU_Judge_Download_README.md": {
+    "path": "provenance/history/Task4_Block4_CPU_Judge_Download_README.md",
+    "sha256": "9b9fd8c6dd082b2d73bb69af32f52a279f4e0f51018085d5e716133e6bd1d9c4"
+  },
+  "Task4_Block4_Judge_Download_Observation.json": {
+    "path": "provenance/history/Task4_Block4_Judge_Download_Observation.json",
+    "sha256": "bb0725167c80656321d32aa2cdb1e46f79036bfc65bb5befca596fb7b48b0b07"
+  },
+  "Task4_Block5_CPU_Model_Inputs.py": {
+    "path": "provenance/launchers/Task4_Block5_CPU_Model_Inputs.py",
+    "sha256": "67c1822b4503d25629cdbad2ed267b3a0e9269185eea7da3e1d0a3d627432535"
+  },
+  "Task4_Block5_CPU_Model_Inputs_README.md": {
+    "path": "provenance/history/Task4_Block5_CPU_Model_Inputs_README.md",
+    "sha256": "2f76aff0f165e7f89ac30cbc5841673b14aa030042ffc49e6ec4a4411632d89c"
+  },
+  "Task4_Block5_Model_Inputs_Observation.json": {
+    "path": "evidence/source/orchestration/VERIFIED_MODEL_INPUT_OBSERVATION.json",
+    "sha256": "9ddb0dab557d0fb82fb615f13e6cc7ca849f42913a98152b918cd2b4bf18cdbf"
+  },
+  "Task4_Block6_CPU_Orchestration.py": {
+    "path": "provenance/launchers/Task4_Block6_CPU_Orchestration.py",
+    "sha256": "d574337dfb0383cfb5d5cf5aedbc12738acf765fc4321cd282660db52e5d4d75"
+  },
+  "Task4_Block6_CPU_Orchestration_Observation.json": {
+    "path": "provenance/history/Task4_Block6_CPU_Orchestration_Observation.json",
+    "sha256": "2eb3eb99744eb10ff41b5fac8b83a6b423023f3e3436213cb3cfdf575352ca73"
+  },
+  "Task4_Block6_CPU_Orchestration_README.md": {
+    "path": "evidence/source/orchestration/README.md",
+    "sha256": "d5ab7ec6242f4c68e092d068f0e4ad7aa0f7bc4b0e601ed0f4818c7c1f2c6802"
+  },
+  "Task4_Block7_A100_Environment.py": {
+    "path": "provenance/launchers/Task4_Block7_A100_Environment.py",
+    "sha256": "d3907cad1b910a8231d12b357f004768dc07daed479d186b5aa705abc4e65ad4"
+  },
+  "Task4_Block7_A100_Environment_Observation.json": {
+    "path": "provenance/history/Task4_Block7_A100_Environment_Observation.json",
+    "sha256": "d50a3567fb73567ccc36470610a3929646b34326031a950a22f71ab91fbf60fc"
+  },
+  "Task4_Block7_A100_Environment_README.md": {
+    "path": "provenance/history/Task4_Block7_A100_Environment_README.md",
+    "sha256": "a8f35fc0e83798803af6ee2a38104dce57468e1e20a6ff7ec646a29ae50f0cc0"
+  },
+  "Task4_Block7_GPU_Exception_Proposal.md": {
+    "path": "provenance/history/Task4_Block7_GPU_Exception_Proposal.md",
+    "sha256": "805556e8a24649df5cd884b0669d395b5287503a3d267645c48aff31a451ad47"
+  },
+  "Task4_Block8_CPU_Isolation_Preflight.py": {
+    "path": "provenance/launchers/Task4_Block8_CPU_Isolation_Preflight.py",
+    "sha256": "8ddbef1b1c77882419f3df7955e1c4d177bf9984e65523cb21f7236c62352c12"
+  },
+  "Task4_Block8_CPU_Isolation_Preflight_README.md": {
+    "path": "provenance/history/Task4_Block8_CPU_Isolation_Preflight_README.md",
+    "sha256": "1e1c6329159226b2240cc1f7199cfde473aceca8eccad7af1531a158c7cf8a32"
+  },
+  "Task4_Block8_Isolated_Setup_Approval_Proposal.md": {
+    "path": "provenance/history/Task4_Block8_Isolated_Setup_Approval_Proposal.md",
+    "sha256": "d98521501e80f94db741356c6c13e0b76d09824316652ae3b92d06ff65d55074"
+  },
+  "Task4_Block8_Isolation_Preflight_Observation.json": {
+    "path": "provenance/history/Task4_Block8_Isolation_Preflight_Observation.json",
+    "sha256": "cfe38e1ab2f8b9406a6f5007e6d387757e569256d79cb6d40382f39348e6619e"
+  },
+  "Task4_Block9_CPU_Wheel_Cache.py": {
+    "path": "provenance/launchers/Task4_Block9_CPU_Wheel_Cache.py",
+    "sha256": "778d54659f39cfdef72b63c9e4abbe03b2a15999799fe0328bb1ebdfa5219262"
+  },
+  "Task4_Block9_CPU_Wheel_Cache_README.md": {
+    "path": "provenance/history/Task4_Block9_CPU_Wheel_Cache_README.md",
+    "sha256": "c6a82936392f62bf7b8ff8e44064cf83ada56ebc5897c41a3d173655106a4532"
+  },
+  "Task4_Block9_Wheel_Cache_Observation.json": {
+    "path": "provenance/history/Task4_Block9_Wheel_Cache_Observation.json",
+    "sha256": "587e285e89a18a18951954418453abe81167c0a1be603b25bc583585e2eb83b2"
+  },
+  "Task4_CPU_Audit_Analysis.py": {
+    "path": "evidence/audit/AUDIT_ANALYSIS_SOURCE.py",
+    "sha256": "f911bada1c9562378673b93d28472bf93c4aac3324c6104fa7ab5011d7f8d377"
+  },
+  "Task4_CPU_Audit_Analysis.sha256.json": {
+    "path": "provenance/history/Task4_CPU_Audit_Analysis.sha256.json",
+    "sha256": "e7d0d77aa4fd5c4ad908801751d67863644eb1381e9e0fc3562d2fe4b1a52547"
+  },
+  "Task4_CPU_Audit_Analysis_Launcher.py": {
+    "path": "provenance/launchers/Task4_CPU_Audit_Analysis_Launcher.py",
+    "sha256": "a037eed0e2c6a0d08f587d09b7acd732a1f9e0162d8aab846e7467163da9e8f2"
+  },
+  "Task4_CPU_Audit_Form.py": {
+    "path": "evidence/audit_preparation/AUDIT_PREPARATION_SOURCE.py",
+    "sha256": "3d3e28e563ea28fe1c3ca4a0ddccc44ae401784604bce3ce9d228d9dcac235fc"
+  },
+  "Task4_CPU_Audit_Form.sha256.json": {
+    "path": "provenance/history/Task4_CPU_Audit_Form.sha256.json",
+    "sha256": "3a634f9260e9909ebb170253d29b0477a6b3f116b16178bcb3cfe54c56a8dcfa"
+  },
+  "Task4_CPU_Audit_Form_Launcher.py": {
+    "path": "provenance/launchers/Task4_CPU_Audit_Form_Launcher.py",
+    "sha256": "ea5259dbaeb1ec75801e4a37e281a72981d1f7afe39783a25ce3c686a8328acf"
+  },
+  "Task4_CPU_Audit_Form_README.md": {
+    "path": "provenance/history/Task4_CPU_Audit_Form_README.md",
+    "sha256": "9378510c884f0e8029ab5438a2029beb8f2978f6cbe3cc8025ad91f38b726c18"
+  },
+  "Task4_CPU_Summaries.py": {
+    "path": "evidence/summaries/AGGREGATION_SOURCE.py",
+    "sha256": "30e0841b49339db01ca8e2bd45fd37e84a70185c8131f1bb5b973d3b3076941b"
+  },
+  "Task4_CPU_Summaries.sha256.json": {
+    "path": "provenance/history/Task4_CPU_Summaries.sha256.json",
+    "sha256": "c05347fc9c436f60f124798972986a9452e2fdbad07c23ccddac024400cc5a5d"
+  },
+  "Task4_CPU_Summaries_Launcher.py": {
+    "path": "provenance/launchers/Task4_CPU_Summaries_Launcher.py",
+    "sha256": "6179d34d717eaf69e52dc62b3e0da7a9e0893d4fbdd08ddca5eda7997053081d"
+  },
+  "Task4_CPU_Summaries_README.md": {
+    "path": "provenance/history/Task4_CPU_Summaries_README.md",
+    "sha256": "dc6c32e97e196d0c5d0d742d0f1f077c3854ba84a9a150ab582023fba4a8276a"
+  },
+  "Task4_Completed_Audit_Labels.json": {
+    "path": "evidence/audit/Task4_Completed_Audit_Labels.json",
+    "sha256": "4d95102c5385b166b291d8579c38986fc4dd9c0112742b8d0874fdc11b1d2d0c"
+  },
+  "Task4_Completed_Audit_README.md": {
+    "path": "provenance/history/Task4_Completed_Audit_README.md",
+    "sha256": "e570c2db78d31c451a7c1b7720a8e6da2c7d182e69f43dc212f1a2e8285129c0"
+  },
+  "Task4_Isolated_Restore_Observation.json": {
+    "path": "provenance/history/Task4_Isolated_Restore_Observation.json",
+    "sha256": "b50065980e10e0f6a82772d92fe21abf7c6e87329d89b34266092cc2a2720039"
+  },
+  "Task4_Jedi_Repair_Observation.json": {
+    "path": "provenance/history/Task4_Jedi_Repair_Observation.json",
+    "sha256": "ab379f7c05d328a6376e5d685f4d3724cd7563da548d12c7c76dcdbb1d0a1959"
+  },
+  "Task4_Judge_Load_Resume_Observation.json": {
+    "path": "provenance/history/Task4_Judge_Load_Resume_Observation.json",
+    "sha256": "efbb8b074093c1a079f51e0b6188ee526c4f434d131c4b062ee9be81972036e1"
+  },
+  "Task4_Judging_Completed_Note.md": {
+    "path": "provenance/history/Task4_Judging_Completed_Note.md",
+    "sha256": "3d698fde13cd79f64a636065382463709b9a2cdcf087512290c8b09e24666498"
+  },
+  "Task4_Judging_Completed_Observation.json": {
+    "path": "provenance/history/Task4_Judging_Completed_Observation.json",
+    "sha256": "56c61c5c18179cf3989d56a64da947aa3343a7b009028b75be68db27e29dc48d"
+  },
+  "Task4_Judgments_Verified_Observation.json": {
+    "path": "provenance/history/Task4_Judgments_Verified_Observation.json",
+    "sha256": "ecdff35c503d2cb975340d0ee9dd0ff851a5a163a737cc2a538c97987572970f"
+  },
+  "Task4_Post_Restart_Resume_Observation.json": {
+    "path": "provenance/history/Task4_Post_Restart_Resume_Observation.json",
+    "sha256": "4a03b431c438f4c361ec01ca1db749505122c975860c050b139d8f74c36f508f"
+  },
+  "Task4_Progress_A100_Resume_Preflight_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_A100_Resume_Preflight_Prepared.md",
+    "sha256": "fbd768883c7098e5b8ee56b002dd25cf9c0afc77d7ed9cfbb55ebc26e0b9b393"
+  },
+  "Task4_Progress_Break_Requested.md": {
+    "path": "provenance/history/Task4_Progress_Break_Requested.md",
+    "sha256": "fd4a6a25dd382cb30e7c784bc969d53a0058ed0d97353abfc9a56bce7bdbbd39"
+  },
+  "Task4_Progress_CPU_Summaries_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_CPU_Summaries_Prepared.md",
+    "sha256": "5145525d842db6831013b36b39cfcac2b6c0ecfcf955d94676a5d3fff9767793"
+  },
+  "Task4_Progress_Jedi_Repair_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Jedi_Repair_Prepared.md",
+    "sha256": "3fe7968a93ebbe811d7633db05a13a4c71303215a71af63675f55e31119eff6d"
+  },
+  "Task4_Progress_Judge_Load_Resume_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Judge_Load_Resume_Prepared.md",
+    "sha256": "7f529db02e799f75119f9f8423a43e997528e7a0ef2a79d00a074117e3cfa967"
+  },
+  "Task4_Progress_Judging_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Judging_Prepared.md",
+    "sha256": "bf5c12fc17160c20f402f1517b556e30e78801acd4f674dfede59ca9c091dd11"
+  },
+  "Task4_Progress_Post_Restart_Resume_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Post_Restart_Resume_Prepared.md",
+    "sha256": "3eb85ae19fe76c1c192fc6ce393a929f9013991453fbb927ae4a4dceaf1c9d90"
+  },
+  "Task4_Progress_Restore_Isolated_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Restore_Isolated_Prepared.md",
+    "sha256": "9d4edfe56878654d7bf6c9d3a7a16c361865f1fd2fb2ee70e3947fcc1d073570"
+  },
+  "Task4_Progress_Resume_Check_Prepared.md": {
+    "path": "provenance/history/Task4_Progress_Resume_Check_Prepared.md",
+    "sha256": "6cff17cd7600aef2b2c728a2727805abf40a69295b236c46f25da20999706576"
+  },
+  "Task4_Progress_Through_Block11_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block11_Preparation.md",
+    "sha256": "6ca914aae45d9092f04df25f116483921d6534f9f03c879e421b3e24de0cada8"
+  },
+  "Task4_Progress_Through_Block11b_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block11b_Preparation.md",
+    "sha256": "dc5296fdd7653c9915915f4b8269fab52444a3ecf312631a82ff8bf57d47ea69"
+  },
+  "Task4_Progress_Through_Block11c_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block11c_Preparation.md",
+    "sha256": "eb96b22033e73d4778a56369f1f8adc1bfa4507583a4fd5b494bd28afa2e5f72"
+  },
+  "Task4_Progress_Through_Block12_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block12_Preparation.md",
+    "sha256": "51bca340810154e7cd3a60af318f8c8804e1e29c88608bd3ff5d95cacf173773"
+  },
+  "Task4_Progress_Through_Block13_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block13_Preparation.md",
+    "sha256": "fc2c2e4430bed9514826a2b7c5376a9f836f731a165bbc71f67dccb017b40939"
+  },
+  "Task4_Progress_Through_Block14_Preparation.md": {
+    "path": "provenance/history/Task4_Progress_Through_Block14_Preparation.md",
+    "sha256": "727f490dde0df7035a4c30f8861ba75af94fe40b57abe11bcaadde2f635c4857"
+  },
+  "Task4_Resume_Check.py": {
+    "path": "provenance/launchers/Task4_Resume_Check.py",
+    "sha256": "818224dbe9f5084839db920aceeb0de785db6bb77adecc8fb76039057637706d"
+  },
+  "Task4_Resume_Check.sha256.json": {
+    "path": "provenance/history/Task4_Resume_Check.sha256.json",
+    "sha256": "810e9ee07f37eb0fb6a316fa7f5a53ec2a106d1ebd5ec1a060c695a1fb95fbf6"
+  },
+  "Task4_Resume_Check_Launcher.py": {
+    "path": "provenance/launchers/Task4_Resume_Check_Launcher.py",
+    "sha256": "20b4167dbd8fdfc79ad7bd0d7abd34fd2648700a569a4ba7aec0802058cdaecd"
+  },
+  "Task4_Resume_Check_Observation.json": {
+    "path": "provenance/history/Task4_Resume_Check_Observation.json",
+    "sha256": "dda3b44d441356fa5b36288185c7b30ade5fdde88bc22b2f9f5b521494d0f8bc"
+  },
+  "Task4_Resume_Check_README.md": {
+    "path": "provenance/history/Task4_Resume_Check_README.md",
+    "sha256": "18a9b1b40278f4e71ab51bac4c612223d0fe5f5ec31b32264b6d68a573da1963"
+  },
+  "Task4_Save_Before_Break.py": {
+    "path": "provenance/launchers/Task4_Save_Before_Break.py",
+    "sha256": "70c4d30378e30a52ec2d68d6bc709312eba5d389eec5b3e340a1d7da9bcb4e5a"
+  },
+  "Task4_Save_Before_Break.sha256.json": {
+    "path": "provenance/history/Task4_Save_Before_Break.sha256.json",
+    "sha256": "35d21dfef2c06fe63148a2eb5ec07934128c49ba9fb5553a47731174726a53f1"
+  },
+  "Task4_Verify_Judgments.py": {
+    "path": "provenance/launchers/Task4_Verify_Judgments.py",
+    "sha256": "68f9c638f027ad22cc9aaec0adf4b0612be41754af9c50cf51b7bbd7d13a4e60"
+  }
+}

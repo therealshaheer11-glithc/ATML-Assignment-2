@@ -1,0 +1,10 @@
+{
+  "script": "Task4_CPU_Audit_Analysis.py",
+  "sha256": "f911bada1c9562378673b93d28472bf93c4aac3324c6104fa7ab5011d7f8d377",
+  "bytes": 16792,
+  "labels_file": "Task4_Completed_Audit_Labels.json",
+  "labels_sha256": "4d95102c5385b166b291d8579c38986fc4dd9c0112742b8d0874fdc11b1d2d0c",
+  "local_tests_passed": 8,
+  "original_release_manifests_and_payloads_unchanged": 19,
+  "actual_cpu_comparison_pending": true
+}

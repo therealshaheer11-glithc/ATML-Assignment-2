@@ -1,0 +1,24 @@
+{
+  "anonymous_records": 240,
+  "artifact_sha256": {
+    "AUDIT_PREPARATION_SOURCE.py": "3d3e28e563ea28fe1c3ca4a0ddccc44ae401784604bce3ce9d228d9dcac235fc",
+    "CLASS_LABEL_DIAGNOSTIC.json": "57992c8768602c6de57e8f587ecfa7128e4c84087488aa3082ce34261f3128ee",
+    "PACKET_CONTRACT.json": "c81c3e5ca120a8960cf2de736146d8253b2487305f3bd8109af022546cfdb1c6",
+    "PRESENTATION_APPROVAL.json": "eb92c74af83583dfd798d3e4804d41ece66c87873a397f3903005e0b88567e5a",
+    "PRIVATE_MAPPING_DO_NOT_USE_WHILE_LABELING.json": "3ed56d5ade28996e198901220264668a52def2171cde04e97a5eed48ad3eb26d",
+    "Task4_Blind_Human_Audit.html": "986188c40468e5402072fa71bc524b85ae7f4d72ff2d83c8a93350ac551609d5"
+  },
+  "fixed_prompt_ids": 60,
+  "format": "ATML_TASK4_AUDIT_PREPARATION_V1",
+  "human_labels_assigned": 0,
+  "human_labels_last_confirmed": 0,
+  "inference_calls": 0,
+  "manual_agreement_computed": false,
+  "models_loaded": 0,
+  "package_changes": 0,
+  "packet_id": "66f81874042a5dcb2bbc6a5df519e84a7bad968847ab44aee1994422dcda57a2",
+  "source_sha256": "3d3e28e563ea28fe1c3ca4a0ddccc44ae401784604bce3ce9d228d9dcac235fc",
+  "status": "BLIND_AUDIT_FORM_READY_HUMAN_LABELS_PENDING",
+  "summary_report_sha256": "e17d37642169ca99473d9976837e5fe966c2c5fccd8db71fb646caa5a4becf7d",
+  "training_performed": false
+}

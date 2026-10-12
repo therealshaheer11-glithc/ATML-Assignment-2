@@ -1,0 +1,21 @@
+{
+  "evidence": "user_returned_console_output",
+  "returned_output_sha256": "3825ced1589ad2ac8a8fa72abd620cf8a06e3c21fb2a43819b098e29a5a6afe8",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judgment_verification_attempts/20261012T064103.775752Z/REPORT.json",
+  "status": "ALL_SAVED_JUDGMENTS_AND_EXPORTS_VERIFIED",
+  "judgment_file_hashes_verified": 1800,
+  "ordered_exports_verified": 4,
+  "policy_judgment_counts": {
+    "sft": 450,
+    "dpo": 450,
+    "ppo": 450,
+    "grpo": 450
+  },
+  "responses_last_verified": 1800,
+  "remaining_judgments": 0,
+  "human_labels_last_confirmed": 0,
+  "human_annotations_inspected": false,
+  "scope": "Mounted Drive file read/checksum verification, not independent server-side synchronization proof.",
+  "gpu_inference_complete": true,
+  "next_stage": "Release A100/switch CPU, then required frozen-protocol aggregation and independent human audit."
+}

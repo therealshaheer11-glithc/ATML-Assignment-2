@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-11T14:28:49.192320+00:00",
+  "evidence": "User-returned Colab console output; saved Drive JSON artifacts have not been opened locally",
+  "returned_output_sha256": "836b51fe8181b24abe7d3a875d0d1eb84fe0f97259fddcfa319cd0e7c07ce444",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/gpu_environment_attempts/20261011T142511.766769Z/REPORT.json",
+  "status": "GPU_ENVIRONMENT_REVIEW_REQUIRED",
+  "source_manifest_sha256": "d941ecb6c16ec91a942b319167826007f5124b0dedc10d2a337b3b783ff4015b",
+  "hardware": "NVIDIA A100-SXM4-40GB",
+  "nvidia_total_memory_mib": 40960,
+  "driver_version": "580.82.07",
+  "torch_version_observed": "2.11.0+cu130",
+  "installed_course_package_versions_observed": {
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "trl": "0.27.2",
+    "peft": "0.17.1",
+    "bitsandbytes": "0.50.2",
+    "huggingface_hub": "0.36.2"
+  },
+  "required_dependency_chain_passed": true,
+  "required_distribution_count": "Not printed in console; saved graph must be inspected in Colab",
+  "fresh_imports_passed": true,
+  "tiny_float16_cuda_check_passed": true,
+  "tiny_nf4_cuda_backend_check_passed": true,
+  "synthetic_checks_passed": 37,
+  "global_dependency_check_passed": false,
+  "global_dependency_messages": [
+    "ipython 7.34.0 requires jedi, which is not installed.",
+    "diffusers 0.40.0 has requirement huggingface-hub<2.0,>=1.23.0, but you have huggingface-hub 0.36.2.",
+    "gradio 6.29.0 has requirement huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2."
+  ],
+  "messages_identical_to_prior_cpu_exception_approval": true,
+  "gpu_required_chain_membership_of_conflicting_packages": "Must be directly verified from saved graph before accepting any GPU exception",
+  "gpu_exceptions_accepted": [],
+  "gpu_environment_contract_finalized": false,
+  "pretrained_models_loaded": 0,
+  "task4_responses_generated": 0,
+  "task4_judgments_produced": 0,
+  "human_labels_assigned": 0,
+  "training_performed": false,
+  "next_stage": "User approval of exact three-message GPU exception proposal; no package changes proposed"
+}

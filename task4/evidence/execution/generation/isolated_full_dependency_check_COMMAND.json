@@ -1,0 +1,12 @@
+{
+  "stage": "isolated_full_dependency_check",
+  "argv": [
+    "/content/task4_isolated_runtime_v1/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pip",
+    "--disable-pip-version-check",
+    "check"
+  ]
+}

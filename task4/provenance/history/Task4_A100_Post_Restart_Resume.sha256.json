@@ -1,0 +1,15 @@
+{
+  "script": "Task4_A100_Post_Restart_Resume.py",
+  "sha256": "0a4fbc85656b74e01c145a2476ae058f9687e6bcf3cc21b3815716a9da67115d",
+  "source_and_launcher_syntax_passed": true,
+  "local_checks_passed": 12,
+  "local_checks_breakdown": {
+    "new_saved_repair_evidence_and_guard_view": 6,
+    "preserved_actual_kernel_restart_guards": 6
+  },
+  "prior_source_manifests_and_payloads_reverified_unchanged": 19,
+  "actual_notebook_restart_and_colab_recheck_pending": true,
+  "last_confirmed_responses": 1800,
+  "last_confirmed_judgments": 0,
+  "human_labels_last_confirmed": 0
+}

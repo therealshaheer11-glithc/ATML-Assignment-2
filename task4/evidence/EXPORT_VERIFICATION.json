@@ -1,0 +1,18 @@
+{
+  "audit_labels": 240,
+  "audit_matrices_recomputed": 4,
+  "created_utc": "20261012T121401.512392Z",
+  "format": "ATML_TASK4_GITHUB_EXPORT_REPORT_V1",
+  "generation_calls": 0,
+  "judge_calls": 0,
+  "judgments": 1800,
+  "models_loaded": 0,
+  "policy_metrics_recomputed": 4,
+  "prior_evidence_modified": false,
+  "raw_dataset_or_weights_included": false,
+  "responses": 1800,
+  "scope": "Verified through mounted Drive; model weights and individual unit envelopes are not exported. Complete ordered generation and judgment records are included.",
+  "source_sha256": "3a7a1a3ad152ff71365ac128f80283866d99f6578ad7f6fed9fbe29d13613cd4",
+  "status": "FULL_EXPORTS_AND_METRICS_VERIFIED",
+  "training_performed": false
+}

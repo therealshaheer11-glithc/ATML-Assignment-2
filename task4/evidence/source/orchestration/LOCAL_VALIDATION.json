@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-11T12:32:19.375790+00:00",
+  "core_checks_passed_locally": 20,
+  "preserved_parser_checks_passed_locally": 8,
+  "local_checks_passed_total": 28,
+  "course_library_checks_pending_colab": 9,
+  "expected_colab_total": 37,
+  "source_syntax_checked": true,
+  "local_torch_available": false,
+  "local_transformers_available": false,
+  "tested_scripts_sha256": {
+    "core.py": "6cfa7bc2179771051e093df550d7d495dede2316f48aa461f177bc5176258489",
+    "test_core.py": "e56853f580a458bf0cda6c3cd5f4cf5a9d2811fde2b56e86db32c17b1e90f838",
+    "test_parser.py": "6862cfc0ac8318a517be4877c3258ceac590ce736d3b58cfa006329d1e97ca81"
+  },
+  "syntax_checked_scripts_sha256": {
+    "core.py": "6cfa7bc2179771051e093df550d7d495dede2316f48aa461f177bc5176258489",
+    "course_calls.py": "e24c3baf6dcb5b6466124b84d9afbf24eb70713c341600eb11f5845ac3ac9647",
+    "run_checks.py": "23dbb000b8bb5632c389daa936ca3d199a03d5ce4300af029c20e58d850a4921",
+    "test_core.py": "e56853f580a458bf0cda6c3cd5f4cf5a9d2811fde2b56e86db32c17b1e90f838",
+    "test_course.py": "0f45ef96633d6c1c0f294d83a85cce08ceda27b1d1b75633b3257d5d60ded248",
+    "test_parser.py": "6862cfc0ac8318a517be4877c3258ceac590ce736d3b58cfa006329d1e97ca81",
+    "validate_cpu.py": "588a63323d69778afd8b3d98f18b452c502479eb63b1feb78f4e76f532a8da0c"
+  },
+  "local_test_log_sha256": {
+    "test_core_orchestration_local.txt": "594bc416745e9d203342392131ad06250465145f2eaa2f000a1dfb5ce5f6db36",
+    "test_parser_orchestration_local.txt": "5770117387b792eae4ec8d907e19802d1b56290facde2288ce21f1503f74e667"
+  },
+  "preserved_judge_source_sha256": "50e7b6507a4c87aa35fce4d1a21944f26049fbdae6aff5a9a2504ff930724e9f",
+  "pretrained_model_weights_loaded": false,
+  "actual_colab_validation_performed": false,
+  "actual_task4_responses_generated": 0,
+  "actual_task4_judgments_produced": 0,
+  "human_labels_assigned": 0
+}

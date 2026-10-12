@@ -1,0 +1,8 @@
+[
+  {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "total_memory_mib": 40960,
+    "driver_version": "580.82.07",
+    "uuid": "GPU-a07b6e3e-3ef6-217b-d41f-dc5c4d6babfd"
+  }
+]

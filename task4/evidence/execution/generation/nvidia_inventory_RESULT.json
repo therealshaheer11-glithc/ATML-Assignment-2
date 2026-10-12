@@ -1,0 +1,10 @@
+{
+  "stage": "nvidia_inventory",
+  "argv": [
+    "nvidia-smi",
+    "--query-gpu=name,memory.total,driver_version,uuid",
+    "--format=csv,noheader,nounits"
+  ],
+  "returncode": 0,
+  "log_sha256": "0f18022ba5c2f89e9790832ad27b835c429f6c7780530c6fed9f5fe6cb384c6c"
+}

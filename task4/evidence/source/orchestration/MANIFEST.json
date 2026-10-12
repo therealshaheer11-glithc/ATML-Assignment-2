@@ -1,0 +1,13 @@
+{
+  "AUTHORIZATION_CONTEXT.json": "602d7dddcd8817ce8b8e18f915e85554620751cae4831a3fa47f0de9dc57b929",
+  "LOCAL_VALIDATION.json": "e79f2bee4626822c704cf75ce9ff37b43d5e42e08a441d57e3a357eceaaa47e2",
+  "README.md": "d5ab7ec6242f4c68e092d068f0e4ad7aa0f7bc4b0e601ed0f4818c7c1f2c6802",
+  "VERIFIED_MODEL_INPUT_OBSERVATION.json": "9ddb0dab557d0fb82fb615f13e6cc7ca849f42913a98152b918cd2b4bf18cdbf",
+  "core.py": "6cfa7bc2179771051e093df550d7d495dede2316f48aa461f177bc5176258489",
+  "course_calls.py": "e24c3baf6dcb5b6466124b84d9afbf24eb70713c341600eb11f5845ac3ac9647",
+  "run_checks.py": "23dbb000b8bb5632c389daa936ca3d199a03d5ce4300af029c20e58d850a4921",
+  "test_core.py": "e56853f580a458bf0cda6c3cd5f4cf5a9d2811fde2b56e86db32c17b1e90f838",
+  "test_course.py": "0f45ef96633d6c1c0f294d83a85cce08ceda27b1d1b75633b3257d5d60ded248",
+  "test_parser.py": "6862cfc0ac8318a517be4877c3258ceac590ce736d3b58cfa006329d1e97ca81",
+  "validate_cpu.py": "588a63323d69778afd8b3d98f18b452c502479eb63b1feb78f4e76f532a8da0c"
+}

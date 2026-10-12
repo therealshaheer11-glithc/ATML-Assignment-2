@@ -1,0 +1,9 @@
+{
+  "reviewed_commit": "2173e5e833754e7904a2a89b7950e56919b4565e",
+  "scope": "Existing verified task-specific scores; evaluation contexts differ; no pooled correlation.",
+  "sources": {
+    "results/task1/analysis/summary.csv": "846d917929fce3b1f93a7235d585ef2d6a73481abc0dbef60678931057a731e6",
+    "task2/evidence/original/held_out_metrics.csv": "fb092895845bf8345cb1aa39425380844c5e54207fd3b2afd3d813dad24dfc56",
+    "task3/results/actual_run_20261011/evaluation.csv": "bdf7dd7e1a0a1337392a81e312373a887f116fff3794849b2c8e946cd9e8ca7d"
+  }
+}

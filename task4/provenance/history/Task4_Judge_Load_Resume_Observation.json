@@ -1,0 +1,22 @@
+{
+  "evidence": "user_returned_console_output_saved_Drive_evidence_pending_direct_verification",
+  "returned_output_sha256": "8b117539834b8a687533f22e4a6c165a177559909498a707bf600d265ca1937d",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/resume_judge_loading_attempts/20261012T052212.342979Z/REPORT.json",
+  "status": "RESUMED_JUDGE_LOADED_AND_VALIDATED_NO_INFERENCE",
+  "post_restart_artifacts_verified": 36,
+  "sealed_source_releases_verified": 19,
+  "judge_files_freshly_sha256_verified": 9,
+  "judge_load_inspection_passed": true,
+  "judge_signature_matches_historical_validation": true,
+  "base_names": 724,
+  "preserved_duplicate_groups": 16,
+  "isolated_exact_packages": 84,
+  "base_and_isolated_environment_unchanged": true,
+  "inspection_process_exited": true,
+  "model_resident_after_block": false,
+  "forward_passes": 0,
+  "judgments": 0,
+  "responses_last_verified": 1800,
+  "human_labels_last_confirmed": 0,
+  "next_stage": "Verify successful judge/current-runtime evidence and all saved generations/cached judgments, then run original fixed categorical judging with per-response persistence."
+}

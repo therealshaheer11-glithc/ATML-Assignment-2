@@ -1,0 +1,12 @@
+{
+  "script": "Task4_CPU_Audit_Form.py",
+  "bytes": 20459,
+  "sha256": "3d3e28e563ea28fe1c3ca4a0ddccc44ae401784604bce3ce9d228d9dcac235fc",
+  "python_test_cases_passed": 5,
+  "javascript_behavior_checks_passed": true,
+  "javascript_dom_simulated": true,
+  "real_browser_visual_check": "UNAVAILABLE: no installed test browser; no browser downloaded",
+  "nineteen_frozen_releases_unchanged": true,
+  "actual_Colab_preparation": "PENDING",
+  "human_labels_last_confirmed": 0
+}

@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-11T12:18:01.532013+00:00",
+  "evidence": "User-returned Colab model-input output; no local live Drive access",
+  "returned_output_sha256": "8e807de83aedcdd992a221ce99ca06bce27b353c7804cba657b75bc547717de1",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_inputs_attempts/20261011T121238.845030Z/REPORT.json",
+  "status": "CPU_ADAPTERS_TOKENIZERS_READY",
+  "source_manifest_sha256": "50696b4becd13a8f1594896d384e718fa8d3984e4fb5785bec977a6b35eeac7d",
+  "prepared_adapters": 3,
+  "sft_adapter": null,
+  "adapter_tensor_counts": {
+    "dpo": 112,
+    "ppo": 112,
+    "grpo": 112
+  },
+  "tokenizers_checked": 2,
+  "prompts_tokenized": 450,
+  "generation_batches_checked": 113,
+  "prompts_exceeding_fixed_256_token_cap": 0,
+  "cpu_model_input_contract_finalized": true,
+  "pretrained_models_loaded": false,
+  "generated_responses": 0,
+  "judge_calls": 0,
+  "human_labels": 0,
+  "training_performed": false,
+  "next_stage": "CPU synthetic validation of orchestration, preserved course helper semantics, aggregation and resume"
+}

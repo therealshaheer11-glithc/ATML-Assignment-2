@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/content/task4_isolated_runtime_v1/bin/python",
+    "-I",
+    "-B",
+    "-u",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z/JUDGING_SOURCE.py",
+    "--worker",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z",
+    "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+    "f43a4be0f0e2ec56e33a53573c4f70218ad42f8bc4f727b82d6e767794d08b5c"
+  ],
+  "stage": "fixed_judging_worker"
+}

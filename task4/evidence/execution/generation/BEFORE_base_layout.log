@@ -1,0 +1,99 @@
+Fresh base layout: 724 names; 16 preserved duplicate groups.
+Named metadata selection for duplicate groups: {
+  "blinker": {
+    "version": "1.9.0",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/blinker-1.9.0.dist-info",
+    "outside_prefix": false
+  },
+  "cryptography": {
+    "version": "50.0.2",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/cryptography-50.0.2.dist-info",
+    "outside_prefix": false
+  },
+  "distro": {
+    "version": "1.9.0",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/distro-1.9.0.dist-info",
+    "outside_prefix": false
+  },
+  "gdal": {
+    "version": "3.8.4",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/gdal-3.8.4.dist-info",
+    "outside_prefix": false
+  },
+  "httplib2": {
+    "version": "0.32.0",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/httplib2-0.32.0.dist-info",
+    "outside_prefix": false
+  },
+  "markdown": {
+    "version": "3.11",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/markdown-3.11.dist-info",
+    "outside_prefix": false
+  },
+  "markupsafe": {
+    "version": "3.0.3",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/markupsafe-3.0.3.dist-info",
+    "outside_prefix": false
+  },
+  "numpy": {
+    "version": "2.1.3",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/numpy-2.1.3.dist-info",
+    "outside_prefix": false
+  },
+  "oauthlib": {
+    "version": "3.3.1",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/oauthlib-3.3.1.dist-info",
+    "outside_prefix": false
+  },
+  "packaging": {
+    "version": "26.3",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/packaging-26.3.dist-info",
+    "outside_prefix": false
+  },
+  "pygobject": {
+    "version": "3.48.2",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygobject-3.48.2.dist-info",
+    "outside_prefix": false
+  },
+  "pyjwt": {
+    "version": "2.15.1",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyjwt-2.15.1.dist-info",
+    "outside_prefix": false
+  },
+  "pyparsing": {
+    "version": "3.3.3",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyparsing-3.3.3.dist-info",
+    "outside_prefix": false
+  },
+  "python-apt": {
+    "version": "0.0.0",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_apt-0.0.0-py3.13.egg-info",
+    "outside_prefix": false
+  },
+  "setuptools": {
+    "version": "80.10.2",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/setuptools-80.10.2.dist-info",
+    "outside_prefix": false
+  },
+  "six": {
+    "version": "1.17.0",
+    "root": "/usr/local/lib/python3.13/dist-packages",
+    "metadata_path": "/usr/local/lib/python3.13/dist-packages/six-1.17.0.dist-info",
+    "outside_prefix": false
+  }
+}

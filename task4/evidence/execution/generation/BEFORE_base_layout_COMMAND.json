@@ -1,0 +1,11 @@
+{
+  "stage": "BEFORE_base_layout",
+  "argv": [
+    "/usr/bin/python3",
+    "-I",
+    "-B",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_repair_recheck_releases/4955a6f76dfbfc5b2f92825fce309eabbe4c209cf576b73a7d182ff0b101f09a/scan_base_layout.py",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_layout_diagnostic_releases/961b9825e7a34823a8f3930e597149c425427d494f8d9c9b10652e5998a734be/scan_layout.py",
+    "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/BEFORE_BASE_LAYOUT.json"
+  ]
+}

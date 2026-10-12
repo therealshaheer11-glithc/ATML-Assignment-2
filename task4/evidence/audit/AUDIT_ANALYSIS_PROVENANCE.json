@@ -1,0 +1,26 @@
+{
+  "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+  "authorization": "User requested AI labeling and supplied a TA message permitting AI use and report treatment; this is not a verified professor communication.",
+  "confidence_used_for_filtering_or_weighting": false,
+  "frozen_export_sha256": {
+    "generation/dpo": "20dc46162a64344d29166dd713933b5480a84ad24f5a31d9fe35040fabf3b97e",
+    "generation/grpo": "a7fcdeccc0c16561d140c4563c90693c851bad8a14467de26730638f29b19395",
+    "generation/ppo": "75e33629d23b8bdbc6d87d7b98997cbc60cfc5fd9d85b9f7e43c0e30de8e1493",
+    "generation/sft": "0f8b450ada024e98dbde43049dddf0e5bd1d11fc64b247e264a1eb9df3b8488d",
+    "judgment/dpo": "3d8a48a12d450c4c356b986fccb82d39b1e967343d87b59ec9dfb264fc29b911",
+    "judgment/grpo": "b44c9410fbbac0de25af3010faea00a0a8a4cc46064c4347c88fac588bebe23a",
+    "judgment/ppo": "e83b0b9ea7d2cfe2b8852d606b44b4ee41267ff5efd9a7f9acb3a1a94cf59f45",
+    "judgment/sft": "2f346cc6c7f1b2fc6c4cc955993e42ccbd17146953f41ca207ebc30f70bbca51"
+  },
+  "judgments_remapped": false,
+  "labels_sha256": "4d95102c5385b166b291d8579c38986fc4dd9c0112742b8d0874fdc11b1d2d0c",
+  "original_agreement_core_sha256": "6cfa7bc2179771051e093df550d7d495dede2316f48aa461f177bc5176258489",
+  "original_agreement_function_unchanged": true,
+  "packet_contract_sha256": "c81c3e5ca120a8960cf2de736146d8253b2487305f3bd8109af022546cfdb1c6",
+  "packet_id": "66f81874042a5dcb2bbc6a5df519e84a7bad968847ab44aee1994422dcda57a2",
+  "preparation_report_sha256": "263c464402b980a118a8ddbc5beb3e12e64f612265541199e5185471ded2e2f4",
+  "private_mapping_sha256": "3ed56d5ade28996e198901220264668a52def2171cde04e97a5eed48ad3eb26d",
+  "row_metadata_adapted_to_actual_label_origin": true,
+  "subset_resampled": false,
+  "summary_report_sha256": "e17d37642169ca99473d9976837e5fe966c2c5fccd8db71fb646caa5a4becf7d"
+}

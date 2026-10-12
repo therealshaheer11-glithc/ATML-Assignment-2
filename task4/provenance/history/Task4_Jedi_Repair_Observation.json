@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-12T04:53:47.046120+00:00",
+  "evidence": "User-returned full Colab console output; next block verifies saved Drive report, new contract and artifact hashes.",
+  "returned_output_sha256": "9564bee9494a52735ed29d15a0593fd52b852820fe586804fada636e0168fc91",
+  "source_sha256": "6b1813443b7b61fe9be1bc0ee36e6ac4f73dcba660533d15d884aab4580f95af",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/resume_base_jedi_attempts/20261012T045114.280111Z/REPORT.json",
+  "status": "RESUMED_BASE_JEDI_REPAIRED_BOTH_DEPENDENCY_CHECKS_PASSED_RESTART_PENDING",
+  "only_base_package_addition": {
+    "jedi": "0.20.0"
+  },
+  "base_package_names": 724,
+  "preserved_duplicate_groups": 16,
+  "isolated_exact_packages": 84,
+  "base_full_dependency_check_passed": true,
+  "isolated_full_dependency_check_passed": true,
+  "fresh_tools_and_jedi_completion_passed": true,
+  "numpy_selected_version": "2.1.3",
+  "packaging_selected_version": "26.3",
+  "standard_root_user_pip_warning_observed": true,
+  "gpu_exceptions_accepted": [],
+  "ordinary_kernel_restart_pending": true,
+  "post_restart_validation_pending": true,
+  "judge_model_loading_pending": true,
+  "new_generation_calls": 0,
+  "judge_calls": 0,
+  "model_loads": 0,
+  "responses_retained": 1800,
+  "judgments_completed": 0,
+  "human_labels_last_confirmed": 0
+}

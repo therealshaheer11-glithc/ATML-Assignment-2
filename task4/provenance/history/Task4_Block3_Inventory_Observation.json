@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-11T11:45:30.165860+00:00",
+  "evidence": "User-returned Colab inventory output; no local live Drive access",
+  "returned_output_sha256": "cf2dffc599cf89ee5153969641e288002978a949a93c5c2afe7b73bdac6545fc",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_inventory_attempts/20261011T113929.803036Z/REPORT.json",
+  "status": "BASE_FILES_VERIFIED_JUDGE_METADATA_READY",
+  "inventory_source_manifest_sha256": "d9e3eb2cd1d9c5cafc4956313553209d0581a07ed9d204c92529be56755e22de",
+  "base": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "verified_files": 7,
+    "bytes": 3098955668,
+    "all_saved_files_verified": true
+  },
+  "judge": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "observed_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "proposed_files": 9,
+    "proposed_download_bytes": 6183451098,
+    "existing_local_cache_candidates": [],
+    "revision_selected_for_experiment": false,
+    "weight_download_performed": false
+  },
+  "model_weights_loaded": false,
+  "generated_responses": 0,
+  "judge_calls": 0,
+  "human_labels": 0,
+  "training_performed": false,
+  "next_stage": "Await explicit approval for documented base reuse, judge revision pin and CPU download proposal"
+}

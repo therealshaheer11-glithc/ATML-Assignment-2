@@ -1,0 +1,13 @@
+{
+  "script": "Task4_Resume_Check.py",
+  "sha256": "818224dbe9f5084839db920aceeb0de785db6bb77adecc8fb76039057637706d",
+  "local_syntax_check_passed": true,
+  "local_checks_passed": 7,
+  "checks_scope": "Synthetic complete 450-prompt / four-policy integrity and read-only checks plus real local stdlib inventory. No Colab execution.",
+  "prior_sealed_manifests_and_payloads_reverified": 19,
+  "actual_colab_resume_check_pending": true,
+  "last_confirmed_responses": 1800,
+  "last_confirmed_judgments": 0,
+  "last_confirmed_human_labels": 0,
+  "no_new_experiment_setting_selected": true
+}

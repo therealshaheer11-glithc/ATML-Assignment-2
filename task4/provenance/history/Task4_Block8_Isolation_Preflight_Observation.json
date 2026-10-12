@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-11T15:02:02.909173+00:00",
+  "evidence": "User-returned Colab console output; saved Drive JSON artifacts have not been independently opened locally. Next approved block must verify them directly.",
+  "returned_output_sha256": "d272cdb6281128e16de96e24663814ac98dc4a4b9bc691da1617a26a9488d0ce",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolation_preflight_attempts/20261011T145304.669615Z/REPORT.json",
+  "status": "ISOLATION_PREFLIGHT_READY_FOR_REVIEW",
+  "source_manifest_sha256": "2ddda0858de0b95a43e006f77b56e569cf037beeec97c06e3f8b3a99275435d5",
+  "gpu_required_distributions": 83,
+  "proposed_isolated_package_pin_count_including_pip": 84,
+  "disputed_packages_outside_required_chain": true,
+  "proposed_torch": "2.11.0+cu130",
+  "proposed_original_base_versions_conditional": {
+    "huggingface-hub": "1.33.0",
+    "peft": "0.21.1",
+    "tokenizers": "0.23.2",
+    "transformers": "5.18.0"
+  },
+  "proposed_jedi_repair": {
+    "jedi": "0.20.0"
+  },
+  "parso": "No change proposed; exact existing version must be read from the saved proposal.",
+  "published_compatible_wheels": 90,
+  "compressed_download_bytes": 2969739166,
+  "compressed_download_gib_rounded": 2.766,
+  "download_total_complete": true,
+  "unresolved_artifacts": 0,
+  "uncompressed_installation_size_bytes": null,
+  "elapsed_installation_time": null,
+  "wheel_files_downloaded": 0,
+  "package_changes_performed": false,
+  "virtual_environment_created": false,
+  "gpu_exceptions_accepted": [],
+  "gpu_environment_contract_finalized": false,
+  "pretrained_models_loaded": 0,
+  "responses_generated": 0,
+  "judgments_produced": 0,
+  "human_labels_assigned": 0,
+  "training_performed": false,
+  "approval_pending": "Exact binary-wheel storage/downloads, isolated A100 environment and conditional Colab base repair; implementation has not begun."
+}

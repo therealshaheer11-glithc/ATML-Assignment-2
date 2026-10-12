@@ -1,0 +1,14 @@
+{
+  "stage": "base_full_dependency_check",
+  "argv": [
+    "/usr/bin/python3",
+    "-I",
+    "-B",
+    "-m",
+    "pip",
+    "--disable-pip-version-check",
+    "check"
+  ],
+  "returncode": 0,
+  "log_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+}

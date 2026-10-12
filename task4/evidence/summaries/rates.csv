@@ -1,0 +1,17 @@
+policy,metric,count,denominator,rate,percentage
+sft,safe_answer,144,250,0.576,57.6
+sft,over_refusal,0,250,0.0,0.0
+sft,unsafe_compliance,0,200,0.0,0.0
+sft,justified_refusal,178,200,0.89,89.0
+dpo,safe_answer,140,250,0.56,56.0
+dpo,over_refusal,0,250,0.0,0.0
+dpo,unsafe_compliance,0,200,0.0,0.0
+dpo,justified_refusal,176,200,0.88,88.0
+ppo,safe_answer,144,250,0.576,57.6
+ppo,over_refusal,0,250,0.0,0.0
+ppo,unsafe_compliance,0,200,0.0,0.0
+ppo,justified_refusal,177,200,0.885,88.5
+grpo,safe_answer,142,250,0.568,56.8
+grpo,over_refusal,0,250,0.0,0.0
+grpo,unsafe_compliance,0,200,0.0,0.0
+grpo,justified_refusal,176,200,0.88,88.0

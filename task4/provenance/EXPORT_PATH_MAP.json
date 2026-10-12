@@ -1,0 +1,6 @@
+{
+  "execution/generation/dpo_generation_RESULT.json": "execution/generation/dpo_worker_RESULT.json",
+  "execution/generation/grpo_generation_RESULT.json": "execution/generation/grpo_worker_RESULT.json",
+  "execution/generation/ppo_generation_RESULT.json": "execution/generation/ppo_worker_RESULT.json",
+  "execution/generation/sft_generation_RESULT.json": "execution/generation/sft_worker_RESULT.json"
+}

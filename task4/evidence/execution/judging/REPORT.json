@@ -1,0 +1,97 @@
+{
+  "artifact_sha256": {
+    "BASE_AFTER_INVENTORY.json": "d517e440840c1c0463d7d8462bd6178dee0d60d9d68412cbb15d2a3c0437843c",
+    "BASE_BEFORE_INVENTORY.json": "d517e440840c1c0463d7d8462bd6178dee0d60d9d68412cbb15d2a3c0437843c",
+    "CURRENT_GPU_QUERY.json": "1b3b61f11c4a578e6f7e57c6d1030363cb7e118464c03ffec3201b30292c1c7e",
+    "DPO_JUDGING_RESULT.json": "1d87752624c2bf1a52ce55b90e57faf60951fd95d0bfd9ae4c8de6e492efa6d6",
+    "GRPO_JUDGING_RESULT.json": "8e6e5e8a15ee68df0c7a5f48f43bc777f5dfa1167ac89e53699644e2120283b3",
+    "INFERENCE_JUDGE_CHECK.json": "49c4e513b08205bf97999badef149b6e2d542dcc97d22cad9dadb55b9e54264e",
+    "INITIAL_JUDGING_COUNTS.json": "ac43a7552481b6bf4e451f08dbcf1b148231b84960c8204678e78baafa106142",
+    "ISOLATED_AFTER.json": "dc005084ec40900f235fa7e311012dd5a4bb881c32e5d16e735c75bf7ae5ddab",
+    "ISOLATED_BEFORE.json": "dc005084ec40900f235fa7e311012dd5a4bb881c32e5d16e735c75bf7ae5ddab",
+    "JUDGE_FILES_CURRENT_SIZE_CHECK.json": "d1efa82b8c3ab6a987d846b6f1777f09f7440837b3f271e0ede3ea5656bbe685",
+    "JUDGING_COMPLETION_CANDIDATE.json": "a10845b29bb6ff8a778b6637377b46b866e594dd7b83424cf2db62626a1fd882",
+    "JUDGING_SOURCE.py": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+    "PPO_JUDGING_RESULT.json": "5b31849f615a7ec4c0815e1c8af4ebbfe55c23f6b252fbfe3fc8c895502e47c6",
+    "SFT_JUDGING_RESULT.json": "64b282ccaa3cd39a32792540ba33d859792b10beaa141b3702f4d95e1a87a21c",
+    "WORKER_RESULT.json": "2bec333ddee0840bf93cb6a3533f54fbdd530ccd3b174811eb5dbba4893b2422",
+    "fixed_judging_worker.log": "9cb51bf379522ef3966405f22159ec4b07954dcd8c149938f2f7d23fc93ac441",
+    "fixed_judging_worker_COMMAND.json": "8cdb57e0c5b8cbe934fdc1a7467a564fc500d57fa0ff9d27db87947b7c254096",
+    "fixed_judging_worker_RESULT.json": "f408ba6c6c7d0afeffa5c409c961aa866d1b44ce6cdc41151e472edbc0935bae",
+    "isolated_after.log": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+    "isolated_after_COMMAND.json": "878d80a483202206c0c7f53b4220c67a3c0a89ac45e87fe63ea33c4d7aecfe8d",
+    "isolated_after_RESULT.json": "23e33dc42e12cce06916330cc6b49f11f4cc9f753be6c41d168ef5b04472df5b",
+    "isolated_before.log": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+    "isolated_before_COMMAND.json": "dcc70a283c14688565da15f267894d669d044e406e13c275b7bd409fb2161791",
+    "isolated_before_RESULT.json": "66fc4794f73c4564c6d96b5824d2b34205cd8bf1910d95cd969f730a22a41021"
+  },
+  "attempt_utc": "20261012T053854.082678Z",
+  "base_and_isolated_environment_unchanged": true,
+  "commands": [
+    {
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z/ISOLATED_BEFORE.json"
+      ],
+      "log_sha256": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+      "returncode": 0,
+      "stage": "isolated_before"
+    },
+    {
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-u",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z/JUDGING_SOURCE.py",
+        "--worker",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z",
+        "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+        "f43a4be0f0e2ec56e33a53573c4f70218ad42f8bc4f727b82d6e767794d08b5c"
+      ],
+      "log_sha256": "9cb51bf379522ef3966405f22159ec4b07954dcd8c149938f2f7d23fc93ac441",
+      "returncode": 0,
+      "stage": "fixed_judging_worker"
+    },
+    {
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/judging_attempts/20261012T053854.082678Z/ISOLATED_AFTER.json"
+      ],
+      "log_sha256": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+      "returncode": 0,
+      "stage": "isolated_after"
+    }
+  ],
+  "completed_judgments": 1800,
+  "downloads": 0,
+  "format": "ATML_TASK4_JUDGING_ATTEMPT_V1",
+  "gpu_exceptions_accepted": [],
+  "historical_generation_contracts_rewritten": false,
+  "human_audit_pending": true,
+  "human_labels_assigned": 0,
+  "judging_completion_contract_sha256": "a10845b29bb6ff8a778b6637377b46b866e594dd7b83424cf2db62626a1fd882",
+  "judging_execution_contract_sha256": "f43a4be0f0e2ec56e33a53573c4f70218ad42f8bc4f727b82d6e767794d08b5c",
+  "new_judge_call_attempts": 1800,
+  "new_judgments_saved": 1800,
+  "package_changes_performed": false,
+  "policy_judgment_counts": {
+    "dpo": 450,
+    "grpo": 450,
+    "ppo": 450,
+    "sft": 450
+  },
+  "remaining_judgments": 0,
+  "response_generation_performed": false,
+  "responses_retained": 1800,
+  "reused_judgments": 0,
+  "source_sha256": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+  "status": "ALL_FOUR_POLICIES_JUDGED_AND_SAVED",
+  "training_performed": false
+}

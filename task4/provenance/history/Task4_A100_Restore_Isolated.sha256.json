@@ -1,0 +1,17 @@
+{
+  "script": "Task4_A100_Restore_Isolated.py",
+  "sha256": "a3025083ed0094652e39e306c7d2bdaf226d025a651e705cf3f8f37b17ac130e",
+  "source_and_launcher_syntax_passed": true,
+  "local_guard_checks_passed": 28,
+  "local_checks_breakdown": {
+    "new_resume_evidence_and_ownership": 9,
+    "preserved_installation_and_isolation": 13,
+    "preserved_child_environment_correction": 6
+  },
+  "prior_source_manifests_and_payloads_verified_unchanged": 19,
+  "actual_a100_restore_execution_pending": true,
+  "authorization": "Existing explicit approval for exact 84-package isolated A100 setup; no new package or experiment choice.",
+  "last_verified_responses": 1800,
+  "last_verified_judgments": 0,
+  "human_labels_last_confirmed": 0
+}

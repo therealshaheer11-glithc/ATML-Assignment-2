@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-11T18:44:00.247948+00:00",
+  "evidence": "User-returned Colab console output; the next block verifies saved Drive report, artifacts, completion contract and every generation unit directly.",
+  "returned_output_sha256": "4b50ba1bba5f89e5b71df9da6465c955c8a81f0c02008d38da921f36c41a3493",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/REPORT.json",
+  "source_manifest_sha256": "862f0e0330d9e8e571cb02bc27b32c48591aaee15f9f2543d315dc43ce97ada4",
+  "status": "ALL_FOUR_POLICIES_GENERATED_AND_SAVED",
+  "by_policy": {
+    "sft": {
+      "responses": 450,
+      "generation_batches": 113
+    },
+    "dpo": {
+      "responses": 450,
+      "generation_batches": 113
+    },
+    "ppo": {
+      "responses": 450,
+      "generation_batches": 113
+    },
+    "grpo": {
+      "responses": 450,
+      "generation_batches": 113
+    }
+  },
+  "completed_generation_batches": 452,
+  "remaining_generation_batches": 0,
+  "responses_generated": 1800,
+  "remaining_responses": 0,
+  "judgments_produced": 0,
+  "remaining_judgments": 1800,
+  "human_labels_assigned": 0,
+  "remaining_human_labels": 240,
+  "base_packages_preserved": 724,
+  "isolated_packages_preserved": 84,
+  "base_and_isolated_environment_unchanged": true,
+  "inherited_sampling_flags_warning_occurrences": 4,
+  "warning_interpretation": "Inherited sampling settings are ignored under the unchanged do_sample=False deterministic generation; no failure or setting change is reported.",
+  "next_stage": "Original categorical NF4 judge, one call per saved response, 1800 calls total, per-judgment atomic persistence and identity-checked resume; no manual labels."
+}

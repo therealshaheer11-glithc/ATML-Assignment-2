@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-11T14:16:03.393874+00:00",
+  "evidence": "User-returned Colab console output; no local live Drive access",
+  "returned_output_sha256": "ac127370b64902faf1c144a80df94b14962e75a0cb5ea8abf5c4246ff7a00116",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/orchestration_attempts/20261011T123747.440376Z/REPORT.json",
+  "status": "CPU_ORCHESTRATION_VALIDATED_NO_INFERENCE",
+  "source_manifest_sha256": "35ca690761d2bfda0992ff37855b16fc72c03ffd4b47afaa81edc533ab7a5f65",
+  "synthetic_cpu_checks_passed": 37,
+  "synthetic_checks_failed": 0,
+  "prompt_ids_checked": 450,
+  "generation_batches_per_policy": 113,
+  "cpu_orchestration_contract_finalized": true,
+  "gpu_environment_validation_pending": true,
+  "gpu_model_validation_pending": true,
+  "pretrained_models_loaded": false,
+  "generated_responses": 0,
+  "judge_calls": 0,
+  "human_labels": 0,
+  "training_performed": false,
+  "next_stage": "A100 environment preparation and fresh-process validation using unchanged course requirements; no pretrained model loads or inference"
+}

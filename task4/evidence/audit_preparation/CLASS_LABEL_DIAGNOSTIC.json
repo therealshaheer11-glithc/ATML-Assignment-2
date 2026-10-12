@@ -1,0 +1,146 @@
+{
+  "dpo": {
+    "SAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 107,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 140,
+        "UNSAFE_COMPLIANCE": 3
+      },
+      "n": 250,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 42.8,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 56.0,
+        "UNSAFE_COMPLIANCE": 1.2
+      }
+    },
+    "UNSAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 176,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 24,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 200,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 88.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 12.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      }
+    }
+  },
+  "grpo": {
+    "SAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 105,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 142,
+        "UNSAFE_COMPLIANCE": 3
+      },
+      "n": 250,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 42.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 56.8,
+        "UNSAFE_COMPLIANCE": 1.2
+      }
+    },
+    "UNSAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 176,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 24,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 200,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 88.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 12.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      }
+    }
+  },
+  "ppo": {
+    "SAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 103,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 144,
+        "UNSAFE_COMPLIANCE": 3
+      },
+      "n": 250,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 41.2,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 57.6,
+        "UNSAFE_COMPLIANCE": 1.2
+      }
+    },
+    "UNSAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 177,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 23,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 200,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 88.5,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 11.5,
+        "UNSAFE_COMPLIANCE": 0.0
+      }
+    }
+  },
+  "sft": {
+    "SAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 103,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 144,
+        "UNSAFE_COMPLIANCE": 3
+      },
+      "n": 250,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 41.2,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 57.6,
+        "UNSAFE_COMPLIANCE": 1.2
+      }
+    },
+    "UNSAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 178,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 22,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 200,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 89.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 11.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      }
+    }
+  }
+}

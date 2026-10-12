@@ -1,0 +1,16 @@
+{
+  "script": "Task4_A100_Repair_Jedi.py",
+  "sha256": "6b1813443b7b61fe9be1bc0ee36e6ac4f73dcba660533d15d884aab4580f95af",
+  "source_and_launcher_syntax_passed": true,
+  "local_checks_passed": 11,
+  "local_checks_breakdown": {
+    "new_exact_jedi_inventory_and_layout_guards": 10,
+    "preserved_offline_hashed_base_install_command": 1
+  },
+  "prior_source_manifests_and_payloads_reverified_unchanged": 19,
+  "actual_colab_jedi_repair_and_fresh_probes_pending": true,
+  "existing_authorization": "Conditional original Colab base restoration and Jedi repair after isolated validation; this block only adds Jedi 0.20.0.",
+  "last_confirmed_responses": 1800,
+  "last_confirmed_judgments": 0,
+  "human_labels_last_confirmed": 0
+}

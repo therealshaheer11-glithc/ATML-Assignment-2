@@ -1,0 +1,19 @@
+{
+  "evidence": "user_returned_console_output_saved_Drive_artifacts_pending_direct_verification",
+  "attachment_sha256": "814b1ab1929d7cfae2d28d66abd996b483ea168f45881ce34941e758aa1ce53e",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/resume_post_restart_attempts/20261012T051358.122710Z/REPORT.json",
+  "status": "RESUMED_BOTH_INTERPRETERS_VALIDATED_AFTER_RESTART_NO_INFERENCE",
+  "actual_kernel_restart_verified": true,
+  "both_full_dependency_checks_passed": true,
+  "fresh_imports_cuda_nf4_passed": true,
+  "synthetic_checks_passed": 37,
+  "base_names": 724,
+  "preserved_duplicate_groups": 16,
+  "isolated_exact_packages": 84,
+  "responses_retained": 1800,
+  "judgments": 0,
+  "human_labels_last_confirmed": 0,
+  "pretrained_models_loaded": 0,
+  "historical_contracts_rewritten": false,
+  "next_stage": "Verify saved current-runtime evidence and pinned judge snapshot; run original sealed judge-only load/inspection without inference."
+}

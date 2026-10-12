@@ -1,0 +1,12 @@
+{
+  "stage": "base_full_dependency_check",
+  "argv": [
+    "/usr/bin/python3",
+    "-I",
+    "-B",
+    "-m",
+    "pip",
+    "--disable-pip-version-check",
+    "check"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "approved": true,
+  "question": "Do you approve a CPU-generated offline human-audit form with 240 anonymous responses shuffled using seed 6304, showing only each prompt and response and hiding policy identity, benchmark metadata and AI judgments? It would autosave your labels in the browser and let you export a JSON backup. This adds a presentation/blinding choice, so your instruction requires explicit approval.",
+  "user_answer": "Approve this audit format"
+}

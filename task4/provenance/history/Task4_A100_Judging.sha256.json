@@ -1,0 +1,17 @@
+{
+  "script": "Task4_A100_Judging.py",
+  "bytes": 34790,
+  "sha256": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+  "source_and_launcher_syntax_passed": true,
+  "local_checks_passed": 38,
+  "local_checks_breakdown": {
+    "new_judging_persistence_resume_provenance_and_heartbeat": 10,
+    "preserved_orchestration_core": 20,
+    "preserved_original_parser": 8
+  },
+  "prior_source_manifests_and_payloads_reverified_unchanged": 19,
+  "actual_Colab_judging_execution_pending": true,
+  "responses_last_verified": 1800,
+  "judgments_last_verified": 0,
+  "human_labels_last_confirmed": 0
+}

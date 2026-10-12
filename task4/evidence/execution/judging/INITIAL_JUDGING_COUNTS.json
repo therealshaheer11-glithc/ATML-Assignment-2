@@ -1,0 +1,27 @@
+{
+  "completed_judgments_by_policy": {
+    "dpo": 0,
+    "grpo": 0,
+    "ppo": 0,
+    "sft": 0
+  },
+  "confidence_filtering_or_weighting": false,
+  "format": "ATML_TASK4_JUDGING_WORKER_V1",
+  "human_labels_assigned": 0,
+  "initial_judgments_by_policy": {
+    "dpo": 0,
+    "grpo": 0,
+    "ppo": 0,
+    "sft": 0
+  },
+  "judge_calls_returned": 0,
+  "judging_execution_contract_sha256": "f43a4be0f0e2ec56e33a53573c4f70218ad42f8bc4f727b82d6e767794d08b5c",
+  "model_loaded": false,
+  "new_judge_call_attempts": 0,
+  "new_judgments_saved": 0,
+  "response_generation_calls": 0,
+  "reused_judgments": 0,
+  "source_sha256": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+  "status": "RUNNING",
+  "training_performed": false
+}

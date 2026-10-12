@@ -1,0 +1,30 @@
+{
+  "completed_judgments": 1800,
+  "completed_judgments_by_policy": {
+    "dpo": 450,
+    "grpo": 450,
+    "ppo": 450,
+    "sft": 450
+  },
+  "completion_candidate_sha256": "a10845b29bb6ff8a778b6637377b46b866e594dd7b83424cf2db62626a1fd882",
+  "confidence_filtering_or_weighting": false,
+  "format": "ATML_TASK4_JUDGING_WORKER_V1",
+  "human_labels_assigned": 0,
+  "initial_judgments_by_policy": {
+    "dpo": 0,
+    "grpo": 0,
+    "ppo": 0,
+    "sft": 0
+  },
+  "judge_calls_returned": 1800,
+  "judging_execution_contract_sha256": "f43a4be0f0e2ec56e33a53573c4f70218ad42f8bc4f727b82d6e767794d08b5c",
+  "model_loaded": true,
+  "new_judge_call_attempts": 1800,
+  "new_judgments_saved": 1800,
+  "remaining_judgments": 0,
+  "response_generation_calls": 0,
+  "reused_judgments": 0,
+  "source_sha256": "b7a51de411113a6a3412176f03b33a58206115b9a60ecaa83e5b21b3d07405b8",
+  "status": "ALL_FOUR_POLICIES_JUDGED_AND_SAVED",
+  "training_performed": false
+}

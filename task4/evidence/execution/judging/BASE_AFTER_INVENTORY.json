@@ -1,0 +1,3847 @@
+{
+  "args": [
+    "/usr/bin/python3",
+    "-I",
+    "-B",
+    "-c",
+    "\nimport importlib.metadata as m, json, platform, re, site, sys\nfrom pathlib import Path\nentries = {}\nfor d in m.distributions():\n    name=d.metadata.get('Name')\n    if name:\n        key=re.sub(r'[-_.]+','-',name).lower()\n        entries.setdefault(key,[]).append({'version':d.version,'root':str(Path(d.locate_file('')).resolve()),\n            'metadata_path':str(getattr(d,'_path',''))})\nselected={}\nfor name in sorted(entries):\n    d=m.distribution(name)\n    selected[name]={'version':d.version,'root':str(Path(d.locate_file('')).resolve()),\n                    'metadata_path':str(getattr(d,'_path',''))}\nprint(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'executable':sys.executable,\n    'prefix':sys.prefix,'base_prefix':sys.base_prefix,'user_site_enabled':site.ENABLE_USER_SITE,\n    'sys_path':sys.path,'selected_packages':selected,'duplicate_groups':{k:v for k,v in entries.items() if len(v)>1}},indent=2))\n"
+  ],
+  "inventory": {
+    "base_prefix": "/usr",
+    "duplicate_groups": {
+      "blinker": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/blinker-1.9.0.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "1.9.0"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/blinker-1.7.0.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "1.7.0"
+        }
+      ],
+      "cryptography": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/cryptography-50.0.2.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "50.0.2"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/cryptography.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "41.0.7"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/cryptography-41.0.7.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "41.0.7"
+        }
+      ],
+      "distro": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/distro-1.9.0.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "1.9.0"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/distro-1.9.0.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "1.9.0"
+        }
+      ],
+      "gdal": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/gdal-3.8.4.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.8.4"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/GDAL-3.8.4.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "3.8.4"
+        }
+      ],
+      "httplib2": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/httplib2-0.32.0.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "0.32.0"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/httplib2-0.20.4.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "0.20.4"
+        }
+      ],
+      "markdown": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/markdown-3.11.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.11"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/Markdown-3.5.2.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "3.5.2"
+        }
+      ],
+      "markupsafe": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/markupsafe-3.0.3.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.0.3"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/MarkupSafe-2.1.5.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "2.1.5"
+        }
+      ],
+      "numpy": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/numpy-2.1.3.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "2.1.3"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/numpy-1.26.4.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "1.26.4"
+        }
+      ],
+      "oauthlib": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/oauthlib-3.3.1.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.3.1"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/oauthlib-3.2.2.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "3.2.2"
+        }
+      ],
+      "packaging": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/packaging-26.3.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "26.3"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/packaging-24.0.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "24.0"
+        }
+      ],
+      "pygobject": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygobject-3.48.2.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.48.2"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/PyGObject-3.48.2.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "3.48.2"
+        }
+      ],
+      "pyjwt": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyjwt-2.15.1.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "2.15.1"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/PyJWT-2.7.0.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "2.7.0"
+        }
+      ],
+      "pyparsing": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyparsing-3.3.3.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "3.3.3"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/pyparsing-3.1.1.dist-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "3.1.1"
+        }
+      ],
+      "python-apt": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_apt-0.0.0-py3.13.egg-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "0.0.0"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/python_apt-2.7.7+ubuntu5.3.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "2.7.7+ubuntu5.3"
+        }
+      ],
+      "setuptools": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/setuptools-80.10.2.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "80.10.2"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/setuptools-68.1.2.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "68.1.2"
+        }
+      ],
+      "six": [
+        {
+          "metadata_path": "/usr/local/lib/python3.13/dist-packages/six-1.17.0.dist-info",
+          "root": "/usr/local/lib/python3.13/dist-packages",
+          "version": "1.17.0"
+        },
+        {
+          "metadata_path": "/usr/lib/python3/dist-packages/six-1.16.0.egg-info",
+          "root": "/usr/lib/python3/dist-packages",
+          "version": "1.16.0"
+        }
+      ]
+    },
+    "executable": "/usr/bin/python3",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "prefix": "/usr",
+    "python": "3.13.15",
+    "selected_packages": {
+      "absl-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/absl_py-1.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.0"
+      },
+      "accelerate": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/accelerate-1.15.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.15.0"
+      },
+      "access": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/access-1.1.10.post3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.10.post3"
+      },
+      "affine": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/affine-3.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.1"
+      },
+      "aiofiles": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/aiofiles-25.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.1.0"
+      },
+      "aiohappyeyeballs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/aiohappyeyeballs-2.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.7.1"
+      },
+      "aiohttp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/aiohttp-3.14.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.14.3"
+      },
+      "aiosignal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/aiosignal-1.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.0"
+      },
+      "aiosqlite": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/aiosqlite-0.22.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.22.1"
+      },
+      "alabaster": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/alabaster-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "albucore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/albucore-0.0.24.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.24"
+      },
+      "albumentations": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/albumentations-2.0.8.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.8"
+      },
+      "ale-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ale_py-0.12.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.1"
+      },
+      "altair": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/altair-5.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.5.0"
+      },
+      "annotated-doc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/annotated_doc-0.0.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.5"
+      },
+      "annotated-types": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/annotated_types-0.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.0"
+      },
+      "antlr4-python3-runtime": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/antlr4_python3_runtime-4.9.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.9.3"
+      },
+      "anyio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/anyio-4.15.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.15.1"
+      },
+      "anywidget": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/anywidget-0.9.21.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.21"
+      },
+      "apsw": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/apsw-3.53.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.53.4.0"
+      },
+      "argon2-cffi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/argon2_cffi-25.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.1.0"
+      },
+      "argon2-cffi-bindings": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/argon2_cffi_bindings-26.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.1.0"
+      },
+      "array-record": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/array_record-0.8.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.3"
+      },
+      "arrow": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/arrow-1.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.0"
+      },
+      "arviz": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/arviz-0.22.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.22.0"
+      },
+      "astropy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/astropy-7.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.2.2"
+      },
+      "astropy-iers-data": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/astropy_iers_data-0.2026.9.28.0.59.37.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2026.9.28.0.59.37"
+      },
+      "astunparse": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/astunparse-1.6.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.3"
+      },
+      "atpublic": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/atpublic-5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.1"
+      },
+      "attrs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/attrs-26.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.1.0"
+      },
+      "audioop-lts": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/audioop_lts-0.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.2"
+      },
+      "audioread": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/audioread-3.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.0"
+      },
+      "authlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/authlib-1.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.8.0"
+      },
+      "autograd": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/autograd-1.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.1"
+      },
+      "babel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/babel-2.18.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.18.0"
+      },
+      "backcall": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/backcall-0.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.0"
+      },
+      "beartype": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/beartype-0.22.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.22.9"
+      },
+      "beautifulsoup4": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/beautifulsoup4-4.13.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.13.5"
+      },
+      "betterproto": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/betterproto-2.0.0b7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0b7"
+      },
+      "bigframes": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/bigframes-2.49.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.49.0"
+      },
+      "bigquery-magics": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/bigquery_magics-0.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.0"
+      },
+      "bleach": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/bleach-6.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.4.0"
+      },
+      "blinker": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/blinker-1.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.0"
+      },
+      "blis": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/blis-1.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.3"
+      },
+      "blobfile": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/blobfile-3.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.0"
+      },
+      "blosc2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/blosc2-4.14.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.14.1"
+      },
+      "bokeh": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/bokeh-3.8.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.8.2"
+      },
+      "bottleneck": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/Bottleneck-1.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.2"
+      },
+      "bqplot": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/bqplot-0.12.47.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.47"
+      },
+      "branca": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/branca-0.8.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.2"
+      },
+      "brotli": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/brotli-1.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.0"
+      },
+      "cachecontrol": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cachecontrol-0.14.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.4"
+      },
+      "cachetools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cachetools-6.2.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.2.6"
+      },
+      "catalogue": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/catalogue-2.0.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.10"
+      },
+      "certifi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/certifi-2026.7.22.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.7.22"
+      },
+      "cffi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cffi-2.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.1"
+      },
+      "chardet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/chardet-5.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.2.0"
+      },
+      "charset-normalizer": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/charset_normalizer-3.4.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.4.9"
+      },
+      "clarabel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/clarabel-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "click": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/click-8.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.5.0"
+      },
+      "cligj": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cligj-0.7.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.2"
+      },
+      "cloudpathlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cloudpathlib-0.25.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.0"
+      },
+      "cloudpickle": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cloudpickle-3.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.2"
+      },
+      "cmake": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cmake-3.31.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.31.10"
+      },
+      "cmdstanpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cmdstanpy-1.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.0"
+      },
+      "colorcet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/colorcet-3.2.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.2.1"
+      },
+      "colorlover": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/colorlover-0.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.3.0"
+      },
+      "community": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/community-1.0.0b1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0b1"
+      },
+      "confection": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/confection-1.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.3"
+      },
+      "cons": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cons-0.4.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.7"
+      },
+      "contourpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/contourpy-1.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.0"
+      },
+      "cpsat-logutils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cpsat_logutils-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "cramjam": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cramjam-2.13.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.13.0"
+      },
+      "cryptography": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cryptography-50.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "50.0.2"
+      },
+      "cucim-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cucim_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "cuda-bindings": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuda_bindings-13.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.3"
+      },
+      "cuda-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuda_core-0.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.0"
+      },
+      "cuda-pathfinder": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuda_pathfinder-1.8.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.8.2"
+      },
+      "cuda-python": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuda_python-13.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.3"
+      },
+      "cuda-toolkit": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuda_toolkit-13.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.2"
+      },
+      "cudf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cudf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "cudf-polars-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cudf_polars_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "cufflinks": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cufflinks-0.17.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.17.3"
+      },
+      "cuml-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuml_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "cupy-cuda13x": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cupy_cuda13x-14.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "14.0.1"
+      },
+      "curl-cffi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/curl_cffi-0.16.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16.3"
+      },
+      "cuvs-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cuvs_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "cvxopt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cvxopt-1.3.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.2"
+      },
+      "cvxpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cvxpy-1.6.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.7"
+      },
+      "cycler": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cycler-0.12.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.1"
+      },
+      "cyipopt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cyipopt-1.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.0"
+      },
+      "cymem": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/cymem-2.0.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.13"
+      },
+      "cython": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/Cython-3.0.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.12"
+      },
+      "dask": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dask-2026.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.1.1"
+      },
+      "dask-cuda": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dask_cuda-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "dask-cudf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dask_cudf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "dataproc-spark-connect": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dataproc_spark_connect-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "datasets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/datasets-4.8.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.8.5"
+      },
+      "db-dtypes": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/db_dtypes-1.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.1"
+      },
+      "dbus-python": {
+        "metadata_path": "/usr/lib/python3/dist-packages/dbus_python-1.3.2.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "1.3.2"
+      },
+      "debugpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/debugpy-1.8.15.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.8.15"
+      },
+      "decorator": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/decorator-4.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.4.2"
+      },
+      "defusedxml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/defusedxml-0.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.1"
+      },
+      "deprecation": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/deprecation-2.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.0"
+      },
+      "diffusers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/diffusers-0.40.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.40.0"
+      },
+      "dill": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dill-0.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.1"
+      },
+      "distributed": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/distributed-2026.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.1.1"
+      },
+      "distributed-ucxx-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/distributed_ucxx_cu13-0.50.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.50.1"
+      },
+      "distro": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/distro-1.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.0"
+      },
+      "dlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dlib-20.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "20.0.1"
+      },
+      "dm-tree": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dm_tree-0.1.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.10"
+      },
+      "docstring-parser": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/docstring_parser-0.18.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.18.0"
+      },
+      "docutils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/docutils-0.21.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.21.2"
+      },
+      "dopamine-rl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/dopamine_rl-4.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.2"
+      },
+      "duckdb": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/duckdb-1.3.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.2"
+      },
+      "earthengine-api": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/earthengine_api-1.7.39.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.39"
+      },
+      "easydict": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/easydict-1.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.13"
+      },
+      "editdistance": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/editdistance-0.8.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.1"
+      },
+      "eerepr": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/eerepr-0.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.3"
+      },
+      "einops": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/einops-0.8.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.2"
+      },
+      "en-core-web-sm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/en_core_web_sm-3.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.8.0"
+      },
+      "entrypoints": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/entrypoints-0.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4"
+      },
+      "esda": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/esda-2.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.9.0"
+      },
+      "et-xmlfile": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/et_xmlfile-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "etils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/etils-1.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.14.0"
+      },
+      "etuples": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/etuples-0.3.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.3.10"
+      },
+      "farama-notifications": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/farama_notifications-0.0.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.6"
+      },
+      "fastai": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastai-2.8.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.8.12"
+      },
+      "fastapi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastapi-0.141.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.141.1"
+      },
+      "fastcore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastcore-2.2.32.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.32"
+      },
+      "fastdownload": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastdownload-0.0.8.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.8"
+      },
+      "fastjsonschema": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastjsonschema-2.22.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.22.2"
+      },
+      "fastprogress": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fastprogress-1.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.6"
+      },
+      "fasttransform": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fasttransform-0.0.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.5"
+      },
+      "filelock": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/filelock-4.0.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.7"
+      },
+      "firebase-admin": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/firebase_admin-6.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.9.0"
+      },
+      "flask": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/flask-3.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.3"
+      },
+      "flatbuffers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/flatbuffers-25.12.19.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.12.19"
+      },
+      "flax": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/flax-0.11.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.2"
+      },
+      "folium": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/folium-0.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.20.0"
+      },
+      "fonttools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fonttools-4.66.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.66.1"
+      },
+      "formulaic": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/formulaic-1.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.2"
+      },
+      "fqdn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fqdn-1.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.0"
+      },
+      "frozendict": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/frozendict-2.4.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.4.7"
+      },
+      "frozenlist": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/frozenlist-1.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.8.0"
+      },
+      "fsspec": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/fsspec-2025.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.12.0"
+      },
+      "future": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/future-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "gast": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gast-0.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.0"
+      },
+      "gcsfs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gcsfs-2025.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.12.0"
+      },
+      "gdal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gdal-3.8.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.8.4"
+      },
+      "gdown": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gdown-5.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.2.2"
+      },
+      "geemap": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/geemap-0.38.8.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.38.8"
+      },
+      "geocoder": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/geocoder-1.38.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.38.1"
+      },
+      "geographiclib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/geographiclib-2.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1"
+      },
+      "geopandas": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/geopandas-1.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.0"
+      },
+      "geopy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/geopy-2.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.4.1"
+      },
+      "giddy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/giddy-2.3.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.3.9"
+      },
+      "gin-config": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gin_config-0.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.0"
+      },
+      "glob2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/glob2-0.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7"
+      },
+      "google": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google-3.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.0"
+      },
+      "google-adk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_adk-2.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.7.1"
+      },
+      "google-api-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_api_core-2.30.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.30.3"
+      },
+      "google-api-python-client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_api_python_client-2.201.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.201.0"
+      },
+      "google-auth": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_auth-2.49.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.49.0"
+      },
+      "google-auth-httplib2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_auth_httplib2-0.4.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.3"
+      },
+      "google-auth-oauthlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_auth_oauthlib-1.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.0"
+      },
+      "google-cloud-bigquery": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_bigquery-3.45.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.45.2"
+      },
+      "google-cloud-bigquery-connection": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_bigquery_connection-1.22.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.22.0"
+      },
+      "google-cloud-bigquery-storage": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_bigquery_storage-2.41.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.41.0"
+      },
+      "google-cloud-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_core-2.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.8.0"
+      },
+      "google-cloud-dataproc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_dataproc-5.30.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.30.0"
+      },
+      "google-cloud-datastore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_datastore-2.26.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.26.1"
+      },
+      "google-cloud-firestore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_firestore-2.33.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.33.0"
+      },
+      "google-cloud-functions": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_functions-1.24.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.24.0"
+      },
+      "google-cloud-language": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_language-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "google-cloud-monitoring": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_monitoring-2.31.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.31.0"
+      },
+      "google-cloud-resource-manager": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_resource_manager-1.18.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.18.0"
+      },
+      "google-cloud-spanner": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_spanner-3.71.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.71.0"
+      },
+      "google-cloud-storage": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_storage-3.15.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.15.1"
+      },
+      "google-cloud-storage-control": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_storage_control-1.15.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.15.0"
+      },
+      "google-cloud-translate": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_cloud_translate-3.27.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.27.0"
+      },
+      "google-colab": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_colab-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "google-crc32c": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_crc32c-1.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.0"
+      },
+      "google-genai": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_genai-2.12.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.12.1"
+      },
+      "google-pasta": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_pasta-0.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.0"
+      },
+      "google-resumable-media": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/google_resumable_media-2.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.11.0"
+      },
+      "googleapis-common-protos": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/googleapis_common_protos-1.75.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.75.5"
+      },
+      "googledrivedownloader": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/googledrivedownloader-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "gradio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gradio-6.29.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.29.0"
+      },
+      "gradio-client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gradio_client-2.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.7.1"
+      },
+      "grain": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grain-0.2.18.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.18"
+      },
+      "graphviz": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/graphviz-0.21.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.21"
+      },
+      "groovy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/groovy-0.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.2"
+      },
+      "grpc-google-iam-v1": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grpc_google_iam_v1-0.14.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.5"
+      },
+      "grpc-interceptor": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grpc_interceptor-0.15.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.15.4"
+      },
+      "grpcio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grpcio-1.84.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.84.0"
+      },
+      "grpcio-status": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grpcio_status-1.84.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.84.0"
+      },
+      "grpclib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/grpclib-0.4.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.9"
+      },
+      "gspread": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gspread-6.2.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.2.1"
+      },
+      "gspread-dataframe": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gspread_dataframe-4.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.0"
+      },
+      "gym": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gym-0.25.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.2"
+      },
+      "gym-notices": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gym_notices-0.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.0"
+      },
+      "gymnasium": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/gymnasium-1.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.0"
+      },
+      "h11": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/h11-0.16.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16.0"
+      },
+      "h2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/h2-4.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.4.1"
+      },
+      "h5netcdf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/h5netcdf-1.8.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.8.1"
+      },
+      "h5py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/h5py-3.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.14.0"
+      },
+      "hdbscan": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hdbscan-0.8.44.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.44"
+      },
+      "hf-gradio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hf_gradio-0.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.1"
+      },
+      "hf-xet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hf_xet-1.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.0"
+      },
+      "highspy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/highspy-1.15.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.15.1"
+      },
+      "holidays": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/holidays-0.105.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.105"
+      },
+      "holoviews": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/holoviews-1.23.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.23.2"
+      },
+      "hpack": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hpack-4.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.2.0"
+      },
+      "html5lib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/html5lib-1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1"
+      },
+      "httpcore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httpcore-1.0.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.9"
+      },
+      "httpcore2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httpcore2-2.13.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.13.1"
+      },
+      "httpimport": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httpimport-1.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.1"
+      },
+      "httplib2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httplib2-0.32.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.32.0"
+      },
+      "httptools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httptools-0.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.0"
+      },
+      "httpx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httpx-0.28.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.28.1"
+      },
+      "httpx2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/httpx2-2.13.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.13.1"
+      },
+      "huggingface-hub": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/huggingface_hub-1.33.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.33.0"
+      },
+      "humanize": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/humanize-4.16.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.16.0"
+      },
+      "hyperframe": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hyperframe-6.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.1.0"
+      },
+      "hyperopt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/hyperopt-0.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.3.0"
+      },
+      "ibis-framework": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ibis_framework-9.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.5.0"
+      },
+      "idna": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/idna-3.20.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.20"
+      },
+      "imageio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/imageio-2.38.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.38.0"
+      },
+      "imageio-ffmpeg": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/imageio_ffmpeg-0.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.0"
+      },
+      "imagesize": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/imagesize-2.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.1"
+      },
+      "imbalanced-learn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/imbalanced_learn-0.14.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.2"
+      },
+      "immutabledict": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/immutabledict-4.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.3.1"
+      },
+      "importlib-metadata": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/importlib_metadata-9.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.0.1"
+      },
+      "imutils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/imutils-0.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.4"
+      },
+      "inequality": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/inequality-1.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.2"
+      },
+      "inflect": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/inflect-7.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.5.0"
+      },
+      "iniconfig": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/iniconfig-2.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.3.0"
+      },
+      "intel-cmplr-lib-ur": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/intel_cmplr_lib_ur-2025.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.3.3"
+      },
+      "intel-openmp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/intel_openmp-2025.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.3.3"
+      },
+      "interface-meta": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/interface_meta-2.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.1"
+      },
+      "ipyevents": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipyevents-2.0.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.4"
+      },
+      "ipyfilechooser": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipyfilechooser-0.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.0"
+      },
+      "ipykernel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipykernel-6.17.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.17.1"
+      },
+      "ipyleaflet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipyleaflet-0.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.20.0"
+      },
+      "ipyparallel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipyparallel-8.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.8.0"
+      },
+      "ipython": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipython-7.34.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.34.0"
+      },
+      "ipython-genutils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipython_genutils-0.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.0"
+      },
+      "ipython-sql": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipython_sql-0.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.0"
+      },
+      "ipywidgets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ipywidgets-7.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.7.1"
+      },
+      "isoduration": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/isoduration-20.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "20.11.0"
+      },
+      "itsdangerous": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/itsdangerous-2.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.0"
+      },
+      "jaraco-classes": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jaraco.classes-3.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.4.0"
+      },
+      "jaraco-context": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jaraco_context-6.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.1.2"
+      },
+      "jaraco-functools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jaraco_functools-4.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.6.0"
+      },
+      "jax": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jax-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "jax-cuda13-pjrt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jax_cuda13_pjrt-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "jax-cuda13-plugin": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jax_cuda13_plugin-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "jaxlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jaxlib-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "jedi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jedi-0.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.20.0"
+      },
+      "jeepney": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jeepney-0.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.0"
+      },
+      "jieba": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jieba-0.42.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.42.1"
+      },
+      "jinja2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jinja2-3.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.6"
+      },
+      "jiter": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jiter-0.17.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.17.0"
+      },
+      "joblib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/joblib-1.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.0"
+      },
+      "joserfc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/joserfc-1.7.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.5"
+      },
+      "jsonpatch": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jsonpatch-1.33.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.33"
+      },
+      "jsonpickle": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jsonpickle-4.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.2"
+      },
+      "jsonpointer": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jsonpointer-3.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.1"
+      },
+      "jsonschema": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jsonschema-4.26.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.26.0"
+      },
+      "jsonschema-specifications": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jsonschema_specifications-2025.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.9.1"
+      },
+      "jupyter-client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_client-7.4.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.4.9"
+      },
+      "jupyter-console": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_console-6.6.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.6.3"
+      },
+      "jupyter-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_core-5.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.9.1"
+      },
+      "jupyter-events": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_events-0.12.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.1"
+      },
+      "jupyter-kernel-gateway": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_kernel_gateway-2.5.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.2"
+      },
+      "jupyter-leaflet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_leaflet-0.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.20.0"
+      },
+      "jupyter-server": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_server-2.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.20.0"
+      },
+      "jupyter-server-terminals": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyter_server_terminals-0.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.4"
+      },
+      "jupyterlab-pygments": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyterlab_pygments-0.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.3.0"
+      },
+      "jupyterlab-widgets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupyterlab_widgets-3.0.17.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.17"
+      },
+      "jupytext": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/jupytext-1.19.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.19.5"
+      },
+      "kaggle": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/kaggle-2.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.2"
+      },
+      "kagglehub": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/kagglehub-1.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.2"
+      },
+      "kagglesdk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/kagglesdk-0.1.37.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.37"
+      },
+      "keras": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/keras-3.13.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.13.2"
+      },
+      "keras-hub": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/keras_hub-0.26.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.26.0"
+      },
+      "keras-nlp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/keras_nlp-0.26.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.26.0"
+      },
+      "keyring": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/keyring-25.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.7.0"
+      },
+      "keyrings-google-artifactregistry-auth": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/keyrings.google_artifactregistry_auth-1.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.2"
+      },
+      "kiwisolver": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/kiwisolver-1.5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.1"
+      },
+      "langchain": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langchain-1.4.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.3"
+      },
+      "langchain-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langchain_core-1.6.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.6"
+      },
+      "langchain-protocol": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langchain_protocol-0.0.19.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.19"
+      },
+      "langgraph": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langgraph-1.2.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.12"
+      },
+      "langgraph-checkpoint": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langgraph_checkpoint-4.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.2.0"
+      },
+      "langgraph-prebuilt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langgraph_prebuilt-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "langgraph-sdk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langgraph_sdk-0.4.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.5"
+      },
+      "langsmith": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/langsmith-0.14.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.2"
+      },
+      "lark": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/lark-1.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.1"
+      },
+      "launchpadlib": {
+        "metadata_path": "/usr/lib/python3/dist-packages/launchpadlib-1.11.0.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "1.11.0"
+      },
+      "lazr-restfulclient": {
+        "metadata_path": "/usr/lib/python3/dist-packages/lazr.restfulclient-0.14.6.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "0.14.6"
+      },
+      "lazr-uri": {
+        "metadata_path": "/usr/lib/python3/dist-packages/lazr.uri-1.0.6.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "1.0.6"
+      },
+      "lazy-loader": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/lazy_loader-0.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6"
+      },
+      "libclang": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libclang-18.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "18.1.1"
+      },
+      "libcudf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libcudf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libcugraph-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libcugraph_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libcuml-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libcuml_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libcuvs-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libcuvs_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libkvikio-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libkvikio_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libnvforest-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libnvforest_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "libpysal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libpysal-4.14.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.14.1"
+      },
+      "libraft-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libraft_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "librapidsmpf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/librapidsmpf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "librmm-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/librmm_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "librosa": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/librosa-0.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.0"
+      },
+      "libucx-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libucx_cu13-1.20.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.20.1"
+      },
+      "libucxx-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/libucxx_cu13-0.50.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.50.0"
+      },
+      "lightgbm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/lightgbm-4.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.6.0"
+      },
+      "linkify-it-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/linkify_it_py-2.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.0"
+      },
+      "llvmlite": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/llvmlite-0.44.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.44.0"
+      },
+      "locket": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/locket-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "logical-unification": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/logical_unification-0.4.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.7"
+      },
+      "lxml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/lxml-6.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.1.3"
+      },
+      "lz4": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/lz4-4.4.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.4.5"
+      },
+      "mako": {
+        "metadata_path": "/usr/lib/python3/dist-packages/Mako-1.3.2.dev0.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "1.3.2.dev0"
+      },
+      "mapclassify": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mapclassify-2.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.10.0"
+      },
+      "markdown": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/markdown-3.11.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.11"
+      },
+      "markdown-it-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/markdown_it_py-4.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.2.0"
+      },
+      "markupsafe": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/markupsafe-3.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.3"
+      },
+      "matplotlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/matplotlib-3.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.10.0"
+      },
+      "matplotlib-inline": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/matplotlib_inline-0.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.2"
+      },
+      "matplotlib-venn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/matplotlib_venn-1.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.2"
+      },
+      "mdit-py-plugins": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mdit_py_plugins-0.6.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.1"
+      },
+      "mdurl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mdurl-0.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.2"
+      },
+      "mgwr": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mgwr-2.2.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.1"
+      },
+      "minikanren": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/minikanren-1.0.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.5"
+      },
+      "missingno": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/missingno-0.5.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.2"
+      },
+      "mistune": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mistune-3.3.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.4"
+      },
+      "mizani": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mizani-0.13.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.13.5"
+      },
+      "mkl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mkl-2025.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.3.1"
+      },
+      "ml-dtypes": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ml_dtypes-0.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.0"
+      },
+      "mlxtend": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mlxtend-0.23.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.23.4"
+      },
+      "mmh3": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mmh3-5.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.3.1"
+      },
+      "momepy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/momepy-0.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.0"
+      },
+      "more-itertools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/more_itertools-10.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "10.8.0"
+      },
+      "moviepy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/moviepy-1.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.3"
+      },
+      "mpmath": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/mpmath-1.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.0"
+      },
+      "msgpack": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/msgpack-1.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.3"
+      },
+      "multidict": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/multidict-6.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.9.1"
+      },
+      "multipledispatch": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/multipledispatch-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "multiprocess": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/multiprocess-0.70.19.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.70.19"
+      },
+      "multitasking": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/multitasking-0.0.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.13"
+      },
+      "murmurhash": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/murmurhash-1.0.15.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.15"
+      },
+      "music21": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/music21-9.9.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.9.2"
+      },
+      "namex": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/namex-0.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.0"
+      },
+      "narwhals": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/narwhals-2.26.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.26.0"
+      },
+      "natsort": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/natsort-8.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.4.0"
+      },
+      "nbclassic": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nbclassic-1.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.3"
+      },
+      "nbclient": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nbclient-0.10.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.10.4"
+      },
+      "nbconvert": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nbconvert-7.17.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.17.1"
+      },
+      "nbformat": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nbformat-5.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.11.1"
+      },
+      "ndindex": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ndindex-1.10.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.10.1"
+      },
+      "nest-asyncio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nest_asyncio-1.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.0"
+      },
+      "networkx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/networkx-3.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.7"
+      },
+      "nh3": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nh3-0.3.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.3.7"
+      },
+      "nibabel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nibabel-5.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.4.2"
+      },
+      "nltk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nltk-3.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.9.1"
+      },
+      "notebook": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/notebook-6.5.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.5.7"
+      },
+      "notebook-shim": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/notebook_shim-0.2.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.4"
+      },
+      "numba": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/numba-0.61.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.61.2"
+      },
+      "numba-cuda": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/numba_cuda-0.28.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.28.2"
+      },
+      "numexpr": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/numexpr-2.14.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.14.2"
+      },
+      "numpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/numpy-2.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.3"
+      },
+      "nvforest-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvforest_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "nvidia-cublas": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cublas-13.1.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.1.0.3"
+      },
+      "nvidia-cublas-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cublas_cu12-12.9.2.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.2.10"
+      },
+      "nvidia-cuda-cccl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_cccl-13.0.85.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.85"
+      },
+      "nvidia-cuda-crt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_crt-13.4.92.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.4.92"
+      },
+      "nvidia-cuda-cupti": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_cupti-13.0.85.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.85"
+      },
+      "nvidia-cuda-cupti-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_cupti_cu12-12.9.79.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.79"
+      },
+      "nvidia-cuda-nvcc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_nvcc-13.0.88.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.88"
+      },
+      "nvidia-cuda-nvcc-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_nvcc_cu12-12.9.86.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.86"
+      },
+      "nvidia-cuda-nvrtc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_nvrtc-13.0.88.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.88"
+      },
+      "nvidia-cuda-nvrtc-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_nvrtc_cu12-12.9.86.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.86"
+      },
+      "nvidia-cuda-runtime": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_runtime-13.0.96.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.96"
+      },
+      "nvidia-cuda-runtime-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cuda_runtime_cu12-12.9.79.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.79"
+      },
+      "nvidia-cudnn-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cudnn_cu12-9.27.0.42.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.27.0.42"
+      },
+      "nvidia-cudnn-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cudnn_cu13-9.19.0.56.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.19.0.56"
+      },
+      "nvidia-cufft": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cufft-12.0.0.61.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.0.0.61"
+      },
+      "nvidia-cufft-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cufft_cu12-11.4.1.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "11.4.1.4"
+      },
+      "nvidia-cufile": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cufile-1.15.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.15.1.6"
+      },
+      "nvidia-curand": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_curand-10.4.0.35.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "10.4.0.35"
+      },
+      "nvidia-curand-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_curand_cu12-10.3.10.19.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "10.3.10.19"
+      },
+      "nvidia-cusolver": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cusolver-12.0.4.66.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.0.4.66"
+      },
+      "nvidia-cusolver-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cusolver_cu12-11.7.5.82.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "11.7.5.82"
+      },
+      "nvidia-cusparse": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cusparse-12.6.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.6.3.3"
+      },
+      "nvidia-cusparse-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cusparse_cu12-12.5.10.65.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.5.10.65"
+      },
+      "nvidia-cusparselt-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_cusparselt_cu13-0.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.0"
+      },
+      "nvidia-libnvcomp-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_libnvcomp_cu13-5.2.0.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.2.0.13"
+      },
+      "nvidia-ml-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_ml_py-13.615.71.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.615.71"
+      },
+      "nvidia-nccl-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nccl_cu12-2.32.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.32.3"
+      },
+      "nvidia-nccl-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nccl_cu13-2.28.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.28.9"
+      },
+      "nvidia-nvimgcodec-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvimgcodec_cu13-0.8.0.22.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.0.22"
+      },
+      "nvidia-nvjitlink": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvjitlink-13.0.88.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.88"
+      },
+      "nvidia-nvjitlink-cu12": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvjitlink_cu12-12.9.86.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "12.9.86"
+      },
+      "nvidia-nvshmem-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvshmem_cu13-3.4.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.4.5"
+      },
+      "nvidia-nvtx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvtx-13.0.85.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.85"
+      },
+      "nvidia-nvvm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvidia_nvvm-13.0.88.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.0.88"
+      },
+      "nvtx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nvtx-0.2.16.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.16"
+      },
+      "nx-cugraph-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/nx_cugraph_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "oauth2client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/oauth2client-4.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.3"
+      },
+      "oauthlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/oauthlib-3.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.1"
+      },
+      "omegaconf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/omegaconf-2.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.3.1"
+      },
+      "onemkl-license": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/onemkl_license-2025.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.3.1"
+      },
+      "openai": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/openai-2.54.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.54.0"
+      },
+      "opencv-contrib-python": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opencv_contrib_python-4.14.0.94.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.14.0.94"
+      },
+      "opencv-python": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opencv_python-5.0.0.93.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.0.0.93"
+      },
+      "opencv-python-headless": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opencv_python_headless-5.0.0.93.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.0.0.93"
+      },
+      "openpyxl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/openpyxl-3.1.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.5"
+      },
+      "opentelemetry-api": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opentelemetry_api-1.42.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.42.1"
+      },
+      "opentelemetry-resourcedetector-gcp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opentelemetry_resourcedetector_gcp-1.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.14.0"
+      },
+      "opentelemetry-sdk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opentelemetry_sdk-1.42.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.42.1"
+      },
+      "opentelemetry-semantic-conventions": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opentelemetry_semantic_conventions-0.63b1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.63b1"
+      },
+      "opt-einsum": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/opt_einsum-3.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.4.0"
+      },
+      "optax": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/optax-0.2.8.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.8"
+      },
+      "optree": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/optree-0.20.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.20.0"
+      },
+      "orbax-checkpoint": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/orbax_checkpoint-0.12.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.6"
+      },
+      "orjson": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/orjson-3.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.12.0"
+      },
+      "orloge": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/orloge-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "ormsgpack": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ormsgpack-1.12.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.12.2"
+      },
+      "osqp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/osqp-1.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.3"
+      },
+      "packaging": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/packaging-26.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.3"
+      },
+      "pandas": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pandas-2.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.3"
+      },
+      "pandas-datareader": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pandas_datareader-0.11.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.1"
+      },
+      "pandas-gbq": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pandas_gbq-0.30.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.30.0"
+      },
+      "pandas-stubs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pandas_stubs-2.2.3.250527.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.3.250527"
+      },
+      "pandocfilters": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pandocfilters-1.5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.1"
+      },
+      "panel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/panel-1.9.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.4"
+      },
+      "panel-material-ui": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/panel_material_ui-0.16.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16.0"
+      },
+      "param": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/param-2.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.4.2"
+      },
+      "parso": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/parso-0.8.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.7"
+      },
+      "parsy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/parsy-2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2"
+      },
+      "partd": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/partd-1.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.2"
+      },
+      "patsy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/patsy-1.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.3"
+      },
+      "peewee": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/peewee-4.5.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.5.2"
+      },
+      "peft": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/peft-0.21.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.21.1"
+      },
+      "pexpect": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pexpect-4.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.9.0"
+      },
+      "pickleshare": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pickleshare-0.7.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.5"
+      },
+      "pillow": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pillow-11.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "11.3.0"
+      },
+      "pip": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pip-24.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "24.1.2"
+      },
+      "platformdirs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/platformdirs-4.12.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.12.2"
+      },
+      "plotly": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/plotly-5.24.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.24.1"
+      },
+      "plotnine": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/plotnine-0.14.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.5"
+      },
+      "pluggy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pluggy-1.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.0"
+      },
+      "plum-dispatch": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/plum_dispatch-2.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.9.0"
+      },
+      "pointpats": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pointpats-2.5.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.5"
+      },
+      "polars": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/polars-1.35.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.35.2"
+      },
+      "polars-runtime-32": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/polars_runtime_32-1.35.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.35.2"
+      },
+      "pooch": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pooch-1.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.0"
+      },
+      "portpicker": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/portpicker-1.5.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.2"
+      },
+      "preshed": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/preshed-3.0.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.13"
+      },
+      "prettytable": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/prettytable-3.18.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.18.0"
+      },
+      "proglog": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/proglog-0.1.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.12"
+      },
+      "progressbar2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/progressbar2-4.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.5.0"
+      },
+      "prometheus-client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/prometheus_client-0.26.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.26.0"
+      },
+      "promise": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/promise-2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.3"
+      },
+      "prompt-toolkit": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/prompt_toolkit-3.0.53.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.53"
+      },
+      "propcache": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/propcache-0.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.4"
+      },
+      "prophet": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/prophet-1.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.0"
+      },
+      "proto-plus": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/proto_plus-1.29.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.29.0"
+      },
+      "protobuf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/protobuf-6.33.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.33.6"
+      },
+      "psutil": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/psutil-5.9.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.9.5"
+      },
+      "psycopg2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/psycopg2-2.9.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.9.13"
+      },
+      "psygnal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/psygnal-0.16.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16.1"
+      },
+      "ptyprocess": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ptyprocess-0.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.0"
+      },
+      "pulp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pulp-4.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.0"
+      },
+      "py-cpuinfo": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/py_cpuinfo-9.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.0.0"
+      },
+      "py4j": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/py4j-0.10.9.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.10.9.9"
+      },
+      "pyarrow": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyarrow-23.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "23.0.1"
+      },
+      "pyasn1": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyasn1-0.6.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.4"
+      },
+      "pyasn1-modules": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyasn1_modules-0.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.2"
+      },
+      "pycairo": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pycairo-1.29.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.29.1"
+      },
+      "pycocotools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pycocotools-2.0.11.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.11"
+      },
+      "pycparser": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pycparser-3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0"
+      },
+      "pycryptodomex": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pycryptodomex-3.23.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.23.0"
+      },
+      "pydantic": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydantic-2.13.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.13.5"
+      },
+      "pydantic-core": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydantic_core-2.46.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.46.5"
+      },
+      "pydata-google-auth": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydata_google_auth-1.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.1"
+      },
+      "pydot": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydot-4.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.1"
+      },
+      "pydotplus": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydotplus-2.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.2"
+      },
+      "pydrive2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/PyDrive2-1.21.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.21.1"
+      },
+      "pydub": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pydub-0.25.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.1"
+      },
+      "pyerfa": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyerfa-2.0.1.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.1.5"
+      },
+      "pygame": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygame-2.6.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.6.1"
+      },
+      "pygit2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygit2-1.20.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.20.1"
+      },
+      "pygments": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygments-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "pygobject": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pygobject-3.48.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.48.2"
+      },
+      "pyiceberg": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyiceberg-0.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.0"
+      },
+      "pyjwt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyjwt-2.15.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.15.1"
+      },
+      "pylibcudf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pylibcudf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "pylibcugraph-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pylibcugraph_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "pylibraft-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pylibraft_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "pymc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pymc-5.28.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.28.5"
+      },
+      "pynndescent": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pynndescent-0.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.0"
+      },
+      "pyogrio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyogrio-0.13.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.13.0"
+      },
+      "pyomo": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyomo-6.10.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.10.1"
+      },
+      "pyopengl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyopengl-3.1.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.10"
+      },
+      "pyopenssl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyopenssl-26.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.4.0"
+      },
+      "pyparsing": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyparsing-3.3.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.3"
+      },
+      "pyperclip": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyperclip-1.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.11.0"
+      },
+      "pyproj": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyproj-3.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.8.0"
+      },
+      "pyroaring": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyroaring-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "pysal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pysal-25.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.7"
+      },
+      "pyshp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyshp-3.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.6"
+      },
+      "pysocks": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/PySocks-1.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.1"
+      },
+      "pyspark": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyspark-4.0.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.4"
+      },
+      "pytensor": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pytensor-2.38.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.38.3"
+      },
+      "pytest": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pytest-8.4.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.4.2"
+      },
+      "python-apt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_apt-0.0.0-py3.13.egg-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.0"
+      },
+      "python-box": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_box-7.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "7.4.1"
+      },
+      "python-dateutil": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_dateutil-2.9.0.post0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.9.0.post0"
+      },
+      "python-dotenv": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_dotenv-1.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.2.3"
+      },
+      "python-fasthtml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_fasthtml-0.14.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.13"
+      },
+      "python-json-logger": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_json_logger-4.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.2.0"
+      },
+      "python-louvain": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_louvain-0.16.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16"
+      },
+      "python-multipart": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_multipart-0.0.32.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.32"
+      },
+      "python-slugify": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_slugify-9.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.1.2"
+      },
+      "python-snappy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_snappy-0.7.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.3"
+      },
+      "python-utils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/python_utils-4.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.1"
+      },
+      "pytz": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pytz-2025.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.2"
+      },
+      "pyviz-comms": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyviz_comms-3.0.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.6"
+      },
+      "pywavelets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pywavelets-1.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.10.0"
+      },
+      "pyyaml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyyaml-6.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.0.3"
+      },
+      "pyzmq": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/pyzmq-26.2.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.2.1"
+      },
+      "quantecon": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/quantecon-0.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.0"
+      },
+      "raft-dask-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/raft_dask_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "rapids-dask-dependency": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rapids_dask_dependency-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "rapids-logger": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rapids_logger-0.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.3"
+      },
+      "rapidsmpf-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rapidsmpf_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "rasterio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rasterio-1.5.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.2"
+      },
+      "rasterstats": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rasterstats-0.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.21.0"
+      },
+      "ratelim": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ratelim-0.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.6"
+      },
+      "referencing": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/referencing-0.37.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.37.0"
+      },
+      "regex": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/regex-2025.11.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.11.3"
+      },
+      "requests": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/requests-2.32.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.32.4"
+      },
+      "requests-oauthlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/requests_oauthlib-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "requests-toolbelt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/requests_toolbelt-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "requirements-parser": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/requirements_parser-0.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.0"
+      },
+      "rfc3339-validator": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rfc3339_validator-0.1.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.4"
+      },
+      "rfc3986-validator": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rfc3986_validator-0.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.1"
+      },
+      "rfc3987-syntax": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rfc3987_syntax-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "rich": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rich-13.9.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "13.9.4"
+      },
+      "rmm-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rmm_cu13-26.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "26.6.0"
+      },
+      "roman-numerals": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/roman_numerals-4.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.0"
+      },
+      "roman-numerals-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/roman_numerals_py-4.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.0"
+      },
+      "rpds-py": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rpds_py-2026.6.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.6.3"
+      },
+      "rpy2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rpy2-3.5.17.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.5.17"
+      },
+      "rsa": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rsa-4.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.9.1"
+      },
+      "rtree": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/rtree-1.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.4.1"
+      },
+      "safehttpx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/safehttpx-0.1.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.7"
+      },
+      "safetensors": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/safetensors-0.8.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.8.0"
+      },
+      "scikit-image": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/scikit_image-0.25.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.2"
+      },
+      "scikit-learn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/scikit_learn-1.6.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.6.1"
+      },
+      "scipy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/scipy-1.16.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.16.3"
+      },
+      "scooby": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/scooby-0.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.0"
+      },
+      "scs": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/scs-3.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.1"
+      },
+      "seaborn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/seaborn-0.13.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.13.2"
+      },
+      "secretstorage": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/secretstorage-3.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.5.0"
+      },
+      "segregation": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/segregation-2.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.4"
+      },
+      "semantic-version": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/semantic_version-2.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.10.0"
+      },
+      "send2trash": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/send2trash-2.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.0"
+      },
+      "sentence-transformers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sentence_transformers-5.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.7.0"
+      },
+      "sentencepiece": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sentencepiece-0.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.2"
+      },
+      "sentry-sdk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sentry_sdk-2.71.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.71.0"
+      },
+      "setuptools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/setuptools-80.10.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "80.10.2"
+      },
+      "shap": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/shap-0.52.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.52.0"
+      },
+      "shapely": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/shapely-2.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.2"
+      },
+      "shellingham": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/shellingham-1.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.4"
+      },
+      "simple-parsing": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/simple_parsing-0.1.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.9"
+      },
+      "simplejson": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/simplejson-4.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.2"
+      },
+      "simsimd": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/simsimd-6.5.16.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.5.16"
+      },
+      "six": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/six-1.17.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.17.0"
+      },
+      "sklearn-compat": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sklearn_compat-0.1.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.6"
+      },
+      "sklearn-pandas": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sklearn_pandas-2.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.2.0"
+      },
+      "slicer": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/slicer-0.0.8.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.0.8"
+      },
+      "smart-open": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/smart_open-8.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.0.2"
+      },
+      "sniffio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sniffio-1.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.1"
+      },
+      "snowballstemmer": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/snowballstemmer-3.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.1"
+      },
+      "sortedcontainers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sortedcontainers-2.4.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.4.0"
+      },
+      "soundfile": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/soundfile-0.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.0"
+      },
+      "soupsieve": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/soupsieve-2.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.10"
+      },
+      "soxr": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/soxr-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "spacy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spacy-3.8.16.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.8.16"
+      },
+      "spacy-legacy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spacy_legacy-3.0.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.12"
+      },
+      "spacy-loggers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spacy_loggers-1.0.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.5"
+      },
+      "spaghetti": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spaghetti-1.7.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.6"
+      },
+      "spanner-graph-notebook": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spanner_graph_notebook-1.1.11.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.11"
+      },
+      "spglm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spglm-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "sphinx": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinx-8.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.2.3"
+      },
+      "sphinxcontrib-applehelp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_applehelp-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "sphinxcontrib-devhelp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_devhelp-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "sphinxcontrib-htmlhelp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_htmlhelp-2.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.0"
+      },
+      "sphinxcontrib-jsmath": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_jsmath-1.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.1"
+      },
+      "sphinxcontrib-qthelp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_qthelp-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "sphinxcontrib-serializinghtml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sphinxcontrib_serializinghtml-2.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.0"
+      },
+      "spint": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spint-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "splot": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/splot-1.1.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.7"
+      },
+      "spopt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spopt-0.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.0"
+      },
+      "spreg": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/spreg-1.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.0"
+      },
+      "sqlalchemy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sqlalchemy-2.1.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.1.1"
+      },
+      "sqlglot": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sqlglot-25.20.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.20.2"
+      },
+      "sqlparse": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sqlparse-0.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.0"
+      },
+      "srsly": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/srsly-2.5.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.4"
+      },
+      "standard-aifc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/standard_aifc-3.13.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.13.0"
+      },
+      "standard-chunk": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/standard_chunk-3.13.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.13.0"
+      },
+      "standard-sunau": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/standard_sunau-3.13.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.13.0"
+      },
+      "stanio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/stanio-0.5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.1"
+      },
+      "starlette": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/starlette-1.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.0"
+      },
+      "statsmodels": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/statsmodels-0.15.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.15.0"
+      },
+      "strictyaml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/strictyaml-1.7.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.7.3"
+      },
+      "stringzilla": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/stringzilla-5.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.1.2"
+      },
+      "stumpy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/stumpy-1.14.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.14.1"
+      },
+      "sympy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/sympy-1.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.14.0"
+      },
+      "tables": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tables-3.10.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.10.2"
+      },
+      "tabulate": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tabulate-0.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.0"
+      },
+      "tbb": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tbb-2022.3.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2022.3.1"
+      },
+      "tblib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tblib-3.2.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.2.2"
+      },
+      "tcmlib": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tcmlib-1.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.0"
+      },
+      "tenacity": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tenacity-9.1.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "9.1.4"
+      },
+      "tensorboard": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorboard-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "tensorboard-data-server": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorboard_data_server-0.7.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.7.2"
+      },
+      "tensorflow": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "tensorflow-datasets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow_datasets-4.9.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.9.10"
+      },
+      "tensorflow-hub": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow_hub-0.16.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.16.1"
+      },
+      "tensorflow-metadata": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow_metadata-1.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.21.0"
+      },
+      "tensorflow-probability": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow_probability-0.25.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.0"
+      },
+      "tensorflow-text": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorflow_text-2.21.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.1"
+      },
+      "tensorstore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tensorstore-0.1.85.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.85"
+      },
+      "termcolor": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/termcolor-3.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.3.0"
+      },
+      "terminado": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/terminado-0.18.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.18.1"
+      },
+      "text-unidecode": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/text_unidecode-1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3"
+      },
+      "textblob": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/textblob-0.19.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.19.0"
+      },
+      "tf-keras": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tf_keras-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "tf-slim": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tf_slim-1.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.0"
+      },
+      "thinc": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/thinc-8.3.13.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "8.3.13"
+      },
+      "threadpoolctl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/threadpoolctl-3.7.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.7.0"
+      },
+      "tifffile": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tifffile-2026.9.20.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.9.20"
+      },
+      "tiktoken": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tiktoken-0.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.0"
+      },
+      "timm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/timm-1.0.30.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.30"
+      },
+      "tinycss2": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tinycss2-1.5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.1"
+      },
+      "tobler": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tobler-0.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.0"
+      },
+      "tokenizers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tokenizers-0.23.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.23.2"
+      },
+      "toml": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/toml-0.10.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.10.2"
+      },
+      "tomlkit": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tomlkit-0.14.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.14.0"
+      },
+      "toolz": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/toolz-0.12.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.12.1"
+      },
+      "torch": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torch-2.11.0+cu130.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.11.0+cu130"
+      },
+      "torchao": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchao-0.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.10.0"
+      },
+      "torchaudio": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchaudio-2.11.0+cu130.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.11.0+cu130"
+      },
+      "torchcodec": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchcodec-0.11.0+cu130.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.0+cu130"
+      },
+      "torchdata": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchdata-0.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.0"
+      },
+      "torchsummary": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchsummary-1.5.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5.1"
+      },
+      "torchtune": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchtune-0.6.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.1"
+      },
+      "torchvision": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/torchvision-0.26.0+cu130.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.26.0+cu130"
+      },
+      "tornado": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tornado-6.5.7.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.5.7"
+      },
+      "tqdm": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tqdm-4.67.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.67.3"
+      },
+      "traitlets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/traitlets-5.7.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.7.1"
+      },
+      "traittypes": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/traittypes-0.2.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.3"
+      },
+      "transformers": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/transformers-5.18.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.18.0"
+      },
+      "treelite": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/treelite-4.7.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.7.2"
+      },
+      "treescope": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/treescope-0.1.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.10"
+      },
+      "triton": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/triton-3.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.6.0"
+      },
+      "truststore": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/truststore-0.10.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.10.4"
+      },
+      "tsfresh": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tsfresh-0.21.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.21.2"
+      },
+      "tweepy": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tweepy-4.17.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.17.0"
+      },
+      "typeguard": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/typeguard-4.6.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.6.0"
+      },
+      "typer": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/typer-0.27.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.27.2"
+      },
+      "types-pytz": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/types_pytz-2026.4.0.20260926.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.4.0.20260926"
+      },
+      "types-setuptools": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/types_setuptools-84.0.0.20260812.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "84.0.0.20260812"
+      },
+      "typing-extensions": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/typing_extensions-4.16.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.16.0"
+      },
+      "typing-inspection": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/typing_inspection-0.4.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.4.4"
+      },
+      "tzdata": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tzdata-2026.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.4"
+      },
+      "tzlocal": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/tzlocal-5.4.4.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "5.4.4"
+      },
+      "ucxx-cu13": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ucxx_cu13-0.50.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.50.0"
+      },
+      "umap-learn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/umap_learn-0.5.12.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.5.12"
+      },
+      "umf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/umf-1.0.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.3"
+      },
+      "uri-template": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/uri_template-1.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.0"
+      },
+      "uritemplate": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/uritemplate-4.2.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.2.0"
+      },
+      "urllib3": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/urllib3-2.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.0"
+      },
+      "uuid-utils": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/uuid_utils-0.17.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.17.1"
+      },
+      "uvicorn": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/uvicorn-0.54.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.54.0"
+      },
+      "uvloop": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/uvloop-0.23.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.23.0"
+      },
+      "vega-datasets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/vega_datasets-0.9.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.0"
+      },
+      "wadllib": {
+        "metadata_path": "/usr/lib/python3/dist-packages/wadllib-1.3.6.egg-info",
+        "root": "/usr/lib/python3/dist-packages",
+        "version": "1.3.6"
+      },
+      "wandb": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wandb-0.28.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.28.1"
+      },
+      "wasabi": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wasabi-1.1.3.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.1.3"
+      },
+      "watchdog": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/watchdog-6.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "6.0.0"
+      },
+      "watchfiles": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/watchfiles-1.3.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.3.0"
+      },
+      "wcwidth": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wcwidth-0.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.9.1"
+      },
+      "weasel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/weasel-1.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.0.0"
+      },
+      "webcolors": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/webcolors-25.10.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "25.10.0"
+      },
+      "webencodings": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/webencodings-0.6.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.6.1"
+      },
+      "websocket-client": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/websocket_client-1.9.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.2"
+      },
+      "websockets": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/websockets-15.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "15.0.1"
+      },
+      "werkzeug": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/werkzeug-3.1.9.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.1.9"
+      },
+      "wheel": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wheel-0.48.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.48.0"
+      },
+      "widgetsnbextension": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/widgetsnbextension-3.6.10.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.6.10"
+      },
+      "wordcloud": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wordcloud-1.9.6.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.9.6"
+      },
+      "wrapt": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/wrapt-2.5.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.5.0"
+      },
+      "xarray": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xarray-2025.12.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2025.12.0"
+      },
+      "xarray-einstats": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xarray_einstats-0.11.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.11.0"
+      },
+      "xee": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xee-0.1.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.1.2"
+      },
+      "xgboost": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xgboost-3.4.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.4.1"
+      },
+      "xlrd": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xlrd-2.0.2.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.0.2"
+      },
+      "xxhash": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xxhash-4.0.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.0.1"
+      },
+      "xyzservices": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/xyzservices-2026.9.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2026.9.1"
+      },
+      "yarl": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/yarl-1.25.1.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.25.1"
+      },
+      "ydf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ydf-0.15.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.15.0"
+      },
+      "ydf-tf": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/ydf_tf-2.21.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "2.21.0"
+      },
+      "yellowbrick": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/yellowbrick-1.5.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "1.5"
+      },
+      "yfinance": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/yfinance-0.2.66.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.2.66"
+      },
+      "zict": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/zict-3.0.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "3.0.0"
+      },
+      "zipp": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/zipp-4.1.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "4.1.0"
+      },
+      "zstandard": {
+        "metadata_path": "/usr/local/lib/python3.13/dist-packages/zstandard-0.25.0.dist-info",
+        "root": "/usr/local/lib/python3.13/dist-packages",
+        "version": "0.25.0"
+      }
+    },
+    "sys_path": [
+      "/usr/lib/python313.zip",
+      "/usr/lib/python3.13",
+      "/usr/lib/python3.13/lib-dynload",
+      "/usr/local/lib/python3.13/dist-packages",
+      "/usr/lib/python3/dist-packages"
+    ],
+    "user_site_enabled": false
+  },
+  "returncode": 0,
+  "stderr": ""
+}

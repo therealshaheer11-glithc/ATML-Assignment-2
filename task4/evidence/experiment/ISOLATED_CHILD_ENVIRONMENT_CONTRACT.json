@@ -1,0 +1,11 @@
+{
+  "format": "ATML_TASK4_ISOLATED_CHILD_ENVIRONMENT_POLICY_V1",
+  "source_manifest_sha256": "999b26996654587e6ddfda1a146cac4ac38b421f0856f6134abd2ac61433c363",
+  "original_sanitizer_source_manifest_sha256": "7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a",
+  "additional_variable_removed_only_from_child": "MPLBACKEND",
+  "recognized_removed_value": "module://matplotlib_inline.backend_inline",
+  "absent_or_empty_value_allowed": true,
+  "unexpected_nonempty_value_requires_review": true,
+  "replacement_backend_forced": false,
+  "parent_environment_modified": false
+}

@@ -1,0 +1,13 @@
+{
+  "format": "ATML_TASK4_GENERATION_ATTEMPT_V1",
+  "status": "RUNNING",
+  "attempt_utc": "20261011T174101.363739Z",
+  "source_manifest_sha256": "862f0e0330d9e8e571cb02bc27b32c48591aaee15f9f2543d315dc43ce97ada4",
+  "commands": [],
+  "policies_completed": [],
+  "package_changes_downloads_or_training_performed": false,
+  "judge_calls_performed": 0,
+  "human_labels_assigned": 0,
+  "gpu_exceptions_accepted": [],
+  "generation_counts": "Pending verified saved-unit inspection"
+}

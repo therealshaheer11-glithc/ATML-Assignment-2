@@ -1,0 +1,11 @@
+{
+  "completed_judgments": 450,
+  "export": {
+    "judgments": 450,
+    "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/judgment/sft.jsonl",
+    "sha256": "2f346cc6c7f1b2fc6c4cc955993e42ccbd17146953f41ca207ebc30f70bbca51"
+  },
+  "new_judgments": 450,
+  "policy": "sft",
+  "reused_judgments": 0
+}

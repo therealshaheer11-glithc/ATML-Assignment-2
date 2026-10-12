@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-11T17:12:54.532845+00:00",
+  "evidence": "User-returned Colab console output; the next block verifies the saved Drive report and artifacts directly.",
+  "returned_output_sha256": "7a04a64b633e9003c2f1b964a44b76c0fead214bcd309edbb25f382d9063cd52",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_loading_attempts/20261011T170515.343871Z/REPORT.json",
+  "source_manifest_sha256": "20c7fb542b21e7d41afd36e2f2b2bb4fa6eb981994eda20ae1344bac4c06935d",
+  "status": "FIVE_MODELS_LOADED_AND_VALIDATED_NO_INFERENCE",
+  "validated_models": [
+    "sft",
+    "dpo",
+    "ppo",
+    "grpo",
+    "judge"
+  ],
+  "models_loaded_and_inspected": 5,
+  "base_snapshot_files_rehashed": 7,
+  "judge_snapshot_files_rehashed": 9,
+  "cuda_placement_eval_mode_adapter_tensors_and_generation_defaults_verified": true,
+  "base_full_dependency_check_passed": true,
+  "isolated_full_dependency_check_passed": true,
+  "base_packages_unchanged": 724,
+  "reviewed_duplicate_groups_preserved": 16,
+  "isolated_packages_unchanged": 84,
+  "gpu_exceptions_accepted": [],
+  "forward_passes": 0,
+  "responses_generated": 0,
+  "judgments_produced": 0,
+  "human_labels_assigned": 0,
+  "next_stage": "Approved deterministic generation for all 450 prompts in fixed batches of four for each of the four sequential policies, with per-batch Drive persistence."
+}

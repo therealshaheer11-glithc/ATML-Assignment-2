@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-12T04:27:09.499015+00:00",
+  "evidence": "User-returned Colab console output; next block verifies saved Drive report and artifact hashes.",
+  "returned_output_sha256": "c4bece10c8b0cd4b2dcbfda0d8f674041b658d30b8b2a1d493b1b4be4024c5c1",
+  "source_sha256": "b304191c43f791b5c9b742758389027b7c7c0de034d72ed7881ad25747d5a657",
+  "report_path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/resume_a100_preflight_attempts/20261012T042038.114257Z/REPORT.json",
+  "status": "A100_RESUME_INVENTORY_AND_CACHED_METADATA_COMPATIBILITY_VERIFIED",
+  "a100_hardware": [
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "total_memory_mib": 40960,
+      "driver_version": "580.82.07",
+      "uuid": "GPU-3b8e2ec2-9c03-4001-c3ff-d4cfda0c3bd5"
+    }
+  ],
+  "python": "3.13.15",
+  "base_package_names": 723,
+  "base_duplicate_groups": 16,
+  "base_dependency_assessment": "ONLY_PREVIOUSLY_APPROVED_JEDI_REPAIR_NEEDED_AFTER_ISOLATED_VALIDATION",
+  "base_dependency_messages": [
+    "ipython 7.34.0 requires jedi, which is not installed."
+  ],
+  "base_original_version_differences": {},
+  "marker_environment_differences": {},
+  "compatible_cached_wheel_records": 90,
+  "compatible_exact_pins": 84,
+  "course_distributions": 83,
+  "isolated_directory_exists": false,
+  "free_bytes_before": 207566639104,
+  "required_free_bytes": 11045288692,
+  "packages_changed": false,
+  "model_loads": 0,
+  "inference_calls": 0,
+  "responses_last_verified": 1800,
+  "judgments_last_verified": 0,
+  "human_labels_last_confirmed": 0,
+  "fresh_wheel_body_hash_verification_pending": true,
+  "isolated_environment_restoration_and_validation_pending": true,
+  "base_repair_pending": true
+}

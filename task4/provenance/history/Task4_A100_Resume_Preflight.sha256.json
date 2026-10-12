@@ -1,0 +1,12 @@
+{
+  "script": "Task4_A100_Resume_Preflight.py",
+  "sha256": "b304191c43f791b5c9b742758389027b7c7c0de034d72ed7881ad25747d5a657",
+  "local_syntax_check_passed": true,
+  "local_guard_tests_passed": 6,
+  "actual_a100_execution_pending": true,
+  "current_block": "Read-only A100 inventory and cached metadata compatibility; no package changes or inference",
+  "last_confirmed_responses": 1800,
+  "last_confirmed_judgments": 0,
+  "last_confirmed_human_labels": 0,
+  "new_experiment_setting_selected": false
+}

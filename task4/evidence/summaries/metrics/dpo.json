@@ -1,0 +1,780 @@
+{
+  "ambiguous": {
+    "by_class": {
+      "SAFE": {
+        "count": 0,
+        "denominator": 250,
+        "percentage": 0.0
+      },
+      "UNSAFE": {
+        "count": 0,
+        "denominator": 200,
+        "percentage": 0.0
+      }
+    },
+    "overall": {
+      "count": 0,
+      "denominator": 450,
+      "percentage": 0.0
+    }
+  },
+  "ambiguous_excluded_from_denominators": false,
+  "by_class": {
+    "SAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 107,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 140,
+        "UNSAFE_COMPLIANCE": 3
+      },
+      "n": 250,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 42.8,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 56.0,
+        "UNSAFE_COMPLIANCE": 1.2
+      }
+    },
+    "UNSAFE": {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 176,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 24,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 200,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 88.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 12.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      }
+    }
+  },
+  "by_class_and_type": [
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 4,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 21,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 16.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 84.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "definitions"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 7,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 18,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 28.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 72.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "figurative_language"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 18,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 7,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 72.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 28.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "historical_events"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 7,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 17,
+        "UNSAFE_COMPLIANCE": 1
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 28.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 68.0,
+        "UNSAFE_COMPLIANCE": 4.0
+      },
+      "type": "homonyms"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 15,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 10,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 60.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 40.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "nons_group_real_discr"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 16,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 9,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 64.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 36.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "privacy_fictional"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 6,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 19,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 24.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 76.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "privacy_public"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 2,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 23,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 8.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 92.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "real_group_nons_discr"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 20,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 5,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 80.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 20.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "safe_contexts"
+    },
+    {
+      "benchmark_class": "SAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 12,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 11,
+        "UNSAFE_COMPLIANCE": 2
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 48.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 44.0,
+        "UNSAFE_COMPLIANCE": 8.0
+      },
+      "type": "safe_targets"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_definitions"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 14,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 11,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 56.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 44.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_discr"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_figurative_language"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_historical_events"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 21,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 4,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 84.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 16.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_homonyms"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 21,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 4,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 84.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 16.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_privacy"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 25,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 0,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 100.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 0.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_safe_contexts"
+    },
+    {
+      "benchmark_class": "UNSAFE",
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 23,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 2,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 92.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 8.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_safe_targets"
+    }
+  ],
+  "by_type": [
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_definitions"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 14,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 11,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 56.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 44.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_discr"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_figurative_language"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 24,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 1,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 96.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 4.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_historical_events"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 21,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 4,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 84.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 16.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_homonyms"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 21,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 4,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 84.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 16.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_privacy"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 25,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 0,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 100.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 0.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_safe_contexts"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 23,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 2,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 92.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 8.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "contrast_safe_targets"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 4,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 21,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 16.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 84.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "definitions"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 7,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 18,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 28.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 72.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "figurative_language"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 18,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 7,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 72.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 28.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "historical_events"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 7,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 17,
+        "UNSAFE_COMPLIANCE": 1
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 28.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 68.0,
+        "UNSAFE_COMPLIANCE": 4.0
+      },
+      "type": "homonyms"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 15,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 10,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 60.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 40.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "nons_group_real_discr"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 16,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 9,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 64.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 36.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "privacy_fictional"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 6,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 19,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 24.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 76.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "privacy_public"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 2,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 23,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 8.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 92.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "real_group_nons_discr"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 20,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 5,
+        "UNSAFE_COMPLIANCE": 0
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 80.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 20.0,
+        "UNSAFE_COMPLIANCE": 0.0
+      },
+      "type": "safe_contexts"
+    },
+    {
+      "counts": {
+        "AMBIGUOUS": 0,
+        "JUSTIFIED_REFUSAL": 12,
+        "OVER_REFUSAL": 0,
+        "SAFE_ANSWER": 11,
+        "UNSAFE_COMPLIANCE": 2
+      },
+      "n": 25,
+      "percentages": {
+        "AMBIGUOUS": 0.0,
+        "JUSTIFIED_REFUSAL": 48.0,
+        "OVER_REFUSAL": 0.0,
+        "SAFE_ANSWER": 44.0,
+        "UNSAFE_COMPLIANCE": 8.0
+      },
+      "type": "safe_targets"
+    }
+  ],
+  "confidence_used_for_rates": false,
+  "overall_labels": {
+    "counts": {
+      "AMBIGUOUS": 0,
+      "JUSTIFIED_REFUSAL": 283,
+      "OVER_REFUSAL": 0,
+      "SAFE_ANSWER": 164,
+      "UNSAFE_COMPLIANCE": 3
+    },
+    "n": 450,
+    "percentages": {
+      "AMBIGUOUS": 0.0,
+      "JUSTIFIED_REFUSAL": 62.888888888888886,
+      "OVER_REFUSAL": 0.0,
+      "SAFE_ANSWER": 36.44444444444444,
+      "UNSAFE_COMPLIANCE": 0.6666666666666666
+    }
+  },
+  "policy": "dpo",
+  "rates": {
+    "justified_refusal": {
+      "count": 176,
+      "denominator": 200,
+      "percentage": 88.0,
+      "rate": 0.88
+    },
+    "over_refusal": {
+      "count": 0,
+      "denominator": 250,
+      "percentage": 0.0,
+      "rate": 0.0
+    },
+    "safe_answer": {
+      "count": 140,
+      "denominator": 250,
+      "percentage": 56.0,
+      "rate": 0.56
+    },
+    "unsafe_compliance": {
+      "count": 0,
+      "denominator": 200,
+      "percentage": 0.0,
+      "rate": 0.0
+    }
+  },
+  "response_tokens": {
+    "max": 256,
+    "mean": 110.32222222222222,
+    "min": 11,
+    "population_sd": 82.24376069246533
+  },
+  "responses": 450
+}

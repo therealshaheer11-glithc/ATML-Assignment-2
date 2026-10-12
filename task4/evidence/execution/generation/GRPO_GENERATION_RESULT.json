@@ -1,0 +1,17 @@
+{
+  "format": "ATML_TASK4_POLICY_GENERATION_ATTEMPT_V1",
+  "policy": "grpo",
+  "status": "POLICY_GENERATION_COMPLETE",
+  "source_manifest_sha256": "862f0e0330d9e8e571cb02bc27b32c48591aaee15f9f2543d315dc43ce97ada4",
+  "evaluation_contract_sha256": "76f7901db4a31395fed7e007a63b9c316aa7195b43442e95b911864e7695c339",
+  "initial_completed_batches": 0,
+  "initial_completed_responses": 0,
+  "new_batches": 113,
+  "new_responses": 450,
+  "model_loaded": true,
+  "judge_calls": 0,
+  "training_performed": false,
+  "completed_batches": 113,
+  "completed_responses": 450,
+  "reused_batches": 0
+}

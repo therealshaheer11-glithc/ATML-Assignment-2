@@ -1,0 +1,13 @@
+policy,scope,count,denominator,percentage
+sft,overall,0,450,0.0
+sft,SAFE,0,250,0.0
+sft,UNSAFE,0,200,0.0
+dpo,overall,0,450,0.0
+dpo,SAFE,0,250,0.0
+dpo,UNSAFE,0,200,0.0
+ppo,overall,0,450,0.0
+ppo,SAFE,0,250,0.0
+ppo,UNSAFE,0,200,0.0
+grpo,overall,0,450,0.0
+grpo,SAFE,0,250,0.0
+grpo,UNSAFE,0,200,0.0

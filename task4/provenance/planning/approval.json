@@ -1,0 +1,26 @@
+{
+  "format": "ATML_TASK4_APPROVAL_V1",
+  "approved": true,
+  "date_local": "2026-10-11",
+  "timezone": "Asia/Karachi",
+  "user_approval_messages": [
+    "Sure I approve",
+    "Yes I approve but document everything"
+  ],
+  "approved_recommendations": {
+    "1": "Task 4 reproducible scripts with preserved course helpers; Colab cells are launchers",
+    "2": "Generation batches of 4; policies sequential; preserve released precision and judge quantization",
+    "3": "Save every generation batch and every judgment under the approved Drive root; checksums and identity-checked resume",
+    "4": "Mean and population SD for response length; agreement over all 60 responses per policy including ambiguous labels; report counts and percentages"
+  },
+  "drive_relative_root": "ATML-Assignment-2/task4/experiment_v1",
+  "interaction": "Exactly one executable Colab block; wait for its actual output before the next block",
+  "documentation": "Record requirements, choices, provenance, implementation, checks, failures, actual progress, and resume state",
+  "execution_environment": "Google Colab; CPU when possible; A100 for model inference",
+  "new_discretionary_changes": "Seek explicit user approval before acting",
+  "manual_labels": "User-provided blind human labels; no AI labels presented as manual annotations",
+  "training_required": false,
+  "session_time_limit": null,
+  "automatic_disconnect": false,
+  "note": "Task 3 time limits, disconnect behavior, optimizer choices and approvals are not inherited by Task 4."
+}

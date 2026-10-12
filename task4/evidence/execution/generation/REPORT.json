@@ -1,0 +1,339 @@
+{
+  "format": "ATML_TASK4_GENERATION_ATTEMPT_V1",
+  "status": "ALL_FOUR_POLICIES_GENERATED_AND_SAVED",
+  "attempt_utc": "20261011T174101.363739Z",
+  "source_manifest_sha256": "862f0e0330d9e8e571cb02bc27b32c48591aaee15f9f2543d315dc43ce97ada4",
+  "commands": [
+    {
+      "stage": "nvidia_inventory",
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,driver_version,uuid",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "log_sha256": "0f18022ba5c2f89e9790832ad27b835c429f6c7780530c6fed9f5fe6cb384c6c"
+    },
+    {
+      "stage": "BEFORE_base_inventory",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/BEFORE_BASE_INVENTORY.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "55277c82586fe4b1f8e2482ca8a0715e5a7857e85239b4e06479d15ed0b9a76b"
+    },
+    {
+      "stage": "BEFORE_base_layout",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_repair_recheck_releases/4955a6f76dfbfc5b2f92825fce309eabbe4c209cf576b73a7d182ff0b101f09a/scan_base_layout.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_layout_diagnostic_releases/961b9825e7a34823a8f3930e597149c425427d494f8d9c9b10652e5998a734be/scan_layout.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/BEFORE_BASE_LAYOUT.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "ab74df2b9248027d16d0b8e331f2a5da4d4841181b6e6538ab70296d6472ae6c"
+    },
+    {
+      "stage": "BEFORE_isolated_inventory",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/BEFORE_ISOLATED.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d"
+    },
+    {
+      "stage": "base_full_dependency_check",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "check"
+      ],
+      "returncode": 0,
+      "log_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "stage": "isolated_full_dependency_check",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "check"
+      ],
+      "returncode": 0,
+      "log_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "stage": "sft_generation",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-u",
+        "/content/task4_generation_if7kmy4j/generate_policy.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/preflight_releases/9a121f29750b5b09c5feafeb491630ba4b88b6c91dc2ed5ee94ebdb989793b65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/orchestration_releases/35ca690761d2bfda0992ff37855b16fc72c03ffd4b47afaa81edc533ab7a5f65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_loading_releases/20c7fb542b21e7d41afd36e2f2b2bb4fa6eb981994eda20ae1344bac4c06935d",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1",
+        "sft",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z"
+      ],
+      "returncode": 0,
+      "log_sha256": "10651f8e68158f05a722a4bbf2a000205aa618b879efa62522a542a0aa4d9252"
+    },
+    {
+      "stage": "dpo_generation",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-u",
+        "/content/task4_generation_if7kmy4j/generate_policy.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/preflight_releases/9a121f29750b5b09c5feafeb491630ba4b88b6c91dc2ed5ee94ebdb989793b65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/orchestration_releases/35ca690761d2bfda0992ff37855b16fc72c03ffd4b47afaa81edc533ab7a5f65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_loading_releases/20c7fb542b21e7d41afd36e2f2b2bb4fa6eb981994eda20ae1344bac4c06935d",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1",
+        "dpo",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z"
+      ],
+      "returncode": 0,
+      "log_sha256": "11640c0e8b86f49cd784ac13e90f324ca75032650ac27189268cb5f8584eb7b4"
+    },
+    {
+      "stage": "ppo_generation",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-u",
+        "/content/task4_generation_if7kmy4j/generate_policy.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/preflight_releases/9a121f29750b5b09c5feafeb491630ba4b88b6c91dc2ed5ee94ebdb989793b65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/orchestration_releases/35ca690761d2bfda0992ff37855b16fc72c03ffd4b47afaa81edc533ab7a5f65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_loading_releases/20c7fb542b21e7d41afd36e2f2b2bb4fa6eb981994eda20ae1344bac4c06935d",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1",
+        "ppo",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z"
+      ],
+      "returncode": 0,
+      "log_sha256": "eeb3e8ee99bcc434d4829b1b2d7729088b7b2d57d584c369468e08b8ff9aa3cc"
+    },
+    {
+      "stage": "grpo_generation",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "-u",
+        "/content/task4_generation_if7kmy4j/generate_policy.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/preflight_releases/9a121f29750b5b09c5feafeb491630ba4b88b6c91dc2ed5ee94ebdb989793b65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/orchestration_releases/35ca690761d2bfda0992ff37855b16fc72c03ffd4b47afaa81edc533ab7a5f65",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/model_loading_releases/20c7fb542b21e7d41afd36e2f2b2bb4fa6eb981994eda20ae1344bac4c06935d",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1",
+        "grpo",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z"
+      ],
+      "returncode": 0,
+      "log_sha256": "c3672e69bafd1746bf641ddecfcc24b5df8c3c7b9fc376e766b9274826127b84"
+    },
+    {
+      "stage": "AFTER_base_inventory",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/AFTER_BASE_INVENTORY.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "55277c82586fe4b1f8e2482ca8a0715e5a7857e85239b4e06479d15ed0b9a76b"
+    },
+    {
+      "stage": "AFTER_base_layout",
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_repair_recheck_releases/4955a6f76dfbfc5b2f92825fce309eabbe4c209cf576b73a7d182ff0b101f09a/scan_base_layout.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/base_layout_diagnostic_releases/961b9825e7a34823a8f3930e597149c425427d494f8d9c9b10652e5998a734be/scan_layout.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/AFTER_BASE_LAYOUT.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "ab74df2b9248027d16d0b8e331f2a5da4d4841181b6e6538ab70296d6472ae6c"
+    },
+    {
+      "stage": "AFTER_isolated_inventory",
+      "argv": [
+        "/content/task4_isolated_runtime_v1/bin/python",
+        "-I",
+        "-B",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/isolated_gpu_releases/7a5673003062448f66a3c43763340483968234f42d2659d517c47d7e33de6e8a/inspect_python.py",
+        "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/generation_attempts/20261011T174101.363739Z/AFTER_ISOLATED.json"
+      ],
+      "returncode": 0,
+      "log_sha256": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d"
+    }
+  ],
+  "policies_completed": [
+    "sft",
+    "dpo",
+    "ppo",
+    "grpo"
+  ],
+  "package_changes_downloads_or_training_performed": false,
+  "judge_calls_performed": 0,
+  "human_labels_assigned": 0,
+  "gpu_exceptions_accepted": [],
+  "generation_counts": {
+    "by_policy": {
+      "sft": {
+        "batches": 113,
+        "responses": 450
+      },
+      "dpo": {
+        "batches": 113,
+        "responses": 450
+      },
+      "ppo": {
+        "batches": 113,
+        "responses": 450
+      },
+      "grpo": {
+        "batches": 113,
+        "responses": 450
+      }
+    },
+    "completed_batches": 452,
+    "completed_responses": 1800,
+    "remaining_batches": 0,
+    "remaining_responses": 0
+  },
+  "evaluation_contract_sha256": "76f7901db4a31395fed7e007a63b9c316aa7195b43442e95b911864e7695c339",
+  "initial_verified_counts": {
+    "by_policy": {
+      "sft": {
+        "batches": 0,
+        "responses": 0
+      },
+      "dpo": {
+        "batches": 0,
+        "responses": 0
+      },
+      "ppo": {
+        "batches": 0,
+        "responses": 0
+      },
+      "grpo": {
+        "batches": 0,
+        "responses": 0
+      }
+    },
+    "completed_batches": 0,
+    "completed_responses": 0,
+    "remaining_batches": 452,
+    "remaining_responses": 1800
+  },
+  "generation_completion_contract_sha256": "701f5652f66692480651e5deb6b7f6a38d133994a8e803e1b715f6a995e2039e",
+  "exports": {
+    "sft": {
+      "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/generation/sft.jsonl",
+      "sha256": "0f8b450ada024e98dbde43049dddf0e5bd1d11fc64b247e264a1eb9df3b8488d",
+      "responses": 450
+    },
+    "dpo": {
+      "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/generation/dpo.jsonl",
+      "sha256": "20dc46162a64344d29166dd713933b5480a84ad24f5a31d9fe35040fabf3b97e",
+      "responses": 450
+    },
+    "ppo": {
+      "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/generation/ppo.jsonl",
+      "sha256": "75e33629d23b8bdbc6d87d7b98997cbc60cfc5fd9d85b9f7e43c0e30de8e1493",
+      "responses": 450
+    },
+    "grpo": {
+      "path": "/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1/evaluation_v1/exports/generation/grpo.jsonl",
+      "sha256": "a7fcdeccc0c16561d140c4563c90693c851bad8a14467de26730638f29b19395",
+      "responses": 450
+    }
+  },
+  "new_responses_this_attempt": 1800,
+  "base_and_isolated_environment_unchanged": true,
+  "artifact_sha256": {
+    "START.json": "fcc1a7ec802d1aed7a72b3b77ea7ce1d79ce067437d1a1cc45adda128819380c",
+    "nvidia_inventory_COMMAND.json": "d499c6a69838e30147644e9722b8f3f588841ae4549a638de7c5b847205e7d27",
+    "nvidia_inventory.log": "0f18022ba5c2f89e9790832ad27b835c429f6c7780530c6fed9f5fe6cb384c6c",
+    "nvidia_inventory_RESULT.json": "8be20082e503886db90633dcadbe96666eec05d02aab525f8fc354508d32bd43",
+    "A100_HARDWARE.json": "2ad4d108b5929d6bb5df7920ddcbb5949a1f81fd44caa6789e374baeeb6fe3d4",
+    "BEFORE_base_inventory_COMMAND.json": "f84dddd3f388be5dfcf2cc7df0d943458b0eb8eada74099fb8e4003c4966607d",
+    "BEFORE_base_inventory.log": "55277c82586fe4b1f8e2482ca8a0715e5a7857e85239b4e06479d15ed0b9a76b",
+    "BEFORE_BASE_INVENTORY.json": "d39195a6da6c1ad794cfe31626b6b01512ef6e0734a3cc2d6e52bf05e311df09",
+    "BEFORE_base_inventory_RESULT.json": "503162d1d1a41d5a1561f7d1a32587445e72f3614b110480d8448ccff40e1b81",
+    "BEFORE_base_layout_COMMAND.json": "377ef3af376f140c84745356e07a8e1fa3f1049b9058dca16e41d811aa04ec8b",
+    "BEFORE_base_layout.log": "ab74df2b9248027d16d0b8e331f2a5da4d4841181b6e6538ab70296d6472ae6c",
+    "BEFORE_BASE_LAYOUT.json": "85a1638c35884220453eb526b04485ccf748170f515994ecc6cff44c2bb73ec6",
+    "BEFORE_base_layout_RESULT.json": "23df78c1a1da5dad29290294434e5696283776c09eb0c5fa6c9632242441eeac",
+    "BEFORE_isolated_inventory_COMMAND.json": "675845c58c05721d92c23ab3523913fad7a445d8af96a49fa9992bd5477d56af",
+    "BEFORE_isolated_inventory.log": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+    "BEFORE_ISOLATED.json": "dc005084ec40900f235fa7e311012dd5a4bb881c32e5d16e735c75bf7ae5ddab",
+    "BEFORE_isolated_inventory_RESULT.json": "6d2fc608c450cd898e39693890c049e371072a3ab2411ffdccab07f2c3edd570",
+    "base_full_dependency_check_COMMAND.json": "52f4ac2b9c7f54da0aa34c3c265c9641dc1960cc6c20359223a2ec88656b443a",
+    "base_full_dependency_check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "base_full_dependency_check_RESULT.json": "edfabbf4bab91656f6c8beb9612e641f48eac56357b11e4e6aa6bd79e7d425c2",
+    "isolated_full_dependency_check_COMMAND.json": "7fa755965ac7199388b1e948262955368426e1acd11556c1f4a7e19e7b20a69f",
+    "isolated_full_dependency_check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "isolated_full_dependency_check_RESULT.json": "0eef228480a21828c0792a3c5de34e18207a83a3eefdcd5530133c481e71d2e5",
+    "POLICY_SNAPSHOT_REHASH.json": "d2b0cc4e8fb4f7c2c37a5a795686d23fd850a9bacdba5f73df7f7c5ced1809e4",
+    "INITIAL_VERIFIED_COUNTS.json": "9a2fb5253bceedbe45ad5f42a8fbf64c5f7166cfcc732fecc19878423c84cbe1",
+    "sft_generation_COMMAND.json": "d90e58005e738e410fe64e51b4dae738f9f2fb661ffc45a5f9b613d9163a8802",
+    "sft_generation.log": "10651f8e68158f05a722a4bbf2a000205aa618b879efa62522a542a0aa4d9252",
+    "SFT_INFERENCE_MODEL_CHECK.json": "c7a39f78ad9bfb98f91ff22deb873e3c36aed926b507b9e02d9fcb36c15b0d53",
+    "SFT_GENERATION_RESULT.json": "4ee61705e32c3b164a1356da4fd5f93828b50052d1a0b03f08629db293c56447",
+    "sft_generation_RESULT.json": "c43cabbd18f81b2c5ad927cf96d8fbd480a9eb2d6a2c258280122a5dd02af450",
+    "AFTER_SFT_COUNTS.json": "f884451275511677dcf1fc34d21cc6b33a1225b242c99c052b634d6a9d1ede96",
+    "dpo_generation_COMMAND.json": "0d4b14477cb7676c272646a18a33c2bf3c32375bc33a77b4efb19e52847bb743",
+    "dpo_generation.log": "11640c0e8b86f49cd784ac13e90f324ca75032650ac27189268cb5f8584eb7b4",
+    "DPO_INFERENCE_MODEL_CHECK.json": "facf98ddbcefbdb01a59e7d5f8c86591641584c1e71e7cc6394945b0d161a6ee",
+    "DPO_GENERATION_RESULT.json": "12b2503c8fabf252545090836a876b13369f1862b4b8b5fc5be45c3ef8165702",
+    "dpo_generation_RESULT.json": "862dc6c1dc7f98c4502b68eb75c0a9647fe1d1de7df8dde2ee1d8dd9955bbe9b",
+    "AFTER_DPO_COUNTS.json": "c63985d1f63bc780ffd7ce584c88bbec5f088258844bd8ac1d1eca44f596eb84",
+    "ppo_generation_COMMAND.json": "22eeb8e8480536067e06184a2004d97712c5b522df1c94792fdb736d9821ad77",
+    "ppo_generation.log": "eeb3e8ee99bcc434d4829b1b2d7729088b7b2d57d584c369468e08b8ff9aa3cc",
+    "PPO_INFERENCE_MODEL_CHECK.json": "a75c85b496d0a5b9d65928a249a1cee78da98f98eabd553743df8f67cf5246c3",
+    "PPO_GENERATION_RESULT.json": "74f3e1f1bfc0d6a08efe11e6e63ebf57ab610a92cf04d66f3b5997d43e78d36e",
+    "ppo_generation_RESULT.json": "7e0047d1f925c23c5ee0b0a68247cf968d2193f03866738ea474bf3829d7df87",
+    "AFTER_PPO_COUNTS.json": "4c3040382fc4c4d2de6420fccdb5b2826bd78bedf81a9f67975c5133bd9db72d",
+    "grpo_generation_COMMAND.json": "1c079ae76cc7ce400a93c12b9785569382aaf068136b3bd7f86d28e6285fb98e",
+    "grpo_generation.log": "c3672e69bafd1746bf641ddecfcc24b5df8c3c7b9fc376e766b9274826127b84",
+    "GRPO_INFERENCE_MODEL_CHECK.json": "81a6e03eb9f18ba2c71a21ef5a1d185db270f34a1d877a17e522bf81e585dbbd",
+    "GRPO_GENERATION_RESULT.json": "f517bdc10e0638531771a73d1f931e6825360d47f78758cc9e300fb01c47c7fe",
+    "grpo_generation_RESULT.json": "64b7b2bab7ac4e98313e4cd3ba63913dced186443fbf9097748bfd7bb772c2c4",
+    "AFTER_GRPO_COUNTS.json": "8f4adc1451eacda2bac21a8f5e55e8cf03a3c95e813105beae617236222496d4",
+    "AFTER_base_inventory_COMMAND.json": "8d922dc8b6749ccd147669cf06fb5889437bf6a6f56579c645132d457ab1d257",
+    "AFTER_base_inventory.log": "55277c82586fe4b1f8e2482ca8a0715e5a7857e85239b4e06479d15ed0b9a76b",
+    "AFTER_BASE_INVENTORY.json": "d39195a6da6c1ad794cfe31626b6b01512ef6e0734a3cc2d6e52bf05e311df09",
+    "AFTER_base_inventory_RESULT.json": "f710c332b59829ee2dc3ff02bba54e52d65c5a896e1b8ffbb3b8f1b2fb3805db",
+    "AFTER_base_layout_COMMAND.json": "9d2faa68c4a0afc98f810e5f6eebca4d9dc26340c10f211e51867212fcac7e05",
+    "AFTER_base_layout.log": "ab74df2b9248027d16d0b8e331f2a5da4d4841181b6e6538ab70296d6472ae6c",
+    "AFTER_BASE_LAYOUT.json": "85a1638c35884220453eb526b04485ccf748170f515994ecc6cff44c2bb73ec6",
+    "AFTER_base_layout_RESULT.json": "a1c9c25d83619c66b86fd3d654e47688c7248010fb0143c8c638f1da91b68759",
+    "AFTER_isolated_inventory_COMMAND.json": "b6dbb2d872212aac9547e46a3276296ea01ef2b0d7afb245efa98cfef2413b89",
+    "AFTER_isolated_inventory.log": "58bd8d294a80ffa2e53757746b4088f6a7c83ec0671b9d8e9a171ee43c49ac0d",
+    "AFTER_ISOLATED.json": "dc005084ec40900f235fa7e311012dd5a4bb881c32e5d16e735c75bf7ae5ddab",
+    "AFTER_isolated_inventory_RESULT.json": "a095e59c40c0cdd7a5fe9bf2cc6e810a72917a516661468bb4a182f5bf9dff66"
+  }
+}

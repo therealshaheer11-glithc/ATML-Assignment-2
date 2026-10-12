@@ -1,0 +1,24 @@
+{
+  "by_policy": {
+    "sft": {
+      "batches": 113,
+      "responses": 450
+    },
+    "dpo": {
+      "batches": 113,
+      "responses": 450
+    },
+    "ppo": {
+      "batches": 113,
+      "responses": 450
+    },
+    "grpo": {
+      "batches": 0,
+      "responses": 0
+    }
+  },
+  "completed_batches": 339,
+  "completed_responses": 1350,
+  "remaining_batches": 113,
+  "remaining_responses": 450
+}

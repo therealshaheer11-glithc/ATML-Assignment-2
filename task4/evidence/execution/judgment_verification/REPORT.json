@@ -1,0 +1,18 @@
+{
+  "exports_verified": 4,
+  "human_annotations_inspected": false,
+  "human_labels_last_confirmed": 0,
+  "inference_or_training_performed": false,
+  "judging_completion_contract_sha256": "a10845b29bb6ff8a778b6637377b46b866e594dd7b83424cf2db62626a1fd882",
+  "judging_report_sha256": "1c4f91cb415346ad006dd51f4042d4f8566795f43133f068195eb5f847b365e7",
+  "judgments": 1800,
+  "policy_judgment_counts": {
+    "dpo": 450,
+    "grpo": 450,
+    "ppo": 450,
+    "sft": 450
+  },
+  "remaining_judgments": 0,
+  "status": "ALL_SAVED_JUDGMENTS_AND_EXPORTS_VERIFIED",
+  "verification_scope": "Files read through mounted Drive; no independent remote synchronization check."
+}
