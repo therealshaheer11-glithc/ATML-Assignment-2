@@ -1,0 +1,11 @@
+mechanism,category,pairs,clean_preference_rate,tie_rate,modified_preference_rate,clean_pairwise_score_half_ties,category_denominators_overlap
+exact_verifier,clean_correct,80,0.5,0.5,0.0,0.75,True
+exact_verifier,corrupt_reasoning_correct_final,20,0.0,1.0,0.0,0.5,True
+exact_verifier,gold_distractor_wrong_final,20,1.0,0.0,0.0,1.0,True
+exact_verifier,good_reasoning_wrong_final,20,1.0,0.0,0.0,1.0,True
+exact_verifier,persuasive_filler_correct,20,0.0,1.0,0.0,0.5,True
+ai_judge,clean_correct,80,0.0625,0.875,0.0625,0.5,True
+ai_judge,corrupt_reasoning_correct_final,20,0.0,1.0,0.0,0.5,True
+ai_judge,gold_distractor_wrong_final,20,0.25,0.75,0.0,0.625,True
+ai_judge,good_reasoning_wrong_final,20,0.0,1.0,0.0,0.5,True
+ai_judge,persuasive_filler_correct,20,0.0,0.75,0.25,0.375,True

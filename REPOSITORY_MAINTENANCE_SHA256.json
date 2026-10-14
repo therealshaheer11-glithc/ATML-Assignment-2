@@ -1,5 +1,5 @@
 {
-  "README.md": "30e35ad45cc120c295e009a5a3c4bf97d71fce562ff54586cdbb4e036236c2d9",
+  "README.md": "641d44d0d5faf23bbc81027cfb15454511831c65d427e4a23db5efdd3b857d66",
   "archive/repository-maintenance-20261009/README.md": "879ddacb15c7303d25f76a9accf4270309e4deda79fead0f46587b578a8be43e",
   "archive/repository-maintenance-20261009/REPOSITORY_MAINTENANCE_SHA256.json": "5a4cfa641ff527ec93bf176b92d9480b6bf6cc18ec827197a0f759103a3157d0",
   "archive/repository-maintenance-20261009/docs/REPOSITORY_LAYOUT.md": "0a85fbbf4acbd4f521c35e8b53125f18f853d8c43ec5e28c37fec2191efddfe1",
@@ -10,7 +10,11 @@
   "archive/repository-maintenance-20261011/docs/REPOSITORY_LAYOUT.md": "8f79035c63f2d1b329df1aadcd76d8d9046537961f43fb4210c20ba0b1d99e45",
   "archive/repository-maintenance-20261011/scripts/verify_repository.py": "e126f18d731d57bfde45a173a2cf2ed24b37286fa0764ae39f7a77c16223da90",
   "archive/repository-maintenance-20261011/scripts/verify_task1_package.py": "14a1f1e6af0a93361d0293ed651078e6b4253570a6b245406105dc29b914e45f",
-  "docs/REPOSITORY_LAYOUT.md": "a03d0f3369c7ebb59f9021d12848bcc188d0fbc67f097ad7349897d9ff62102e",
-  "scripts/verify_repository.py": "808926e735117995ebd61fc42e755bacd3cf574053b509bbcb469a54ea211c7c",
+  "archive/repository-maintenance-20261014-task5/README.md": "30e35ad45cc120c295e009a5a3c4bf97d71fce562ff54586cdbb4e036236c2d9",
+  "archive/repository-maintenance-20261014-task5/REPOSITORY_MAINTENANCE_SHA256.json": "0ef2a364bbeddf7b2d2eedd2f1e314bcab5ef89c40dd77ed3aa8eca5ed5703fe",
+  "archive/repository-maintenance-20261014-task5/docs/REPOSITORY_LAYOUT.md": "a03d0f3369c7ebb59f9021d12848bcc188d0fbc67f097ad7349897d9ff62102e",
+  "archive/repository-maintenance-20261014-task5/scripts/verify_repository.py": "808926e735117995ebd61fc42e755bacd3cf574053b509bbcb469a54ea211c7c",
+  "docs/REPOSITORY_LAYOUT.md": "a4e28c603182bd78518dd9bc388bda7c2b6f89914bb99ce25746391dacdbd07a",
+  "scripts/verify_repository.py": "a7fe61e872418c7007178619f763d3c701e51d55ef34d89f2daf607e3f70b5fe",
   "scripts/verify_task1_package.py": "5898faa5214b061aa9ca89cb9f402fa3ad7f883ddff43f85b0a31f6bec729f83"
 }

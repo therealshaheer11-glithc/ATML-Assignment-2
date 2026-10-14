@@ -1,0 +1,7 @@
+policy,domain,responses,correct,missing_or_unparseable_final,incorrect_designated_final
+sft,gsm,300,90,183,27
+sft,transfer,100,51,42,7
+rlvr,gsm,300,114,148,38
+rlvr,transfer,100,53,37,10
+rlaif,gsm,300,104,159,37
+rlaif,transfer,100,51,36,13

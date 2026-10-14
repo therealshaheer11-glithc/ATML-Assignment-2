@@ -1,0 +1,15 @@
+{
+  "user_message": "okay go ahead",
+  "approved_proposal_sha256": "20009615ee16b746ef0e4182004926b67ff7b39ce93600e5dabcf55400ccc19d",
+  "approved_candidate_versions_sha256": "9f695dba56dfdbc4d3597586fe8ab6c90d38fa20a8bc3bcfccf50422bfe030ab",
+  "approved_scope": "Task 5 isolated environment plan with exact 84 cached versions, offline hashed installation, disk headroom and synthetic A100 validation; defer A100 setup until remaining CPU protocol and implementation checks are ready",
+  "local_environment": "/content/task5_isolated_runtime_v1",
+  "base_package_changes_approved": false,
+  "downloads_approved": false,
+  "pretrained_model_loading_approved": false,
+  "policy_generation_approved": false,
+  "ai_judging_approved": false,
+  "experimental_protocol_choices_approved": false,
+  "environment_execution_status": "DEFERRED_UNTIL_CPU_READINESS",
+  "next_cpu_work": "Read-only diagnostic structure inspection to prepare a reviewable evaluation protocol"
+}

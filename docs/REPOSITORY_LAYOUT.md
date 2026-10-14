@@ -1,11 +1,27 @@
-# Repository layout — Task 4 integration, 12 October 2026
+# Repository layout — Task 5 integration
 
-The active safety evaluation lives under `task4/`, with CPU reproduction at its top level, immutable exported records in `evidence/`, and sealed source releases plus stage history in `provenance/`. Its README is the current entry point. The five unfinished root `task4_safety/*.py` scaffolds move byte for byte into `archive/course-starter/task4_safety/`.
+Task 5 now lives under `task5/`, with read-only CPU verification at its top level,
+immutable executed Python releases under `source/`, metric/label records under
+`records/`, fixed IDs under `splits/`, and checked results under `results/`.
+The notebook's recoveries and source hashes are documented in `provenance/`.
 
-Previous navigation, both maintenance verifiers, this layout document and their manifest are preserved under `archive/repository-maintenance-20261011/`. The active Task 1 verifier adds only a Task 4 path translation. The original 988-file Task 1 manifest, Tasks 2–3 packages, scientific settings, raw outputs and labels remain unchanged. Task 5 remains unfinished. Source snapshots that share content are kept because their manifests and prior provenance refer to them.
+Previous navigation, the combined verifier, this document and the maintenance
+manifest are retained byte-for-byte in `archive/repository-maintenance-20261014-task5/`.
+The root `task5_feedback/` is retained in place as original course reference,
+including scaffolds; use the complete isolated Task 5 source instead. No old
+files are deleted or moved. Tasks 1–4 and all original scientific manifests stay
+unchanged. Their historical status text describes their earlier publication.
 
-The combined verifier now checks Task 4 integrity and recomputes its saved statistics. `python3 scripts/verify_repository.py --stage` stages only declared files and explicit retired-starter paths; `--staged` checks exact inventory and matching bytes. No command commits or pushes. These commands include required provenance ZIPs despite the outer-ZIP ignore rule.
+The combined verifier now invokes Task 5's CPU verifier and includes its declared
+files in the existing optional stage/index checks. Check, apply, stage, commit
+and push remain separate user-authorized actions. The package installer checks
+the live remote and exact clean baseline `d1def5ccd50d609e797ebcac0759564b3a3bb8e5`,
+verifies every source/destination hash before applying, and rolls back file bytes
+on a caught failure. Process termination or power loss can still leave a partial
+application requiring review. It never resets, stashes, deletes tracked history,
+stages, commits or pushes.
 
-The delivery installer requires reviewed HEAD and refreshed origin/main at `2173e5e833754e7904a2a89b7950e56919b4565e`. Unexpected local changes, unknown files, path collisions or remote drift stop installation. It first copies the retired source into its archive, verifies the copy, then removes the old active path. Ordinary exceptions restore prior file bytes; a process kill/power failure may require reviewing a partial installation. No reset, stash, history rewrite or remote deletion occurs.
-
-The prior layout record is in `../archive/repository-maintenance-20261011/docs/REPOSITORY_LAYOUT.md`. Historical links/statuses describe their original context. Follow the root README for current navigation.
+Full raw course data, model weights, private review bundles and outer delivery
+ZIPs remain outside Git. Task 5 public result reproduction operates on saved
+score/length records; optional private-bundle verification recomputes exact scores
+from full text. The combined eight-page report and LMS submission remain separate.

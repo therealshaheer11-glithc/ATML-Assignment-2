@@ -45,6 +45,9 @@ def main():
     subprocess.run([sys.executable, str(ROOT / "task4/verify_package.py")], check=True)
     expected |= {"task4/" + n for n in read_manifest("task4/PACKAGE_SHA256.json")}
     expected.add("task4/PACKAGE_SHA256.json")
+    subprocess.run([sys.executable, "-B", str(ROOT / "task5/verify_package.py")], check=True)
+    expected |= {"task5/" + n for n in read_manifest("task5/MANIFEST.json")["files"]}
+    expected.add("task5/MANIFEST.json")
     if args.stage or args.staged:
         tracked = set(git("ls-files", "-z", capture=True).decode().split("\0")) - {""}
         allowed = expected | set(original)

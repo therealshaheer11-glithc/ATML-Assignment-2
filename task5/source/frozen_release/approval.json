@@ -1,0 +1,23 @@
+{
+  "a100_environment_setup_already_approved_but_deferred_until_cpu_readiness": true,
+  "approved": true,
+  "approved_proposal_sha256": "e020dc3d0f29d766953fd56dbfd49ae75b2d34378ebcb87878556e1e03fa0a8e",
+  "approved_scope": [
+    "Approve proposed evaluation choices",
+    "Implement modular Task 5 evaluation/diagnostic/aggregation code and audit/resume helpers in a Task 5-specific copy",
+    "Run CPU syntax and synthetic semantic/consistency/resume checks",
+    "Compute released exact-verifier scores for the 100 existing fixed diagnostic responses on CPU and save evidence"
+  ],
+  "block6_scope": "CPU released exact-verifier scoring of the 100 unchanged supplied diagnostic responses only",
+  "excluded_scope": [
+    "Pretrained model loading",
+    "Policy response generation",
+    "AI judging",
+    "Training",
+    "Publishing or pushing code",
+    "Changing course data, frozen weights, released verifier or judge decisions"
+  ],
+  "format": "ATML_TASK5_PROTOCOL_APPROVAL_V1",
+  "later_pretrained_execution_approval_required": true,
+  "user_message": "okay all approved"
+}

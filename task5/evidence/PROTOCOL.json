@@ -1,0 +1,126 @@
+{
+  "approval_status": "APPROVED",
+  "approval_user_message": "okay all approved",
+  "approved_proposal_sha256": "e020dc3d0f29d766953fd56dbfd49ae75b2d34378ebcb87878556e1e03fa0a8e",
+  "assignment_fixed": {
+    "ai_pairwise_score": "Win 1, tie 0.5, loss 0",
+    "base_policy": "Qwen/Qwen2.5-1.5B-Instruct",
+    "diagnostic_problems": 20,
+    "diagnostic_responses": 100,
+    "do_sample": true,
+    "evaluation_only": true,
+    "exact_verifier": "Unchanged released last designated final parser, numerical tolerance 1e-9",
+    "format_compliance": "Designated final successfully parsed regardless of correctness",
+    "gsm_examples": 300,
+    "judge": "Qwen/Qwen2.5-3B-Instruct",
+    "judge_quantization": "4-bit NF4 with float16 compute on A100",
+    "math_max_new_tokens": 512,
+    "policies": [
+      "sft",
+      "rlvr",
+      "rlaif"
+    ],
+    "policy_dtype": "float16",
+    "policy_quantization": "None; preserve common.models.load_policy",
+    "seed": 6304,
+    "svamp_examples": 100,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "training": false
+  },
+  "course_starter_commit": "1d64ac65acd5e45d1e4e1f415edc80455e21274e",
+  "excluded_from_next_approval_scope": [
+    "Pretrained model loading",
+    "Policy response generation",
+    "AI judging",
+    "Training",
+    "Publishing or pushing code",
+    "Changing course data, frozen weights, released verifier or judge decisions"
+  ],
+  "format": "ATML_TASK5_EVALUATION_PROTOCOL_PROPOSAL_V1",
+  "later_approval_requirements": [
+    "Pretrained model loading and actual generation/judging execution",
+    "Any change to this frozen protocol",
+    "Qualitative selection/classification conventions not fixed by the assignment or this proposal"
+  ],
+  "planned_workload_not_executed": {
+    "cpu_exact_diagnostic_scores": 100,
+    "diagnostic_ai_comparisons": 80,
+    "gsm_policy_responses": 900,
+    "policy_ai_comparisons": 800,
+    "policy_responses": 1200,
+    "svamp_policy_responses": 300,
+    "total_ai_comparisons": 880
+  },
+  "proposed_choices": {
+    "batch_size": 1,
+    "cache_scope": "New Task 5 namespace bound to rubric, settings, model/tokenizer revisions, input and code hashes; no reuse of earlier task judgments",
+    "cost_recording": "Save actual inference elapsed time, output-token counts, comparison counts and hardware separately from progress-writing time; no invented cost or speed claims",
+    "diagnostic_pairing": {
+      "clean_category_reporting": "Reference preference/tie/other preference aggregated across its 80 contrasts; each modified category has 20 contrasts. These category rows overlap and must not be summed into a 160-pair denominator.",
+      "contrast_variants": [
+        "corrupt_reasoning_correct_final",
+        "good_reasoning_wrong_final",
+        "persuasive_filler_correct",
+        "gold_distractor_wrong_final"
+      ],
+      "filler_and_distractor": "Separate 20-pair breakdowns; distractor is not pooled into the pure outcome-change sensitivity.",
+      "problems": 20,
+      "reference": "clean_correct",
+      "reference_quality_convention": "Clean is the diagnostic reference. For filler, a tie is acceptable, and filler preference is flagged as possible style bias rather than a numerical correctness error.",
+      "s_outcome": "Fraction of 20 clean-vs-wrong-final pairs preferring the correct-final response; reasoning text verified identical for all 20.",
+      "s_reason": "Fraction of 20 clean-vs-corrupt-reasoning pairs preferring clean; report ties and opposite preferences separately.",
+      "unique_pairs": 80,
+      "verifier_pair_preference": "Compare released binary scores: reference higher, tie, or modified higher."
+    },
+    "domain_order": [
+      "gsm",
+      "transfer"
+    ],
+    "generation_defaults": "Keep course kwargs and checkpoint generation defaults; save effective settings before inference",
+    "judge_protocol": "Preserve rubric, greedy decoding, canonical model identity in cache key, deterministic hash-based A/B swap and unparseable-to-TIE decisions; no extra reversed-order inference or retries.",
+    "judge_token_limit": {
+      "configuration_value": 64,
+      "proposed_use": 4,
+      "rationale": "Preserve the supplied fixed judge helper; document its config mismatch without calling it an instructor-designated deliberate defect.",
+      "released_helper_effective": 4
+    },
+    "length_dispersion": "Population standard deviation (ddof=0), alongside mean",
+    "persistence": "Save each completed response/judgment and generation RNG state; resume only matching frozen identities and a committed completed unit; preserve incomplete evidence without silent overwrite",
+    "policy_comparisons": [
+      "rlvr_vs_sft",
+      "rlaif_vs_sft"
+    ],
+    "policy_order": [
+      "sft",
+      "rlvr",
+      "rlaif"
+    ],
+    "prompt_handling": "Use unchanged course messages and template; no question truncation; stop if full prompt plus completion budget cannot fit model context",
+    "response_length": "Generated response-token count from course helper, excluding padding and including first generated EOS as in released mask",
+    "samples_per_policy_per_prompt": 1,
+    "seed_scope": "Reset course seed 6304 immediately before generation in each policy/domain run; checkpoint RNG after each completed response",
+    "sft_pairwise_display": "Reference baseline; no extra SFT-vs-itself AI calls",
+    "source_row_order_preserved": true,
+    "transfer_drop": "GSM minus SVAMP for exact-accuracy and AI-win-rate percentage points, with domain-specific SFT reference explained",
+    "verifier_judge_agreement": {
+      "ai_tie": "Preserve fixed judge result, including its unparseable-to-TIE behavior",
+      "breakdowns": [
+        "3-by-3 verifier/AI preference table",
+        "tie counts",
+        "raw unparseable judge-output count",
+        "agreement restricted to decisive verifier comparisons, labelled secondary and denominator explicit"
+      ],
+      "interpretation": "Disagreement need not imply judge error: outcome-only verifier ties can conceal reasoning-quality differences.",
+      "primary": "Fraction of policy-vs-SFT comparisons with matching three-way preference: evaluated policy wins, tie, or SFT wins",
+      "verifier_tie": "Both responses receive the same released exact-reward score"
+    }
+  },
+  "requested_next_approval_scope": [
+    "Approve proposed evaluation choices",
+    "Implement modular Task 5 evaluation/diagnostic/aggregation code and audit/resume helpers in a Task 5-specific copy",
+    "Run CPU syntax and synthetic semantic/consistency/resume checks",
+    "Compute released exact-verifier scores for the 100 existing fixed diagnostic responses on CPU and save evidence"
+  ],
+  "source_diagnostic_checkpoint": "/content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/diagnostic_structure_attempts/20261012T175457.377462Z_e7e14416/REPORT.json"
+}

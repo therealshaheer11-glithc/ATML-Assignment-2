@@ -1,0 +1,1 @@
+{"ai_judge":{"S_outcome":0.0,"S_reason":0.0},"category_denominators_overlap":true,"exact_verifier":{"S_outcome":1.0,"S_reason":0.0},"interpretation":"Reasoning-only verifier ties are expected; filler ties are acceptable. Modified filler preference may indicate style bias.","pairs_per_sensitivity":20}

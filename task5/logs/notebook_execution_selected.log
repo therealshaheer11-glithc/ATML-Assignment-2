@@ -1,0 +1,224 @@
+CELL 00
+Status: CPU_INITIAL_INVENTORY_SAVED_REVIEW_PENDING
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/inventory_attempts/20261012T162435.079975Z_249d0dc3/REPORT.json
+
+
+CELL 01
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/asset_inventory_attempts/20261012T164833.926502Z_55de9866/REPORT.json
+
+
+CELL 02
+Status: CPU_MODEL_INTEGRITY_COMPLETE_ENVIRONMENT_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/model_integrity_attempts/20261012T170126.140651Z_ebfc96ec/REPORT.json
+
+
+CELL 03
+Status: CPU_WHEEL_CACHE_VALIDATED_INSTALLATION_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/wheel_validation_attempts/20261012T173139.703528Z_6024d7df/REPORT.json
+
+
+CELL 04
+Status: CPU_DIAGNOSTIC_STRUCTURE_SAVED_PROTOCOL_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/diagnostic_structure_attempts/20261012T175457.377462Z_e7e14416/REPORT.json
+
+
+CELL 05
+Status: CPU_EXACT_DIAGNOSTICS_SAVED_REVIEW_PENDING
+Exact scores computed / saved: 100 / 100
+Unique verifier comparisons: 80
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/exact_diagnostic_attempts/20261012T181819.978550Z_019ba8cf/REPORT.json
+Report SHA-256: 4aa5cb6eeb1b56d88819c9e975c06d8544f697ba07dd9652a4861fef392bb4c8
+
+
+CELL 06
+Status: CPU_READY_FOR_APPROVED_A100_SETUP
+Model files verified: 16 / 16
+Wheels verified: 90 / 90
+CPU tests: 44 passed: True
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/combined_cpu_preflight_attempts/20261013T090737.971920Z_38745111/REPORT.json
+Report SHA-256: 80b7e94d72a248c606f75d255e1315debdf9262c679455a5d69fc5def88388a1
+
+
+CELL 07
+Status: A100_ISOLATED_ENVIRONMENT_READY_PRETRAINED_EXECUTION_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/a100_setup_attempts/20261013T093754.042876Z_44eefae6/REPORT.json
+Report SHA-256: 440f9c23ddc59291a96730b99cc5d9c6c6df00ee8d90996f7cac40f911b5af06
+
+
+CELL 08
+sft/gsm: 1/300 answers saved
+sft/gsm: 25/300 answers saved
+sft/gsm: 50/300 answers saved
+sft/gsm: 75/300 answers saved
+sft/gsm: 100/300 answers saved
+sft/gsm: 125/300 answers saved
+sft/gsm: 150/300 answers saved
+sft/gsm: 175/300 answers saved
+sft/gsm: 200/300 answers saved
+sft/gsm: 225/300 answers saved
+sft/gsm: 250/300 answers saved
+sft/gsm: 275/300 answers saved
+sft/gsm: 300/300 answers saved
+sft/transfer: 1/100 answers saved
+sft/transfer: 25/100 answers saved
+sft/transfer: 50/100 answers saved
+sft/transfer: 75/100 answers saved
+sft/transfer: 100/100 answers saved
+rlvr/gsm: 1/300 answers saved
+rlvr/gsm: 25/300 answers saved
+rlvr/gsm: 50/300 answers saved
+rlvr/gsm: 75/300 answers saved
+rlvr/gsm: 100/300 answers saved
+rlvr/gsm: 125/300 answers saved
+rlvr/gsm: 150/300 answers saved
+rlvr/gsm: 175/300 answers saved
+rlvr/gsm: 200/300 answers saved
+rlvr/gsm: 225/300 answers saved
+rlvr/gsm: 250/300 answers saved
+rlvr/gsm: 275/300 answers saved
+rlvr/gsm: 300/300 answers saved
+rlvr/transfer: 1/100 answers saved
+rlvr/transfer: 25/100 answers saved
+rlvr/transfer: 50/100 answers saved
+rlvr/transfer: 75/100 answers saved
+rlvr/transfer: 100/100 answers saved
+rlaif/gsm: 1/300 answers saved
+rlaif/gsm: 25/300 answers saved
+rlaif/gsm: 50/300 answers saved
+rlaif/gsm: 75/300 answers saved
+rlaif/gsm: 100/300 answers saved
+rlaif/gsm: 125/300 answers saved
+rlaif/gsm: 150/300 answers saved
+rlaif/gsm: 175/300 answers saved
+rlaif/gsm: 200/300 answers saved
+ERROR KeyboardInterrupt: 
+
+CELL 09
+Status: CPU_RESUME_AUDIT_PASSED_A100_REVALIDATION_PENDING
+Completed / remaining: 1000 / 200
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/resume_audit_attempts/20261013T181642.449932Z_ac16e163/REPORT.json
+Report SHA-256: 3c4956879b74cc7b7dbdaaa2df4c564377bbd390758853c7aced813c9e1918e2
+
+
+CELL 10
+Status: A100_ISOLATED_ENVIRONMENT_READY_PRETRAINED_EXECUTION_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/a100_setup_attempts/20261013T183739.943962Z_5b86afb0/REPORT.json
+Report SHA-256: a889212fd696664380bf93f3b93ef454c2fcb96f46748161e4a9a9f1208cb80f
+Errors: []
+Saved resume report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/a100_resume_attempts/20261013T183737.071719Z_37a523ea/REPORT.json
+Resume report SHA-256: f904a525c644e274fdb4e33c4f9c9943e2069950c5199cfe4b4e7f924223a3dd
+
+
+CELL 11
+rlaif/gsm: 201/300 answers saved
+rlaif/gsm: 225/300 answers saved
+rlaif/gsm: 250/300 answers saved
+rlaif/gsm: 275/300 answers saved
+rlaif/gsm: 300/300 answers saved
+rlaif/transfer: 1/100 answers saved
+rlaif/transfer: 25/100 answers saved
+rlaif/transfer: 50/100 answers saved
+rlaif/transfer: 75/100 answers saved
+rlaif/transfer: 100/100 answers saved
+Status: POLICY_GENERATION_COMPLETE_AI_JUDGING_PENDING
+Completed / remaining: 1200 / 0
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/generation_attempts/20261013T185651.698351Z_3acc1fba/REPORT.json
+Report SHA-256: 70e94700d334fc67febeb54be36edb8a767e06f70132b47166da13e334bc98e4
+
+
+CELL 12
+Verified saved completion: 1,200 / 1,200 answers.
+Generation report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/generation_attempts/20261013T185651.698351Z_3acc1fba/REPORT.json
+Generation report SHA-256: 70e94700d334fc67febeb54be36edb8a767e06f70132b47166da13e334bc98e4
+Drive flush succeeded. Requesting runtime release now.
+
+
+CELL 13
+Status: A100_ISOLATED_ENVIRONMENT_READY_PRETRAINED_EXECUTION_APPROVAL_PENDING
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/a100_setup_attempts/20261014T054916.518035Z_0eebfbb4/REPORT.json
+Report SHA-256: 525eeeb6a09f9184dd8a78352875b5342c4f114c670dcd8fda97ee72f9ec5ca4
+AI comparisons: 1/880 saved
+AI comparisons: 25/880 saved
+AI comparisons: 50/880 saved
+AI comparisons: 75/880 saved
+AI comparisons: 100/880 saved
+AI comparisons: 125/880 saved
+AI comparisons: 150/880 saved
+AI comparisons: 175/880 saved
+AI comparisons: 200/880 saved
+AI comparisons: 225/880 saved
+AI comparisons: 250/880 saved
+AI comparisons: 275/880 saved
+AI comparisons: 300/880 saved
+AI comparisons: 325/880 saved
+AI comparisons: 350/880 saved
+AI comparisons: 375/880 saved
+AI comparisons: 400/880 saved
+AI comparisons: 425/880 saved
+AI comparisons: 450/880 saved
+AI comparisons: 475/880 saved
+AI comparisons: 500/880 saved
+AI comparisons: 525/880 saved
+AI comparisons: 550/880 saved
+AI comparisons: 575/880 saved
+AI comparisons: 600/880 saved
+AI comparisons: 625/880 saved
+AI comparisons: 650/880 saved
+AI comparisons: 675/880 saved
+AI comparisons: 700/880 saved
+AI comparisons: 725/880 saved
+AI comparisons: 750/880 saved
+AI comparisons: 775/880 saved
+AI comparisons: 800/880 saved
+AI comparisons: 825/880 saved
+AI comparisons: 850/880 saved
+AI comparisons: 875/880 saved
+AI comparisons: 880/880 saved
+Status: TASK5_QUANTITATIVE_RESULTS_SAVED_READY_TO_RELEASE
+Errors: []
+Saved report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/feedback_attempts/20261014T054901.853724Z_8eb2b1ac/REPORT.json
+Report SHA-256: 1e8a459adbd3a2d3e2aa1b4a01972cf1141c235481f4e7f7b54ca95dbe959baa
+sft/gsm: accuracy=0.3000; AI score=SFT reference; mean tokens=287.93
+sft/transfer: accuracy=0.5100; AI score=SFT reference; mean tokens=161.37
+rlvr/gsm: accuracy=0.3800; AI score=0.4967; mean tokens=275.65
+rlvr/transfer: accuracy=0.5300; AI score=0.5250; mean tokens=157.16
+rlaif/gsm: accuracy=0.3467; AI score=0.5017; mean tokens=287.48
+rlaif/transfer: accuracy=0.5100; AI score=0.4950; mean tokens=171.99
+Diagnostic AI sensitivity: 0.0 0.0
+All 880 comparisons and quantitative results saved. Flushing Drive...
+Drive flush succeeded. Requesting GPU runtime release now.
+
+
+CELL 14
+
+ERROR AttributeError: module 'verified_task5_cpu_judge_inspection' has no attribute 'WRAPPE'
+
+CELL 15
+  sft/gsm: verified 100/300
+  sft/gsm: verified 200/300
+  sft/gsm: verified 300/300
+  sft/transfer: verified 100/100
+  rlvr/gsm: verified 100/300
+  rlvr/gsm: verified 200/300
+  rlvr/gsm: verified 300/300
+  rlvr/transfer: verified 100/100
+  rlaif/gsm: verified 100/300
+  rlaif/gsm: verified 200/300
+  rlaif/gsm: verified 300/300
+  rlaif/transfer: verified 100/100
+Status: CPU_JUDGE_OUTPUT_AUDIT_COMPLETE
+Errors: []
+Saved audit report: /content/drive/MyDrive/ATML-Assignment-2/task5/experiment_v1/judge_output_audit_attempts/20261014T064213.775930Z_b3da2523/REPORT.json
+Audit report SHA-256: 6dedbb09f7f3b7ced3e4f4c94bf15d45057ec2eab34d42972f3079811a3ca109
+Bundle SHA-256: 8bace113620a0080808a50df9b9ca296e881cb7ac430c118b6c73f339c030067
+

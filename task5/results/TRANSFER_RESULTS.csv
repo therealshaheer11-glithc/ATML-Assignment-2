@@ -1,0 +1,4 @@
+policy,ai_reference,ai_win_rate_drop_percentage_points,exact_accuracy_drop_percentage_points,mean_length_change_gsm_minus_svamp
+sft,SFT evaluated separately on each fixed domain.,,-21.000000000000004,126.55666666666667
+rlvr,SFT evaluated separately on each fixed domain.,-2.8333333333333375,-15.000000000000002,118.48666666666665
+rlaif,SFT evaluated separately on each fixed domain.,0.666666666666671,-16.333333333333332,115.49000000000001
