@@ -4,7 +4,7 @@ The deliberate TA defect is corrected: advantages use the reward mean and popula
 
 User approval: “All approved go ahead”, 10 October 2026, decisions A-M. See [the complete protocol](PROTOCOL_AND_APPROVALS.md) and [authorization record](source/docs/approval.json). This package targets [ATML-Assignment-2](https://github.com/therealshaheer11-glithc/ATML-Assignment-2) and keeps Tasks 1/2 separate.
 
-Completed execution: standard 20/20 updates, both forks 8/8 updates, and 200/200 evaluations for midpoint and each endpoint. The returned small export passed the local audit; the five-pair qualitative score table was approved on 11 October 2026. See [results and limitations](RESULTS.md) and the [approved scores](results/actual_run_20261011/review/SCORES.md). The package is prepared for publication; the final GitHub commit still needs verification. Main-report integration remains separate. See the [PA compliance audit](publication/PA_COMPLIANCE.md).
+Completed execution: standard 20/20 updates, both forks 8/8 updates, and 200/200 evaluations for midpoint and each endpoint. The returned small export passed the local audit; the five-pair qualitative score table was approved on 11 October 2026. See [results and limitations](RESULTS.md) and the [approved scores](results/actual_run_20261011/review/SCORES.md). Tasks 1–5 are published at `7e7099d99180ce7e180b09da22fd9ee8fc835566`; the combined repository verifier passed on that published checkout. Main-report integration remains separate. See the [PA compliance audit](publication/PA_COMPLIANCE.md).
 
 ## Verify this publication without GPU
 

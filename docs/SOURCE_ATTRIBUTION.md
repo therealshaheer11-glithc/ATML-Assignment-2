@@ -2,7 +2,7 @@
 
 The public course starter is [AbDu11aHHH/ATML-PA2-LLM-PostTraining](https://github.com/AbDu11aHHH/ATML-PA2-LLM-PostTraining), pinned at `05543bec4fba95eba708eae9d6e15730d53ca317`. The TA prompt-preserving preprocessing patch is pinned at `076e7cfdc7cd2f4b5e8e9e12cf15ef3652bc92da`. Reused infrastructure includes model/LoRA loading conventions, tokenization/chat templates, data plumbing, generation/scoring helpers, word counting, course configurations and fixed assets. The original executed source snapshots are retained in the evidence folders.
 
-Student implementation, with Codex assistance, completes the DPO training/evaluation pipeline, corrects the objective and accuracy, preserves frozen-reference isolation and exact budgets, records reproducibility evidence, and adds the approved preprocessing/numerical compatibility handling. Publication-only additions are listed in [the audit](task1/AUDIT.md). Other task folders remain the supplied scaffolds.
+Student implementation, with Codex assistance, completes the DPO training/evaluation pipeline, corrects the objective and accuracy, preserves frozen-reference isolation and exact budgets, records reproducibility evidence, and adds the approved preprocessing/numerical compatibility handling. Publication-only additions are listed in [the audit](task1/AUDIT.md). This paragraph describes Task 1. Tasks 2–5 are now completed isolated implementations, with task-specific attribution linked below.
 
 Data: [course assets](https://huggingface.co/datasets/AbDu11aHHH/ATML-PA2-assets), revision `0b350481fb03f5525a35bcdec4131bd4fe487f98`. They contain the fixed course UltraFeedback subsets; the student did not create or rebalance them. The ten fixed word-limit prompts are tracked in the starter and retained unchanged. Dataset files are not redistributed in this package beyond those ten prompts; generated outputs and metrics are preserved as evidence.
 
@@ -16,3 +16,14 @@ Research references:
 - The assignment manual defines the required experiment and metric conventions; TA clarifications here are user-supplied messages, not text silently inserted into the manual.
 
 Codex/LLM assistance covered implementation, explanations, debugging, audit and documentation. The student ran the experiments in Colab, approved discretionary choices and qualitative examples, and is responsible for understanding/reviewing the submitted work. Historical code and failed attempts are retained rather than presented as newly authored or successful results.
+
+## Tasks 2–5 and current publication
+
+Tasks 1–5 were published together at `7e7099d99180ce7e180b09da22fd9ee8fc835566`.
+Tasks 2–5 preserve course commit `1d64ac65acd5e45d1e4e1f415edc80455e21274e`.
+Materially reused helpers, completed implementations, compatibility changes, and
+AI assistance are described in [Task 2](../task2/README.md#attribution),
+[Task 3](../task3/README.md#attribution), [Task 4](../task4/README.md#attribution),
+and [Task 5](../task5/provenance/README.md). The original Task 1 attribution
+is retained byte-for-byte under the maintenance archive; its original manifest
+continues to verify that historical copy.

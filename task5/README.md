@@ -35,3 +35,11 @@ The judge's high tie rate and mixed-label outputs are disclosed. The course's
 effective four-token limit and first-label parser were preserved under the
 approved protocol. No training or evaluation-driven policy tuning was performed.
 The full combined PA2 report and submission are separate artifacts.
+
+## Publication and attribution
+
+The experiment package was published at `7e7099d99180ce7e180b09da22fd9ee8fc835566`.
+Current repository-wide status is in [PUBLICATION_STATUS.json](../docs/PUBLICATION_STATUS.json).
+Course helpers, models, fixed data identities and Codex-assisted additions are
+attributed in [source provenance](provenance/README.md). Earlier reports retain
+their original pending flags as historical evidence; they do not override current status.

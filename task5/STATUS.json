@@ -1,1 +1,11 @@
-{"approved_qualitative_analysis_complete":true,"combined_report_layout_complete":false,"evaluation_complete":true,"historical_pending_flags_retained":true,"publication_performed":false,"quantitative_analysis_complete":true,"report_section_drafted":true}
+{
+  "approved_qualitative_analysis_complete": true,
+  "combined_report_layout_complete": false,
+  "evaluation_complete": true,
+  "historical_pending_flags_retained": true,
+  "publication_performed": true,
+  "quantitative_analysis_complete": true,
+  "report_section_drafted": true,
+  "experiment_publication_commit": "7e7099d99180ce7e180b09da22fd9ee8fc835566",
+  "publication_scope": "Task 5 code/evidence publication; final combined report and LMS submission are separate."
+}

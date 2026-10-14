@@ -35,7 +35,7 @@ The released one-policy-epoch update recomputes likelihoods before the optimizer
 
 The difficulty bins use mean cached reward as an approved proxy; they are not independently annotated difficulty. Fixed consecutive partitions retain all 192 generations. Small K differences are descriptive and depend on that partition. Normalized-signal variance partly tracks informativeness by construction.
 
-Equal allowance preserves released update counts, response caps and natural EOS stopping. It does **not** establish literal equality of realized generated tokens. If the marker requires exact realized-token matching, instructor clarification is needed before changing the frozen experiment. This audit does not silently reinterpret the observed totals or start an unapproved rerun.
+Equal allowance preserves released update counts, response caps and natural EOS stopping. It does **not** establish literal equality of realized generated tokens. The student retains this allocation-based interpretation as a justified, disclosed experimental choice. It is not exact realized-token matching or a verified instructor endorsement. The current rationale is in `docs/EXPERIMENTAL_DECISIONS.md`; no runs or observed totals were changed.
 
 ## Do the results make sense?
 

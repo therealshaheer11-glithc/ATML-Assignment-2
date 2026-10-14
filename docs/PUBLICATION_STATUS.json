@@ -1,0 +1,22 @@
+{
+  "experiment_publication_commit": "7e7099d99180ce7e180b09da22fd9ee8fc835566",
+  "experiment_tasks_complete": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "saved_result_reproduction": "CPU commands provided; receipt records actual checks",
+  "report_and_task6": "separate_future_work_outside_this_cleanup",
+  "fresh_gpu_bootstrap": {
+    "task1": "public preparation path",
+    "task2": "historical receipts required",
+    "task3": "public preparation path",
+    "task4": "historical receipts and trained adapters required",
+    "task5": "historical receipts required"
+  },
+  "token_budget_interpretation": "equal allocated allowances; unequal realized tokens disclosed",
+  "task4_audit_origin": "ai_generated_under_user_reported_ta_exception",
+  "lms_submission": "not_verified"
+}

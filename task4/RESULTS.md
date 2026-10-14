@@ -106,7 +106,7 @@ The additional audit was completed under the user-supplied TA exception permitti
 
 All experiments are frozen, single-run descriptive comparisons. There is no optimizer-only causal intervention, confidence filtering, ambiguity exclusion, checkpoint selection, new training or rejudging. The 60-ID audit is balanced by benchmark class; it is not a new equal-per-type sample. Exact duplicate prompt/response pairs share their audit label.
 
-The computational evidence and GitHub package are prepared and locally verified. Remaining assignment work includes integrating Task 4 into the combined report, completing Task 5, reviewing the repository changes in Codespaces and publishing the approved commit. No further GPU inference is needed for this package.
+Tasks 1–5 are complete and published at `7e7099d99180ce7e180b09da22fd9ee8fc835566`. Remaining submission work is report integration, final layout/evidence review, and LMS submission. No further GPU inference is needed to reproduce the saved Task 4 statistics.
 
 ## Linked evidence
 

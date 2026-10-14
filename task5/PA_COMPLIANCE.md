@@ -71,5 +71,4 @@ public-only reproduction verifies aggregates from those published score records.
 Historical pending-qualitative flags are unchanged for hash integrity; STATUS.json
 and the separate approved selection record describe the completed analysis stage.
 
-GitHub application, staging, commit, push, and LMS submission are separate actions.
-Package preparation does not claim that any of them has occurred.
+The experiment package was published at `7e7099d99180ce7e180b09da22fd9ee8fc835566`. This confirms code/evidence publication, not completion of the combined PDF or LMS submission. Original export-time pending flags remain historical records.

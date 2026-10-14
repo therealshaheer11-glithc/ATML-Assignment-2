@@ -1,7 +1,7 @@
 {
   ".gitignore": "3e782aec83661b3537393e8f42b401b72f1265d22f51d8c46d5a6b84e1022e13",
   "PROTOCOL_AND_APPROVALS.md": "f1e6df902722c5c0e5b9ad57b8ba46c2b581f9d1963269b1639e07f0135e66cc",
-  "README.md": "db873b0c39ff66c21265429e1add52ec8e269f22afff87e2912f76b36605739a",
+  "README.md": "b298176f002eb2189478717fa72b4f97eb0fc4fede4a69ece19211528864cb19",
   "RESULTS.md": "19c925de6e8728b34c7b9a8396b35a0b2b52c97cf74b0650fd72b169541b5896",
   "analysis/audit_saved_export.py": "d42bcadf08fb334f4a7984e6a3f344d8443c99499803a72a2f951407381ffc55",
   "analysis/present_saved_results.py": "7b11668d6a4fdd5f81e31cd326e54d2975c8744609a77ec11d06417bb9b16bcd",
@@ -11,7 +11,7 @@
   "provenance/REVIEW_EVIDENCE.json": "7f9c8f3d763ec35fca5a0946abb2e719540a929fc4a8c78417a9c68f0384c4af",
   "provenance/releases/ATML_PA2_Task3_Colab.sha256.json": "d580173a25a4f7d0ca460739787e3e9156925256c0783b63aa64a20fcb6e5eb1",
   "provenance/releases/ATML_PA2_Task3_Colab.zip": "d3c55c4d0202d09d36c2a93dc7f3ccbc48a0c65690939ff7a429a585aeb9bbd5",
-  "publication/PA_COMPLIANCE.md": "8eac1b45402183cc461e2b729490a9015de1ae5ffd3912822b9853958e6b644e",
+  "publication/PA_COMPLIANCE.md": "7441b406445b48da26d55e8be5b627caa8400d533a9744282c14e4aef31ccef2",
   "publication/TASK4_HANDOFF.json": "b6fc1a99e5d5f7f1dd09311186869ebfe0334d1f6fea70992ac8f933d1af5887",
   "publication/cache_recheck.json": "7c8eae2ead5ef466b9c6e23c431fa439702ed6b4871860212f8cbcaf60e63b36",
   "publication/cpu_tests.json": "6312983c6608bd43460f39b6d1b6383e97fd6ad4394983b516f12989dbebe2d9",

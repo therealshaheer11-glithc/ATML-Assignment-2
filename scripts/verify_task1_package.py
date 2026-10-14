@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGINAL_MANIFEST_SHA256 = "1ea18dbe564c95ebb326b062305279c191344036730a896f78b87b5178dd63ca"
 
 def current_path(name):
+    if name == "docs/SOURCE_ATTRIBUTION.md":
+        return "archive/repository-maintenance-20261014-cleanup/docs/SOURCE_ATTRIBUTION.md"
     if name == "README.md":
         return "archive/task1-publication/README.md"
     if name == "scripts/verify_task1_package.py":

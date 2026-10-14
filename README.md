@@ -1,94 +1,169 @@
 # ATML PA2 — LLM Post-Training
 
-Tasks 1 (DPO), 2 (PPO), 3 (GRPO), 4 (safety calibration), and 5 (feedback sources) have completed experiments, saved evidence, and documented audits. The combined assignment report is separate from this code and evidence repository.
+Completed experiments compare DPO, PPO, GRPO, safety calibration, and verifier versus AI feedback. Tasks 1–5 were published at **`7e7099d99180ce7e180b09da22fd9ee8fc835566`**. This repository preserves the executed source, fixed IDs, logs, results, and documented limitations. The final course report and LMS submission are separate deliverables.
 
 ## Start here
 
-| Task | Implementation | Results and audit |
+| Task | Executed implementation | Results and interpretation |
 |---|---|---|
 | 1: DPO | [task1_dpo](task1_dpo/) | [Results](docs/task1/RESULTS.md), [audit](docs/task1/AUDIT.md), [figures](figures/task1/README.md) |
-| 2: PPO | [task2/source/task2_ppo](task2/source/task2_ppo/) | [Task 2 guide](task2/README.md), [audit](task2/AUDIT.md), [approved examples](task2/QUALITATIVE_EXAMPLES.md) |
-| 3: GRPO | [task3/source/task3_grpo](task3/source/task3_grpo/) | [Task 3 guide](task3/README.md), [results](task3/RESULTS.md), [PA audit](task3/publication/PA_COMPLIANCE.md) |
-| 4: Safety | [Task 4 source and reproduction](task4/README.md) | [Results](task4/RESULTS.md), [coverage and limits](task4/PA_COMPLIANCE.md) |
-| 5: Feedback | [Task 5 source and reproduction](task5/README.md) | [Results](task5/RESULTS.md), [coverage and limits](task5/PA_COMPLIANCE.md) |
+| 2: PPO | [task2/source/task2_ppo](task2/source/task2_ppo/) | [Guide](task2/README.md), [audit](task2/AUDIT.md), [examples](task2/QUALITATIVE_EXAMPLES.md) |
+| 3: GRPO | [task3/source/task3_grpo](task3/source/task3_grpo/) | [Results](task3/RESULTS.md), [coverage](task3/publication/PA_COMPLIANCE.md) |
+| 4: Safety | [Source and stage index](task4/REPRODUCE.md) | [Results](task4/RESULTS.md), [coverage](task4/PA_COMPLIANCE.md) |
+| 5: Feedback | [task5/source/frozen_release](task5/source/frozen_release/) | [Results](task5/RESULTS.md), [coverage](task5/PA_COMPLIANCE.md) |
 
-Task 2 carries the exact helpers and configuration used for its experiments inside `task2/source/`. Follow its [restoration instructions](task2/README.md) before running its source tests or experiments. Task 1 uses the root `common/` and `configs/` directories.
+See [current publication status](docs/PUBLICATION_STATUS.json) and [source attribution](docs/SOURCE_ATTRIBUTION.md). Task 6 and the report are separate future work.
 
-## Verify the published files
+## Verify and reproduce the published results on CPU
 
-From the repository root, using Python 3.10 or newer:
+Run from the repository root with Python 3.10+; no third-party packages, credentials, model downloads, or GPU are required:
 
 ```bash
-python3 scripts/verify_repository.py
+python3 -B scripts/verify_repository.py
+python3 -B scripts/reproduce_saved_results.py --output outputs/reproduced
 ```
 
-This checks the original 988-file Task 1 package at its documented current locations, the separate Task 1 figures addition, all 133 manifest-listed Task 2 files, the manifest-listed Task 3 files and saved-record audit, all Task 4 files and 1,800 saved response–judgment pairs with 240 audit labels, all Task 5 files with 1,200 policy metric records, 880 comparison events and nine reproduced result files, and the repository maintenance files. It requires no model downloads, third-party Python packages, or GPU. It verifies file integrity; the scientific audit results and their limits are documented in each task's audit.
+The second command requires a new output directory and saves separate logs plus a checksum receipt. It checks the publication and regenerates the five tasks' saved-result analyses. Task 5's public records contain scores, lengths and judge labels; recalculation from those records does not independently rescore private full answer text. For exact answer rescoring, see its [private-bundle audit](task5/REPRODUCE.md).
 
-Task 1 saved statistics can also be recomputed with:
+Individual commands are:
 
 ```bash
-python3 -m task1_dpo.analyze_results --output outputs/task1_recomputed
+python3 -B -m task1_dpo.analyze_results --output outputs/task1_recomputed
+python3 -B task2/analysis/audit_export.py --original task2/evidence/original --output outputs/task2_recomputed
+python3 -B task3/analysis/present_saved_results.py --output outputs/task3_recomputed
+python3 -B task4/reproduce.py --output outputs/task4_recomputed
+python3 -B task5/verify_package.py --output outputs/task5_recomputed
 ```
 
-Choose a fresh output directory. See [Task 1 reproduction](docs/task1/REPRODUCE.md) and [Task 2 verification and reproduction](task2/README.md) for further checks. Task 3 CPU verification and exact Colab reproduction commands are in the [Task 3 guide](task3/README.md).
+Task 2's corrected clipping table is `task2/evidence/reviewed/clipping_study_corrected.csv`; the original export is preserved as history. Do not substitute its overwritten metadata fields into the report.
 
-## Task 3 verification and reproduction
+## Model execution: prerequisites and exact entry points
+
+The commands below describe the implemented experiments, not a request to repeat completed runs. Use CPU for preparation and analysis, and the documented A100 environment for model execution. The original experiments used Python 3.13.15 and CUDA PyTorch 2.11.0, with pinned task-specific dependencies. Read each task's environment and persistence instructions before running it. Do not install the CPU verification environment over an active GPU environment.
+
+**Portability boundary:** Tasks 1 and 3 have public asset preparation paths. Tasks 2, 4, and 5 preserve their original staged setup and guards; some stages require owner-held Drive receipts, weights, and earlier checkpoints. The public package supports complete saved-statistic reproduction, but does not yet provide a tested empty-machine bootstrap for every GPU workflow. Exact historical receipts must never be invented, and guards must not be disabled to make a fresh runtime proceed. [Details](docs/REPRODUCTION_SCOPE.md).
+
+### Task 1: standard DPO, beta sweep, and length control
+
+From the repository root, with compatible CUDA PyTorch installed and Drive mounted:
 
 ```bash
-python3 task3/verify_package.py
+python -m pip install -r requirements.txt -c requirements-task1-lock.txt
+python -m task1_dpo.prepare_assets --models-dir /content/ATML_PA2_models
+mkdir -p /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+```
+
+For standard and length-balanced training, plus the untouched SFT evaluation:
+
+```bash
+(
+set -e
+for condition in standard length_balanced; do
+  python -m task1_dpo.train --run-name "$condition" --models-dir /content/ATML_PA2_models --output "outputs/reproduce/$condition/checkpoint" --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+  python -m task1_dpo.evaluate --name "$condition" --phase policy --adapter "outputs/reproduce/$condition/checkpoint" --models-dir /content/ATML_PA2_models --output "outputs/reproduce/$condition/policy" --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+  python -m task1_dpo.evaluate --name "$condition" --phase reward --policy-results "outputs/reproduce/$condition/policy" --models-dir /content/ATML_PA2_models --output "outputs/reproduce/$condition/reward" --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+done
+)
+python -m task1_dpo.evaluate --name sft --phase policy --models-dir /content/ATML_PA2_models --output outputs/reproduce/sft/policy --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+python -m task1_dpo.evaluate --name sft --phase reward --policy-results outputs/reproduce/sft/policy --models-dir /content/ATML_PA2_models --output outputs/reproduce/sft/reward --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+```
+
+The fixed three-condition beta sweep uses:
+
+```bash
+python -m task1_dpo.ablate_beta --phase train --run-root outputs/reproduce --models-dir /content/ATML_PA2_models --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+python -m task1_dpo.ablate_beta --phase policy --run-root outputs/reproduce --models-dir /content/ATML_PA2_models --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+python -m task1_dpo.ablate_beta --phase reward --run-root outputs/reproduce --models-dir /content/ATML_PA2_models --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
+```
+
+Execute phases separately and stop on failure. The fixed evaluations include the required length strata and word-limit prompts. [Full Task 1 instructions](docs/task1/REPRODUCE.md).
+
+### Task 2: standard PPO, clipping and KL-pressure forks
+
+Restore the exact course checkout and overlay on CPU:
+
+```bash
+python3 task2/restore_source.py
+```
+
+Follow the [Task 2 setup notebooks](task2/notebooks/) and [preparation constraints](task2/README.md#reproduction-and-checkpoints). After valid preparation, the underlying command from the reconstructed runtime runs the standard 20-update continuation, five independent eight-update forks, seven 200-prompt endpoint evaluations, and the fixed clipping cache:
+
+```bash
+cd task2/.runtime/course
+python -m scripts.task2_resume_json --pipeline-entry --models-dir /content/ATML_PA2_Task2_models --persistent-root /content/drive/MyDrive/ATML-Assignment-2/task2/experiment_v1 --session-minutes 120
+```
+
+The command includes the approved JSON-contract compatibility repair. Use the corrected `Task2_GPU_Resume.ipynb` launcher for staged persistence and automatic release; the lower-level command does not itself disconnect the runtime. The independent central fork is reused in the clipping and KL sweeps. CPU aggregation of a complete original experiment uses:
+
+```bash
+python -m task2_ppo.aggregate_cpu --experiment /content/drive/MyDrive/ATML-Assignment-2/task2/experiment_v1 --output /content/drive/MyDrive/ATML-Assignment-2/task2/recomputed_tables
+```
+
+That historical aggregator creates a new qualitative worksheet. The approved published examples are separately retained in `task2/QUALITATIVE_EXAMPLES.md`; blank worksheets are not completed qualitative evidence.
+
+### Task 3: standard GRPO, group-size cache and normalization forks
+
+```bash
 python3 task3/restore_source.py --destination task3/.runtime/course
 ```
 
-Use the preserved [Task 3 Colab ZIP](task3/provenance/releases/ATML_PA2_Task3_Colab.zip) with its [CPU notebook](task3/notebooks/01_CPU_Prepare.ipynb) and [GPU/resume notebook](task3/notebooks/02_GPU_Run_and_Resume.ipynb) for model execution. After notebook setup in Colab, the underlying fixed commands from `/content/task3_runtime/course` are:
+With the [preserved Colab setup](task3/README.md#run-in-colab), run from the reconstructed runtime:
 
 ```bash
+cd task3/.runtime/course
 python -m task3_grpo.prepare --experiment /content/drive/MyDrive/ATML-Assignment-2/task3/experiment_v1
 python -m task3_grpo.pipeline --experiment /content/drive/MyDrive/ATML-Assignment-2/task3/experiment_v1 --resume
 ```
 
-These are reproduction instructions, not a request to rerun completed experiments. The notebooks enforce persistence and session limits. Task 3 source must run in its isolated runtime because root helpers belong to Task 1. The final standard 20-update adapter is reserved for Task 4; model files stay on Drive.
+Preparation computes the fixed K=2/4/8 cache study. The pipeline performs the shared normalization probe, standard 20-update continuation, both eight-update forks, and four 200-prompt evaluations. All group-size conditions retain the same 192 cached generations. The original CPU/GPU notebooks remain thin staged launchers rather than the sole implementation.
 
-## Task 4 verification and reproduction
+### Task 4: fixed-policy safety and audit
 
-```bash
-python3 task4/verify_package.py
-python3 task4/reproduce.py --output outputs/task4_recomputed
-```
-
-These CPU commands reproduce all four metric summaries, four audit matrices and six CSV tables. The [Task 4 guide](task4/README.md) links the original execution source, fixed configuration/IDs and logs. The additional audit used AI labels under a user-supplied TA exception; agreement is not independent human validation.
-
-## Task 5 verification and reproduction
+Restore the 19 sealed source releases without executing them:
 
 ```bash
-python3 -B task5/verify_package.py
-python3 -B task5/verify_package.py --output outputs/task5_recomputed
+python3 task4/restore_releases.py --destination outputs/task4_original_releases
 ```
 
-These CPU commands reproduce the saved quantitative results without model loads.
-The [Task 5 guide](task5/README.md) links fixed IDs, immutable model-execution
-source, recorded settings, small logs and approved qualitative examples. Public
-records exclude full raw course data and generated answer text; optional private
-bundle verification recomputes exact scores from the saved full evidence. The
-judge's four-token limit, frequent ties and mixed-label outputs are documented.
-The root `task5_feedback/` remains the original course reference, including its
-unfinished scaffolds; the completed implementation is `task5/source/frozen_release/`.
+On the already prepared original Colab runtime, change the notebook working directory to the repository root. Run each of these Python statements in a separate notebook cell, checking completion before continuing. The generation launcher asks for the preserved `ATML_PA2_Task4_A100_Generation.zip` from `task4/provenance/releases/`:
 
-## Organization and provenance
+```python
+import runpy
+runpy.run_path("task4/provenance/launchers/Task4_Block14_A100_Generation.py", run_name="__main__")
+runpy.run_path("task4/evidence/execution/judging/JUDGING_SOURCE.py", run_name="__main__")
+runpy.run_path("task4/evidence/summaries/AGGREGATION_SOURCE.py", run_name="__main__")
+```
 
-- `docs/task1/`, `results/task1/`, and `figures/task1/` contain Task 1 documentation, evidence, and figures.
-- `task2/` contains the complete approved Task 2 publication, including its immutable execution source and original evidence.
-- `task3/` contains the completed Task 3 implementation, immutable source/release and original evidence plus approved review sidecars.
-- `task4/` contains completed safety evaluation, frozen exports and original source releases; `archive/course-starter/task4_safety/` preserves its five retired scaffolds.
-- `task5/` contains completed feedback-source evaluation, CPU reproduction, fixed IDs, metric records and source provenance.
-- `archive/repository-maintenance-20261014-task5/` preserves navigation, the combined verifier and maintenance records before Task 5 integration.
-- `archive/repository-maintenance-20261011/` preserves navigation and verifiers before Task 4 integration.
-- `archive/course-starter/task3_grpo/` preserves the six retired Task 3 starter files.
-- `archive/repository-maintenance-20261009/` preserves the previous repository navigation and verifiers.
-- `archive/course-starter/task2_ppo/` contains the superseded, incomplete Task 2 course starter. It is historical material, not the implementation used for the completed experiments.
-- `archive/task1-publication/` preserves the original Task 1 README and verification script byte for byte. The archived README describes the earlier publication state.
-- The original chronological Task 1 notebook export remains in `archive/atml_pa2_task1.py.txt`; it is history and should not be run wholesale.
-- Model weights, optimizer checkpoints, runtime backups, downloaded datasets, and outer delivery ZIPs remain outside the published repository.
+These retain historical prerequisite and source guards. The [stage index](task4/REPRODUCE.md#source-stage-index) documents preparation, resume, audit-packet creation, and audit-label import. Standard Tasks 1–3 adapters are required; they are not replaced with ablation winners. Audit labels were AI-generated under a user-reported TA exception and are not independent human validation.
 
-The intentional evidence and code-release archives inside `task2/` and `task3/provenance/releases/` / `task4/provenance/releases/` are required publication files. They are distinct from outer delivery ZIPs used to upload packages.
+### Task 5: SFT/RLVR/RLAIF and controlled diagnostics
 
-See [repository layout and verification changes](docs/REPOSITORY_LAYOUT.md), [Task 1 source attribution](docs/SOURCE_ATTRIBUTION.md), and [Task 2 attribution](task2/README.md#attribution), and [Task 3 attribution](task3/README.md#attribution). Repository maintenance does not change model code, hyperparameters, results, or experimental approvals.
+With the original mounted Drive project, run CPU preflight from `task5/source/frozen_release/`:
+
+```bash
+python -B -m task5_run.preflight
+```
+
+Restore the documented A100 environment using the [preserved setup](task5/REPRODUCE.md#original-model-execution-and-resume). From the frozen release directory, run one phase at a time:
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /content/task5_isolated_runtime_v1/bin/python -B -m task5_run.run generate --project /content/drive/MyDrive/ATML-Assignment-2
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /content/task5_isolated_runtime_v1/bin/python -B -m task5_run.run judge --project /content/drive/MyDrive/ATML-Assignment-2
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 /content/task5_isolated_runtime_v1/bin/python -B -m task5_run.run aggregate --project /content/drive/MyDrive/ATML-Assignment-2
+```
+
+These cover 1,200 policy answers and 880 comparison events, including all 80 diagnostic pairs. The released four-token judge limit, first-label parsing, cache behavior, and high tie rate remain disclosed. No Task 5 training is required.
+
+## Interpretation and submission
+
+Tasks 2–3 use equal **allocated** short-run token allowances and fixed update counts, preserving natural EOS termination. Actual generated-token totals differ and are reported. This is an explicit experimental choice, not a claim of exactly equal token consumption or instructor endorsement. See [budget rationale](docs/EXPERIMENTAL_DECISIONS.md).
+
+The report, Task 6 synthesis and LMS submission are outside this repository-cleanup update.
+
+## Layout, provenance and attribution
+
+Task 1 uses root `common/` and `configs/`. Later tasks retain isolated helpers to reproduce their executed versions. `archive/` contains historical source and earlier publication documentation; those files intentionally describe earlier states. The root `task5_feedback/` is original course scaffolding, not the completed pipeline. Use `task5/source/frozen_release/`.
+
+Raw downloaded datasets, public model weights, optimizer checkpoints, caches and outer upload ZIPs stay outside Git. Small response evidence, fixed IDs, exact source releases and machine-readable results are intentional publication artifacts. See [layout](docs/REPOSITORY_LAYOUT.md).
+
+Materially reused course code is attributed to [AbDu11aHHH/ATML-PA2-LLM-PostTraining](https://github.com/AbDu11aHHH/ATML-PA2-LLM-PostTraining); pinned revisions and the completed student/Codex contributions are listed in [source attribution](docs/SOURCE_ATTRIBUTION.md), [Task 2](task2/README.md#attribution), [Task 3](task3/README.md#attribution), [Task 4](task4/README.md#attribution), and [Task 5](task5/provenance/README.md). The student remains responsible for understanding the submitted work.

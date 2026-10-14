@@ -1,10 +1,10 @@
 {
   ".gitignore": "8b9c2cc18a2f541493d512634a05aa8078e4b425faf36e23515a7a6a8e430c29",
-  "AUDIT.md": "f47be0b134a288a3ff22bc331f1ba3cb69fdcc485c5cfc6a27b9c6b14f23fd1b",
+  "AUDIT.md": "8e1f3e518074bb01a195c4e3ac151fafd581046766a3ad83b18aaeac54b3d8a1",
   "FINAL_AUDIT.json": "2ddd508ad3317edb8c7e0712409be1b7a6bc3e4a35e87fb0606814fc6042d66b",
   "PROTOCOL_AND_APPROVALS.md": "3f6833b4b09afa0c0d0243e8b2b4aa6cd01ad72a71b1133c8e5de689029d1438",
   "QUALITATIVE_EXAMPLES.md": "ba523a0b2c730a617de5e85f23a639cc3e17012882104c1e170e6a65158f1f07",
-  "README.md": "cb1856de9e2e5deb660d9b7b07080136efa784e5c4ea3d94e35cf0e7296db3bd",
+  "README.md": "f6b26bac50d63614592d7bcae097320df19f96ee26e23b2d3832cd5b5a2da902",
   "analysis/audit_export.py": "901ad07196807a5cdf36d15a09ba2328e7f3c085ef723bf0c81bff657a8bbd9a",
   "analysis/audit_records.py": "5bacb6d333874c8facab91845aab9fc6b87fbaeaeb8fdaea19bfa7d606c2a24d",
   "analysis/rebuild_figures.py": "780360b0ad9911700db3cf7d5c4716ce511b39e4b7ec19f4de291d778cbb2ced",
