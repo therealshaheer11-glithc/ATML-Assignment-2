@@ -23,7 +23,7 @@ def main():
     py = [sys.executable, '-B']
     jobs = [
         ('integrity', py + ['scripts/verify_repository.py']),
-        ('task1', py + ['-m', 'task1_dpo.analyze_results', '--output', str(output / 'task1')]),
+        ('task1', py + ['task1/reproduce.py', '--output', str(output / 'task1')]),
         ('task2', py + ['task2/analysis/audit_export.py', '--original', 'task2/evidence/original', '--output', str(output / 'task2')]),
         ('task3', py + ['task3/analysis/present_saved_results.py', '--output', str(output / 'task3')]),
         ('task4', py + ['task4/reproduce.py', '--output', str(output / 'task4')]),

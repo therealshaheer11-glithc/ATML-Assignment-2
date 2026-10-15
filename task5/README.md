@@ -21,8 +21,8 @@ byte-identical result files. They load no models and use no GPU.
 - [Reproduction commands and original A100 workflow](REPRODUCE.md)
 - [Assignment coverage, recovered errors and limitations](PA_COMPLIANCE.md)
 - [Frozen experiment source](source/frozen_release/README.md)
-- [Machine-readable results](results/), [record-level metrics](records/),
-  [fixed source IDs](splits/), [execution logs](logs/), and [provenance](provenance/README.md)
+- [Machine-readable results](results), [record-level metrics](records),
+  [fixed source IDs](splits), [execution logs](logs), and [provenance](provenance/README.md)
 
 Public-mode reproduction calculates statistics from the saved score/length
 records. The optional private-bundle audit also recomputes exact scores from full

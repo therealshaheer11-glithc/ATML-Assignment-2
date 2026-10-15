@@ -1,68 +1,48 @@
-"""Check the combined publication, optionally stage exactly its approved files."""
+"""Verify the organized publication and preserved historical evidence."""
 import argparse
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import subprocess
 import sys
-from verify_task1_package import current_path
-
 ROOT = Path(__file__).resolve().parents[1]
-
-def read_manifest(name):
-    return json.loads((ROOT / name).read_text())
-
-def verify_manifest(name):
-    manifest = read_manifest(name)
-    for rel, digest in manifest.items():
-        path = ROOT / rel
-        if path.is_symlink() or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
-            raise SystemExit(f"Checksum mismatch or missing file: {rel}")
-    print(f"VERIFIED: {len(manifest)} files in {name}", flush=True)
-    return set(manifest) | {name}
-
-def git(*args, capture=False):
-    return subprocess.run(["git", *args], cwd=ROOT, check=True,
-                          stdout=subprocess.PIPE if capture else None).stdout
-
+INDEX = 'manifests/REPOSITORY_SHA256.json'
+def read(name):
+    return json.loads((ROOT/name).read_text())
+def check(name, expected):
+    p = PurePosixPath(name)
+    if p.is_absolute() or '..' in p.parts or str(p)!=name or not p.parts:
+        raise SystemExit('Unsafe manifest path: ' + name)
+    path = ROOT/name
+    if any(x.is_symlink() for x in (path,*path.parents)) or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+        raise SystemExit('Missing or changed file: ' + name)
+def git(*args):
+    return subprocess.check_output(['git',*args],cwd=ROOT)
 def main():
-    parser = argparse.ArgumentParser()
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("--stage", action="store_true")
-    group.add_argument("--staged", action="store_true")
-    args = parser.parse_args()
-    expected = verify_manifest("REPOSITORY_MAINTENANCE_SHA256.json")
-    subprocess.run([sys.executable, str(ROOT / "scripts/verify_task1_package.py")], check=True)
-    original = read_manifest("PACKAGE_SHA256.json")
-    expected |= {current_path(n) for n in original} | {"PACKAGE_SHA256.json"}
-    expected |= verify_manifest("TASK1_FIGURES_SHA256.json")
-    subprocess.run([sys.executable, str(ROOT / "task2/verify_package.py")], check=True)
-    expected |= {"task2/" + n for n in read_manifest("task2/PACKAGE_SHA256.json")}
-    expected.add("task2/PACKAGE_SHA256.json")
-    subprocess.run([sys.executable, str(ROOT / "task3/verify_package.py")], check=True)
-    expected |= {"task3/" + n for n in read_manifest("task3/PACKAGE_SHA256.json")}
-    expected.add("task3/PACKAGE_SHA256.json")
-    subprocess.run([sys.executable, str(ROOT / "task4/verify_package.py")], check=True)
-    expected |= {"task4/" + n for n in read_manifest("task4/PACKAGE_SHA256.json")}
-    expected.add("task4/PACKAGE_SHA256.json")
-    subprocess.run([sys.executable, "-B", str(ROOT / "task5/verify_package.py")], check=True)
-    expected |= {"task5/" + n for n in read_manifest("task5/MANIFEST.json")["files"]}
-    expected.add("task5/MANIFEST.json")
+    p=argparse.ArgumentParser(description=__doc__)
+    g=p.add_mutually_exclusive_group();g.add_argument('--stage',action='store_true');g.add_argument('--staged',action='store_true')
+    args=p.parse_args()
+    current=read(INDEX)
+    for name,digest in current.items():check(name,digest)
+    expected=set(current)|{INDEX}
+    baseline=read('manifests/BASELINE_SHA256.json');mapping=read('manifests/BASELINE_PATH_MAP.json')
+    if set(baseline)!=set(mapping) or len(set(mapping.values()))!=len(mapping):
+        raise SystemExit('Invalid baseline relocation coverage.')
+    for name,digest in baseline.items():check(mapping[name],digest)
+    figures=read('manifests/TASK1_FIGURES_ORIGINAL_SHA256.json')
+    for name,digest in figures.items():check(mapping[name],digest)
+    print(f'CURRENT PUBLICATION VERIFIED: {len(expected)} files; all {len(baseline)} pre-cleanup files retained byte-for-byte.',flush=True)
+    for command in [('scripts/verify_task1_package.py',),('task2/verify_package.py',),('task3/verify_package.py',),('task4/verify_package.py',),('task5/verify_package.py',)]:
+        subprocess.run([sys.executable,'-B',*command],cwd=ROOT,check=True)
+    if args.stage:
+        indexed=set(git('ls-files','-z').decode().split('\0'))-{''}
+        if indexed-set(baseline)-expected:raise SystemExit('Unexpected tracked files.')
+        removed=(set(baseline)-expected)&indexed
+        git('add','-f','-A','--',*sorted(expected|removed))
     if args.stage or args.staged:
-        tracked = set(git("ls-files", "-z", capture=True).decode().split("\0")) - {""}
-        allowed = expected | set(original)
-        if tracked - allowed:
-            raise SystemExit("Unexpected tracked files; review before publishing: " + repr(sorted(tracked - allowed)))
-        if args.stage:
-            removed = set(original) - {current_path(n) for n in original}
-            paths = expected | (removed & tracked)
-            git("add", "-f", "-A", "--", *sorted(paths))
-        indexed = set(git("ls-files", "-z", capture=True).decode().split("\0")) - {""}
-        if indexed != expected:
-            raise SystemExit("Git index inventory mismatch: " + repr(sorted(indexed ^ expected)))
-        git("diff", "--quiet", "--exit-code")
-        print(f"STAGED VERIFIED: all {len(expected)} expected files are indexed and match verified working files.")
-    print("REPOSITORY VERIFIED. No GPU used.")
-
-if __name__ == "__main__":
-    main()
+        indexed=set(git('ls-files','-z').decode().split('\0'))-{''}
+        if indexed!=expected:raise SystemExit('Index inventory differs: '+repr(sorted(indexed^expected)))
+        git('diff','--quiet','--exit-code')
+        print(f'STAGED VERIFIED: {len(expected)} files.')
+    print('REPOSITORY VERIFIED. No GPU used.')
+if __name__=='__main__':main()

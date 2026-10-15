@@ -2,15 +2,26 @@
 
 Completed experiments compare DPO, PPO, GRPO, safety calibration, and verifier versus AI feedback. Tasks 1–5 were published at **`7e7099d99180ce7e180b09da22fd9ee8fc835566`**. This repository preserves the executed source, fixed IDs, logs, results, and documented limitations. The final course report and LMS submission are separate deliverables.
 
+## Repository map
+
+```text
+task1/ … task5/  Completed tasks: start with each README
+scripts/         Verify the repository or reproduce saved results
+docs/            Cross-task decisions, attribution and reproduction scope
+manifests/       Checksums and historical path mappings
+archive/         Original scaffolds and earlier publication documents
+README.md        Navigation and exact experiment commands
+```
+
 ## Start here
 
 | Task | Executed implementation | Results and interpretation |
 |---|---|---|
-| 1: DPO | [task1_dpo](task1_dpo/) | [Results](docs/task1/RESULTS.md), [audit](docs/task1/AUDIT.md), [figures](figures/task1/README.md) |
-| 2: PPO | [task2/source/task2_ppo](task2/source/task2_ppo/) | [Guide](task2/README.md), [audit](task2/AUDIT.md), [examples](task2/QUALITATIVE_EXAMPLES.md) |
-| 3: GRPO | [task3/source/task3_grpo](task3/source/task3_grpo/) | [Results](task3/RESULTS.md), [coverage](task3/publication/PA_COMPLIANCE.md) |
+| 1: DPO | [task1_dpo](task1/source/task1_dpo) | [Results](task1/docs/RESULTS.md), [audit](task1/docs/AUDIT.md), [figures](task1/figures/README.md) |
+| 2: PPO | [task2/source/task2_ppo](task2/source/task2_ppo) | [Guide](task2/README.md), [audit](task2/AUDIT.md), [examples](task2/QUALITATIVE_EXAMPLES.md) |
+| 3: GRPO | [task3/source/task3_grpo](task3/source/task3_grpo) | [Results](task3/RESULTS.md), [coverage](task3/publication/PA_COMPLIANCE.md) |
 | 4: Safety | [Source and stage index](task4/REPRODUCE.md) | [Results](task4/RESULTS.md), [coverage](task4/PA_COMPLIANCE.md) |
-| 5: Feedback | [task5/source/frozen_release](task5/source/frozen_release/) | [Results](task5/RESULTS.md), [coverage](task5/PA_COMPLIANCE.md) |
+| 5: Feedback | [task5/source/frozen_release](task5/source/frozen_release) | [Results](task5/RESULTS.md), [coverage](task5/PA_COMPLIANCE.md) |
 
 See [current publication status](docs/PUBLICATION_STATUS.json) and [source attribution](docs/SOURCE_ATTRIBUTION.md). Task 6 and the report are separate future work.
 
@@ -28,7 +39,7 @@ The second command requires a new output directory and saves separate logs plus 
 Individual commands are:
 
 ```bash
-python3 -B -m task1_dpo.analyze_results --output outputs/task1_recomputed
+python3 -B task1/reproduce.py --output outputs/task1_recomputed
 python3 -B task2/analysis/audit_export.py --original task2/evidence/original --output outputs/task2_recomputed
 python3 -B task3/analysis/present_saved_results.py --output outputs/task3_recomputed
 python3 -B task4/reproduce.py --output outputs/task4_recomputed
@@ -45,9 +56,10 @@ The commands below describe the implemented experiments, not a request to repeat
 
 ### Task 1: standard DPO, beta sweep, and length control
 
-From the repository root, with compatible CUDA PyTorch installed and Drive mounted:
+With compatible CUDA PyTorch installed and Drive mounted, start from the repository root and enter the preserved Task 1 source directory:
 
 ```bash
+cd task1/source
 python -m pip install -r requirements.txt -c requirements-task1-lock.txt
 python -m task1_dpo.prepare_assets --models-dir /content/ATML_PA2_models
 mkdir -p /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
@@ -76,7 +88,9 @@ python -m task1_dpo.ablate_beta --phase policy --run-root outputs/reproduce --mo
 python -m task1_dpo.ablate_beta --phase reward --run-root outputs/reproduce --models-dir /content/ATML_PA2_models --backup-root /content/drive/MyDrive/ATML-Assignment-2/reproduction_backups
 ```
 
-Execute phases separately and stop on failure. The fixed evaluations include the required length strata and word-limit prompts. [Full Task 1 instructions](docs/task1/REPRODUCE.md).
+Execute phases separately and stop on failure. The fixed evaluations include the required length strata and word-limit prompts. [Full Task 1 instructions](task1/docs/REPRODUCE.md).
+
+Return to the repository root before using the later task commands (`cd ../..` from `task1/source/`).
 
 ### Task 2: standard PPO, clipping and KL-pressure forks
 
@@ -86,7 +100,7 @@ Restore the exact course checkout and overlay on CPU:
 python3 task2/restore_source.py
 ```
 
-Follow the [Task 2 setup notebooks](task2/notebooks/) and [preparation constraints](task2/README.md#reproduction-and-checkpoints). After valid preparation, the underlying command from the reconstructed runtime runs the standard 20-update continuation, five independent eight-update forks, seven 200-prompt endpoint evaluations, and the fixed clipping cache:
+Follow the [Task 2 setup notebooks](task2/notebooks) and [preparation constraints](task2/README.md#reproduction-and-checkpoints). After valid preparation, the underlying command from the reconstructed runtime runs the standard 20-update continuation, five independent eight-update forks, seven 200-prompt endpoint evaluations, and the fixed clipping cache:
 
 ```bash
 cd task2/.runtime/course
@@ -103,6 +117,8 @@ That historical aggregator creates a new qualitative worksheet. The approved pub
 
 ### Task 3: standard GRPO, group-size cache and normalization forks
 
+Start from the repository root (`cd ../../..` if still in `task2/.runtime/course`).
+
 ```bash
 python3 task3/restore_source.py --destination task3/.runtime/course
 ```
@@ -118,6 +134,8 @@ python -m task3_grpo.pipeline --experiment /content/drive/MyDrive/ATML-Assignmen
 Preparation computes the fixed K=2/4/8 cache study. The pipeline performs the shared normalization probe, standard 20-update continuation, both eight-update forks, and four 200-prompt evaluations. All group-size conditions retain the same 192 cached generations. The original CPU/GPU notebooks remain thin staged launchers rather than the sole implementation.
 
 ### Task 4: fixed-policy safety and audit
+
+Start from the repository root (`cd ../../..` if still in `task3/.runtime/course`).
 
 Restore the 19 sealed source releases without executing them:
 
@@ -162,7 +180,12 @@ The report, Task 6 synthesis and LMS submission are outside this repository-clea
 
 ## Layout, provenance and attribution
 
-Task 1 uses root `common/` and `configs/`. Later tasks retain isolated helpers to reproduce their executed versions. `archive/` contains historical source and earlier publication documentation; those files intentionally describe earlier states. The root `task5_feedback/` is original course scaffolding, not the completed pipeline. Use `task5/source/frozen_release/`.
+Each completed task has one top-level entry folder: `task1/` through `task5/`.
+Task 1's source, results, figures and guides now live together. Its execution
+directory is `task1/source/`; later tasks retain their sealed execution sources.
+`scripts/` contains repository-wide checks, `docs/` contains cross-task guidance,
+and `manifests/` contains current verification indexes and relocation records.
+`archive/` preserves historical material, including the unused Task 5 starter.
 
 Raw downloaded datasets, public model weights, optimizer checkpoints, caches and outer upload ZIPs stay outside Git. Small response evidence, fixed IDs, exact source releases and machine-readable results are intentional publication artifacts. See [layout](docs/REPOSITORY_LAYOUT.md).
 

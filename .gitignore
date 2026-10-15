@@ -39,3 +39,13 @@ data/*
 
 # Small release provenance shipped in this package
 !/manifests/*.json
+
+# Task 1 isolated source workspace
+/task1/source/data/*
+!/task1/source/data/README.md
+!/task1/source/data/word_limit_prompts.jsonl
+/task1/source/checkpoints/
+/task1/source/cached/
+/task1/source/models/
+/task1/source/run_backups/
+.runtime/

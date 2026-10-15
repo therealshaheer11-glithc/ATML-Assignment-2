@@ -16,10 +16,10 @@ The first command is read-only. The second requires a fresh output directory and
 - [Results and qualitative interpretation](RESULTS.md)
 - [CPU reproduction and original Colab workflow](REPRODUCE.md)
 - [Assignment coverage and limitations](PA_COMPLIANCE.md)
-- [Original summaries](evidence/summaries/) and [audit comparisons](evidence/audit/)
-- [All response/judgment records](evidence/experiment/evaluation_v1/exports/)
-- [Frozen settings, IDs and endpoint contracts](evidence/experiment/)
-- [Executed orchestration source](evidence/source/orchestration/), [generation logs](evidence/execution/generation/) and [judging source/logs](evidence/execution/judging/)
+- [Original summaries](evidence/summaries) and [audit comparisons](evidence/audit)
+- [All response/judgment records](evidence/experiment/evaluation_v1/exports)
+- [Frozen settings, IDs and endpoint contracts](evidence/experiment)
+- [Executed orchestration source](evidence/source/orchestration), [generation logs](evidence/execution/generation) and [judging source/logs](evidence/execution/judging)
 - [Historical source releases and stage helpers](provenance/README.md)
 
 ## Evidence boundaries

@@ -1,22 +1,31 @@
-# Repository layout and documentation maintenance
+# Repository layout
 
-The root README is the current entry point. `docs/PUBLICATION_STATUS.json` records
-the completed experiment publication and separates it from report/submission work.
-Tasks 1–5 retain isolated execution sources, fixed IDs, saved evidence and CPU
-verifiers. This cleanup covers documentation and reproduction instructions only.
+| Location | Purpose |
+|---|---|
+| [task1/](../task1/) | DPO source, results, figures and guides |
+| [task2/](../task2/) | PPO source, results, audits and launchers |
+| [task3/](../task3/) | GRPO source, results, audits and launchers |
+| [task4/](../task4/) | Safety execution sources, evidence and analysis |
+| [task5/](../task5/) | Feedback evaluation source, results and analysis |
+| [scripts/](../scripts/) | Repository-wide verification and CPU reproduction |
+| [manifests/](../manifests/) | Current checksums and original-to-current path records |
+| [archive/](../archive/) | Earlier source scaffolds and superseded publication files |
 
-Task 1 uses root common/config helpers. Tasks 2–5 preserve the helper versions
-used in their executed releases. The root `task5_feedback/` is retained course
-scaffolding; the completed implementation is `task5/source/frozen_release/`.
+The root README supplies exact entry points. Each task has its own README.
+Task 1 model commands run from `task1/source/`; its original import/config/data
+relationships remain intact. Public saved-result commands run from the repository root.
 
-The cleanup adds a CPU saved-results dispatcher and current documentation. Before
-updating guide text or publication-wrapper checksums, it preserves their exact
-previous bytes in `archive/repository-maintenance-20261014-cleanup/`. Original
-experimental source, data identities, results, labels, configs, scientific seals
-and release ZIPs are unchanged. The original Task 1 manifest verifies its earlier
-attribution page through an explicit archive mapping.
+The 15 October structural cleanup moves source/evidence without changing their
+bytes. Any edited publication guide or verifier has its previous bytes retained
+under `archive/repository-layout-20261015/`. A baseline map accounts for every
+file at commit `2cabffbec6e72fbb4f865b72af485e10c9c96579`.
+Original source/experiment manifests are not regenerated. Current publication
+wrapper manifests are refreshed only for the changed navigation or paths.
 
-Publication-wrapper manifests track the current guides. They are distinct from
-immutable experiment/source manifests. The combined verifier checks both layers.
-Raw downloaded datasets, full model weights, caches, and outer transfer ZIPs stay
-outside Git. See REPRODUCTION_SCOPE.md for the fresh GPU reproduction boundary.
+Historical paths inside frozen logs, notebooks and source documentation identify
+the original execution environment. They are not instructions to create duplicate
+root folders. See [the map documentation](../manifests/README.md).
+
+This reorganization changes neither the experiment results nor the documented
+[fresh-runtime reproduction limits](REPRODUCTION_SCOPE.md). Task 6 and the final
+course report remain separate work.

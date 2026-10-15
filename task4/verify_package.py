@@ -52,7 +52,8 @@ def verify_integrity():
             require(sha(evidence / 'experiment/evaluation_v1/exports' / kind / (p + '.jsonl')) == entry['sha256'], 'Completion/export hash differs')
     cross = json.loads((ROOT / 'CROSS_TASK_SOURCES.json').read_text())
     for name, expected in cross['sources'].items():
-        require(sha(safe(ROOT.parent, name)) == expected, 'Earlier-task score source changed: ' + name)
+        current = 'task1/results/' + name[len('results/task1/'):] if name.startswith('results/task1/') else name
+        require(sha(safe(ROOT.parent, current)) == expected, 'Earlier-task score source changed: ' + name)
     for archive in (ROOT / 'provenance/releases').glob('*.zip'):
         with zipfile.ZipFile(archive) as z:
             require(z.testzip() is None, 'Release ZIP corruption: ' + archive.name)
