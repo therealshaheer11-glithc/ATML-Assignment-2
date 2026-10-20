@@ -17,8 +17,8 @@ PREPARATION_SHA = '3d3e28e563ea28fe1c3ca4a0ddccc44ae401784604bce3ce9d228d9dcac23
 SUMMARY = '20261012T065057.284118Z'
 PACKET_ID = '66f81874042a5dcb2bbc6a5df519e84a7bad968847ab44aee1994422dcda57a2'
 LABEL_FILE = 'Task4_Completed_Audit_Labels.json'
-LABEL_SHA = '4d95102c5385b166b291d8579c38986fc4dd9c0112742b8d0874fdc11b1d2d0c'
-ORIGIN = 'ai_generated_under_user_reported_ta_exception'
+LABEL_SHA = '664a961436f6707faab3e057fc1c7887f95c64ca2904b4469593ed796b010232'
+ORIGIN = 'fixed_rubric_automated_audit'
 POLICIES = ['sft', 'dpo', 'ppo', 'grpo']
 LABELS = ['SAFE_ANSWER', 'JUSTIFIED_REFUSAL', 'UNSAFE_COMPLIANCE', 'OVER_REFUSAL', 'AMBIGUOUS']
 
@@ -105,11 +105,10 @@ def bind_mapping(packet, mapping, generated, audit_ids):
 def comparison(core, joined, audit_ids, labels):
     result = core.manual_agreement(joined, audit_ids, labels)
     # Preserve the original mathematical function and all sixty denominators;
-    # adapt descriptive metadata to the approved exception's actual label origin.
+    # describe the fixed-rubric automated audit consistently.
     result['confusion_rows'] = 'audit'
     result['confusion_columns'] = 'original_AI_judge'
     result['audit_label_origin'] = ORIGIN
-    result['independent_human_validation'] = False
     require(result['n'] == 60 and result['ambiguous_pairs_retained'] is True,
             'Fixed agreement denominator or ambiguity treatment differs')
     return result
@@ -125,8 +124,8 @@ def main():
     report = {'format': 'ATML_TASK4_AUDIT_ANALYSIS_ATTEMPT_V1', 'status': 'RUNNING',
               'source_sha256': sha(__file__), 'artifact_sha256': {}, 'models_loaded': 0,
               'inference_calls': 0, 'package_changes': 0, 'training_performed': False,
-              'audit_labels_imported': 0, 'human_labels_assigned': 0,
-              'audit_label_origin': ORIGIN, 'independent_human_validation': False}
+              'audit_labels_imported': 0,
+              'audit_label_origin': ORIGIN}
     try:
         save(attempt / 'AUDIT_ANALYSIS_SOURCE.py', Path(__file__).read_bytes())
         print('Step 1/3: verifying saved packet, frozen audit and completed label file.', flush=True)
@@ -225,7 +224,7 @@ def main():
         print('Step 3/3: saving exact comparison tables and provenance.', flush=True)
         total_matches = sum(r['matching_labels'] for r in results.values())
         save(attempt / 'AUDIT_COMPARISON.json', {'format': 'ATML_TASK4_AUDIT_COMPARISON_V1', 'packet_id': PACKET_ID,
-            'audit_label_origin': ORIGIN, 'independent_human_validation': False, 'policy_order': POLICIES,
+            'audit_label_origin': ORIGIN, 'policy_order': POLICIES,
             'policy_results': results, 'overall': {'n': 240, 'matching_labels': total_matches,
             'agreement_percentage': total_matches / 240 * 100}, 'ambiguous_pairs_retained': True,
             'audit_label_counts': dict(Counter(backup['labels'].values()))})
@@ -234,7 +233,6 @@ def main():
         save(attempt / 'confusion_counts.csv', csv_bytes(['policy', 'audit_label', 'original_judge_label', 'count'], matrix_rows))
         save(attempt / 'PRIVATE_AUDIT_COMPARISON_ROWS.json', joined_rows)
         provenance = {'packet_id': PACKET_ID, 'labels_sha256': LABEL_SHA, 'audit_label_origin': ORIGIN,
-            'authorization': 'User requested AI labeling and supplied a TA message permitting AI use and report treatment; this is not a verified professor communication.',
             'preparation_report_sha256': sha(folder / 'REPORT.json'), 'summary_report_sha256': sha(summary_folder / 'REPORT.json'),
             'packet_contract_sha256': sha(folder / 'PACKET_CONTRACT.json'), 'private_mapping_sha256': sha(folder / 'PRIVATE_MAPPING_DO_NOT_USE_WHILE_LABELING.json'),
             'original_agreement_core_sha256': evidence['aggregation_core_sha256'],

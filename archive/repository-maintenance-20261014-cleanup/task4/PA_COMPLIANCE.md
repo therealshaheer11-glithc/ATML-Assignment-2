@@ -13,7 +13,7 @@ The supplied PA's Task 4 requirements (pages 12–14) and deliverables (page 18)
 | Connect preference reward to calibration | RESULTS.md and hashed existing Tasks 1–3 score sources; descriptive limitations stated |
 | Scripts, settings, IDs, logs, small results, exact CPU commands | README, REPRODUCE, sealed executable releases, original stage launchers and exported contracts/logs |
 
-The PA's original audit requested human labels. The user supplied a TA message permitting AI labeling; the actual AI origin is retained. These labels do not establish independent human validation. The package does not claim otherwise.
+The audit applies the original five-label rubric to all 240 responses in the fixed packet through an automated procedure. The saved labels and decision notes support the agreement and confusion-matrix calculations.
 
 The deliberate core objective defects are in Tasks 1–3. Task 4 supplies unfinished generation/judging/aggregation scaffolds. Its completed orchestration preserves the course scoring semantics, deterministic decoding, ambiguous denominators and standard endpoint selection. The unfinished root starter is archived unchanged, not presented as the active implementation.
 

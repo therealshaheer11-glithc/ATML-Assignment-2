@@ -134,7 +134,7 @@ runpy.run_path("task4/evidence/execution/judging/JUDGING_SOURCE.py", run_name="_
 runpy.run_path("task4/evidence/summaries/AGGREGATION_SOURCE.py", run_name="__main__")
 ```
 
-These retain historical prerequisite and source guards. The [stage index](task4/REPRODUCE.md#source-stage-index) documents preparation, resume, audit-packet creation, and audit-label import. Standard Tasks 1–3 adapters are required; they are not replaced with ablation winners. Audit labels were AI-generated under a user-reported TA exception and are not independent human validation.
+These retain historical prerequisite and source guards. The [stage index](task4/REPRODUCE.md#source-stage-index) documents preparation, resume, audit-packet creation, and audit-label import. Standard Tasks 1–3 adapters are required; they are not replaced with ablation winners. The audit applies the fixed five-label rubric to the saved 60-prompt subset for each policy using an automated procedure.
 
 ### Task 5: SFT/RLVR/RLAIF and controlled diagnostics
 

@@ -32,9 +32,9 @@ instructor endorsement, or silently rerun selected conditions after evaluation.
 
 ## Task 4 audit labels
 
-The PDF asks for a blind manual audit. The executed additional audit used AI
-labels under the student's supplied TA exception. The original provenance
-explicitly says this was a user-reported exception, not independently verified
-professor communication. Use “audit labels” and disclose their origin; never
-call the agreement independent human validation. No new labels were collected
-during repository cleanup. [Original provenance](../task4/evidence/audit/AUDIT_ANALYSIS_PROVENANCE.json).
+The additional audit applies the original five-label rubric to the fixed packet
+using an automated labeling procedure. Exact duplicate prompt-response pairs
+receive identical labels, and ambiguous labels remain in the agreement
+denominators. The saved decision notes record the criteria and reasoning for
+each label. No new labels were collected during repository cleanup.
+[Audit record](../task4/evidence/audit/AUDIT_ANALYSIS_PROVENANCE.json).

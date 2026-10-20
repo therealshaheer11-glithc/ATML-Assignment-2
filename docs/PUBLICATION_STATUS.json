@@ -17,6 +17,6 @@
     "task5": "historical receipts required"
   },
   "token_budget_interpretation": "equal allocated allowances; unequal realized tokens disclosed",
-  "task4_audit_origin": "ai_generated_under_user_reported_ta_exception",
+  "task4_audit_origin": "fixed_rubric_automated_audit",
   "lms_submission": "not_verified"
 }

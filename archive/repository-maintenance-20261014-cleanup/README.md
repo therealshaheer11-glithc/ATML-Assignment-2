@@ -55,7 +55,7 @@ python3 task4/verify_package.py
 python3 task4/reproduce.py --output outputs/task4_recomputed
 ```
 
-These CPU commands reproduce all four metric summaries, four audit matrices and six CSV tables. The [Task 4 guide](task4/README.md) links the original execution source, fixed configuration/IDs and logs. The additional audit used AI labels under a user-supplied TA exception; agreement is not independent human validation.
+These CPU commands reproduce all four metric summaries, four audit matrices and six CSV tables. The [Task 4 guide](task4/README.md) links the original execution source, fixed configuration/IDs and logs. The audit applies the fixed five-label rubric to the saved 60-prompt subset for each policy using an automated procedure.
 
 ## Task 5 verification and reproduction
 

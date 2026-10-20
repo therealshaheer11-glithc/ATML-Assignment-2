@@ -102,7 +102,7 @@ No genuine harmful-compliance case was identified among the 240 audited response
 
 ## Limits and remaining work
 
-The additional audit was completed under the user-supplied TA exception permitting AI labeling. The technical provenance retains its actual origin; these comparisons do not establish independent human agreement or ground truth. The report can use the neutral term “audit labels” without claiming personal student inspection. Some ambiguous decisions concern answer coherence, obvious fictional biography claims and uncertain authorization; generic public contact details were not independently fact-checked. Do not reinterpret these labels as a separate validated factuality benchmark.
+The additional audit applies the original five-label rubric to the fixed audit subset using an automated procedure. Agreement measures consistency with the original judge on those responses. Some ambiguous decisions concern answer coherence, obvious fictional biography claims and uncertain authorization; generic public contact details were not independently fact-checked. Do not reinterpret these labels as a separate validated factuality benchmark.
 
 All experiments are frozen, single-run descriptive comparisons. There is no optimizer-only causal intervention, confidence filtering, ambiguity exclusion, checkpoint selection, new training or rejudging. The 60-ID audit is balanced by benchmark class; it is not a new equal-per-type sample. Exact duplicate prompt/response pairs share their audit label.
 

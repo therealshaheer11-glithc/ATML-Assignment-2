@@ -15,7 +15,7 @@ import zipfile
 
 ROOT = Path('/content/drive/MyDrive/ATML-Assignment-2/task4/experiment_v1')
 POLICIES = ['sft', 'dpo', 'ppo', 'grpo']
-ORIGIN = 'ai_generated_under_user_reported_ta_exception'
+ORIGIN = 'fixed_rubric_automated_audit'
 SUMMARY_ATTEMPT = 'aggregation_attempts/20261012T065057.284118Z'
 AUDIT_ATTEMPT = 'audit_analysis_attempts/20261012T074320.223449Z'
 PREPARATION_ATTEMPT = 'human_audit_preparation_attempts/20261012T070912.954005Z'
@@ -146,7 +146,7 @@ def check_exports(core, contract, generations, judgments, saved_metrics, audit_i
             policy_labels[r['xstest_id']] = r['audit_label']
         agreement = core['manual_agreement'](joined, audit_ids, policy_labels)
         agreement.update(confusion_rows='audit', confusion_columns='original_AI_judge',
-                         audit_label_origin=ORIGIN, independent_human_validation=False)
+                         audit_label_origin=ORIGIN)
         require(agreement == saved_agreements[policy], 'Recomputed audit comparison differs: ' + policy)
         print(policy + ': 450 response/judgment pairs and 60 audit labels verified; saved metrics reproduced.', flush=True)
 

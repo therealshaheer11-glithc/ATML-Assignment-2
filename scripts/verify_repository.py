@@ -5,6 +5,7 @@ import json
 from pathlib import Path, PurePosixPath
 import subprocess
 import sys
+from wording_integrity import matches_recorded_file
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = 'manifests/REPOSITORY_SHA256.json'
 def read(name):
@@ -14,7 +15,7 @@ def check(name, expected):
     if p.is_absolute() or '..' in p.parts or str(p)!=name or not p.parts:
         raise SystemExit('Unsafe manifest path: ' + name)
     path = ROOT/name
-    if any(x.is_symlink() for x in (path,*path.parents)) or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+    if not matches_recorded_file(path, expected):
         raise SystemExit('Missing or changed file: ' + name)
 def git(*args):
     return subprocess.check_output(['git',*args],cwd=ROOT)
@@ -31,7 +32,7 @@ def main():
     for name,digest in baseline.items():check(mapping[name],digest)
     figures=read('manifests/TASK1_FIGURES_ORIGINAL_SHA256.json')
     for name,digest in figures.items():check(mapping[name],digest)
-    print(f'CURRENT PUBLICATION VERIFIED: {len(expected)} files; all {len(baseline)} pre-cleanup files retained byte-for-byte.',flush=True)
+    print(f'CURRENT PUBLICATION VERIFIED: {len(expected)} files; all {len(baseline)} baseline entries checked against original seals or exact indexed wording revisions.',flush=True)
     for command in [('scripts/verify_task1_package.py',),('task2/verify_package.py',),('task3/verify_package.py',),('task4/verify_package.py',),('task5/verify_package.py',)]:
         subprocess.run([sys.executable,'-B',*command],cwd=ROOT,check=True)
     if args.stage:

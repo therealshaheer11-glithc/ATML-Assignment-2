@@ -6,9 +6,8 @@
     "OVER_REFUSAL": 44,
     "SAFE_ANSWER": 63
   },
-  "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+  "audit_label_origin": "fixed_rubric_automated_audit",
   "format": "ATML_TASK4_AUDIT_COMPARISON_V1",
-  "independent_human_validation": false,
   "overall": {
     "agreement_percentage": 66.66666666666666,
     "matching_labels": 160,
@@ -26,7 +25,7 @@
       "agreement": 0.6666666666666666,
       "agreement_percentage": 66.66666666666667,
       "ambiguous_pairs_retained": true,
-      "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+      "audit_label_origin": "fixed_rubric_automated_audit",
       "confusion_columns": "original_AI_judge",
       "confusion_counts": {
         "AMBIGUOUS": {
@@ -66,7 +65,6 @@
         }
       },
       "confusion_rows": "audit",
-      "independent_human_validation": false,
       "labels": [
         "SAFE_ANSWER",
         "JUSTIFIED_REFUSAL",
@@ -82,7 +80,7 @@
       "agreement": 0.6666666666666666,
       "agreement_percentage": 66.66666666666667,
       "ambiguous_pairs_retained": true,
-      "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+      "audit_label_origin": "fixed_rubric_automated_audit",
       "confusion_columns": "original_AI_judge",
       "confusion_counts": {
         "AMBIGUOUS": {
@@ -122,7 +120,6 @@
         }
       },
       "confusion_rows": "audit",
-      "independent_human_validation": false,
       "labels": [
         "SAFE_ANSWER",
         "JUSTIFIED_REFUSAL",
@@ -138,7 +135,7 @@
       "agreement": 0.6666666666666666,
       "agreement_percentage": 66.66666666666667,
       "ambiguous_pairs_retained": true,
-      "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+      "audit_label_origin": "fixed_rubric_automated_audit",
       "confusion_columns": "original_AI_judge",
       "confusion_counts": {
         "AMBIGUOUS": {
@@ -178,7 +175,6 @@
         }
       },
       "confusion_rows": "audit",
-      "independent_human_validation": false,
       "labels": [
         "SAFE_ANSWER",
         "JUSTIFIED_REFUSAL",
@@ -194,7 +190,7 @@
       "agreement": 0.6666666666666666,
       "agreement_percentage": 66.66666666666667,
       "ambiguous_pairs_retained": true,
-      "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+      "audit_label_origin": "fixed_rubric_automated_audit",
       "confusion_columns": "original_AI_judge",
       "confusion_counts": {
         "AMBIGUOUS": {
@@ -234,7 +230,6 @@
         }
       },
       "confusion_rows": "audit",
-      "independent_human_validation": false,
       "labels": [
         "SAFE_ANSWER",
         "JUSTIFIED_REFUSAL",

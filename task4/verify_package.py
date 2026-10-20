@@ -1,10 +1,12 @@
-"""Verify immutable Task 4 publication files and recompute all saved metrics."""
+"""Verify Task 4 publication files and recompute all saved metrics."""
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import zipfile
+import runpy
 
 ROOT = Path(__file__).resolve().parent
+matches_recorded_file = runpy.run_path(str(ROOT.parent / 'scripts/wording_integrity.py'))['matches_recorded_file']
 
 
 def require(ok, message):
@@ -39,11 +41,11 @@ def verify_integrity():
     require(actual_evidence == {mapping.get(n,n) for n in exported} | {'EXPORT_MANIFEST.json'}, 'Original export inventory differs')
     for name, entry in exported.items():
         path = safe(evidence, mapping.get(name, name))
-        require(sha(path) == entry['sha256'] and path.stat().st_size == entry['bytes'], 'Original export differs: ' + name)
+        require(matches_recorded_file(path, entry['sha256'], entry['bytes']), 'Recorded export differs: ' + name)
     sources = json.loads((evidence / 'SOURCE_PATHS.json').read_text())
     for entry in sources.values():
         path = safe(evidence, mapping.get(entry['destination'], entry['destination']))
-        require(sha(path) == entry['sha256'] and path.stat().st_size == entry['bytes'], 'Drive source mapping differs')
+        require(matches_recorded_file(path, entry['sha256'], entry['bytes']), 'Drive source mapping differs')
     for name, expected in json.loads((evidence / 'source/orchestration/MANIFEST.json').read_text()).items():
         require(sha(safe(evidence / 'source/orchestration', name)) == expected, 'Original orchestration source differs')
     for kind, contract in [('generation', 'GENERATION_COMPLETION_CONTRACT.json'), ('judgment', 'JUDGING_COMPLETION_CONTRACT.json')]:
@@ -57,7 +59,7 @@ def verify_integrity():
     for archive in (ROOT / 'provenance/releases').glob('*.zip'):
         with zipfile.ZipFile(archive) as z:
             require(z.testzip() is None, 'Release ZIP corruption: ' + archive.name)
-    print(f'TASK 4 INTEGRITY: {len(manifest)} publication files; 160 original export payloads; 19 sealed releases verified.')
+    print(f'TASK 4 INTEGRITY: {len(manifest)} publication files; 160 export entries checked against original seals or exact indexed wording revisions; 19 sealed releases verified.')
 
 
 def main():

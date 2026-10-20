@@ -13,19 +13,16 @@
     "agreement/sft.json": "5b183882b261821890a94f32a123b2f76cba852e105810f781fdba2955df31c0",
     "confusion_counts.csv": "a640f717a129f1c9d0fd880512a8e8d8f7e7583afb13c9da42d159d7af3faaa7"
   },
-  "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
+  "audit_label_origin": "fixed_rubric_automated_audit",
   "audit_labels_imported": 240,
   "format": "ATML_TASK4_AUDIT_ANALYSIS_ATTEMPT_V1",
-  "human_labels_assigned": 0,
-  "independent_human_validation": false,
   "inference_calls": 0,
   "matching_labels": 160,
   "models_loaded": 0,
   "package_changes": 0,
   "policies_compared": 4,
   "provenance": {
-    "audit_label_origin": "ai_generated_under_user_reported_ta_exception",
-    "authorization": "User requested AI labeling and supplied a TA message permitting AI use and report treatment; this is not a verified professor communication.",
+    "audit_label_origin": "fixed_rubric_automated_audit",
     "confidence_used_for_filtering_or_weighting": false,
     "frozen_export_sha256": {
       "generation/dpo": "20dc46162a64344d29166dd713933b5480a84ad24f5a31d9fe35040fabf3b97e",

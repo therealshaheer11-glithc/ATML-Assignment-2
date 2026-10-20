@@ -1,0 +1,190 @@
+{
+  "base_commit": "10f03a00bbb042f909d9ec7908e2f7014aab7bb0",
+  "files": {
+    "README.md": {
+      "after_bytes": 13640,
+      "after_sha256": "c7dfa0f703a743416dc76dfe53c3151ef100b31dcc77e519c8aec63ea0c3cf5c",
+      "before_bytes": 13626,
+      "before_sha256": "e908f9000d5b57ddaa23412648d90fff0f7acf3e0f911dfab9c8b0ecd1ae8d91"
+    },
+    "archive/repository-layout-20261015/README.md": {
+      "after_bytes": 12774,
+      "after_sha256": "e2f88db4654f1fe35ae346699bd087b964f7cdaee4791a3542174ef835edb3f7",
+      "before_bytes": 12760,
+      "before_sha256": "e5af8c1cc51ddd17cfe2c865109dc2e60c54b46890af50d373ef0e2758d77f91"
+    },
+    "archive/repository-layout-20261015/task4/README.md": {
+      "after_bytes": 3245,
+      "after_sha256": "a8823e48cdecf89adf04d90147a07147c91b83ff6d05d026ffd05552ee69c6df",
+      "before_bytes": 3396,
+      "before_sha256": "1d9cc8f85d8047f61921cc6484646a7bd04bba97ff0665382ccc5097d91af525"
+    },
+    "archive/repository-maintenance-20261014-cleanup/README.md": {
+      "after_bytes": 7236,
+      "after_sha256": "a8f5da0b0049e1bbe7966f45a1ef5e0712aba06e2819fd1c8547bc32d0ed89d0",
+      "before_bytes": 7233,
+      "before_sha256": "641d44d0d5faf23bbc81027cfb15454511831c65d427e4a23db5efdd3b857d66"
+    },
+    "archive/repository-maintenance-20261014-cleanup/task4/PA_COMPLIANCE.md": {
+      "after_bytes": 2451,
+      "after_sha256": "08c9535e9ae7b14939eff9481d168bf95d16239f7eb2427e09c45ec6750f4f96",
+      "before_bytes": 2471,
+      "before_sha256": "52848aa8049218965247546ef09b6d2cedc215639beccf914b3355893555c769"
+    },
+    "archive/repository-maintenance-20261014-cleanup/task4/RESULTS.md": {
+      "after_bytes": 14111,
+      "after_sha256": "f69a23883da5a4eb14179368cb325210afac99de4b08fd45be5fddf540a7bf70",
+      "before_bytes": 14249,
+      "before_sha256": "5eb3a885e3002aa840091d292854123437ee26ba84c52d4d369a482ede767640"
+    },
+    "archive/repository-maintenance-20261014-task5/README.md": {
+      "after_bytes": 5993,
+      "after_sha256": "79b426708bb8592f9ec25fcd9fc31dfcb0e4a41fd294d7ec78afee6f2f663318",
+      "before_bytes": 5990,
+      "before_sha256": "30e35ad45cc120c295e009a5a3c4bf97d71fce562ff54586cdbb4e036236c2d9"
+    },
+    "docs/EXPERIMENTAL_DECISIONS.md": {
+      "after_bytes": 2113,
+      "after_sha256": "2a149a925364c2507c35839eec60120ead659f2da48dae391dbdd1b3e85c6a5a",
+      "before_bytes": 2163,
+      "before_sha256": "f17120b69448036405f00f8139110489ea6d6885e12f7326e34a8d251a0330ad"
+    },
+    "docs/PUBLICATION_STATUS.json": {
+      "after_bytes": 765,
+      "after_sha256": "f379530aa7dbbbc792df54d8cd5c2e4c0132d32eb089792597169d8986f275fb",
+      "before_bytes": 782,
+      "before_sha256": "254e2122a9616a8ac5268e4e3f4e577d58bd70558aa14ee65e46e0ce8ba3157b"
+    },
+    "manifests/README.md": {
+      "after_bytes": 1112,
+      "after_sha256": "62130c3d89d01db10d9af2f254a3a2d51092f99f277fce9e1bfaa86ddab5a111",
+      "before_bytes": 840,
+      "before_sha256": "4ec186e8c5d3638a4490bc3ca8da75c16fdb17609826806b17358d123f7c3f5d"
+    },
+    "scripts/verify_repository.py": {
+      "after_bytes": 2667,
+      "after_sha256": "97fb297d52ae12508218a4434d3fe426b142d25e99f0cf3236e5c67028001fea",
+      "before_bytes": 2662,
+      "before_sha256": "20aa0c0012f5437b1eb4ff4ed22d22e43a48fc246faefceb8fbee21250c91ef5"
+    },
+    "task4/PACKAGE_SHA256.json": {
+      "after_bytes": 39386,
+      "after_sha256": "c19cf40dd2923049a4c10b60ae0174045c05acf79d80dc8cb8514cd9c908afab",
+      "before_bytes": 39386,
+      "before_sha256": "66649c6654f14159ff53737666f80d75ae6e2096eb313eb220977889e1a8ea9e"
+    },
+    "task4/PA_COMPLIANCE.md": {
+      "after_bytes": 2527,
+      "after_sha256": "a1ba1e8a91898e4290d7cf9ead931ad273f3b2e3650a61af1d04e453ffce50f9",
+      "before_bytes": 2527,
+      "before_sha256": "5b95f40e2dea549beb1bf1c07644becc1044df0890ad3a7d300f3b48139c83ff"
+    },
+    "task4/README.md": {
+      "after_bytes": 3320,
+      "after_sha256": "85b8c1bf2d5464a816c393cac60eb9f4f2ca75492acd7fd115a70d4154ee22eb",
+      "before_bytes": 3389,
+      "before_sha256": "d416904905704d72272cf5247247488249c43acb98f607b2954bc9897eb3602f"
+    },
+    "task4/RESULTS.md": {
+      "after_bytes": 14057,
+      "after_sha256": "8ef0e92a054ae5e5ce57e67a7f6a838ff63adb7492df4423fb5cb7c9dad74593",
+      "before_bytes": 14195,
+      "before_sha256": "2308bcd9928c364db59523748f0a4acc31717ff0ea736741382fd0e427c0463f"
+    },
+    "task4/evidence/audit/AUDIT_ANALYSIS_PROVENANCE.json": {
+      "after_bytes": 1684,
+      "after_sha256": "378c3d58c36e44a8d4d0a61be6588e9fa9740996f2cd1314e227b703cf723cfe",
+      "before_bytes": 1864,
+      "before_sha256": "ec602a183a74c9f972271d59b140e1a5772c8da4318e4d064dbf59d2a56b91f2"
+    },
+    "task4/evidence/audit/AUDIT_ANALYSIS_SOURCE.py": {
+      "after_bytes": 16425,
+      "after_sha256": "b6a9e1412d21aeae2e560cba2ff773c99fb6d7ab126cfc823310af04c8d590a5",
+      "before_bytes": 16792,
+      "before_sha256": "f911bada1c9562378673b93d28472bf93c4aac3324c6104fa7ab5011d7f8d377"
+    },
+    "task4/evidence/audit/AUDIT_COMPARISON.json": {
+      "after_bytes": 6524,
+      "after_sha256": "2d29c36c41185104ab34c1b40bc3b2824dccba2ef4d187b643533a8b822f8f49",
+      "before_bytes": 6830,
+      "before_sha256": "2770a743a4f0a075ae6275c9fff4f557e525f1363d8a4f69a84366e44f45c6c0"
+    },
+    "task4/evidence/audit/REPORT.json": {
+      "after_bytes": 3376,
+      "after_sha256": "d6bc5c8e3cc46a39ed2d8f61e60c75b7809f160e0d4bb57d269ac988b08f7f62",
+      "before_bytes": 3646,
+      "before_sha256": "619077010f5a7a52805b38c6c6e82d29f9b5ae9313b853f404902cbedd4a8a40"
+    },
+    "task4/evidence/audit/Task4_Completed_Audit_Labels.json": {
+      "after_bytes": 7443,
+      "after_sha256": "664a961436f6707faab3e057fc1c7887f95c64ca2904b4469593ed796b010232",
+      "before_bytes": 7460,
+      "before_sha256": "4d95102c5385b166b291d8579c38986fc4dd9c0112742b8d0874fdc11b1d2d0c"
+    },
+    "task4/evidence/audit/agreement/dpo.json": {
+      "after_bytes": 1264,
+      "after_sha256": "810a137b5330076b45e036c6b7bcd39f34b2009bce07ef1bbb4c9def33f05f96",
+      "before_bytes": 1322,
+      "before_sha256": "a0789238a832d678041628e531bbe876e7011ac7617a839cd62e75be1ab774c0"
+    },
+    "task4/evidence/audit/agreement/grpo.json": {
+      "after_bytes": 1264,
+      "after_sha256": "d2915cc68531336c9d948e6a4dd77b21055c69eb8aa52cfbe506cd3d4a6cdfd3",
+      "before_bytes": 1322,
+      "before_sha256": "d0e7594248bef11f7c6c5eeab406c02c6dc065c6bf4ac771ec641a80f08688a8"
+    },
+    "task4/evidence/audit/agreement/ppo.json": {
+      "after_bytes": 1264,
+      "after_sha256": "eaff45a475817b403dadda95e7a0131f2af9e8e2a565e47ee4879165300050ec",
+      "before_bytes": 1322,
+      "before_sha256": "5b183882b261821890a94f32a123b2f76cba852e105810f781fdba2955df31c0"
+    },
+    "task4/evidence/audit/agreement/sft.json": {
+      "after_bytes": 1264,
+      "after_sha256": "eaff45a475817b403dadda95e7a0131f2af9e8e2a565e47ee4879165300050ec",
+      "before_bytes": 1322,
+      "before_sha256": "5b183882b261821890a94f32a123b2f76cba852e105810f781fdba2955df31c0"
+    },
+    "task4/evidence/exporter/Task4_CPU_Export_GitHub.py": {
+      "after_bytes": 20040,
+      "after_sha256": "749b14be296bbe1daffe0b37354a7749267fb6ce76cd537705ce3b92bb87c684",
+      "before_bytes": 20093,
+      "before_sha256": "3a7a1a3ad152ff71365ac128f80283866d99f6578ad7f6fed9fbe29d13613cd4"
+    },
+    "task4/provenance/history/Task4_Audit_Decision_Notes.json": {
+      "after_bytes": 64582,
+      "after_sha256": "57641b895e4c1d6fb87b7cfa5df3f4d7c5c270e16f28cb7c4faf365823782d0a",
+      "before_bytes": 64599,
+      "before_sha256": "449cfed686ba1d7e258397a99c20e6e02d49eee4173b90e5070ba29442427490"
+    },
+    "task4/provenance/history/Task4_Completed_Audit_README.md": {
+      "after_bytes": 3940,
+      "after_sha256": "26d006c730c1813ee5153eb577d98a251e00205c027dc7b3f71091e0e0456398",
+      "before_bytes": 4477,
+      "before_sha256": "e570c2db78d31c451a7c1b7720a8e6da2c7d182e69f43dc212f1a2e8285129c0"
+    },
+    "task4/reproduce.py": {
+      "after_bytes": 5411,
+      "after_sha256": "3e288eef21e9a4f05f85abaabc93934c8e8752ea37cc365257f453fa8fd3a945",
+      "before_bytes": 5486,
+      "before_sha256": "58c07e676d9da9cafc0ac0251603abda86cf9105f44cb7d309b4bde3d4905892"
+    },
+    "task4/verify_package.py": {
+      "after_bytes": 3908,
+      "after_sha256": "20a8a2cd037a3ec30592afe0d185297e360f4d0d0bf551793cdc6e4545bb118a",
+      "before_bytes": 3754,
+      "before_sha256": "2ef6ac70a5721084029077385535c068e5f60960ef4f959a6eca2a38b15f13de"
+    }
+  },
+  "format": "ATML_WORDING_REVISIONS_V1",
+  "scientific_invariants": [
+    "response text",
+    "labels and per-label reasons",
+    "prompt and packet IDs",
+    "settings",
+    "metrics and confusion counts",
+    "scoring code",
+    "sealed releases"
+  ],
+  "scope": "Documentation and audit-description metadata; associated verification wrappers and current task index."
+}

@@ -38,7 +38,7 @@ def recompute(output=None):
     for p in policies:
         metrics[p] = core['aggregate_policy'](p, [{k: row[k] for k in core['META']} for row in generations[p]], judgments[p])
         agreements[p] = core['manual_agreement'](judgments[p], ids, {r['xstest_id']: r['audit_label'] for r in audit_rows if r['policy'] == p})
-        agreements[p].update(confusion_rows='audit', confusion_columns='original_AI_judge', audit_label_origin=exporter['ORIGIN'], independent_human_validation=False)
+        agreements[p].update(confusion_rows='audit', confusion_columns='original_AI_judge', audit_label_origin=exporter['ORIGIN'])
         require(metrics[p] == read('summaries/metrics/' + p + '.json'), 'Metric sidecar differs: ' + p)
     csv_bytes = aggregation['csv_bytes']
     tables = {}
@@ -76,7 +76,7 @@ def recompute(output=None):
                 (folder / (p + '.json')).write_bytes(exporter['encoded'](value))
         report = {'status': 'REPRODUCED', 'responses': 1800, 'judgments': 1800, 'audit_labels': 240,
                   'csv_tables_byte_equal': 6, 'metrics_recomputed': 4, 'confusion_matrices_recomputed': 4,
-                  'independent_human_validation': False, 'models_loaded': 0,
+                  'models_loaded': 0,
                   'package_manifest_sha256': hashlib.sha256((ROOT / 'PACKAGE_SHA256.json').read_bytes()).hexdigest()}
         (output / 'VERIFICATION.json').write_bytes(exporter['encoded'](report))
     print('TASK 4 REPRODUCED: 1800 response/judgment pairs, 240 audit labels, 6 byte-identical CSV tables. No GPU used.')

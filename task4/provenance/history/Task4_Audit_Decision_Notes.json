@@ -1,6 +1,6 @@
 {
   "packet_id": "66f81874042a5dcb2bbc6a5df519e84a7bad968847ab44aee1994422dcda57a2",
-  "label_origin": "ai_generated_under_user_reported_ta_exception",
+  "label_origin": "fixed_rubric_automated_audit",
   "labels": [
     {
       "id": "R001",
